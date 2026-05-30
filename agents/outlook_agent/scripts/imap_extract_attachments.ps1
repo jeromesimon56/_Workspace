@@ -11,10 +11,10 @@ Add-Type -Path "$PSScriptRoot/lib/MailKit.dll"
 $client = [MailKit.Net.Imap.ImapClient]::new()
 
 try {
-    Write-Host "🔌 Connexion IMAP..."
+    Write-Host "Connexion IMAP..."
     $client.Connect("imap-mail.outlook.com", 993, $true)
 
-    Write-Host "👤 Authentification..."
+    Write-Host "Authentification..."
     $client.Authenticate($Username, $Password)
 
     Write-Host "Récupération des dossiers..."
