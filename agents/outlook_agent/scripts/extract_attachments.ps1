@@ -6,14 +6,14 @@ param(
 
 . "$PSScriptRoot/graph_auth.ps1"
 
-Write-Host "📥 Extraction des pièces jointes depuis le dossier Outlook : $Folder"
+Write-Host "Extraction des pièces jointes depuis le dossier Outlook : $Folder"
 
 $userId = (Get-MgUser -UserId me).Id
 
 # Récupération du dossier Outlook
 $folderObj = Get-MgUserMailFolder -UserId $userId -MailFolderId $Folder -ErrorAction SilentlyContinue
 if (-not $folderObj) {
-    Write-Host "❌ Dossier introuvable : $Folder"
+    Write-Host "Dossier introuvable : $Folder"
     exit
 }
 
@@ -50,9 +50,9 @@ foreach ($msg in $messages) {
             $filePath = Join-Path $msgFolder $fileName
 
             [IO.File]::WriteAllBytes($filePath, $att.ContentBytes)
-            Write-Host "📎 Pièce jointe sauvegardée : $filePath"
+            Write-Host "Pièce jointe sauvegardée : $filePath"
         }
     }
 }
 
-Write-Host "✅ Extraction terminée."
+Write-Host "Extraction terminee."
