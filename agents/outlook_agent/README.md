@@ -64,13 +64,13 @@ Usage
 .\agents\outlook_agent\run_agent.ps1 -Action clean -Folder All -MaxMessages 500 -ForceDeleteDomains 'amazon.fr','example.com' -DryRun
 ```
 
-- Nettoyage standard (LinkedIn, Amazon) :
+- Nettoyage standard (LinkedIn, Amazon, et domaines définis par défaut) :
 
 ```powershell
 .\agents\outlook_agent\run_agent.ps1 -Action clean -Folder All -MaxMessages 500 -StandardCleanup -DryRun
 ```
 
-> Quand `-StandardCleanup` est spécifié, les domaines par défaut (linkedin.com, em.linkedin.com, amazon.fr, amazon.com) sont nettoyés. Tu peux ajouter d'autres domaines avec `-ForceDeleteDomains` en même temps.
+> Quand `-StandardCleanup` est spécifié, le script recherche d'abord les emails déjà importés localement dans `./outlook_emails` pour les domaines standards, puis supprime uniquement les messages serveur qui correspondent à ces imports locaux. `-ForceDeleteDomains` étend la liste des domaines recherchés dans les fichiers locaux.
 
 - Lister d'abord les messages détectés sans les supprimer (DryRun) :
 

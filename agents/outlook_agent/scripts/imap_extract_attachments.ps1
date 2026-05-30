@@ -1,40 +1,82 @@
 param(
     [string]$Username,
     [string]$Password,
-    [string]$Output = "$PSScriptRoot/attachments"
+    [string]$Output = ''
 )
 
-# Charger MailKit et MimeKit
-Add-Type -Path "$PSScriptRoot/lib/MimeKit.dll"
-Add-Type -Path "$PSScriptRoot/lib/MailKit.dll"
-
-# Créer le dossier de sortie
-if (-not (Test-Path $Output)) {
-    New-Item -ItemType Directory -Path $Output | Out-Null
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+if (-not $Output) {
+    $Output = Join-Path $scriptDir 'attachments'
 }
 
-$client = [MailKit.Net.Imap.ImapClient]::new()
+function Resolve-AssemblyPath {
+    param([string]$AssemblyName)
+    $path = Join-Path $scriptDir "lib\$AssemblyName"
+    if (Test-Path $path) { return $path }
+    return $null
+}
 
+function Load-RequiredAssemblies {
+    $required = @(
+        'System.Runtime.dll',
+        'MimeKit.dll',
+        'MailKit.dll'
+    )
+
+    $missing = @()
+    foreach ($dll in $required) {
+        $path = Resolve-AssemblyPath -AssemblyName $dll
+        if (-not $path) {
+            $missing += $dll
+            continue
+        }
+
+        try {
+            [Reflection.Assembly]::LoadFrom($path) | Out-Null
+        } catch {
+            Write-Warning "Impossible de charger l'assembly '$dll' depuis '$path': $($_.Exception.Message)"
+            $missing += $dll
+        }
+    }
+
+    if ($missing.Count -gt 0) {
+        Write-Error "Assemblies manquants ou introuvables dans '$scriptDir\lib': $($missing -join ', ')"
+        Write-Error "Lancez install_mailkit_deps.ps1 pour telecharger les dependances automatiquement."
+        exit 1
+    }
+}
+
+function Get-AllFolders {
+    param([MailKit.IMailFolder]$Folder)
+
+    $folders = @($Folder)
+    foreach ($sub in $Folder.GetSubfolders($false)) {
+        $folders += Get-AllFolders -Folder $sub
+    }
+    return $folders
+}
+
+function Ensure-FolderExists {
+    param([string]$Path)
+    if (-not (Test-Path $Path)) {
+        New-Item -ItemType Directory -Path $Path | Out-Null
+    }
+}
+
+Load-RequiredAssemblies
+Ensure-FolderExists -Path $Output
+
+$client = [MailKit.Net.Imap.ImapClient]::new()
 try {
     Write-Host "Connexion IMAP..."
-    $client.Connect("imap-mail.outlook.com", 993, $true)
+    $client.Connect('imap-mail.outlook.com', 993, $true)
 
     Write-Host "Authentification..."
     $client.Authenticate($Username, $Password)
 
     Write-Host "Récupération des dossiers..."
     $root = $client.GetFolder($client.PersonalNamespaces[0])
-
-    function Get-FoldersRecursively {
-        param([MailKit.IMailFolder]$Folder)
-
-        foreach ($sub in $Folder.GetSubfolders($true)) {
-            $sub
-            Get-FoldersRecursively -Folder $sub
-        }
-    }
-
-    $folders = Get-FoldersRecursively -Folder $root
+    $folders = Get-AllFolders -Folder $root
 
     foreach ($folder in $folders) {
         Write-Host "Dossier : $($folder.FullName)"
@@ -50,21 +92,22 @@ try {
 
         foreach ($summary in $summaries) {
             $msg = $folder.GetMessage($summary.UniqueId)
-
-            if (-not $msg.Attachments) { continue }
+            if (-not $msg.Attachments -or $msg.Attachments.Count -eq 0) { continue }
 
             $safeFolder = ($folder.FullName -replace '[\\/:*?"<>|]', '_')
             $msgFolder = Join-Path $Output $safeFolder
-
-            if (-not (Test-Path $msgFolder)) {
-                New-Item -ItemType Directory -Path $msgFolder | Out-Null
-            }
+            Ensure-FolderExists -Path $msgFolder
 
             foreach ($att in $msg.Attachments) {
                 $fileName = $att.FileName
-                if (-not $fileName) { $fileName = "attachment.bin" }
+                if (-not $fileName) { $fileName = 'attachment.bin' }
 
                 $filePath = Join-Path $msgFolder $fileName
+                $counter = 1
+                while (Test-Path $filePath) {
+                    $filePath = Join-Path $msgFolder "{0}_{1}{2}" -f [System.IO.Path]::GetFileNameWithoutExtension($fileName), $counter, [System.IO.Path]::GetExtension($fileName)
+                    $counter++
+                }
 
                 $stream = [System.IO.File]::Create($filePath)
                 try {
@@ -84,9 +127,13 @@ try {
 
         $folder.Close()
     }
-
+} catch {
+    Write-Error "Erreur IMAP : $($_.Exception.Message)"
+    if ($_.Exception.InnerException) { Write-Error "  Inner: $($_.Exception.InnerException.Message)" }
+    exit 1
 } finally {
-    if ($client.IsConnected) {
+    if ($client -and $client.IsConnected) {
         $client.Disconnect($true)
     }
 }
+

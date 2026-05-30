@@ -9,17 +9,18 @@ param(
 
 . "$PSScriptRoot\graph_auth.ps1"
 
-# Default domains to force-delete when -StandardCleanup is used
+# Default domains used to search local .eml imports when -StandardCleanup is used
 $defaultForceDeleteDomains = @(
     'linkedin.com',
     'em.linkedin.com',
     'amazon.fr',
     'amazon.com',
     'eseis-syndic.sergic.com',
+    'eseis-syundic.sergic.com',
     'mags.france-abonnements.fr',
+    'france-abonnements.fr',
     'leboncoin.fr',
     'info.swile.co',
-    'france-abonnements.fr',
     'mail.gmf.fr',
     'chronopost.fr'
 )
@@ -134,6 +135,21 @@ function Find-LocalEmailsInStandardDomains {
     return $localEmails
 }
 
+function Normalize-EmailText {
+    param([string]$Text)
+    if (-not $Text) { return '' }
+    return ($Text -replace '\s+', ' ').Trim().ToLower()
+}
+
+function Get-LocalEmailMatchKey {
+    param(
+        [string]$From,
+        [string]$Subject
+    )
+    return "$((Normalize-EmailText -Text $From))|$((Normalize-EmailText -Text $Subject))"
+}
+
+function Get-MessageAgeDays {
     param([datetime]$DateTime)
     if ($null -eq $DateTime) { return $null }
     return [int](((Get-Date) - $DateTime).TotalDays)
@@ -193,6 +209,14 @@ function Is-PromoMessage {
         [int]$AgeDays
     )
 
+    if ($StandardCleanup) {
+        if ($localEmailMatchKeys -and $localEmailMatchKeys.Count -gt 0) {
+            $matchKey = Get-LocalEmailMatchKey -From $From -Subject $Subject
+            return $localEmailMatchKeys -contains $matchKey
+        }
+        return $false
+    }
+
     # If ForceDeleteDomains is specified, only match emails from those domains
     if ($ForceDeleteDomains -and $ForceDeleteDomains.Count -gt 0) {
         $fromLower = Get-SafeString $From | ForEach-Object { $_.ToLower() }
@@ -239,19 +263,22 @@ function Is-PromoMessage {
 
 # When StandardCleanup is enabled, first check local email folder
 if ($StandardCleanup) {
-    $localEmailFolder = $Output
-    if (-not $localEmailFolder -or $localEmailFolder -eq './outlook_emails') {
-        $localEmailFolder = './outlook_emails'
-    }
-    
+    $localEmailFolder = Join-Path (Get-Location) 'outlook_emails'
     Write-Host "StandardCleanup: Consultation des emails localement importés dans '$localEmailFolder'..."
     $localEmails = Find-LocalEmailsInStandardDomains -LocalEmailFolder $localEmailFolder -Domains $ForceDeleteDomains
-    
+
     if ($localEmails.Count -gt 0) {
         Write-Host "StandardCleanup: $($localEmails.Count) email(s) trouvé(s) localement pour suppression."
+        $localEmailMatchKeys = $localEmails | ForEach-Object {
+            Get-LocalEmailMatchKey -From $_.From -Subject $_.Subject
+        } | Select-Object -Unique
+    } else {
+        Write-Host "StandardCleanup: aucun email local trouvé pour les domaines spécifiés ou dans les imports locaux."
+        $localEmailMatchKeys = @()
     }
 } else {
     $localEmails = @()
+    $localEmailMatchKeys = @()
 }
 
 $userId = (Get-MgUser -UserId me).Id

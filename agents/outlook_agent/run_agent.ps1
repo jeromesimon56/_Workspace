@@ -6,6 +6,8 @@ param(
     [string]$Rules = "./config/settings.json",
     [int]$MaxMessages = 0,
     [string[]]$ForceDeleteDomains = @(),
+    [string]$ImapUsername = "",
+    [string]$ImapPassword = "",
     [switch]$StandardCleanup,
     [switch]$DryRun,
     [switch]$AutoConfirm
@@ -19,6 +21,13 @@ switch ($Action.ToLower()) {
     }
     "extract" {
         & (Join-Path $scriptRoot "scripts\extract_attachments.ps1") -Folder $Folder -Output $AttachmentsOutput -MaxMessages $MaxMessages
+    }
+    "imap-extract" {
+        if (-not $ImapUsername -or -not $ImapPassword) {
+            Write-Error "Action 'imap-extract' requires -ImapUsername and -ImapPassword"
+            exit 1
+        }
+        & (Join-Path $scriptRoot "scripts\imap_extract_attachments.ps1") -Username $ImapUsername -Password $ImapPassword -Output $AttachmentsOutput
     }
     "clean" {
         & (Join-Path $scriptRoot "scripts\clean_promotions.ps1") -Folder $Folder -MaxMessages $MaxMessages -ForceDeleteDomains $ForceDeleteDomains @([System.Management.Automation.SwitchParameter]::new($StandardCleanup)) @([System.Management.Automation.SwitchParameter]::new($DryRun)) @([System.Management.Automation.SwitchParameter]::new($AutoConfirm))
@@ -34,6 +43,6 @@ switch ($Action.ToLower()) {
         Sort-OutlookEmails -Source $EmailsOutput -RulesFile $Rules
     }
     default {
-        Write-Host "Unknown action: $Action. Use fetch, extract, sort, or all."
+        Write-Host "Unknown action: $Action. Use fetch, extract, imap-extract, clean, sort, or all."
     }
 }

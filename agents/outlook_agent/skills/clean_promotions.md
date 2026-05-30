@@ -6,8 +6,8 @@ Recherche et supprime les emails promotionnels (newsletter/offres) dans un dossi
 ## Inputs
 - Folder name (ex: Inbox, All)
 - MaxMessages (0 = tous les messages)
-- StandardCleanup (switch) : active le nettoyage des domaines par défaut (LinkedIn, Amazon)
-- ForceDeleteDomains (array) : si spécifié, seuls les emails de ces domaines sont supprimés
+- StandardCleanup (switch) : active le nettoyage standard en recherchant d'abord les emails importés localement dans `./outlook_emails`, puis supprime uniquement les messages serveur correspondant à ces imports.
+- ForceDeleteDomains (array) : étend la liste des domaines recherchés dans les emails locaux lors du nettoyage standard, sinon limite la suppression aux domaines fournis.
 - DryRun (switch) : affiche les messages détectés sans les supprimer
 - AutoConfirm (bool) : supprime sans demander confirmation
 
