@@ -1,0 +1,5 @@
+# Ne jamais versionner les emails exportés
+agents/outlook_agent/outlook_emails/
+# Fichiers temporaires
+*.tmp
+*.log
