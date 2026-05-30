@@ -1,58 +1,58 @@
 param(
     [string]$Folder = "Inbox",
-    [string]$Output = "./attachments",
+    [string]$Output = "$PSScriptRoot/../../outlook_emails",
     [int]$MaxMessages = 0
 )
 
-. "$PSScriptRoot\graph_auth.ps1"
+. "$PSScriptRoot/graph_auth.ps1"
+
+Write-Host "📥 Extraction des pièces jointes depuis le dossier Outlook : $Folder"
 
 $userId = (Get-MgUser -UserId me).Id
-$knownFolderIds = @{
-    'Inbox' = 'Inbox'
-    'Sent Items' = 'SentItems'
-    'SentItems' = 'SentItems'
-    'Drafts' = 'Drafts'
-    'Deleted Items' = 'DeletedItems'
-    'DeletedItems' = 'DeletedItems'
-    'Junk Email' = 'JunkEmail'
-    'JunkEmail' = 'JunkEmail'
-    'Archive' = 'Archive'
-    'Outbox' = 'Outbox'
-}
-$folderId = if ($knownFolderIds.ContainsKey($Folder)) { $knownFolderIds[$Folder] } else { $null }
 
-if ($folderId) {
-    $folderObj = Get-MgUserMailFolder -UserId $userId -MailFolderId $folderId
-} else {
-    $folderObj = Get-MgUserMailFolder -UserId $userId -Top 100 | Where-Object { $_.DisplayName -ieq $Folder } | Select-Object -First 1
-}
+# Récupération du dossier Outlook
+$folderObj = Get-MgUserMailFolder -UserId $userId -MailFolderId $Folder -ErrorAction SilentlyContinue
 if (-not $folderObj) {
-    Write-Error "Mail folder '$Folder' introuvable. Vérifiez le nom de dossier Outlook."
-    exit 1
+    Write-Host "❌ Dossier introuvable : $Folder"
+    exit
 }
 
-if (-not (Test-Path $Output)) {
-    New-Item -ItemType Directory -Path $Output -Force | Out-Null
+# Récupération des messages
+$params = @{
+    UserId       = $userId
+    MailFolderId = $folderObj.Id
+    All          = $true
 }
+if ($MaxMessages -gt 0) { $params.Top = $MaxMessages }
 
-if ($MaxMessages -gt 0) {
-    $messages = Get-MgUserMailFolderMessage -UserId $userId -MailFolderId $folderObj.Id -Top $MaxMessages
-} else {
-    $messages = Get-MgUserMailFolderMessage -UserId $userId -MailFolderId $folderObj.Id -All
-}
+$messages = Get-MgUserMailFolderMessage @params
 
 foreach ($msg in $messages) {
-    $id = $msg.Id
-    $attachments = Get-MgUserMessageAttachment -UserId $userId -MessageId $id -All
+
+    # Création du chemin miroir : outlook_emails/<Folder>/<MessageId>/
+    $safeSubject = ($msg.Subject -replace '[^a-zA-Z0-9-_ ]','_')
+    if (-not $safeSubject) { $safeSubject = "SansSujet" }
+
+    $msgFolder = Join-Path $Output $Folder
+    $msgFolder = Join-Path $msgFolder ("{0:yyyy-MM-dd}_{1}" -f $msg.ReceivedDateTime, $msg.Id)
+
+    if (-not (Test-Path $msgFolder)) {
+        New-Item -ItemType Directory -Path $msgFolder | Out-Null
+    }
+
+    # Récupération des pièces jointes
+    $attachments = Get-MgUserMessageAttachment -UserId $userId -MessageId $msg.Id
+
     foreach ($att in $attachments) {
-        if ($att.ODataType -eq "#microsoft.graph.fileAttachment") {
-            $name = $att.Name
-            $contentBytes = $att.ContentBytes
-            $bytes = [System.Convert]::FromBase64String($contentBytes)
-            $dir = Join-Path $Output $id
-            if (-not (Test-Path $dir)) { New-Item -ItemType Directory -Path $dir | Out-Null }
-            $path = Join-Path $dir $name
-            [System.IO.File]::WriteAllBytes($path, $bytes)
+        if ($att.AdditionalProperties.'@odata.type' -eq "#microsoft.graph.fileAttachment") {
+
+            $fileName = $att.Name
+            $filePath = Join-Path $msgFolder $fileName
+
+            [IO.File]::WriteAllBytes($filePath, $att.ContentBytes)
+            Write-Host "📎 Pièce jointe sauvegardée : $filePath"
         }
     }
 }
+
+Write-Host "✅ Extraction terminée."
