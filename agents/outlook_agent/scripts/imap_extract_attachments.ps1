@@ -4,9 +4,14 @@ param(
     [string]$Output = "$PSScriptRoot/attachments"
 )
 
-# Charger MailKit localement
+# Charger MailKit et MimeKit
 Add-Type -Path "$PSScriptRoot/lib/MimeKit.dll"
 Add-Type -Path "$PSScriptRoot/lib/MailKit.dll"
+
+# Créer le dossier de sortie
+if (-not (Test-Path $Output)) {
+    New-Item -ItemType Directory -Path $Output | Out-Null
+}
 
 $client = [MailKit.Net.Imap.ImapClient]::new()
 
@@ -25,27 +30,37 @@ try {
 
         foreach ($sub in $Folder.GetSubfolders($true)) {
             $sub
-            Get-FoldersRecursively $sub
+            Get-FoldersRecursively -Folder $sub
         }
     }
 
-    $folders = Get-FoldersRecursively $root
+    $folders = Get-FoldersRecursively -Folder $root
 
     foreach ($folder in $folders) {
         Write-Host "Dossier : $($folder.FullName)"
         $folder.Open([MailKit.FolderAccess]::ReadOnly)
 
-        foreach ($msg in $folder.Fetch(0, $folder.Count - 1, [MailKit.MessageSummaryItems]::Full | [MailKit.MessageSummaryItems]::UniqueId)) {
+        $count = $folder.Count
+        if ($count -eq 0) {
+            $folder.Close()
+            continue
+        }
 
-            $message = $folder.GetMessage($msg.UniqueId)
+        $summaries = $folder.Fetch(0, $count - 1, [MailKit.MessageSummaryItems]::UniqueId)
 
-            if (-not $message.Attachments) { continue }
+        foreach ($summary in $summaries) {
+            $msg = $folder.GetMessage($summary.UniqueId)
+
+            if (-not $msg.Attachments) { continue }
 
             $safeFolder = ($folder.FullName -replace '[\\/:*?"<>|]', '_')
             $msgFolder = Join-Path $Output $safeFolder
-            if (-not (Test-Path $msgFolder)) { New-Item -ItemType Directory -Path $msgFolder | Out-Null }
 
-            foreach ($att in $message.Attachments) {
+            if (-not (Test-Path $msgFolder)) {
+                New-Item -ItemType Directory -Path $msgFolder | Out-Null
+            }
+
+            foreach ($att in $msg.Attachments) {
                 $fileName = $att.FileName
                 if (-not $fileName) { $fileName = "attachment.bin" }
 
@@ -63,7 +78,7 @@ try {
                     $stream.Dispose()
                 }
 
-                Write-Host "📎 $filePath"
+                Write-Host "Pièce jointe sauvegardée : $filePath"
             }
         }
 
@@ -71,5 +86,7 @@ try {
     }
 
 } finally {
-    if ($client.IsConnected) { $client.Disconnect($true) }
+    if ($client.IsConnected) {
+        $client.Disconnect($true)
+    }
 }
