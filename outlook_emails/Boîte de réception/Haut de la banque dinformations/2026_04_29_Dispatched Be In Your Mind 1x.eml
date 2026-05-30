@@ -1,0 +1,2282 @@
+Received: from PRAP250MB0516.EURP250.PROD.OUTLOOK.COM (2603:10a6:102:293::12)
+ by VI6PPF5FBC185B3.EURP250.PROD.OUTLOOK.COM with HTTPS; Wed, 29 Apr 2026
+ 03:02:19 +0000
+Received: from BLAPR03CA0029.namprd03.prod.outlook.com (2603:10b6:208:32b::34)
+ by PRAP250MB0516.EURP250.PROD.OUTLOOK.COM (2603:10a6:102:293::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9846.26; Wed, 29 Apr
+ 2026 03:02:17 +0000
+Received: from BL6PEPF0001AB53.namprd02.prod.outlook.com
+ (2603:10b6:208:32b:cafe::8f) by BLAPR03CA0029.outlook.office365.com
+ (2603:10b6:208:32b::34) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9846.28 via Frontend Transport; Wed,
+ 29 Apr 2026 03:02:16 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.1.62)
+ smtp.mailfrom=bounces.amazon.fr; dkim=pass (signature was verified)
+ header.d=amazon.fr;dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=pass action=none
+ header.from=amazon.fr;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of bounces.amazon.fr
+ designates 54.240.1.62 as permitted sender) receiver=protection.outlook.com;
+ client-ip=54.240.1.62; helo=a1-62.smtp-out.eu-west-1.amazonses.com; pr=C
+Received: from a1-62.smtp-out.eu-west-1.amazonses.com (54.240.1.62) by
+ BL6PEPF0001AB53.mail.protection.outlook.com (10.167.241.5) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9846.18
+ via Frontend Transport; Wed, 29 Apr 2026 03:02:16 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:B068F940CBAAC24E2FFE53CB2CC980BEB873DE2E94FB71797DD4244AC06D9FC2;UpperCasedChecksum:B05CDBB66EC3095DB56CFFC7B77D5A571567CA99556AB90017F8932FA102AA0D;SizeAsReceived:1703;Count:15
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=5dwc7qcledvv573zks4cqvvq76pynoes; d=amazon.fr; t=1777431735;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=A4+UHJTSZXqqmG0XGhBSeu6YASjlorjf8mB1XvPHpRE=;
+	b=pvv31AaJpsuazw3nFhe/MVe0dU4HvaZ8SKfFgOgwxCwDd0UywKw20dSN0/mJQP2Q
+	+666k3lfqOWWDNoxZVuVziTS3Oc6vDe7a6YSBiz/U+KmTrBGqZqDru4YK09eoVEJB1F
+	TI/uUS3VBCq7UEYcpnNhU6niL40kxmvDdK8zTZJc=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=shh3fegwg5fppqsuzphvschd53n6ihuv; d=amazonses.com; t=1777431735;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=A4+UHJTSZXqqmG0XGhBSeu6YASjlorjf8mB1XvPHpRE=;
+	b=W5ZetjvqoOynIiU41EnUGhXgz0ekE9qjMRnADSvS9Twbg13zofGfaKK4dEJsZ0f5
+	lajVJp/7zOvQpwHAEcLWDzV6aPqBLjGiLjR/7gpO2g1tTcCdzSPyGcN3T5jHsoeUaYC
+	EGf8HIyyNWKQ32Gjc6Z+8GnJJZM6Nap9xY7fISJ8=
+Date: Wed, 29 Apr 2026 03:02:15 +0000
+From: "Amazon.fr" <confirmation-commande@amazon.fr>
+To: jeromesimon56@hotmail.com
+Message-ID: <0102019dd72fee08-28e8b34b-1f79-4fa2-bc60-f45b401c0f72-000000@eu-west-1.amazonses.com>
+Subject: =?UTF-8?B?RGlzcGF0Y2hlZDog4oCYQmUgSW4gWW91ciBNaW5kIDF4Li4u4oCZ?=
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3201774_565738181.1777431735758"
+X-AMAZON-MAIL-RELAY-TYPE: notification
+Bounces-to: 202604290302140d89153eb13e44a1ac27fc6aba50p0eu-CB8KV80F9ZOS3@bounces.amazon.fr
+X-AMAZON-METADATA: CA=CB8KV80F9ZOS3-CU=A1BHIYBEKTESWV
+X-Original-MessageID: <urn.rtn.msg.202604290302140d89153eb13e44a1ac27fc6aba50p0eu@1777431735760.>
+Feedback-ID: 1103836691::1.eu-west-1.UIAUrMfbpGrxavqnRE0yoZrAUBI9C7GRNUx/kUDo6B4=:AmazonSES
+X-SES-Outgoing: 2026.04.29-54.240.1.62
+X-IncomingHeaderCount: 15
+Return-Path: 202604290302140d89153eb13e44a1ac27fc6aba50p0eu-CB8KV80F9ZOS3@bounces.amazon.fr
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Apr 2026 03:02:16.8405
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 3e7fff50-fd97-4687-ed53-08dea59bb893
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BL6PEPF0001AB53:EE_|PRAP250MB0516:EE_|VI6PPF5FBC185B3:EE_
+X-MS-Exchange-Organization-AuthSource: BL6PEPF0001AB53.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 4/28/2026 9:24:40 PM
+X-MS-Office365-Filtering-Correlation-Id: 3e7fff50-fd97-4687-ed53-08dea59bb893
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 54.240.1.62
+X-SID-PRA: CONFIRMATION-COMMANDE@AMAZON.FR
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;ARA:1444111002|68400799013|6089299003|1290799033|461199028|9000799056|9400799043|47200799024|58200799025|1680799066|5139299004|10300799038|1122599022|440099028|4302099013|3412199025|30041999003|1370799030|1380799030|1360799030|56899033|1602099012;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Apr 2026 03:02:16.6022
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3e7fff50-fd97-4687-ed53-08dea59bb893
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: BL6PEPF0001AB53.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PRAP250MB0516
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7363389
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9846.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;ex:0;auth:1;dest:I;OFR:TrustedSenderList;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90012020)(91020020)(91040095)(9050020)(9100341)(944500132)(4810010)(4910033)(9575002)(10195002)(9414026)(9310011)(9220031)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?b0xvek5BWllneDhKMXAzZEtsbDZwanR2aklHVTlvVTdqN1MvdWh0UG1BRnFt?=
+ =?utf-8?B?MmJZbjBKclZreStESjZJQmZ4UzVsckdmbWZQcWVncmlFTjVRa1ZFQ0xGTUU2?=
+ =?utf-8?B?Z251QTFxd1czNlRleEpJVjFLdCtqNFB6aG9OSmpSbUhyV3ZJNVlybWZ2QWJE?=
+ =?utf-8?B?emUyNTJheDF1NXBPMzNiblpFR2pRZDl0ZGNvOXFpWUU4L0Vzc1F2YkgyYzRa?=
+ =?utf-8?B?VDN5OFJtcmtMQU51WC9OcWpzdGl1cE5CYVFreWdXR2dXU0NpZHowbFRsckdI?=
+ =?utf-8?B?NTVZY0YzeGprYnAyVEF1NDR5dmY3NjdJbkdPSmxTZFpmUW8yajBkSGtKUm9M?=
+ =?utf-8?B?Y0xyVzNaOEc5MjBvYUREZTI2QU9DQlRUK05td2JLRDVDZlVRbE13ZmdhVmlI?=
+ =?utf-8?B?NFBHY2c1Y001N1Z6aCswUkRnUlQ5ZGoydVdraFhTOGpRYU1Nb1QyWWxRN0xv?=
+ =?utf-8?B?c0hmaSt4Q0lYcXV6Z0dOYnNienpySE44dnNINkVuRUIybXdoTldUaXNxU05G?=
+ =?utf-8?B?TVhsU01GYzR3Y1Exd2RZb2kwYUgwRFM4TXZtZDV6bVdXWXJ4U2VRdGM4TTQ0?=
+ =?utf-8?B?VG9vTTUwcXpSREpKTnRqK2IxVStmUjU0UDg2MmJQbWQ3dzhMRldtQ2Vma1NT?=
+ =?utf-8?B?V3dXNWkyZWNobmxRYXFvMWlsV3g4dm9mb00zdTFwMkRJZGNQTmFLVjZ1SDRr?=
+ =?utf-8?B?eFRQOGFhaW92cXAxTDNTOHVvdDNZKzJ3ZlVCeXpya3NiN29RS0NnMUp0V3BZ?=
+ =?utf-8?B?RXFzblY1QzNJcHBGenNwbFRwcG4wcmRidlFiUFkxYkx5SHV2OXBJdXk2TElL?=
+ =?utf-8?B?Tmx3RncwaHQ0QkxHbWpUc1RIVGJ2UUlnUlYrUVVXTktieU9aRTBjNUZPS0l4?=
+ =?utf-8?B?VjJHamhOcTJrNnl1SGIrNVgyTnhqTDE3VnRkdFdwdEJuamhWdWFVZVVRd1ZO?=
+ =?utf-8?B?R3dBSlRlY0REdlFWQWI3TzQvaVNoR2c3eGdCNGxIRGZxbmlQcW02bVRHa2lr?=
+ =?utf-8?B?d0V5dFpNMmlCamczZERkcjZnTjJoZ2FxM0VFQU9Ua21yN0ZpaWw0ZHBhNEdR?=
+ =?utf-8?B?RFFid0NEOUJKMzY3eEc3M0EvdGwrUTZySkdVMkUra3BNd3VhbUV6NUlNWU1K?=
+ =?utf-8?B?OTAyVnBpRW1lbm9KS2hlYXh6bWtVZVZOVm5XZW5ldVo3bVZXRUdqZVI5TmQ2?=
+ =?utf-8?B?MXc0NHVsNUNDbDZuR00vb1N4SnlLV2NxRTA2ZG5KV3E1Z3psRTNFUjRpQmVn?=
+ =?utf-8?B?SEF1ZnluZFJNT0RqdWQ2cUdNK0NyOWhja0d0UUN2cG55NHVEMjFWQzJzNis3?=
+ =?utf-8?B?RkJTczJYTEE4bEx6cStreVQ1ZW1rM2h2SFMrdElrTkhZUTVXcm9mdFp1dzlw?=
+ =?utf-8?B?YTcxdThHcUY0Q0hqM2FLKzRzd25Ecm5HMW4zVFFzWVB2VjQzV05wMG1WUWpY?=
+ =?utf-8?B?YmwzbDZ2ZUIrNHAxME1nVVZ6WWtpTEF1QmVPRElPSERKUTFYNUJpOEZxZ2lZ?=
+ =?utf-8?B?OUxKSzBsM0tEVWFySkR2NTFGWXFrZnRPWk53NzZrZ3YwU0hBZWNOb0NlbnB4?=
+ =?utf-8?B?M1ZxLzIwMW4rL1ZCWnVGVTlpV0FyL210MThYZW0xZVVtcWZldUJwZHBpWkF2?=
+ =?utf-8?B?U1NmalBIMkRRM0dROUg1aU5hd2JLRUg4aEFWRUIxcWwwSUZ6NnNWQTlOZlpk?=
+ =?utf-8?B?ODhNOUlmdDFteU9nUnJVaVpyZlRyc1ZtcHZFR1RyRXM3cXBFQ3ozcXFvaXdl?=
+ =?utf-8?B?bEFuRUQvcjZ4M2J4RTBQRXdvK1IxbEZab3pOT09rc05RKzdGNm9zYUlKK1Ri?=
+ =?utf-8?B?RFo2SFcrTkk2RytRelpXbkFLRmh6ZmErSHhSc1VvUytBMTFOTG9pTDlGVS92?=
+ =?utf-8?B?RHVIU0dQMmZRZzhGTU9WVlp6NWdGVW5zaUp3M05iTllqSkxNYlU5eDJYK1BS?=
+ =?utf-8?B?bDlqVDhBR3ZjeUxJeFNGUlp6VTZUZTZiYjhFUWdKZTltcHdLb0w0Q2V2b0dV?=
+ =?utf-8?B?ZHJodFl0OVVmTFhvZUlzMzNsUi80ZmVhVlZLMW96NWJ5bUVBN2lPUFV4dmFG?=
+ =?utf-8?B?Y2RXQzR0NVRHV2RvZUxoalR3ZGpzMHptWW02aWhBSklwcHFyQWdWb29qWWNZ?=
+ =?utf-8?B?WFI2akpydHVobHk2RkpkUHU0T2w0TGwrQVBFb0hnck5rbUtUOVhNMkl1Ykhz?=
+ =?utf-8?B?bys2VWJrZmhCdWZ6alduc3U2SCtxMEZFQlAxNnV4TzRVSWUwcHd1YnBxWXRK?=
+ =?utf-8?B?SXVBVWl0S3Q5ZUhNKzVOWTFEaENmb1ZHVXlNWVNzc2gvZmNwandvZ2dwSWYx?=
+ =?utf-8?B?V1hUdE1Fd25FeFo1bVhxM1JEbkdHSlJ2SXpWRzJ5enN2WjdqbVJ2K3BwRzhs?=
+ =?utf-8?B?SjdDYzZ0cUpGbVVyaEpLOXZJSFBhMlNSQXZudWYrM0s0akhTYnJ3T01Vd2NM?=
+ =?utf-8?B?b2UwWUt4bEhrVFVXYkJRN1dJSmQxSG01aGlqZ0dUQVptYk9mUThIb3E1RWVq?=
+ =?utf-8?B?VStPcnNFcTM0NUh4QTcyMTgzWURRVFZTdE1NWkJFWlNpNEVIaXRLd09NRGR0?=
+ =?utf-8?B?K2kvdEhRSm5qUnNUUGJNeFQ0MldKbTBpRndLYmRhWXF0THlLazlRcXVhb21O?=
+ =?utf-8?B?bXJVTHRMWFN5MTNjOTFUekpVRTdzK3NFdXlkZGxFVkt2V2xMd1dxV21nZmZQ?=
+ =?utf-8?B?ZUkxOUlmMjd2TjNOVGRubmUwbkVIbDZOMmR2MFBVVmJ3d1JLRENRdmtlUU1l?=
+ =?utf-8?B?SEtFZDZabFoxWFRmUjdyZW1QU2I5TG11OEcvb3p5WDZkWStsdTlYQlpFdFkx?=
+ =?utf-8?B?N0d2Q2xGcUR3VzhxWEVRRm9NWktyZit4bGhxSXpTenVPanFZU2dob0pPTnhz?=
+ =?utf-8?B?TEppVnhLN3U1d0QxK0VaWmpFVTY1eWZDdGk1eTJ5akhkVzZteVhlaVczVUZ1?=
+ =?utf-8?Q?yVjEUe8SN9cjcH1N?=
+MIME-Version: 1.0
+
+------=_Part_3201774_565738181.1777431735758
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+ =20
+
+
+    Your package was dispatched!
+Ordered
+
+Dispatched
+
+Out for delivery
+
+Delivered
+
+
+
+
+
+
+
+
+
+
+Arriving today
+
+
+
+Amazon Locker - Aviva, Intermarch=C3=A9 Express Suresnes, 48 Avenue Jean Ja=
+ures, Suresnes, 92150
+
+Order #
+407-9629033-1133952
+
+
+
+Track package
+https://www.amazon.fr/progress-tracker/package?_encoding=3DUTF8&orderId=3D4=
+07-9629033-1133952&packageIndex=3D0&shipmentId=3DTnGNFmhTk&vt=3DNOTIFICATIO=
+NS&ref_=3Dp_btn_fed_track_package
+
+* Be In Your Mind 1x Adaptateur de C=C3=A2ble de Connecteur de Batterie Con=
+necteur de Faisceau de Batterie =C3=A0 Bo=C3=AEtier Rigide 4S avec Prise d'=
+=C3=A9quilibrage JST-XH Compatible avec T-raxxas TRX 1/8 Voiture RC
+  Quantity: 1
+  14.49 EUR
+
+
+Total
+14.49 EUR
+
+
+
+
+
+Amazon.fr is a trading name for Amazon EU Sarl, for Amazon Europe Core Sarl=
+ and for Amazon Media EU Sarl, all of which have their registered office at=
+ 38 avenue John F. Kennedy, L-1855 Luxembourg. =C2=A92026 Amazon.com, Inc. =
+or its affiliates. Amazon and all related marks are trademarks of Amazon.co=
+m, Inc. or its affiliates.
+
+You can return a product within 14 days from the date of delivery (with som=
+e [exceptions](https://www.amazon.fr/gp/help/customer/display.html?ie=3DUTF=
+8&nodeId=3D11717991&ref_=3Dfed_tlt_default_ro)). We will refund the price o=
+f the product and the delivery costs for the cheapest delivery method offer=
+ed by Amazon. The costs for returning the product, however, will be at your=
+ expense. You may incur higher return fees if the product cannot normally b=
+e returned by post. You can return the product using our [Online Returns Ce=
+ntre](https://www.amazon.fr/gp/css/returns/homepage.html?ref_=3Dfed_tlt_def=
+ault_ro) or by contacting [Customer Service](https://www.amazon.fr/gp/help/=
+customer/contact-us?ie=3DUTF8&nodeId=3D559912&ref_=3Dfed_tlt_default_ro). Y=
+ou can also exercise your right of withdrawal by filling out this [form](ht=
+tps://www.amazon.fr/formulaire-retractation) and sending it by post. Please=
+ also see our [Refund Policy](https://www.amazon.fr/gp/help/customer/displa=
+y.html?ie=3DUTF8&nodeId=3D11087641&ref_=3Dfed_tlt_default_ro) for items ret=
+urned within 30 days (in this case, we will refund only the purchase price =
+of the product). For more information, see the Help Page: [Our Return Polic=
+ies](https://www.amazon.fr/gp/help/customer/display.html?ie=3DUTF8&ref_=3Df=
+ed_tlt_default_ro&nodeId=3D548524#conditions_vente). For more information o=
+n the legal warranty related to your items, click [here](https://www.amazon=
+.fr/gp/help/customer/display.html?ie=3DUTF8&nodeId=3D201310960&ref_=3Dfed_t=
+lt_default_ro). For any claims or questions, please contact our [Customer S=
+ervice](https://www.amazon.fr/gp/help/customer/contact-us?ie=3DUTF8&nodeId=
+=3D559912&ref_=3Dfed_tlt_default_ro). Amazon EU soci=C3=A9t=C3=A9 =C3=A0 re=
+sponsabilit=C3=A9 limit=C3=A9e, 38 avenue John F. Kennedy, L-1855 Luxembour=
+g. Share capital: EUR 165,833. RCS Luxembourg Number: B 101818. Business Li=
+cense Number: 134248. Luxembourg VAT Registration Number: LU 20260743.
+
+Amazon.co.uk
+------=_Part_3201774_565738181.1777431735758
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html lang=3D"en" dir=3D"auto" xmlns=3D"http://www.w3.org/19=
+99/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-=
+microsoft-com:office:office"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle></title><!--[if !mso]><!--><meta http-equiv=3D"X-UA-Compatible" conten=
+t=3D"IE=3Dedge"><!--<![endif]--><meta name=3D"viewport" content=3D"width=3D=
+device-width,initial-scale=3D1"><style type=3D"text/css">#outlook a{padding=
+:0}body{margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adju=
+st:100%}table,td{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rs=
+pace:0pt}img{border:0;height:auto;line-height:100%;outline:0;text-decoratio=
+n:none;-ms-interpolation-mode:bicubic}p{display:block;margin:13px 0}</style=
+><!--[if mso]>
+    <noscript>
+    <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]--><!--[if lte mso 11]>
+    <style type=3D"text/css">.mj-outlook-group-fix{width:100%!important}</s=
+tyle>
+    <![endif]--><style type=3D"text/css">@media only screen and (min-width:=
+600px){.mj-column-per-100{width:100%!important;max-width:100%}.mj-column-px=
+-584{width:584px!important;max-width:584px}.mj-column-px-144{width:144px!im=
+portant;max-width:144px}.mj-column-px-NaN{width:NaNNaN%!important;max-width=
+:NaNNaN%}.mj-column-px-128{width:128px!important;max-width:128px}.mj-column=
+-per-25{width:25%!important;max-width:25%}.mj-column-per-75{width:75%!impor=
+tant;max-width:75%}.mj-column-per-50{width:50%!important;max-width:50%}}</s=
+tyle><style media=3D"screen and (min-width:600px)">.moz-text-html .mj-colum=
+n-per-100 { width:100% !important; max-width: 100%; }
+.moz-text-html .mj-column-px-584 { width:584px !important; max-width: 584px=
+; }
+.moz-text-html .mj-column-px-144 { width:144px !important; max-width: 144px=
+; }
+.moz-text-html .mj-column-px-NaN { width:NaNNaN% !important; max-width: NaN=
+NaN%; }
+.moz-text-html .mj-column-px-128 { width:128px !important; max-width: 128px=
+; }
+.moz-text-html .mj-column-per-25 { width:25% !important; max-width: 25%; }
+.moz-text-html .mj-column-per-75 { width:75% !important; max-width: 75%; }
+.moz-text-html .mj-column-per-50 { width:50% !important; max-width: 50%; }<=
+/style><style type=3D"text/css">
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+
+                   =20
+               =20
+            @media (prefers-color-scheme:dark){.rio-header-274,.rio-header-=
+274 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-header-275,.rio-heade=
+r-275 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-header-276,.rio-heade=
+r-276 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-text-1270{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-button-339{
+          color: #0F1111 !important;
+          background: #FFD916 !important;
+          border-color: #FCD200 !important;
+          }.rio-button-cta-primary{
+          background: #FFD916 !important;
+          }}[data-ogsc] .rio-button-339{
+        color: #0F1111 !important;
+        background: #FFD916 !important;
+        border-color: #FCD200 !important;
+        }[data-ogsc] .rio-button-cta-primary{
+        background: #FFD916 !important;
+        }@media (prefers-color-scheme:dark){.rio-text-1271{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1272{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1273{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1274{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1275{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1276{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1277{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1278{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1279{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1280{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1281{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1282{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1283{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1284{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1285{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-header-277,.rio-heade=
+r-277 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-text-1286{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1287{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1288{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1289{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1290{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1291{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1292{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1293{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1294{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1295{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1296{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1297{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1298{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1299{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1300{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-header-278,.rio-heade=
+r-278 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-text-1301{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1302{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1303{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1304{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1305{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1306{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1307{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1308{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1309{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1310{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1311{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1312{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-header-279,.rio-heade=
+r-279 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-text-1313{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1314{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1315{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1316{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1317{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1318{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1319{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1320{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1321{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1322{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1323{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1324{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-header-280,.rio-heade=
+r-280 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-text-1325{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1326{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1327{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1328{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1329{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1330{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1331{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1332{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1333{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-header-281,.rio-heade=
+r-281 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-text-1334{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1335{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1336{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1337{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1338{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1339{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1340{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1341{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1342{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-header-282,.rio-heade=
+r-282 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-text-1343{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1344{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1345{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1346{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1347{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1348{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-header-283,.rio-heade=
+r-283 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-text-1349{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1350{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1351{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1352{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1353{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1354{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-header-284,.rio-heade=
+r-284 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-header-285,.rio-heade=
+r-285 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-text-1355{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-button-340{
+          color: #0F1111 !important;
+          background: #FFD916 !important;
+          border-color: #FCD200 !important;
+          }.rio-button-cta-primary{
+          background: #FFD916 !important;
+          }}[data-ogsc] .rio-button-340{
+        color: #0F1111 !important;
+        background: #FFD916 !important;
+        border-color: #FCD200 !important;
+        }[data-ogsc] .rio-button-cta-primary{
+        background: #FFD916 !important;
+        }@media (prefers-color-scheme:dark){.rio-text-1356{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1357{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1358{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1359{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1360{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1361{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1362{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1363{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-button-341{
+          color: #0F1111 !important;
+          background: #FFD916 !important;
+          border-color: #FCD200 !important;
+          }.rio-button-cta-primary{
+          background: #FFD916 !important;
+          }}[data-ogsc] .rio-button-341{
+        color: #0F1111 !important;
+        background: #FFD916 !important;
+        border-color: #FCD200 !important;
+        }[data-ogsc] .rio-button-cta-primary{
+        background: #FFD916 !important;
+        }@media (prefers-color-scheme:dark){.rio-button-342{
+          color: #565959 !important;
+          background: #FEFEFE !important;
+          border-color: #D5D9D9 !important;
+          }.rio-button-cta-secondary{
+          background: #FEFEFE !important;
+          }}[data-ogsc] .rio-button-342{
+        color: #565959 !important;
+        background: #FEFEFE !important;
+        border-color: #D5D9D9 !important;
+        }[data-ogsc] .rio-button-cta-secondary{
+        background: #FEFEFE !important;
+        }@media only screen and (min-width:600px){.rio-asin-image-sTgMVZiJa=
+e1FU2tNEMgHdy .productImageTd{height:120px!important}.rio-asin-image-sTgMVZ=
+iJae1FU2tNEMgHdy .productImage{max-height:120px!important;max-width:120px!i=
+mportant}}@media only screen and (min-width:600px){.rio-asin-image-2non7zwJ=
+QkUvLXQm6JLmRQ .productImageTd{height:120px!important}.rio-asin-image-2non7=
+zwJQkUvLXQm6JLmRQ .productImage{max-height:120px!important;max-width:120px!=
+important}}@media only screen and (min-width:600px){.rio-asin-image-hCcUavd=
+KbJrWwzFefVRVAE .productImageTd{height:122px!important}.rio-asin-image-hCcU=
+avdKbJrWwzFefVRVAE .productImage{max-height:122px!important;max-width:122px=
+!important}}@media (prefers-color-scheme:dark){.rio-text-1364{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1365{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1366{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1367{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1368{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1369{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1370{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1371{
+            color: #FFFFFF;
+            }}@media only screen and (min-width:600px){.rio-asin-image-woae=
+Qf7ajTkaotsKDnbWqa .productImageTd{height:122px!important}.rio-asin-image-w=
+oaeQf7ajTkaotsKDnbWqa .productImage{max-height:122px!important;max-width:12=
+2px!important}}@media (prefers-color-scheme:dark){.rio-text-1372{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1373{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1374{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1375{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1376{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1377{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1378{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1379{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1380{
+            color: #2162A1;
+            }}@media (prefers-color-scheme:dark){.rio-text-1381{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1382{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1383{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1384{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1385{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1386{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1387{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1388{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1389{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1390{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1391{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1392{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1393{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1394{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1395{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1396{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1397{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1398{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1399{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1400{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-button-343{
+          color: #0F1111 !important;
+          background: #FFD916 !important;
+          border-color: #FCD200 !important;
+          }.rio-button-cta-primary{
+          background: #FFD916 !important;
+          }}[data-ogsc] .rio-button-343{
+        color: #0F1111 !important;
+        background: #FFD916 !important;
+        border-color: #FCD200 !important;
+        }[data-ogsc] .rio-button-cta-primary{
+        background: #FFD916 !important;
+        }@media (prefers-color-scheme:dark){.rio-button-344{
+          color: #565959 !important;
+          background: #FEFEFE !important;
+          border-color: #D5D9D9 !important;
+          }.rio-button-cta-secondary{
+          background: #FEFEFE !important;
+          }}[data-ogsc] .rio-button-344{
+        color: #565959 !important;
+        background: #FEFEFE !important;
+        border-color: #D5D9D9 !important;
+        }[data-ogsc] .rio-button-cta-secondary{
+        background: #FEFEFE !important;
+        }@media only screen and (min-width:600px){.rio-asin-image-fkkZ7fasv=
+DgLARnqymvYx6 .productImageTd{height:120px!important}.rio-asin-image-fkkZ7f=
+asvDgLARnqymvYx6 .productImage{max-height:120px!important;max-width:120px!i=
+mportant}}@media only screen and (min-width:600px){.rio-asin-image-cWQdcXjc=
+Y9U6wSrKyjQcqk .productImageTd{height:120px!important}.rio-asin-image-cWQdc=
+XjcY9U6wSrKyjQcqk .productImage{max-height:120px!important;max-width:120px!=
+important}}@media only screen and (min-width:600px){.rio-asin-image-ffU5eH8=
+dnGVdiZeN53aJty .productImageTd{height:122px!important}.rio-asin-image-ffU5=
+eH8dnGVdiZeN53aJty .productImage{max-height:122px!important;max-width:122px=
+!important}}@media (prefers-color-scheme:dark){.rio-text-1401{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1402{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1403{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1404{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1405{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1406{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1407{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1408{
+            color: #FFFFFF;
+            }}@media only screen and (min-width:600px){.rio-asin-image-g3K9=
+E9nY2fenWBnBnnH5kA .productImageTd{height:122px!important}.rio-asin-image-g=
+3K9E9nY2fenWBnBnnH5kA .productImage{max-height:122px!important;max-width:12=
+2px!important}}@media (prefers-color-scheme:dark){.rio-text-1409{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1410{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1411{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1412{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1413{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1414{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1415{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1416{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1417{
+            color: #2162A1;
+            }}@media (prefers-color-scheme:dark){.rio-text-1418{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1419{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1420{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1421{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1422{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1423{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1424{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1425{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1426{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1427{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1428{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1429{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1430{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1431{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1432{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1433{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1434{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1435{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1436{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1437{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-button-345{
+          color: #0F1111 !important;
+          background: #FFD916 !important;
+          border-color: #FCD200 !important;
+          }.rio-button-cta-primary{
+          background: #FFD916 !important;
+          }}[data-ogsc] .rio-button-345{
+        color: #0F1111 !important;
+        background: #FFD916 !important;
+        border-color: #FCD200 !important;
+        }[data-ogsc] .rio-button-cta-primary{
+        background: #FFD916 !important;
+        }@media (prefers-color-scheme:dark){.rio-button-346{
+          color: #565959 !important;
+          background: #FEFEFE !important;
+          border-color: #D5D9D9 !important;
+          }.rio-button-cta-secondary{
+          background: #FEFEFE !important;
+          }}[data-ogsc] .rio-button-346{
+        color: #565959 !important;
+        background: #FEFEFE !important;
+        border-color: #D5D9D9 !important;
+        }[data-ogsc] .rio-button-cta-secondary{
+        background: #FEFEFE !important;
+        }@media only screen and (min-width:600px){.rio-asin-image-i4RGTSWAJ=
+Nkj5Vu9pTegg3 .productImageTd{height:120px!important}.rio-asin-image-i4RGTS=
+WAJNkj5Vu9pTegg3 .productImage{max-height:120px!important;max-width:120px!i=
+mportant}}@media only screen and (min-width:600px){.rio-asin-image-oMJ8pcXG=
+PrUbKxqzwBj6Mi .productImageTd{height:120px!important}.rio-asin-image-oMJ8p=
+cXGPrUbKxqzwBj6Mi .productImage{max-height:120px!important;max-width:120px!=
+important}}@media only screen and (min-width:600px){.rio-asin-image-vBSoB1R=
+tSCNMbR3v3Cnmrz .productImageTd{height:122px!important}.rio-asin-image-vBSo=
+B1RtSCNMbR3v3Cnmrz .productImage{max-height:122px!important;max-width:122px=
+!important}}@media (prefers-color-scheme:dark){.rio-text-1438{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1439{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1440{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1441{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1442{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1443{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1444{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1445{
+            color: #FFFFFF;
+            }}@media only screen and (min-width:600px){.rio-asin-image-9LVL=
+eyCiMMwA41EQNg38s8 .productImageTd{height:122px!important}.rio-asin-image-9=
+LVLeyCiMMwA41EQNg38s8 .productImage{max-height:122px!important;max-width:12=
+2px!important}}@media (prefers-color-scheme:dark){.rio-text-1446{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1447{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1448{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1449{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1450{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1451{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1452{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1453{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1454{
+            color: #2162A1;
+            }}@media (prefers-color-scheme:dark){.rio-text-1455{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1456{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1457{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1458{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1459{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1460{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1461{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1462{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1463{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1464{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1465{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1466{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1467{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1468{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1469{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1470{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1471{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1472{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1473{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1474{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-button-347{
+          color: #0F1111 !important;
+          background: #FFD916 !important;
+          border-color: #FCD200 !important;
+          }.rio-button-cta-primary{
+          background: #FFD916 !important;
+          }}[data-ogsc] .rio-button-347{
+        color: #0F1111 !important;
+        background: #FFD916 !important;
+        border-color: #FCD200 !important;
+        }[data-ogsc] .rio-button-cta-primary{
+        background: #FFD916 !important;
+        }@media (prefers-color-scheme:dark){.rio-button-348{
+          color: #565959 !important;
+          background: #FEFEFE !important;
+          border-color: #D5D9D9 !important;
+          }.rio-button-cta-secondary{
+          background: #FEFEFE !important;
+          }}[data-ogsc] .rio-button-348{
+        color: #565959 !important;
+        background: #FEFEFE !important;
+        border-color: #D5D9D9 !important;
+        }[data-ogsc] .rio-button-cta-secondary{
+        background: #FEFEFE !important;
+        }@media only screen and (min-width:600px){.rio-asin-image-7bNyQSAeM=
+onb218E4pX7ey .productImageTd{height:120px!important}.rio-asin-image-7bNyQS=
+AeMonb218E4pX7ey .productImage{max-height:120px!important;max-width:120px!i=
+mportant}}@media only screen and (min-width:600px){.rio-asin-image-s47yJRQF=
+QttS6tYW8pWaBn .productImageTd{height:120px!important}.rio-asin-image-s47yJ=
+RQFQttS6tYW8pWaBn .productImage{max-height:120px!important;max-width:120px!=
+important}}@media only screen and (min-width:600px){.rio-asin-image-vKUfhna=
+dzvjRj3Lxo3J7iB .productImageTd{height:122px!important}.rio-asin-image-vKUf=
+hnadzvjRj3Lxo3J7iB .productImage{max-height:122px!important;max-width:122px=
+!important}}@media (prefers-color-scheme:dark){.rio-text-1475{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1476{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1477{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1478{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1479{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1480{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1481{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1482{
+            color: #FFFFFF;
+            }}@media only screen and (min-width:600px){.rio-asin-image-iaVr=
+f2izZqEnwgaaDjpEvM .productImageTd{height:122px!important}.rio-asin-image-i=
+aVrf2izZqEnwgaaDjpEvM .productImage{max-height:122px!important;max-width:12=
+2px!important}}@media (prefers-color-scheme:dark){.rio-text-1483{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1484{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1485{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1486{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1487{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1488{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1489{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1490{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1491{
+            color: #2162A1;
+            }}@media (prefers-color-scheme:dark){.rio-text-1492{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1493{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1494{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1495{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1496{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1497{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1498{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1499{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1500{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1501{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1502{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1503{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-header-286,.rio-heade=
+r-286 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-button-349{
+          color: #0F1111 !important;
+          background: #FFD916 !important;
+          border-color: #FCD200 !important;
+          }.rio-button-cta-primary{
+          background: #FFD916 !important;
+          }}[data-ogsc] .rio-button-349{
+        color: #0F1111 !important;
+        background: #FFD916 !important;
+        border-color: #FCD200 !important;
+        }[data-ogsc] .rio-button-cta-primary{
+        background: #FFD916 !important;
+        }@media (prefers-color-scheme:dark){.rio-header-287,.rio-header-287=
+ *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-text-1504{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-button-350{
+          color: #565959 !important;
+          background: #FEFEFE !important;
+          border-color: #D5D9D9 !important;
+          }.rio-button-cta-secondary{
+          background: #FEFEFE !important;
+          }}[data-ogsc] .rio-button-350{
+        color: #565959 !important;
+        background: #FEFEFE !important;
+        border-color: #D5D9D9 !important;
+        }[data-ogsc] .rio-button-cta-secondary{
+        background: #FEFEFE !important;
+        }@media (prefers-color-scheme:dark){.rio-button-351{
+          color: #0F1111 !important;
+          background: #FFD916 !important;
+          border-color: #FCD200 !important;
+          }.rio-button-cta-primary{
+          background: #FFD916 !important;
+          }}[data-ogsc] .rio-button-351{
+        color: #0F1111 !important;
+        background: #FFD916 !important;
+        border-color: #FCD200 !important;
+        }[data-ogsc] .rio-button-cta-primary{
+        background: #FFD916 !important;
+        }@media (prefers-color-scheme:dark){.rio-text-1505{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1506{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1507{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-text-1508{
+            color: #FFFFFF;
+            }}@media (prefers-color-scheme:dark){.rio-header-288,.rio-heade=
+r-288 *{
+            color: #FFFFFF !important;
+            }}@media (prefers-color-scheme:dark){.rio-button-352{
+          color: #0F1111 !important;
+          background: #FFD916 !important;
+          border-color: #FCD200 !important;
+          }.rio-button-cta-primary{
+          background: #FFD916 !important;
+          }}[data-ogsc] .rio-button-352{
+        color: #0F1111 !important;
+        background: #FFD916 !important;
+        border-color: #FCD200 !important;
+        }[data-ogsc] .rio-button-cta-primary{
+        background: #FFD916 !important;
+        }@media only screen and (max-width:599px){table.mj-full-width-mobil=
+e{width:100%!important}td.mj-full-width-mobile{width:auto!important}}
+         .amazon-logo {
+            background-color: #FFFFFF!important;
+        }
+       =20
+        .amazon-navbar-content{
+            font-family:Ember,'Amazon Ember',Arial,sans-serif;
+            font-size: 14px !important;
+            font-weight:700 !important;
+            background-color: #FFFFFF!important;
+        }
+        .amazon-logo.full{padding-left:0!important;padding-right:0!importan=
+t}.amazon-logo.zeroBorder{border:0;border-collapse:collapse;border-spacing:=
+0}.amazon-logo .full{padding-left:0!important;padding-right:0!important}.am=
+azon-logo .zeroBorder{border:0;border-collapse:collapse;border-spacing:0}.a=
+mazon-logo .light-img{background-color:#fff;background-image:linear-gradien=
+t(#fff,#fff)}@media (prefers-color-scheme:light){.amazon-logo .light-img{di=
+splay:block!important}.amazon-logo .dark-img{display:none!important}
+            .amazon-navbar-content {
+                font-family:Ember,'Amazon Ember',Arial,sans-serif;
+                background-color: #FFFFFF!important;
+                color:  #0F1111!important;
+            }
+             }@media (prefers-color-scheme:dark){.amazon-logo{background-co=
+lor:#181a1a!important}=20
+            .amazon-navbar-content {
+                background-color: #161D26 !important;
+                color:#FFFFFF!important;
+            }
+             .amazon-logo .light-img{display:none!important}.amazon-logo .d=
+ark-img{display:block!important}}[data-ogsc] .amazon-logo .content{backgrou=
+nd-color:#181a1a!important}[data-ogsc] .amazon-logo .light-img{display:none=
+!important}[data-ogsc] .amazon-logo .dark-img{display:block!important}@medi=
+a (prefers-color-scheme:dark){.rio-card,.rio-card-text,.rio-card-text>table=
+,.rio-card>table{background-color:#181a1a!important}}[data-ogsc] .rio-card,=
+[data-ogsc] .rio-card-text,[data-ogsc] .rio-card-text>table,[data-ogsc] .ri=
+o-card>table{background-color:#181a1a!important}.rio-card-text p+p{margin-t=
+op:1.2em}.rio-header strong{color:#067d62}@media (prefers-color-scheme:dark=
+){.rio-header *{
+            color: #FFFFFF !important;
+            }.rio-header a{color:#6ed6e6!important}.rio-header strong{color=
+:#13bd96!important}}
+        [data-ogsc] .rio-header,
+        [data-ogsc] .rio-header * {
+          color: #FFFFFF !important;
+        }
+        [data-ogsc] .rio-header a,[data-ogsc] .rio-header a>*{color:#6ed6e6=
+!important}[data-ogsc] .rio-header strong{color:#13bd96!important}@media (p=
+refers-color-scheme:dark){.rio-table-grid-td-bg{background:#252626!importan=
+t}}[data-ogsc] .rio-table-grid-td-bg{background:#252626!important}.rio-text=
+ strong{color:#067d62}.rio-text img:not([data-emoji]){width:100%;height:aut=
+o}@media (prefers-color-scheme:dark){.rio-text *{
+            color: #FFFFFF !important;
+            }.rio-text a,.rio-text a>*{color:#6ed6e6!important}.rio-text st=
+rong{color:#13bd96!important}}[data-ogsc] .rio-text *{
+          color: #FFFFFF !important;
+          }[data-ogsc] .rio-text a,[data-ogsc] .rio-text a>*{color:#6ed6e6!=
+important}[data-ogsc] .rio-text strong{color:#13bd96!important}@media (pref=
+ers-color-scheme:dark){.rio-button *{
+          color: #0F1111 !important;
+          }}[data-ogsc] .rio-button *{
+        color: #0F1111 !important;
+        }
+        .alert-message a {
+            color: #007185 !important;
+            text-decoration: none !important;
+        }
+        @media (prefers-color-scheme:dark){
+            .alert-message a {
+                color: #6ED6E6 !important;
+            }
+            }
+        [data-ogsc] .alert-message a {
+            color: #6ED6E6 !important;
+        }
+        .rio-asin-image .productImage{mix-blend-mode:multiply}u+.body .rio-=
+asin-image .productImage{mix-blend-mode:initial!important}@media (prefers-c=
+olor-scheme:dark){.rio-asin-image .productImageTd{background-image:linear-g=
+radient(#fff,#fff)!important}.rio-asin-image .productImage{mix-blend-mode:i=
+nitial!important}}[data-ogsc] .rio-asin-image .productImageTd{background-im=
+age:linear-gradient(#fff,#fff)!important}[data-ogsc] .rio-asin-image .produ=
+ctImage{mix-blend-mode:initial!important}@media only screen and (min-width:=
+600px){u+.body .rio-asin-image .productImage{mix-blend-mode:multiply!import=
+ant}}@media (prefers-color-scheme:dark){.asin-container{background:#252626!=
+important}}[data-ogsc] .asin-container{background:#252626!important}.rio-as=
+in-container-image img{mix-blend-mode:multiply;object-fit:contain}@media (p=
+refers-color-scheme:dark){.rio-asin-container-image img{mix-blend-mode:init=
+ial!important}}u+.body .rio-asin-container-image img{mix-blend-mode:initial=
+!important}@media only screen and (min-width:600px){u+.body .rio-asin-conta=
+iner-image img{mix-blend-mode:multiply!important}}[data-ogsc] .rio-asin-con=
+tainer-image img{mix-blend-mode:initial!important}
+      @media (prefers-color-scheme: dark) {
+          .productHvePrimeDayPrice {
+              color: #FFFFFF !important;
+          }
+          .priceBadge {
+              color: #FF8C8C !important;
+          },
+          .priceDiscount {
+              background-color: #FF8C8C !important;
+          },
+          .productListPrice {
+              color: #FFFFFF !important;
+          }
+      }
+      [data-ogsc]  .productListPrice {
+          color: #FFFFFF !important;
+      }
+      [data-ogsc] .productHvePrimeDayPrice {
+          color: #FFFFFF !important;
+      }
+      [data-ogsc] .priceBadge {
+          color: #FF8C8C !important;
+      }=20
+      [data-ogsc] .priceDiscount {
+          background-color: #FF8C8C !important;
+      }=20
+     =20
+        @media (prefers-color-scheme: dark) {
+            .productHveDiscount {
+                color: #FF8C8C !important;
+            }
+            .productHvePrice {
+                color: #FFFFFF !important;
+            }
+        }
+        [data-ogsc]  .productHveDiscount {
+            color: #FF8C8C !important;
+        }
+        [data-ogsc] .productHvePrice {
+            color: #FFFFFF !important;
+        }
+       =20
+        .footer-text, .footer-card p, .footer-card li {
+            color: #494D4D;
+        }
+        .footer-card p{margin-top:20px}
+        .footer-card a {
+            color: #007185 !important;
+            text-decoration: none !important;
+        }
+        @media (prefers-color-scheme:dark){
+            .footer-card {
+                background-color: #303333 !important;
+            }
+           =20
+            .footer-card a {
+                color: #6ED6E6 !important;
+            }
+           =20
+            .footer-text, .footer-card p, .footer-card li {
+                color: #C8CCCC !important;
+            }
+            .lightFooterImg{display:none!important}.darkFooterImg{display:b=
+lock!important}}[data-ogsb] .footer-card{background-color:#303333!important=
+}
+        [data-ogsc] .footer-card a {
+            color: #6ED6E6 !important;
+        }
+        [data-ogsc] .footer-card li,[data-ogsc] .footer-card p,[data-ogsc] =
+.footer-text{color:#c8cccc!important}[data-ogsc] .lightFooterImg{display:no=
+ne!important}[data-ogsc] .darkFooterImg{display:block!important}</style><st=
+yle type=3D"text/css">@font-face{font-family:Ember;font-weight:700;src:loca=
+l("Ember"),url(https://m.media-amazon.com/images/G/01/outbound/AmazonEmber_=
+Bd._CB1515450239_.WOFF) format("woff");mso-generic-font-family:swiss;mso-fo=
+nt-alt:"Arial"}@font-face{font-family:Ember;font-weight:600;src:local("Embe=
+r"),url(https://m.media-amazon.com/images/G/01/outbound/AmazonEmber_Bd._CB1=
+515450239_.WOFF) format("woff");mso-generic-font-family:swiss;mso-font-alt:=
+"Arial"}@font-face{font-family:Ember;font-weight:500;src:local("Ember"),url=
+(https://m.media-amazon.com/images/G/01/outbound/AmazonEmber_Md._CB15154502=
+39_.WOFF) format("woff");mso-generic-font-family:swiss;mso-font-alt:"Arial"=
+}@font-face{font-family:Ember;font-weight:400;font-style:normal;src:local("=
+Ember"),url(https://m.media-amazon.com/images/G/01/outbound/AmazonEmber_Rg.=
+_CB1515450239_.WOFF) format("woff");mso-generic-font-family:swiss;mso-font-=
+alt:"Arial"}@font-face{font-family:Ember;font-weight:200;src:local("Ember")=
+,url(https://m.media-amazon.com/images/G/01/outbound/AmazonEmber_Lt._CB1515=
+450239_.WOFF) format("woff");mso-generic-font-family:swiss;mso-font-alt:"Ar=
+ial"}@font-face{font-family:"Amazon Ember";font-weight:700;src:local("Amazo=
+n Ember"),url(https://m.media-amazon.com/images/G/01/outbound/AmazonEmber_B=
+d._CB1515450239_.WOFF) format("woff");mso-generic-font-family:swiss;mso-fon=
+t-alt:"Arial"}@font-face{font-family:"Amazon Ember";font-weight:600;src:loc=
+al("Amazon Ember"),url(https://m.media-amazon.com/images/G/01/outbound/Amaz=
+onEmber_Bd._CB1515450239_.WOFF) format("woff");mso-generic-font-family:swis=
+s;mso-font-alt:"Arial"}@font-face{font-family:"Amazon Ember";font-weight:50=
+0;src:local("Amazon Ember"),url(https://m.media-amazon.com/images/G/01/outb=
+ound/AmazonEmber_Md._CB1515450239_.WOFF) format("woff");mso-generic-font-fa=
+mily:swiss;mso-font-alt:"Arial"}@font-face{font-family:"Amazon Ember";font-=
+style:normal;font-weight:400;src:local("Amazon Ember"),url(https://m.media-=
+amazon.com/images/G/01/outbound/AmazonEmber_Rg._CB1515450239_.WOFF) format(=
+"woff");mso-generic-font-family:swiss;mso-font-alt:"Arial"}@font-face{font-=
+family:"Amazon Ember";font-weight:200;src:local("Amazon Ember"),url(https:/=
+/m.media-amazon.com/images/G/01/outbound/AmazonEmber_Lt._CB1515450239_.WOFF=
+) format("woff");mso-generic-font-family:swiss;mso-font-alt:"Arial"}*{font-=
+family:Ember,'Amazon Ember',Arial,sans-serif;border-spacing:0;margin:0;padd=
+ing:0}ol,ul{margin-left:32px!important}[data-ogsc] :root{--body-bg:#181A1A;=
+--body-color:#ffffff}.rootContent{background:#fff!important}.fonts,.sans,h1=
+,h2,h3,h4,h5,li,p,table,td,th{color:#0f1111}a{color:#007185;text-decoration=
+:none}@media screen and (max-width:599px){.mobile-only{display:initial!impo=
+rtant}.desktop-only{display:none!important;mso-hide:all!important}}@media s=
+creen and (min-width:600px){.mobile-only{display:none!important;mso-hide:al=
+l!important}}@media (prefers-color-scheme:light){:root{--body-bg:#ffffff;--=
+body-color:#000000}}@media (prefers-color-scheme:dark){:root{--body-bg:#181=
+A1A;--body-color:#ffffff}body{background-color:#181a1a!important}.fonts,.sa=
+ns,h1,h2,h3,h4,h5,li,p,table,td,th{color:#fff}a{color:#6ed6e6}.rootContent,=
+.rootContent>table{background:#181a1a!important}}[data-ogsc] .fonts,[data-o=
+gsc] .sans,[data-ogsc] h1,[data-ogsc] h2,[data-ogsc] h3,[data-ogsc] h4,[dat=
+a-ogsc] h5,[data-ogsc] li,[data-ogsc] p{color:#fff}[data-ogsc] a{color:#6ed=
+6e6}[data-ogsc] .rootContent,[data-ogsc] .rootContent>table{background:#181=
+a1a!important}body{background-color:var(--body-bg)!important;color:var(--bo=
+dy-color)!important;margin:0!important;padding:0}body>img{position:absolute=
+}table{border-spacing:0}h3,h4,h5,p,table th{font-weight:400;margin:0;paddin=
+g:0}td{padding:0}img{border:0}a,span,td{word-break:break-word!important}.bu=
+tton{background-color:#ffd814;color:#0f1111!important;border-radius:24px;pa=
+dding:1px 16px;display:inline-block;box-shadow:1px 2px 4px rgba(153,153,153=
+,.2);font-size:13px;line-height:29px;white-space:nowrap;text-decoration:non=
+e;margin-top:4px}.box-shadow a{box-shadow:1px 2px 4px rgba(153,153,153,.2)}=
+a,body,table,td{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}.ap=
+pleBody a,.appleFooter a{color:#007185!important;text-decoration:none}a[x-a=
+pple-data-detectors]{color:#007185!important;font-family:inherit!important;=
+font-size:inherit!important;font-weight:inherit!important;line-height:inher=
+it!important}u+#body a{color:#007185!important;font-family:inherit!importan=
+t;font-size:inherit!important;font-weight:inherit!important;line-height:inh=
+erit!important}#MessageViewBody a{color:#007185!important;font-family:inher=
+it!important;font-size:inherit!important;font-weight:inherit!important;line=
+-height:inherit!important}</style><meta content=3D"telephone=3Dno" name=3D"=
+format-detection"><meta content=3D"width=3Ddevice-width,initial-scale=3D1;u=
+ser-scalable=3Dno;" name=3D"viewport"><meta content=3D"IE=3D9; IE=3D8; IE=
+=3D7; IE=3DEDGE" http-equiv=3D"X-UA-Compatible"><meta name=3D"x-apple-disab=
+le-message-reformatting"><meta content=3D"light dark" name=3D"color-scheme"=
+><meta content=3D"light dark" name=3D"supported-color-schemes"><!--
+             =20
+             =20
+             =20
+              --><style type=3D"text/css">.productListPrice{color:#565959}.=
+productDiscount{color:#cc0c39}.productPrice{color:#0f1111}@media (prefers-c=
+olor-scheme:dark){.productListPrice{color:#fff!important}.productDiscount{c=
+olor:#ff8c8c!important}.productPrice{color:#fff!important}}[data-ogsc] .pro=
+ductListPrice{color:#fff!important}[data-ogsc] .productDiscount{color:#ff8c=
+8c!important}[data-ogsc] .productPrice{color:#fff!important}</style><style =
+type=3D"text/css">.dealBadge{background-color:#cc0c39;color:#fff}.dealText{=
+color:#cc0c39}@media (prefers-color-scheme:dark){.dealBadge{background-colo=
+r:#ff8c8c!important;color:#000!important}.dealText{color:#ff8c8c!important}=
+}[data-ogsc] .dealBadge{background-color:#ff8c8c!important;color:#000!impor=
+tant}[data-ogsc] .dealText{color:#ff8c8c!important}</style><!--[if gte mso =
+9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG />
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <style>
+        body, h1, h2, h3, h4, table, th, td, p, li, a, .sans, .fonts {
+            font-family: Helvetica, Arial, sans-serif !important;
+        }
+        [data-ogsc] .rootContent, [data-ogsc] .rootContent > table{
+          background: #181A1A !important;
+        }
+    </style>
+    <![endif]--></head><body class=3D"body" style=3D"word-spacing:normal;">=
+<img width=3D"1" height=3D"1" src=3D"https://www.amazon.fr/gp/r.html?C=3D2H=
+KZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Durn:rtn:msg:202604290302140d89153=
+eb13e44a1ac27fc6aba50p0eu&amp;R=3D3371W4IVJ7UYX&amp;T=3DO&amp;U=3Dhttps%3A%=
+2F%2Fimages-eu.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&a=
+mp;H=3DMBYFA0SHZMATNPJPJAPOBZ2GTF8A&amp;ref_=3Dpe_109071451_1103836691_open=
+s" alt=3D""><div style=3D"display:none;font-size:1px;color:#ffffff;line-hei=
+ght:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Dispatched=
+: =E2=80=98Be In Your Mind 1x...=E2=80=99=CD=8F =E2=80=8C &nbsp; =E2=80=87 =
+=C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=
+=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp=
+; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C =
+&nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=
+=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=
+=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=
+=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=
+=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =
+=E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &n=
+bsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=
+=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=
+=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =
+=C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=
+=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp=
+; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C =
+&nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=
+=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=
+=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=
+=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=
+=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =
+=E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &n=
+bsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=
+=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=
+=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =
+=C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=
+=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp=
+; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C =
+&nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=
+=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=
+=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=
+=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=
+=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =
+=E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &n=
+bsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=
+=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=
+=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =
+=C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=
+=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp=
+; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C =
+&nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=
+=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=
+=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=
+=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=
+=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =
+=E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &n=
+bsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=
+=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=
+=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =
+=C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=
+=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp=
+; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C =
+&nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=
+=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=
+=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=
+=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=
+=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =
+=E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &n=
+bsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=
+=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=
+=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =
+=C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=
+=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp=
+; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C =
+&nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=
+=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=
+=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=
+=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=
+=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =
+=E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &n=
+bsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=
+=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =
+=E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=
+=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =
+=C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=
+=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp=
+; =E2=80=87 =C2=AD=CD=8F =E2=80=8C &nbsp; =E2=80=87 =C2=AD</div><div class=
+=3D"body" lang=3D"en" dir=3D"auto"> <!--[if mso | IE]><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"rootContent-ou=
+tlook moduleId-brandIdentity-outlook" role=3D"presentation" style=3D"width:=
+600px;" width=3D"600" bgcolor=3D"#ffffff" ><tr><td style=3D"line-height:0px=
+;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div class=3D"roo=
+tContent moduleId-brandIdentity" style=3D"background:#ffffff;background-col=
+or:#ffffff;margin:0px auto;max-width:600px;"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"b=
+ackground:#ffffff;background-color:#ffffff;width:100%;"><tbody><tr><td styl=
+e=3D"direction:ltr;font-size:0px;padding:0px 0px 4px 0px;text-align:left;">=
+<!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0"><![endif]--> <!--[if mso | IE]><tr><td align=3D"left" =
+class=3D"" width=3D"600px" ><![endif]-->                     <mj-raw>    </=
+mj-raw><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pres=
+entation" width=3D"100%" style=3D"width:100%"><tr><td width=3D"100%" align=
+=3D"center" valign=3D"middle" style=3D"text-align:center;width:100%;padding=
+:8px 0;background-color:#232F3E;background:linear-gradient(to right, #232F3=
+E, #232F3E);font-size:14px;font-weight:bold;line-height:20px;font-familiy:E=
+mber,'Amazon Ember',Arial,sans-serif;"><!--[if mso | IE]><table width=3D"60=
+0" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" s=
+tyle=3D"width:600px"><tr><td width=3D"600" align=3D"center" valign=3D"middl=
+e" style=3D"width:600px; mso-line-height-rule:exactly; background-color: #2=
+32F3E; background: linear-gradient(to right, #232F3E, #232F3E);"><![endif]-=
+-><div role=3D"list" style=3D"width:100%;">   <span role=3D"listitem" style=
+=3D"display:inline-block;">&nbsp;&nbsp;&nbsp;<a href=3D"https://www.amazon.=
+fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Durn:rtn:msg:20=
+2604290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3DZWL2E83QGSLL&amp;T=3DC=
+&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fgp%2Fcss%2Forder-history%3Fref_%3Dpe=
+_109071451_1103836691_TLH_00_01_BT_00_fed_yo_default&amp;H=3DHO9UDPKKYBZ5KA=
+A5BV8HSXKQKH0A&amp;ref_=3Dpe_109071451_1103836691_TLH_00_01_BT_00_fed_yo_de=
+fault" target=3D"_blank" style=3D"color:#FFFFFF;text-decoration:none;white-=
+space:nowrap;">Your Orders</a>&nbsp;&nbsp;&nbsp;</span>    <span role=3D"li=
+stitem" style=3D"display:inline-block;">&nbsp;&nbsp;&nbsp;<a href=3D"https:=
+//www.amazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Du=
+rn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3DKD2H8JAPC=
+767&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fyour-account%3Fref_%3Dp=
+e_109071451_1103836691_TLH_00_02_BT_00_fed_ya_default&amp;H=3DDZYNFLZOGCAD1=
+ADYGFRRUKIA0DGA&amp;ref_=3Dpe_109071451_1103836691_TLH_00_02_BT_00_fed_ya_d=
+efault" target=3D"_blank" style=3D"color:#FFFFFF;text-decoration:none;white=
+-space:nowrap;">Your Account</a>&nbsp;&nbsp;&nbsp;</span>    <span role=3D"=
+listitem" style=3D"display:inline-block;">&nbsp;&nbsp;&nbsp;<a href=3D"http=
+s://www.amazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=
+=3Durn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3DXXUO1=
+KGQQJPC&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fgp%2Fbuyagain%3Fref=
+_%3Dpe_109071451_1103836691_TLH_00_03_BT_00_fed_bia_default&amp;H=3DLHAONNM=
+RC1VNOGEMNLAPB9C62Q4A&amp;ref_=3Dpe_109071451_1103836691_TLH_00_03_BT_00_fe=
+d_bia_default" target=3D"_blank" style=3D"color:#FFFFFF;text-decoration:non=
+e;white-space:nowrap;">Buy Again</a>&nbsp;&nbsp;&nbsp;</span></div><!--[if =
+mso | IE]></td></tr></table><![endif]--></td></tr><tr></tr></table><!--[if =
+mso | IE]></td></tr><![endif]--> <!--[if mso | IE]></table><![endif]--></td=
+></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><![endif]--=
+> <!--[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"rootContent-outlook moduleId-stepTracker-outlook=
+" role=3D"presentation" style=3D"width:600px;" width=3D"600" bgcolor=3D"#ff=
+ffff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]--><div class=3D"rootContent moduleId-stepTracker" style=
+=3D"background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:6=
+00px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"background:#ffffff;background-color:#=
+ffffff;width:100%;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;pad=
+ding:4px 8px 4px 8px;text-align:left;"><!--[if mso | IE]><table role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><![endif]--> <!=
+--[if mso | IE]><tr><td align=3D"left" class=3D"" width=3D"600px" ><![endif=
+]-->        <!--[if mso | IE]><table align=3D"center" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" class=3D"rio-card-outlook" role=3D"presentation=
+" style=3D"width:584px;" width=3D"584" bgcolor=3D"#ffffff" ><tr><td style=
+=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-=
+-><div class=3D"rio-card" style=3D"background:#ffffff;background-color:#fff=
+fff;margin:0px auto;border-radius:4px;max-width:584px;"><table align=3D"cen=
+ter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation"=
+ style=3D"background:#ffffff;background-color:#ffffff;width:100%;border-rad=
+ius:4px;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:4px 8=
+px 4px 8px;text-align:left;"><!--[if mso | IE]><table role=3D"presentation"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td align=3D"left" cl=
+ass=3D"" width=3D"584px" ><![endif]-->  <!--[if mso | IE]><table align=3D"c=
+enter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" role=3D"=
+presentation" style=3D"width:568px;" width=3D"568" ><tr><td style=3D"line-h=
+eight:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div sty=
+le=3D"margin:0px auto;max-width:568px;"><table align=3D"center" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"width:=
+100%;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:0;text-a=
+lign:left;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"><tr><td align=3D"left" class=3D"" style=3D=
+"" ><![endif]--><div style=3D"font-family:Ember,'Amazon Ember',Arial,sans-s=
+erif;font-size:15px;line-height:1;text-align:center;color:#000000;"><h2 sty=
+le=3D"margin:0;padding:0;font-family:Ember,'Amazon Ember',Arial,sans-serif;=
+font-weight:700;font-size:18px;line-height:22px;color:#0F1111;" class=3D"ri=
+o-header rio-header-279"><div style=3D"padding-bottom:10px">Your package wa=
+s dispatched!</div></h2></div><!--[if mso | IE]></td></tr></table><![endif]=
+--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><![e=
+ndif]--> <!--[if mso | IE]></td></tr><tr><td align=3D"left" class=3D"" widt=
+h=3D"584px" ><![endif]-->  <table cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"list" width=3D"100%" border=3D"0" style=3D"color:#000000;font-family:Em=
+ber,'Amazon Ember',Arial,sans-serif;font-size:15px;line-height:22px;table-l=
+ayout:auto;width:100%;border:none;"><tr><td width=3D"25%" valign=3D"top" ro=
+le=3D"listitem"><table cellpadding=3D"0" cellspacing=3D"0" role=3D"presenta=
+tion" width=3D"100%" border=3D"0" style=3D"color:#000000;font-family:Ember,=
+'Amazon Ember',Arial,sans-serif;font-size:15px;line-height:22px;table-layou=
+t:auto;width:100%;border:none;"><tr><td style=3D"height:18px"><table cellpa=
+dding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%" border=
+=3D"0" style=3D"color:#000000;font-family:Ember,'Amazon Ember',Arial,sans-s=
+erif;font-size:15px;line-height:22px;table-layout:auto;width:100%;border:no=
+ne;"><tr><td width=3D"50%" height=3D"18"><table cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" width=3D"100%" border=3D"0" style=3D"color:#=
+000000;font-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;lin=
+e-height:22px;table-layout:auto;width:100%;border:none;"><tr><td height=3D"=
+7"></td></tr><tr><td height=3D"4"></td></tr><tr><td height=3D"7"></td></tr>=
+</table>  </td><td height=3D"18"><table cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" width=3D"18" border=3D"0" style=3D"color:#000000;fon=
+t-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;line-height:2=
+2px;table-layout:auto;width:18;border:none;"><tr><td width=3D"18" height=3D=
+"18" align=3D"center"><div style=3D"border-radius:18px;background:#1196AB;l=
+ine-height:17px;box-shadow:0 0 0 2px #1196AB;"><img aria-label=3D"Completed=
+" src=3D"https://m.media-amazon.com/images/G/01/outbound/etc/steptracker-ch=
+eckmark._CB552848383_.png" width=3D"19" height=3D"19" style=3D"width:18px;h=
+eight:18px;display:block;" alt=3D"Completed"></div></td></tr></table>  </td=
+><td width=3D"50%" height=3D"18"><table cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" width=3D"100%" border=3D"0" style=3D"color:#000000;f=
+ont-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;line-height=
+:22px;table-layout:auto;width:100%;border:none;"><tr><td height=3D"7"></td>=
+</tr><tr><td height=3D"4" style=3D"background:#1196AB"><div style=3D"width:=
+100%;height:0;border-width:0;background:#1196AB;border-bottom:4px solid #11=
+96AB;"></div></td></tr><tr><td height=3D"7"></td></tr></table>  </td></tr><=
+/table></td></tr><tr><td height=3D"5"></td></tr><tr><td> <div style=3D"font=
+-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;font-weight:40=
+0;line-height:21px;text-align:center;color:#0F1111;"><span class=3D"rio-tex=
+t rio-text-1302">Ordered</span></div> </td></tr></table></td><td width=3D"2=
+5%" valign=3D"top" role=3D"listitem"><table cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" width=3D"100%" border=3D"0" style=3D"color:#00=
+0000;font-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;line-=
+height:22px;table-layout:auto;width:100%;border:none;"><tr><td style=3D"hei=
+ght:18px"><table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" =
+width=3D"100%" border=3D"0" style=3D"color:#000000;font-family:Ember,'Amazo=
+n Ember',Arial,sans-serif;font-size:15px;line-height:22px;table-layout:auto=
+;width:100%;border:none;"><tr><td width=3D"50%" height=3D"18"> <table cellp=
+adding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%" border=
+=3D"0" style=3D"color:#000000;font-family:Ember,'Amazon Ember',Arial,sans-s=
+erif;font-size:15px;line-height:22px;table-layout:auto;width:100%;border:no=
+ne;"><tr><td height=3D"7"></td></tr><tr><td height=3D"4" style=3D"backgroun=
+d:#1196AB"><div style=3D"width:100%;height:0;border-width:0;background:#119=
+6AB;border-bottom:4px solid #1196AB;"></div></td></tr><tr><td height=3D"7">=
+</td></tr></table> </td><td height=3D"18"> <table cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" width=3D"18" border=3D"0" style=3D"color:#=
+000000;font-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;lin=
+e-height:22px;table-layout:auto;width:18;border:none;"><tr><td width=3D"18"=
+ height=3D"18" align=3D"center"><div style=3D"border-radius:18px;background=
+:#1196AB;line-height:17px;box-shadow:0 0 0 2px #1196AB;"><img aria-label=3D=
+"Completed" src=3D"https://m.media-amazon.com/images/G/01/outbound/etc/step=
+tracker-checkmark._CB552848383_.png" width=3D"19" height=3D"19" style=3D"wi=
+dth:18px;height:18px;display:block;" alt=3D"Completed"></div></td></tr></ta=
+ble> </td><td width=3D"50%" height=3D"18"> <table cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" width=3D"100%" border=3D"0" style=3D"color=
+:#000000;font-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;l=
+ine-height:22px;table-layout:auto;width:100%;border:none;"><tr><td height=
+=3D"7"></td></tr><tr><td height=3D"4" style=3D"background:#1196AB"><div sty=
+le=3D"width:100%;height:0;border-width:0;background:#1196AB;border-bottom:4=
+px solid #1196AB;border-radius:0 2px 2px 0;"></div></td></tr><tr><td height=
+=3D"7"></td></tr></table> </td></tr></table></td></tr><tr><td height=3D"5">=
+</td></tr><tr><td><div style=3D"font-family:Ember,'Amazon Ember',Arial,sans=
+-serif;font-size:15px;font-weight:700;line-height:21px;text-align:center;co=
+lor:#0F1111;"><span class=3D"rio-text rio-text-1304">Dispatched</span></div=
+>  </td></tr></table></td><td width=3D"25%" valign=3D"top" role=3D"listitem=
+"><table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D=
+"100%" border=3D"0" style=3D"color:#000000;font-family:Ember,'Amazon Ember'=
+,Arial,sans-serif;font-size:15px;line-height:22px;table-layout:auto;width:1=
+00%;border:none;"><tr><td style=3D"height:18px"><table cellpadding=3D"0" ce=
+llspacing=3D"0" role=3D"presentation" width=3D"100%" border=3D"0" style=3D"=
+color:#000000;font-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:1=
+5px;line-height:22px;table-layout:auto;width:100%;border:none;"><tr><td wid=
+th=3D"50%" height=3D"18">  <table cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" width=3D"100%" border=3D"0" style=3D"color:#000000;font-f=
+amily:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;line-height:22px=
+;table-layout:auto;width:100%;border:none;"><tr><td height=3D"7"></td></tr>=
+<tr><td height=3D"4" style=3D"background:#E9E7E7"><div style=3D"width:100%;=
+height:0;border-width:0;background:#E9E7E7;border-bottom:4px solid #E9E7E7;=
+"></div></td></tr><tr><td height=3D"7"></td></tr></table></td><td height=3D=
+"18">  <table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" wid=
+th=3D"18" border=3D"0" style=3D"color:#000000;font-family:Ember,'Amazon Emb=
+er',Arial,sans-serif;font-size:15px;line-height:22px;table-layout:auto;widt=
+h:18;border:none;"><tr><td width=3D"18" height=3D"18" align=3D"center"><div=
+ style=3D"border-radius:18px;background:#E9E7E7;line-height:17px;box-shadow=
+:0 0 0 2px #E9E7E7;"><img aria-label=3D"Pending" src=3D"https://m.media-ama=
+zon.com/images/G/01/outbound/etc/pixel.gif" width=3D"19" height=3D"19" styl=
+e=3D"width:18px;height:18px;display:block;" alt=3D"Pending"></div></td></tr=
+></table></td><td width=3D"50%" height=3D"18">  <table cellpadding=3D"0" ce=
+llspacing=3D"0" role=3D"presentation" width=3D"100%" border=3D"0" style=3D"=
+color:#000000;font-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:1=
+5px;line-height:22px;table-layout:auto;width:100%;border:none;"><tr><td hei=
+ght=3D"7"></td></tr><tr><td height=3D"4" style=3D"background:#E9E7E7"><div =
+style=3D"width:100%;height:0;border-width:0;background:#E9E7E7;border-botto=
+m:4px solid #E9E7E7;"></div></td></tr><tr><td height=3D"7"></td></tr></tabl=
+e></td></tr></table></td></tr><tr><td height=3D"5"></td></tr><tr><td> <div =
+style=3D"font-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;f=
+ont-weight:400;line-height:21px;text-align:center;color:#0F1111;"><span cla=
+ss=3D"rio-text rio-text-1308">Out for delivery</span></div> </td></tr></tab=
+le></td><td width=3D"25%" valign=3D"top" role=3D"listitem"><table cellpaddi=
+ng=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%" border=3D"0=
+" style=3D"color:#000000;font-family:Ember,'Amazon Ember',Arial,sans-serif;=
+font-size:15px;line-height:22px;table-layout:auto;width:100%;border:none;">=
+<tr><td style=3D"height:18px"><table cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" width=3D"100%" border=3D"0" style=3D"color:#000000;font=
+-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;line-height:22=
+px;table-layout:auto;width:100%;border:none;"><tr><td width=3D"50%" height=
+=3D"18">  <table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" =
+width=3D"100%" border=3D"0" style=3D"color:#000000;font-family:Ember,'Amazo=
+n Ember',Arial,sans-serif;font-size:15px;line-height:22px;table-layout:auto=
+;width:100%;border:none;"><tr><td height=3D"7"></td></tr><tr><td height=3D"=
+4" style=3D"background:#E9E7E7"><div style=3D"width:100%;height:0;border-wi=
+dth:0;background:#E9E7E7;border-bottom:4px solid #E9E7E7;"></div></td></tr>=
+<tr><td height=3D"7"></td></tr></table></td><td height=3D"18">  <table cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"18" border=
+=3D"0" style=3D"color:#000000;font-family:Ember,'Amazon Ember',Arial,sans-s=
+erif;font-size:15px;line-height:22px;table-layout:auto;width:18;border:none=
+;"><tr><td width=3D"18" height=3D"18" align=3D"center"><div style=3D"border=
+-radius:18px;background:#E9E7E7;line-height:17px;box-shadow:0 0 0 2px #E9E7=
+E7;"><img aria-label=3D"Pending" src=3D"https://m.media-amazon.com/images/G=
+/01/outbound/etc/pixel.gif" width=3D"19" height=3D"19" style=3D"width:18px;=
+height:18px;display:block;" alt=3D"Pending"></div></td></tr></table></td><t=
+d width=3D"50%" height=3D"18">  <table cellpadding=3D"0" cellspacing=3D"0" =
+role=3D"presentation" width=3D"100%" border=3D"0" style=3D"color:#000000;fo=
+nt-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;line-height:=
+22px;table-layout:auto;width:100%;border:none;"><tr><td height=3D"7"></td><=
+/tr><tr><td height=3D"4"></td></tr><tr><td height=3D"7"></td></tr></table><=
+/td></tr></table></td></tr><tr><td height=3D"5"></td></tr><tr><td> <div sty=
+le=3D"font-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;font=
+-weight:400;line-height:21px;text-align:center;color:#0F1111;"><span class=
+=3D"rio-text rio-text-1311">Delivered</span></div> </td></tr></table></td><=
+/tr></table><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbo=
+dy></table></div><!--[if mso | IE]></td></tr></table></td></tr><![endif]-->=
+  <!--[if mso | IE]></table><![endif]--></td></tr></tbody></table></div><!-=
+-[if mso | IE]></td></tr></table><![endif]--> <!--[if mso | IE]><table alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"root=
+Content-outlook moduleId-divider-outlook" role=3D"presentation" style=3D"wi=
+dth:600px;" width=3D"600" bgcolor=3D"#ffffff" ><tr><td style=3D"line-height=
+:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div class=3D=
+"rootContent moduleId-divider" style=3D"background:#ffffff;background-color=
+:#ffffff;margin:0px auto;max-width:600px;"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"b=
+ackground:#ffffff;background-color:#ffffff;width:100%;"><tbody><tr><td styl=
+e=3D"direction:ltr;font-size:0px;padding:4px 8px 4px 8px;text-align:left;">=
+<!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0"><![endif]--><!--[if mso | IE]><tr><td align=3D"left" c=
+lass=3D"" width=3D"600px" ><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"rio-card-outlook" role=3D"presentation" s=
+tyle=3D"width:584px;" width=3D"584" ><tr><td style=3D"line-height:0px;font-=
+size:0px;mso-line-height-rule:exactly;"><![endif]--><div class=3D"rio-card"=
+ style=3D"margin:0px auto;border-radius:4px;max-width:584px;"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presen=
+tation" style=3D"width:100%;border-radius:4px;"><tbody><tr><td style=3D"dir=
+ection:ltr;font-size:0px;padding:0px 8px 0px 8px;text-align:left;"><!--[if =
+mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0"><tr><td align=3D"left" class=3D"" width=3D"584px" ><![endif]--=
+><p style=3D"border-top:solid 1px #BBBFBF;font-size:1px;margin:0px auto;wid=
+th:100%;"></p><!--[if mso | IE]><table align=3D"left" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" style=3D"border-top:solid 1px #BBBFBF;font-size=
+:1px;margin:0px auto;width:568px;" role=3D"presentation" width=3D"568px" ><=
+tr><td style=3D"height:0;line-height:0;"> &nbsp;
+</td></tr></table></td></tr></table><![endif]--></td></tr></tbody></table><=
+/div><!--[if mso | IE]></td></tr></table></td></tr><![endif]--><!--[if mso =
+| IE]></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]=
+></td></tr></table><![endif]--> <!--[if mso | IE]><table align=3D"center" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"rootContent-outloo=
+k moduleId-rexMultiOrderCard-outlook" role=3D"presentation" style=3D"width:=
+600px;" width=3D"600" bgcolor=3D"#ffffff" ><tr><td style=3D"line-height:0px=
+;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div class=3D"roo=
+tContent moduleId-rexMultiOrderCard" style=3D"background:#ffffff;background=
+-color:#ffffff;margin:0px auto;max-width:600px;"><table align=3D"center" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=
+=3D"background:#ffffff;background-color:#ffffff;width:100%;"><tbody><tr><td=
+ style=3D"direction:ltr;font-size:0px;padding:4px 8px 4px 8px;text-align:le=
+ft;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0"><![endif]--> <!--[if mso | IE]><tr><td align=3D"l=
+eft" class=3D"rex-multi-order-card-outlook rex-multi-order-card-v1-outlook"=
+ width=3D"600px" ><table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" class=3D"rio-card-outlook" role=3D"presentation" style=3D"w=
+idth:584px;" width=3D"584" bgcolor=3D"#ffffff" ><tr><td style=3D"line-heigh=
+t:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div class=
+=3D"rio-card" style=3D"background:#ffffff;background-color:#ffffff;margin:0=
+px auto;border-radius:4px;max-width:584px;"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"b=
+ackground:#ffffff;background-color:#ffffff;width:100%;border-radius:4px;"><=
+tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:4px 8px 4px 8px;=
+text-align:left;"><!--[if mso | IE]><table role=3D"presentation" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0"><![endif]-->        <!--[if mso | IE=
+]><tr><td align=3D"left" class=3D"" width=3D"584px" ><table align=3D"center=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" role=3D"prese=
+ntation" style=3D"width:568px;" width=3D"568" ><tr><td style=3D"line-height=
+:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style=3D=
+"margin:0px auto;max-width:568px;"><table align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"width:100%;=
+"><tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:0;text-align:=
+left;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0"><tr><td align=3D"left" class=3D"" style=3D"vert=
+ical-align:top;width:568px;" ><![endif]--><div class=3D"mj-column-per-100 m=
+j-outlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;d=
+isplay:inline-block;vertical-align:top;width:100%;"><table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tbod=
+y><tr><td style=3D"vertical-align:top;padding:0;"><table border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tbody>=
+<tr><td align=3D"left" style=3D"font-size:0px;padding:0;word-break:break-wo=
+rd;"><!--[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" class=3D"" role=3D"presentation" style=3D"width:568px;=
+" width=3D"568" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-he=
+ight-rule:exactly;"><![endif]--><div style=3D"margin:0px auto;max-width:568=
+px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" style=3D"width:100%;"><tbody><tr><td style=3D"dire=
+ction:ltr;font-size:0px;padding:0;text-align:left;"><!--[if mso | IE]><tabl=
+e role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><t=
+r><td align=3D"left" class=3D"" style=3D"vertical-align:top;width:568px;" >=
+<![endif]--><div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"=
+font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-a=
+lign:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" width=3D"100%"><tbody><tr><td style=3D"vertical-al=
+ign:top;padding:0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" width=3D"100%"><tbody><tr><td align=3D"left" style=
+=3D"font-size:0px;padding:0;word-break:break-word;"><div style=3D"font-fami=
+ly:Ember,'Amazon Ember',Arial,sans-serif;font-size:18px;font-weight:700;lin=
+e-height:22px;text-align:left;color:#0F1111;"><span class=3D"rio-text rio-t=
+ext-1467">Arriving today</span></div></td></tr><tr><td align=3D"left" class=
+=3D"rio-spacer" style=3D"font-size:0px;padding:0;word-break:break-word;"><d=
+iv aria-hidden=3D"true" style=3D"height:4px;line-height:4px">&nbsp;</div></=
+td></tr><tr><td align=3D"left" style=3D"font-size:0px;padding:0;word-break:=
+break-word;"><div style=3D"font-family:Ember,'Amazon Ember',Arial,sans-seri=
+f;font-size:15px;font-weight:400;line-height:21px;text-align:left;color:#0F=
+1111;"><span class=3D"rio-text rio-text-1470"><b>Amazon Locker - Aviva, Int=
+ermarch=C3=A9 Express Suresnes, 48 Avenue Jean Jaures, Suresnes, 92150</b><=
+/span></div></td></tr><tr><td align=3D"left" style=3D"font-size:0px;padding=
+:0;word-break:break-word;"><div style=3D"font-family:Ember,'Amazon Ember',A=
+rial,sans-serif;font-size:15px;font-weight:400;line-height:21px;text-align:=
+left;color:#0F1111;"><span class=3D"rio-text rio-text-1473"><span>Order #</=
+span> <span>=E2=80=AB407-9629033-1133952</span></span></div></td></tr><tr><=
+td align=3D"left" style=3D"font-size:0px;padding:0;word-break:break-word;">=
+<!--[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" class=3D"" role=3D"presentation" style=3D"width:568px;" wid=
+th=3D"568" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-=
+rule:exactly;"><![endif]--><div style=3D"margin:0px auto;max-width:568px;">=
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"width:100%;"><tbody><tr><td style=3D"direction=
+:ltr;font-size:0px;padding:0;text-align:left;"><!--[if mso | IE]><table rol=
+e=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ align=3D"left" class=3D"" style=3D"vertical-align:top;width:568px;" ><![en=
+dif]--><div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-=
+size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:=
+top;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" width=3D"100%"><tbody><tr><td style=3D"vertical-align:t=
+op;padding:0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" width=3D"100%"><tbody><mj-raw>  </mj-raw><tr><td align=3D=
+"left" class=3D"rio-spacer" style=3D"font-size:0px;padding:0;word-break:bre=
+ak-word;"><div aria-hidden=3D"true" style=3D"height:12px;line-height:12px">=
+&nbsp;</div></td></tr><tr><td align=3D"left" style=3D"font-size:0px;padding=
+:0;word-break:break-word;"><table cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" role=3D"presentation"><tr><td class=3D"rio-button-cta-primary" styl=
+e=3D"text-align:center;border-radius:24px;mso-padding-alt:6px 16px;mso-bord=
+er-alt:1px solid #FCD200;background:#FFD916;"><a target=3D"_blank" class=3D=
+"rio-button rio-button-primary rio-button-347" href=3D"https://www.amazon.f=
+r/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Durn:rtn:msg:202=
+604290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3D1XW8LIFF4YVRP&amp;T=3DC=
+&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fprogress-tracker%2Fpackage%3F_encodi=
+ng%3DUTF8%26orderId%3D407-9629033-1133952%26packageIndex%3D0%26shipmentId%3=
+DTnGNFmhTk%26vt%3DNOTIFICATIONS%26ref_%3Dpe_109071451_1103836691_p_btn_fed_=
+track_package&amp;H=3DGIXUSKQEBJTCS5F53PKP0DCODTQA&amp;ref_=3Dpe_109071451_=
+1103836691_p_btn_fed_track_package" style=3D"border:1px solid #FCD200;backg=
+round:#FFD916;mso-border-alt:none;font-family:Ember,'Amazon Ember',Arial,sa=
+ns-serif;color:#0F1111;text-decoration:none;border-radius:24px;padding:6px =
+16px;mso-padding-alt:0;display:inline-block;box-shadow:1px 2px 4px rgba(153=
+, 153, 153, 0.2);font-size:13px;line-height:18px;white-space:nowrap;text-sh=
+adow:0 0 0.1px transparent;"><span style=3D"text-decoration: none;">Track p=
+ackage</span></a></td></tr></table></td></tr></tbody></table></td></tr></tb=
+ody></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr=
+></tbody></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td=
+></tr>  <tr><td align=3D"left" style=3D"font-size:0px;padding:0;word-break:=
+break-word;"><!--[if mso | IE]><table align=3D"center" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" class=3D"" role=3D"presentation" style=3D"widt=
+h:568px;" width=3D"568" ><tr><td style=3D"line-height:0px;font-size:0px;mso=
+-line-height-rule:exactly;"><![endif]--><div style=3D"margin:0px auto;max-w=
+idth:568px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" style=3D"width:100%;"><tbody><tr><td style=
+=3D"direction:ltr;font-size:0px;padding:0;text-align:left;"><!--[if mso | I=
+E]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tr><td align=3D"left" class=3D"" style=3D"vertical-align:top;width:=
+568px;" ><![endif]--><div class=3D"mj-column-per-100 mj-outlook-group-fix" =
+style=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;v=
+ertical-align:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><td style=3D"ve=
+rtical-align:top;padding:0;"><table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><td align=3D"left=
+" class=3D"rio-spacer" style=3D"font-size:0px;padding:0;word-break:break-wo=
+rd;"><div aria-hidden=3D"true" style=3D"height:12px;line-height:12px">&nbsp=
+;</div></td></tr><tr><td align=3D"left" style=3D"font-size:0px;padding:0;wo=
+rd-break:break-word;"><!--[if mso | IE]><table align=3D"center" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" class=3D"" role=3D"presentation" styl=
+e=3D"width:568px;" width=3D"568" ><tr><td style=3D"line-height:0px;font-siz=
+e:0px;mso-line-height-rule:exactly;"><![endif]--><div style=3D"margin:0px a=
+uto;max-width:568px;"><table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" role=3D"presentation" style=3D"width:100%;"><tbody><tr>=
+<td style=3D"direction:ltr;font-size:0px;padding:0;text-align:left;"><!--[i=
+f mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0"><tr><td align=3D"left" class=3D"" style=3D"width:568px;" ><!=
+[endif]--><div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"fo=
+nt-size:0;line-height:0;text-align:left;display:inline-block;width:100%;dir=
+ection:ltr;"><!--[if mso | IE]><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" role=3D"presentation" ><tr><td style=3D"align:left;vertical-ali=
+gn:top;width:142px;" ><![endif]--><div class=3D"mj-column-per-25 mj-outlook=
+-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display:in=
+line-block;vertical-align:top;width:25%;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><t=
+d style=3D"vertical-align:top;padding:0;padding-right:8px;padding-left:0;">=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" width=3D"100%"><tbody>       <!-- TODO fallback can be removed after at =
+least 2week bake time and validating that all emails are getting the link f=
+rom productImageConnection https://issues.amazon.com/issues/TxN-996 -->  <m=
+j-raw>  </mj-raw><tr><td align=3D"left" class=3D"rio-asin-image" style=3D"f=
+ont-size:0px;padding:0;word-break:break-word;"><table style=3D"width: 100%;=
+ border-radius: 4px;" class=3D"rio-asin-image-iaVrf2izZqEnwgaaDjpEvM" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"=
+100%"><tbody><tr><td class=3D"productImageTd" style=3D"background-image:lin=
+ear-gradient(rgba(15, 17, 17, 0.03), rgba(15, 17, 17, 0.03));border-radius:=
+4px;position:relative;width:100%;height:64px;vertical-align:middle;text-ali=
+gn:center;padding:8px;"><a target=3D"_blank" href=3D"https://www.amazon.fr/=
+gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Durn:rtn:msg:20260=
+4290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3D2O74DMSF6LYW9&amp;T=3DC&a=
+mp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fdp%2FB0DVXXS6N7%3Fref_%3Dpe_109071451_=
+1103836691_i_fed_asin_title&amp;H=3DDREO9ENJGZ61FMIZ5WM58Q5E0AUA&amp;ref_=
+=3Dpe_109071451_1103836691_i_fed_asin_title" style=3D"background-color:tran=
+sparent;display:inline-block;"><img style=3D"width:100%;height:auto;max-hei=
+ght:64px;max-width:64px;margin:auto;display:block;" class=3D"productImage" =
+width=3D"122" src=3D"https://m.media-amazon.com/images/I/51micjA44vL._SS90_=
+.jpg" alt=3D"Be In Your Mind 1x Adaptateur de C=C3=A2ble de Connecteur de B=
+atterie Connecteur de Faisceau de Batterie =C3=A0 Bo=C3=AEtier Rigide 4S av=
+ec Prise d'=C3=A9quilibrage JST-XH Compatible avec T-raxxas TRX 1/8 Voiture=
+ RC"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table></div><!--[if mso | IE]></td><td style=3D"align:left;vertical-a=
+lign:top;width:426px;" ><![endif]--><div class=3D"mj-column-per-75 mj-outlo=
+ok-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display:=
+inline-block;vertical-align:top;width:75%;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><t=
+d style=3D"vertical-align:top;padding:0;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tbody><mj-ra=
+w>  </mj-raw><tr><td align=3D"left" style=3D"font-size:0px;padding:0;word-b=
+reak:break-word;"><div style=3D"font-family:Ember,'Amazon Ember',Arial,sans=
+-serif;font-size:15px;font-weight:400;line-height:21px;text-align:left;colo=
+r:#0F1111;"><span class=3D"rio-text rio-text-1483"><a href=3D"https://www.a=
+mazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Durn:rtn:=
+msg:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3D3RHCTNDG4XB5M&am=
+p;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fdp%2FB0DVXXS6N7%3Fref_%3Dpe_1=
+09071451_1103836691_t_fed_asin_title&amp;H=3DVFZTPNCTPGOJ7HNUZAZTLIQE2KYA&a=
+mp;ref_=3Dpe_109071451_1103836691_t_fed_asin_title" target=3D"_blank" style=
+=3D"color: #0F1111;">Be In Your Mind 1x Adaptateur de ...</a></span></div><=
+/td></tr> <tr><td align=3D"left" class=3D"rio-spacer" style=3D"font-size:0p=
+x;padding:0;word-break:break-word;"><div aria-hidden=3D"true" style=3D"heig=
+ht:4px;line-height:4px">&nbsp;</div></td></tr><tr><td align=3D"left" style=
+=3D"font-size:0px;padding:0;word-break:break-word;"><div style=3D"font-fami=
+ly:Ember,'Amazon Ember',Arial,sans-serif;font-size:13px;font-weight:400;lin=
+e-height:18px;text-align:left;color:#565959;"><span class=3D"rio-text rio-t=
+ext-1484">Sold by BE IN YOUR MIND</span></div></td></tr>  <tr><td align=3D"=
+left" class=3D"rio-spacer" style=3D"font-size:0px;padding:0;word-break:brea=
+k-word;"><div aria-hidden=3D"true" style=3D"height:4px;line-height:4px">&nb=
+sp;</div></td></tr><tr><td align=3D"left" style=3D"font-size:0px;padding:0;=
+word-break:break-word;"><div style=3D"font-family:Ember,'Amazon Ember',Aria=
+l,sans-serif;font-size:13px;font-weight:400;line-height:18px;text-align:lef=
+t;color:#565959;"><span class=3D"rio-text rio-text-1486">Condition: New</sp=
+an></div></td></tr> <tr><td align=3D"left" class=3D"rio-spacer" style=3D"fo=
+nt-size:0px;padding:0;word-break:break-word;"><div aria-hidden=3D"true" sty=
+le=3D"height:4px;line-height:4px">&nbsp;</div></td></tr><tr><td align=3D"le=
+ft" style=3D"font-size:0px;padding:0;word-break:break-word;"><div style=3D"=
+font-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:13px;font-weigh=
+t:400;line-height:18px;text-align:left;color:#565959;"><span class=3D"rio-t=
+ext rio-text-1487">Quantity: 1</span></div></td></tr>  <tr><td align=3D"lef=
+t" class=3D"rio-spacer" style=3D"font-size:0px;padding:0;word-break:break-w=
+ord;"><div aria-hidden=3D"true" style=3D"height:4px;line-height:4px">&nbsp;=
+</div></td></tr><tr><td align=3D"left" style=3D"font-size:0px;padding:0;wor=
+d-break:break-word;"><div style=3D"font-family:Ember,'Amazon Ember',Arial,s=
+ans-serif;font-size:18px;font-weight:400;line-height:22px;text-align:left;c=
+olor:#0F1111;"><span class=3D"rio-text rio-text-1490"><mj-raw></mj-raw>  <s=
+pan role=3D"region" aria-label=3D"{amount=3D14.49, currencyCode=3D{smallest=
+Amount=3D0.01, code=3DEUR}, label=3Dnull, pricingIncrement=3Dnull}" style=
+=3D"font-size: 18px; font-weight: 400; vertical-align: baseline;"><!-- MSO-=
+specific style for Outlook --><!--[if mso]><table cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0" ><tr> <td style=3D"font-size: 18px; vertical-align:=
+ top; padding: 0;"><sup style=3D"position: relative; top: 2px;">=E2=82=AC</=
+sup></td> <td style=3D"font-size: 18px; font-weight: 400; vertical-align: m=
+iddle; padding: 0;"><span style=3D"display: inline-block;">14</span></td>  =
+<td style=3D"font-size: 18px; vertical-align: top; padding: 0;"><sup style=
+=3D"position: relative; top: 2px;">49</sup></td></tr></table><![endif]--><!=
+-- Non-MSO rendering for other email clients --><!--[if !mso]><!--><sup sty=
+le=3D"font-size: 10px; position: relative; top: 2px;">=E2=82=AC</sup>14<sup=
+ style=3D"font-size: 10px; position: relative; top: 2px;">49</sup><!--<![en=
+dif]--> </span><mj-raw></mj-raw></span></div></td></tr></tbody></table></td=
+></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><![endif]--=
+></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></=
+table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbo=
+dy></table></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></ta=
+ble><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr=
+></table><![endif]--></td></tr></tbody></table></td></tr></tbody></table></=
+div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></tab=
+le></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr><tr><td =
+align=3D"left" class=3D"rio-spacer" style=3D"font-size:0px;padding:0;word-b=
+reak:break-word;"><div aria-hidden=3D"true" style=3D"height:12px;line-heigh=
+t:12px">&nbsp;</div></td></tr><tr><td align=3D"left" style=3D"font-size:0px=
+;padding:0;word-break:break-word;"><table width=3D"100%" role=3D"presentati=
+on" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td style=3D"width=
+:100%;height:1px;padding-top:0px;padding-bottom:0px;padding-left:0px;paddin=
+g-right:0px;background-color:#BBBFBF;"><p style=3D"border-top:solid 1px #BB=
+BFBF;font-size:1px;margin:0px auto;width:100%;"></p><!--[if mso | IE]><tabl=
+e align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"=
+border-top:solid 1px #BBBFBF;font-size:1px;margin:0px auto;width:568px;" ro=
+le=3D"presentation" width=3D"568px" ><tr><td style=3D"height:0;line-height:=
+0;"> &nbsp;
+</td></tr></table><![endif]--></td></tr></table></td></tr><tr><td align=3D"=
+left" style=3D"font-size:0px;padding:0;word-break:break-word;"><!--[if mso =
+| IE]><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" role=3D"presentation" style=3D"width:568px;" width=3D"568" >=
+<tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly=
+;"><![endif]--><div style=3D"margin:0px auto;max-width:568px;"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presen=
+tation" style=3D"width:100%;"><tbody><tr><td style=3D"direction:ltr;font-si=
+ze:0px;padding:0;text-align:left;"><!--[if mso | IE]><table role=3D"present=
+ation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td align=3D"le=
+ft" class=3D"" style=3D"vertical-align:top;width:568px;" ><![endif]--><div =
+class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0px;tex=
+t-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10=
+0%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presen=
+tation" width=3D"100%"><tbody><tr><td style=3D"vertical-align:top;padding:0=
+;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presenta=
+tion" width=3D"100%"><tbody><tr><td align=3D"left" class=3D"rio-spacer" sty=
+le=3D"font-size:0px;padding:0;word-break:break-word;"><div aria-hidden=3D"t=
+rue" style=3D"height:12px;line-height:12px">&nbsp;</div></td></tr><tr><td a=
+lign=3D"left" style=3D"font-size:0px;padding:0;word-break:break-word;"><!--=
+[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"" role=3D"presentation" style=3D"width:568px;" width=
+=3D"568" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-ru=
+le:exactly;"><![endif]--><div style=3D"margin:0px auto;max-width:568px;"><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"width:100%;"><tbody><tr><td style=3D"direction:l=
+tr;font-size:0px;padding:0;text-align:left;"><!--[if mso | IE]><table role=
+=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td =
+align=3D"left" class=3D"" style=3D"vertical-align:top;width:568px;" ><![end=
+if]--><div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-s=
+ize:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:t=
+op;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" rol=
+e=3D"presentation" width=3D"100%"><tbody><tr><td style=3D"vertical-align:to=
+p;padding:0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" width=3D"100%"><tbody><tr><td align=3D"left" style=3D"fon=
+t-size:0px;padding:0;word-break:break-word;"><table cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%" border=3D"0" style=3D"color:#000000;font-family=
+:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;line-height:22px;tabl=
+e-layout:auto;width:100%;border:none;"><tr><mj-raw></mj-raw></td><td align=
+=3D"left" style=3D"width: 50%; padding-right: 30px; font-size: 14px;">Total=
+</td><td align=3D"right" style=3D"width: 50%; font-size: 14px; font-weight:=
+ bold;"><mj-raw></mj-raw><mj-raw> </mj-raw>  =E2=82=AC14.49<mj-raw></mj-raw=
+></td></tr></table></td></tr></tbody></table></td></tr></tbody></table></di=
+v><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table=
+></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></=
+table></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><=
+![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></ta=
+ble><![endif]--></td></tr><tr><td align=3D"left" class=3D"rio-spacer" style=
+=3D"font-size:0px;padding:0;word-break:break-word;"><div aria-hidden=3D"tru=
+e" style=3D"height:12px;line-height:12px">&nbsp;</div></td></tr><tr><td ali=
+gn=3D"left" style=3D"font-size:0px;padding:0;word-break:break-word;"><table=
+ width=3D"100%" role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0"><tr><td style=3D"width:100%;height:1px;padding-top:0px;padding-=
+bottom:0px;padding-left:0px;padding-right:0px;background-color:#BBBFBF;"><p=
+ style=3D"border-top:solid 1px #BBBFBF;font-size:1px;margin:0px auto;width:=
+100%;"></p><!--[if mso | IE]><table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"border-top:solid 1px #BBBFBF;font-size:1p=
+x;margin:0px auto;width:568px;" role=3D"presentation" width=3D"568px" ><tr>=
+<td style=3D"height:0;line-height:0;"> &nbsp;
+</td></tr></table><![endif]--></td></tr></table></td></tr></tbody></table><=
+/td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><![endif=
+]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></t=
+d></tr><![endif]--> <!--[if mso | IE]></table><![endif]--></td></tr></tbody=
+></table></div><!--[if mso | IE]></td></tr></table></td></tr><![endif]-->  =
+<!--[if mso | IE]></table><![endif]--></td></tr></tbody></table></div><!--[=
+if mso | IE]></td></tr></table><![endif]--> <!--[if mso | IE]><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"rootC=
+ontent-outlook moduleId-marketingSlot-outlook" role=3D"presentation" style=
+=3D"width:600px;" width=3D"600" bgcolor=3D"#ffffff" ><tr><td style=3D"line-=
+height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div cl=
+ass=3D"rootContent moduleId-marketingSlot" style=3D"background:#ffffff;back=
+ground-color:#ffffff;margin:0px auto;max-width:600px;"><table align=3D"cent=
+er" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" =
+style=3D"background:#ffffff;background-color:#ffffff;width:100%;"><tbody><t=
+r><td style=3D"direction:ltr;font-size:0px;padding:4px 8px 4px 8px;text-ali=
+gn:left;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0"><![endif]--><!--[if mso | IE]><tr><td align=
+=3D"left" class=3D"sonar-asin-grid-hve-outlook sonar-asin-grid-hve-v1-outlo=
+ok" width=3D"600px" ><table align=3D"center" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" class=3D"rio-card-outlook" role=3D"presentation" style=
+=3D"width:584px;" width=3D"584" bgcolor=3D"#ffffff" ><tr><td style=3D"line-=
+height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div cl=
+ass=3D"rio-card" style=3D"background:#ffffff;background-color:#ffffff;margi=
+n:0px auto;border-radius:4px;max-width:584px;"><table align=3D"center" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D=
+"background:#ffffff;background-color:#ffffff;width:100%;border-radius:4px;"=
+><tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:4px 8px 4px 8p=
+x;text-align:left;"><!--[if mso | IE]><table role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td align=3D"left" class=3D"=
+" width=3D"584px" ><![endif]-->  <table cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" width=3D"100%" border=3D"0" style=3D"color:#000000;f=
+ont-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;line-height=
+:22px;table-layout:auto;width:100%;border:none;"><tr><td width=3D"65%"><div=
+ style=3D"font-family:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;=
+line-height:1;text-align:left;color:#000000;"><h2 style=3D"margin:0;padding=
+:0;font-family:Ember,'Amazon Ember',Arial,sans-serif;font-weight:700;font-s=
+ize:18px;line-height:22px;color:#0F1111;" class=3D"rio-header rio-header-28=
+7">Keep shopping for</h2></div></td></tr></table><div aria-hidden=3D"true" =
+style=3D"height:8px;line-height:8px">&nbsp;</div><!--[if mso | IE]></td></t=
+r><![endif]--> <!--[if mso | IE]><tr><td align=3D"left" class=3D"asin-grid-=
+custom-border-outlook" width=3D"584px" ><table align=3D"center" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" class=3D"asin-grid-custom-border-outl=
+ook" role=3D"presentation" style=3D"width:568px;" width=3D"568" ><tr><td st=
+yle=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endi=
+f]--><div class=3D"asin-grid-custom-border" style=3D"margin:0px auto;max-wi=
+dth:568px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" role=3D"presentation" style=3D"width:100%;"><tbody><tr><td style=
+=3D"direction:ltr;font-size:0px;padding:0;text-align:left;"><!--[if mso | I=
+E]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tr><td align=3D"left" class=3D"" width=3D"568px" ><![endif]--> <tab=
+le class=3D"rio-table-grid-table" role=3D"list" width=3D"100%" border=3D"0"=
+ style=3D"width:100%;font-size:0;line-height:0;mso-line-height-rule:exactly=
+;"><tr><td class=3D"rio-table-grid-td-bg" role=3D"listitem" valign=3D"top" =
+width=3D"32%" style=3D"width:32%;  border-radius:8px; background-color: #f7=
+f7f7 ">    <table role=3D"presentation" style=3D"table-layout:fixed;width:1=
+00%;max-width:100%;background-color:#f7f7f7;border-radius:8px;" class=3D"as=
+in-container"><tr><td style=3D"padding:0px;"><table role=3D"presentation" c=
+lass=3D"rio-asin-container-image" width=3D"100%"><tr><td align=3D"center"><=
+a href=3D"https://www.amazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3=
+EL0T6Z&amp;M=3Durn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&a=
+mp;R=3D3UCP1D0XCG4U6&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fdp%2FB=
+0CS4ML214%2F%3Fref_%3Dpe_109071451_1103836691_AGH3Col_04_00_IMG_07_ci_mcx_m=
+i_2p_0_lm%26pd_rd_wg%3DeTug4%26pd_rd_w%3DM9q0h%26pf_rd_p%3D5ed9c785-2d12-4d=
+d8-a812-7f9881cb840e%26pd_rd_r%3D0cabc3d9-1eeb-49e0-bcff-e89aae5c19d2%26con=
+tent-id%3Damzn1.sym.5ed9c785-2d12-4dd8-a812-7f9881cb840e%3Aamzn1.symc.af370=
+406-a791-4ead-816f-67c2728438f0&amp;H=3DORZHLBAIGAYFR05AKLGUF4ALDYMA&amp;re=
+f_=3Dpe_109071451_1103836691_AGH3Col_04_00_IMG_07_ci_mcx_mi_2p_0_lm" target=
+=3D"_blank"><img src=3D"https://m.media-amazon.com/images/I/415eqOkExYL._SR=
+276,276_.jpg" alt=3D"Leomil Spiderman Boys' Luminous Trainers Children's Sh=
+oes, Ideal for School and Leisure" align=3D"center" width=3D"138" height=3D=
+"138" style=3D"width: 100%;height: auto;max-width:138px;max-height:138px;">=
+</a></td></tr></table><div style=3D"padding:4px;">  <table role=3D"presenta=
+tion" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-bot=
+tom:4px"><tbody><tr><td><span class=3D"productHvePrice" style=3D"font-size:=
+13px;font-weight:400;line-height:16px;color:#0F1111;direction:ltr !importan=
+t;">=E2=82=AC42.04 </span></td></tr></tbody></table><div style=3D"font-fami=
+ly:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;font-weight:400;lin=
+e-height:21px;text-align:left;color:#0F1111;"><span class=3D"rio-text rio-t=
+ext-1508" aria-hidden=3D"true"><div style=3D"width:164px;overflow:hidden;te=
+xt-overflow:ellipsis;white-space:nowrap;max-width:100%;">Leomil Spiderman B=
+oys' Luminous...</div></span></div></div></td></tr></table></td><td aria-hi=
+dden=3D"true" width=3D"2%" style=3D"width:2%;"><div style=3D"width:8px">&nb=
+sp;</div></td>  <td class=3D"rio-table-grid-td-bg" role=3D"listitem" valign=
+=3D"top" width=3D"32%" style=3D"width:32%;  border-radius:8px; background-c=
+olor: #f7f7f7 ">    <table role=3D"presentation" style=3D"table-layout:fixe=
+d;width:100%;max-width:100%;background-color:#f7f7f7;border-radius:8px;" cl=
+ass=3D"asin-container"><tr><td style=3D"padding:0px;"><table role=3D"presen=
+tation" class=3D"rio-asin-container-image" width=3D"100%"><tr><td align=3D"=
+center"><a href=3D"https://www.amazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=
+=3D3O0AMW3EL0T6Z&amp;M=3Durn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6a=
+ba50p0eu&amp;R=3DOLMH1UICW6BX&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr=
+%2Fdp%2FB075VKNJWZ%2F%3Fref_%3Dpe_109071451_1103836691_AGH3Col_04_01_IMG_07=
+_ci_mcx_mi_2p_1_lm%26pd_rd_wg%3DeTug4%26pd_rd_w%3DM9q0h%26pf_rd_p%3D5ed9c78=
+5-2d12-4dd8-a812-7f9881cb840e%26pd_rd_r%3D0cabc3d9-1eeb-49e0-bcff-e89aae5c1=
+9d2%26content-id%3Damzn1.sym.5ed9c785-2d12-4dd8-a812-7f9881cb840e%3Aamzn1.s=
+ymc.af370406-a791-4ead-816f-67c2728438f0&amp;H=3DIJVNBXT1M5ST9FWSIEAYN4LYUN=
+CA&amp;ref_=3Dpe_109071451_1103836691_AGH3Col_04_01_IMG_07_ci_mcx_mi_2p_1_l=
+m" target=3D"_blank"><img src=3D"https://m.media-amazon.com/images/I/41Y5Fw=
+ACIJL._SR276,276_.jpg" alt=3D"Traxxas Charging Cable [1x TRX Male - 1x TRX =
+Female] 1611458" align=3D"center" width=3D"138" height=3D"138" style=3D"wid=
+th: 100%;height: auto;max-width:138px;max-height:138px;"></a></td></tr></ta=
+ble><div style=3D"padding:4px;">  <table role=3D"presentation" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-bottom:4px"><tbody><t=
+r><td><span class=3D"productHvePrice" style=3D"font-size:13px;font-weight:4=
+00;line-height:16px;color:#0F1111;direction:ltr !important;">=E2=82=AC21.75=
+ </span></td></tr></tbody></table><div style=3D"font-family:Ember,'Amazon E=
+mber',Arial,sans-serif;font-size:15px;font-weight:400;line-height:21px;text=
+-align:left;color:#0F1111;"><span class=3D"rio-text rio-text-1508" aria-hid=
+den=3D"true"><div style=3D"width:164px;overflow:hidden;text-overflow:ellips=
+is;white-space:nowrap;max-width:100%;">Traxxas Charging Cable [1x TRX...</d=
+iv></span></div></div></td></tr></table></td><td aria-hidden=3D"true" width=
+=3D"2%" style=3D"width:2%;"><div style=3D"width:8px">&nbsp;</div></td>  <td=
+ class=3D"rio-table-grid-td-bg" role=3D"listitem" valign=3D"top" width=3D"3=
+2%" style=3D"width:32%;  border-radius:8px; background-color: #f7f7f7 ">   =
+ <table role=3D"presentation" style=3D"table-layout:fixed;width:100%;max-wi=
+dth:100%;background-color:#f7f7f7;border-radius:8px;" class=3D"asin-contain=
+er"><tr><td style=3D"padding:0px;"><table role=3D"presentation" class=3D"ri=
+o-asin-container-image" width=3D"100%"><tr><td align=3D"center"><a href=3D"=
+https://www.amazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp=
+;M=3Durn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3D2A3=
+I6Z4QN36I2&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fdp%2FB0CK2L2H97%=
+2F%3Fref_%3Dpe_109071451_1103836691_AGH3Col_04_02_IMG_07_ci_mcx_mi_2p_2_lm%=
+26pd_rd_wg%3DeTug4%26pd_rd_w%3DM9q0h%26pf_rd_p%3D5ed9c785-2d12-4dd8-a812-7f=
+9881cb840e%26pd_rd_r%3D0cabc3d9-1eeb-49e0-bcff-e89aae5c19d2%26content-id%3D=
+amzn1.sym.5ed9c785-2d12-4dd8-a812-7f9881cb840e%3Aamzn1.symc.af370406-a791-4=
+ead-816f-67c2728438f0&amp;H=3DSZOEEDM1IQ0WCFPPINXIYAWAT4EA&amp;ref_=3Dpe_10=
+9071451_1103836691_AGH3Col_04_02_IMG_07_ci_mcx_mi_2p_2_lm" target=3D"_blank=
+"><img src=3D"https://m.media-amazon.com/images/I/41es8wh3z6L._SR276,276_.j=
+pg" alt=3D"The G-Lab - Yttrium Combo - Azerty RGB Gaming Pack, 105 Keys Gam=
+er Keyboard and 19 Anti-ghosting Keys - 2400 Dpi Gamer Mouse - Gaming Mouse=
+ Pad - Pc Ps4 PS5 - New" align=3D"center" width=3D"138" height=3D"138" styl=
+e=3D"width: 100%;height: auto;max-width:138px;max-height:138px;"></a></td><=
+/tr></table><div style=3D"padding:4px;">  <table role=3D"presentation" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-bottom:4px"><=
+tbody><tr><td><span class=3D"productHveDiscount" style=3D"font-weight:400;f=
+ont-size:13px;line-height:16px;color:#CC0C39;display:inline-block;margin-ri=
+ght:4px;">-13% </span><span class=3D"productHvePrice" style=3D"font-size:13=
+px;font-weight:400;line-height:16px;color:#0F1111;direction:ltr !important;=
+">=E2=82=AC25.95 </span></td></tr></tbody></table><div style=3D"font-family=
+:Ember,'Amazon Ember',Arial,sans-serif;font-size:15px;font-weight:400;line-=
+height:21px;text-align:left;color:#0F1111;"><span class=3D"rio-text rio-tex=
+t-1508" aria-hidden=3D"true"><div style=3D"width:164px;overflow:hidden;text=
+-overflow:ellipsis;white-space:nowrap;max-width:100%;">The G-Lab - Yttrium =
+Combo -...</div></span></div></div></td></tr></table></td>   </tr></table><=
+!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></=
+div><!--[if mso | IE]></td></tr></table></td></tr></table><![endif]--></td>=
+</tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><!=
+[endif]-->        <!--[if mso | IE]></table><![endif]--></td></tr></tbody><=
+/table></div><!--[if mso | IE]></td></tr></table><![endif]--> <!--[if mso |=
+ IE]><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"rootContent-outlook moduleId-transactionalFooter-outlook" role=
+=3D"presentation" style=3D"width:600px;" width=3D"600" bgcolor=3D"#ffffff" =
+><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactl=
+y;"><![endif]--><div class=3D"rootContent moduleId-transactionalFooter" sty=
+le=3D"background:#ffffff;background-color:#ffffff;margin:0px auto;max-width=
+:600px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"background:#ffffff;background-color:#=
+ffffff;width:100%;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;pad=
+ding:4px 0px 0px 0px;text-align:left;"><!--[if mso | IE]><table role=3D"pre=
+sentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><![endif]-->  <=
+!--[if mso | IE]><tr><td align=3D"left" class=3D"sonar-footer-outlook sonar=
+-footer-v1-outlook" width=3D"600px" ><![endif]--><style type=3D"text/css">.=
+footer-text, .footer-card p, .footer-card li {
+            color: #494D4D;
+        }
+        .footer-card p{margin-top:20px}
+        .footer-card a {
+            color: #007185 !important;
+            text-decoration: none !important;
+        }
+        @media (prefers-color-scheme:dark){
+            .footer-card {
+                background-color: #303333 !important;
+            }
+           =20
+            .footer-card a {
+                color: #6ED6E6 !important;
+            }
+           =20
+            .footer-text, .footer-card p, .footer-card li {
+                color: #C8CCCC !important;
+            }
+            .lightFooterImg{display:none!important}.darkFooterImg{display:b=
+lock!important}}[data-ogsb] .footer-card{background-color:#303333!important=
+}
+        [data-ogsc] .footer-card a {
+            color: #6ED6E6 !important;
+        }
+        [data-ogsc] .footer-card li,[data-ogsc] .footer-card p,[data-ogsc] =
+.footer-text{color:#c8cccc!important}[data-ogsc] .lightFooterImg{display:no=
+ne!important}[data-ogsc] .darkFooterImg{display:block!important}</style><ta=
+ble class=3D"footer-card" data-sonar-role=3D"footer" width=3D"100%" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" style=3D"ba=
+ckground-color:#F0F2F2;width:100%;"><tr><td width=3D"100%" align=3D"left" s=
+tyle=3D"width:100%;padding-bottom:4px;text-align:left"><table width=3D"100%=
+" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" st=
+yle=3D"width:100%;"><tr><td class=3D"footer-text" style=3D"width:100%;paddi=
+ng:0 16px 16px 16px;font-family:Ember,'Amazon Ember',Arial,sans-serif;font-=
+size:14px;line-height:20px;color:#494D4D;"><div style=3D"margin-top:20px;">=
+Amazon.fr is a trading name for Amazon EU Sarl, for Amazon Europe Core Sarl=
+ and for Amazon Media EU Sarl, all of which have their registered office at=
+ 38 avenue John F. Kennedy, L-1855 Luxembourg. <br>=C2=A92026 Amazon.com, I=
+nc. or its affiliates. Amazon and all related marks are trademarks of Amazo=
+n.com, Inc. or its affiliates.</div> <div style=3D"margin-top:20px;"><p>You=
+ can return a product within 14 days from the date of delivery (with some <=
+a href=3D"https://www.amazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3=
+EL0T6Z&amp;M=3Durn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&a=
+mp;R=3DWP0ZZUENGU9P&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fgp%2Fhe=
+lp%2Fcustomer%2Fdisplay.html%3Fie%3DUTF8%26nodeId%3D11717991%26ref_%3Dpe_10=
+9071451_1103836691_fed_tlt_default_ro&amp;H=3DRCTUE0GPRBJSDAM6EDYWAQPY6N4A&=
+amp;ref_=3Dpe_109071451_1103836691_fed_tlt_default_ro" rel=3D"nofollow">exc=
+eptions</a>). We will refund the price of the product and the delivery cost=
+s for the cheapest delivery method offered by Amazon. The costs for returni=
+ng the product, however, will be at your expense. You may incur higher retu=
+rn fees if the product cannot normally be returned by post.</p>
+<p>You can return the product using our <a href=3D"https://www.amazon.fr/gp=
+/f.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Durn:rtn:msg:2026042=
+90302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3D2PXNNU6DDPYME&amp;T=3DC&amp=
+;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fgp%2Fcss%2Freturns%2Fhomepage.html%3Fref=
+_%3Dpe_109071451_1103836691_fed_tlt_default_ro&amp;H=3DDQUFGDWYK6ZGNUSHSNV6=
+ZW9SPSOA&amp;ref_=3Dpe_109071451_1103836691_fed_tlt_default_ro" rel=3D"nofo=
+llow">Online Returns Centre</a> or by contacting <a href=3D"https://www.ama=
+zon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Durn:rtn:ms=
+g:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3D38B35A8UYPL62&amp;=
+T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fgp%2Fhelp%2Fcustomer%2Fcontact-=
+us%3Fie%3DUTF8%26nodeId%3D559912%26ref_%3Dpe_109071451_1103836691_fed_tlt_d=
+efault_ro&amp;H=3DT9MD1NNA16YVOMIHVRXUPV0E3VYA&amp;ref_=3Dpe_109071451_1103=
+836691_fed_tlt_default_ro" rel=3D"nofollow">Customer Service</a>. You can a=
+lso exercise your right of withdrawal by filling out this <a href=3D"https:=
+//www.amazon.fr/gp/f.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Du=
+rn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3D3A8OTSP4Q=
+IFCR&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fformulaire-retractatio=
+n%3Fref_%3Dpe_109071451_1103836691&amp;H=3DUABYQW054XUAO5AFGDKMLPP5C40A&amp=
+;ref_=3Dpe_109071451_1103836691" rel=3D"nofollow">form</a> and sending it b=
+y post.</p>
+<p>Please also see our <a href=3D"https://www.amazon.fr/gp/r.html?C=3D2HKZH=
+B70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Durn:rtn:msg:202604290302140d89153eb1=
+3e44a1ac27fc6aba50p0eu&amp;R=3D1JBPWIO9O17XM&amp;T=3DC&amp;U=3Dhttps%3A%2F%=
+2Fwww.amazon.fr%2Fgp%2Fhelp%2Fcustomer%2Fdisplay.html%3Fie%3DUTF8%26nodeId%=
+3D11087641%26ref_%3Dpe_109071451_1103836691_fed_tlt_default_ro&amp;H=3DEBUO=
+PSSIAFBTPANAFUJQ4VEB180A&amp;ref_=3Dpe_109071451_1103836691_fed_tlt_default=
+_ro" rel=3D"nofollow">Refund Policy</a> for items returned within 30 days (=
+in this case, we will refund only the purchase price of the product). For m=
+ore information, see the Help Page: <a href=3D"https://www.amazon.fr/gp/r.h=
+tml?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Durn:rtn:msg:20260429030=
+2140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3D1YAYZ6AYFGRCS&amp;T=3DC&amp;U=
+=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fgp%2Fhelp%2Fcustomer%2Fdisplay.html%3Fie%3=
+DUTF8%26ref_%3Dpe_109071451_1103836691_fed_tlt_default_ro%26nodeId%3D548524=
+%23conditions_vente&amp;H=3DQQ67UY1EXKKAPYJWCXYCA3OZK0YA&amp;ref_=3Dpe_1090=
+71451_1103836691_fed_tlt_default_ro" rel=3D"nofollow">Our Return Policies</=
+a>.</p>
+<p>For more information on the legal warranty related to your items, click =
+<a href=3D"https://www.amazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW=
+3EL0T6Z&amp;M=3Durn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&=
+amp;R=3D1HA7TM9396YQ0&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fgp%2F=
+help%2Fcustomer%2Fdisplay.html%3Fie%3DUTF8%26nodeId%3D201310960%26ref_%3Dpe=
+_109071451_1103836691_fed_tlt_default_ro&amp;H=3DJODEKFDOB7VCSWSU4EGU8BFYYO=
+IA&amp;ref_=3Dpe_109071451_1103836691_fed_tlt_default_ro" rel=3D"nofollow">=
+here</a>. For any claims or questions, please contact our <a href=3D"https:=
+//www.amazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;M=3Du=
+rn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3D22VG13ZH9=
+9DLE&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%2Fgp%2Fhelp%2Fcustomer%2=
+Fcontact-us%3Fie%3DUTF8%26nodeId%3D559912%26ref_%3Dpe_109071451_1103836691_=
+fed_tlt_default_ro&amp;H=3DTOQ7H9ACCKG2DBYGRSJUXMINUH0A&amp;ref_=3Dpe_10907=
+1451_1103836691_fed_tlt_default_ro" rel=3D"nofollow">Customer Service</a>.<=
+/p>
+<p>Amazon EU soci=C3=A9t=C3=A9 =C3=A0 responsabilit=C3=A9 limit=C3=A9e, 38 =
+avenue John F. Kennedy, L-1855 Luxembourg. Share capital: EUR 165,833. RCS =
+Luxembourg Number: B 101818. Business License Number: 134248. Luxembourg VA=
+T Registration Number: LU 20260743.</p></div></td></tr></table><a href=3D"h=
+ttps://www.amazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0AMW3EL0T6Z&amp;=
+M=3Durn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6aba50p0eu&amp;R=3DAYE6=
+20HL0VAU&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.fr%3Fref_%3Dpe_10907145=
+1_1103836691_TF_05_04_LNK_08&amp;H=3DHHM4JIA54X6EYMJ3KXH3OHZRRJGA&amp;ref_=
+=3Dpe_109071451_1103836691_TF_05_04_LNK_08" target=3D"_blank"><img src=3D"h=
+ttps://m.media-amazon.com/images/G/01/outbound/OutboundTemplates/Smile_Logo=
+_Light._BG240,242,242_.png" alt=3D"Amazon.co.uk" height=3D"43" width=3D"86"=
+ align=3D"left" class=3D"lightFooterImg" style=3D"display:block;"> <!--[if =
+!mso]><! --><img src=3D"https://m.media-amazon.com/images/G/01/outbound/Out=
+boundTemplates/Smile_Logo_Dark.png" alt=3D"Amazon.co.uk" height=3D"43" widt=
+h=3D"86" align=3D"left" class=3D"darkFooterImg" style=3D"display:none;"><!-=
+-<![endif]--></a></td></tr></table><!--[if mso | IE]></td></tr><![endif]-->=
+ <!--[if mso | IE]></table><![endif]--></td></tr></tbody></table></div><!--=
+[if mso | IE]></td></tr></table><![endif]--></div><img width=3D"1" height=
+=3D"1" src=3D"https://www.amazon.fr/gp/r.html?C=3D2HKZHB70XDY3A&amp;K=3D3O0=
+AMW3EL0T6Z&amp;M=3Durn:rtn:msg:202604290302140d89153eb13e44a1ac27fc6aba50p0=
+eu&amp;R=3D3P8AFG215I47F&amp;T=3DE&amp;U=3Dhttps%3A%2F%2Fimages-eu.ssl-imag=
+es-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&amp;H=3D14FSZVC7FFLK9HWB=
+KVFBX1F3XKGA&amp;ref_=3Dpe_109071451_1103836691_open" alt=3D""></body></htm=
+l>=
+
+------=_Part_3201774_565738181.1777431735758--

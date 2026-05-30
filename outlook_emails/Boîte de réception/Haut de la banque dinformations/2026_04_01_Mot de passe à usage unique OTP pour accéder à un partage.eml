@@ -1,0 +1,352 @@
+Received: from DU0P250MB0645.EURP250.PROD.OUTLOOK.COM (2603:10a6:10:328::10)
+ by PAVP250MB0931.EURP250.PROD.OUTLOOK.COM with HTTPS; Wed, 1 Apr 2026
+ 16:07:20 +0000
+Received: from SJ0PR03CA0004.namprd03.prod.outlook.com (2603:10b6:a03:33a::9)
+ by DU0P250MB0645.EURP250.PROD.OUTLOOK.COM (2603:10a6:10:328::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9745.28; Wed, 1 Apr
+ 2026 16:07:18 +0000
+Received: from CO1PEPF00012E61.namprd05.prod.outlook.com
+ (2603:10b6:a03:33a:cafe::c1) by SJ0PR03CA0004.outlook.office365.com
+ (2603:10b6:a03:33a::9) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9745.29 via Frontend Transport; Wed,
+ 1 Apr 2026 16:07:17 +0000
+Authentication-Results: spf=pass (sender IP is 195.68.89.195)
+ smtp.mailfrom=oodrive.com; dkim=pass (signature was verified)
+ header.d=oodrive.com;dmarc=pass action=none
+ header.from=oodrive.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oodrive.com designates
+ 195.68.89.195 as permitted sender) receiver=protection.outlook.com;
+ client-ip=195.68.89.195; helo=mailinfra.oodrive.com; pr=C
+Received: from mailinfra.oodrive.com (195.68.89.195) by
+ CO1PEPF00012E61.mail.protection.outlook.com (10.167.249.70) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.9769.17 via Frontend Transport; Wed, 1 Apr 2026 16:07:16 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:8A6FF04147BFC26BC9A8406A33D3440E2BAAE28DFBC87AA512262E47C60DA582;UpperCasedChecksum:5F3F9AB9F93ACFDB879D4933FA07088E6E2D27D8D7AF7DC1330A45CE5B050A7F;SizeAsReceived:904;Count:10
+Date: Wed, 1 Apr 2026 18:07:14 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oodrive.com;
+	s=default; t=1775059634;
+	bh=tVNIXyWNdRoJ1OCAVl1oEQTYaHwX6LoBxbvbrf3RQmc=;
+	h=From:Reply-To:To:Subject;
+	b=Y13vp005DkcdN+4j33x9Zd8yfZ0X7c6PAn7LM38eor2Z3gra9nhd/X3bdvr/1miaL
+	 /EiguaOy/OptUVd00zagKn8pmPWrCJbKxv1iFczZ4zm/z5Hw3j6hZiFWZe36V4Mf5U
+	 QbX+kH3bbz6h9wKTJYpva+nBBCmgqt0Ll2PIB9x0=
+X-Server-Id: mailinfra01
+From: Michael LE TILLY via ca-morbihan-postfiles
+ <nepasrepondre_ca-morbihan@oodrive.com>
+Reply-To: nepasrepondre_ca-morbihan@oodrive.com
+To: jeromesimon56@hotmail.com
+Message-ID: <1772743781.208547.1775059634874@hermod-blue-5d9d475844-cmp4j>
+Subject: =?UTF-8?Q?Mot_de_passe_=C3=A0_usage_unique_(?=
+ =?UTF-8?Q?OTP)_pour_acc=C3=A9der_=C3=A0_un_partage?=
+Content-Type: multipart/mixed;
+	boundary="----=_Part_208545_1241117303.1775059634861"
+X-IncomingHeaderCount: 10
+Return-Path: nepasrepondre_ca-morbihan@oodrive.com
+X-MS-Exchange-Organization-ExpirationStartTime: 01 Apr 2026 16:07:16.6734
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 23b6fed2-88d1-4bbb-15cb-08de9008beb3
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: CO1PEPF00012E61:EE_|DU0P250MB0645:EE_|PAVP250MB0931:EE_
+X-MS-Exchange-Organization-AuthSource: CO1PEPF00012E61.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 4/1/2026 4:06:49 PM
+X-MS-Office365-Filtering-Correlation-Id: 23b6fed2-88d1-4bbb-15cb-08de9008beb3
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 195.68.89.195
+X-SID-PRA: NEPASREPONDRE_CA-MORBIHAN@OODRIVE.COM
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:1444111002|3069299007|32060799003|9109299003|9000799056|10300799038|1290799033|7009299003|461199028|5149299006|1360799030|1380799030|1370799030|440099028|3412199025|19025499015|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 01 Apr 2026 16:07:16.3240
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 23b6fed2-88d1-4bbb-15cb-08de9008beb3
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: CO1PEPF00012E61.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DU0P250MB0645
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.8043259
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9745.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90010023)(91010020)(91040095)(9050020)(9100341)(944500132)(2008001181)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?OFBKOURmVWNzV1NBWG0wMXdsMktOLzNzT2dVTVU2SkdVMlppOTFwbEQ4Ly9K?=
+ =?utf-8?B?Vys4S0psTHU2Z3FDMnVGQ3JhZ1F2eFVyc2xiZldzSmNrL2pxa3NTQ1lYL3dt?=
+ =?utf-8?B?eHUxVWpqSUFvMlRTWjBLQk9ISnFaU3JQZFgwaFEwVUJmcUdYOVBQaVNLNmJO?=
+ =?utf-8?B?Q2FXbndoY29IUlR4aDRXUnVkRFhhSHBSY2JQZ3FJck93djFhcmZJMmIvZU5Y?=
+ =?utf-8?B?blo5aEdNR21BSDZvb1N2ZUlrOUl6Z0FpYVB6Tk1zT2JvaGVaVGdGWDlpQUds?=
+ =?utf-8?B?VjBqWFF1ZTJab2hBSFNpemNEcEFzQmhIZS9wQ2luL1d6Nm9JVHFyUkI1a0lY?=
+ =?utf-8?B?Ykh5TzFvT1NLY29jS0hzWjNUVWY1MzlZWHFZaHBtK3VLSmdBU3BEMDBmWDBr?=
+ =?utf-8?B?TjlKaEhDYnQwMXN3RzE0OVlqZk0zb24yMllVWkIraWNEMmlBQzFSQjV3alUy?=
+ =?utf-8?B?RnJhbDBuVUwvWUZpL0YvenZWOHVwUWRybW45SDIxbG5zTTI0TDMwMXFoWjdD?=
+ =?utf-8?B?Rkh4a0l5R29ZRG5GZkZBYk1aYnRqd2xXOTVUK1Rva2lHQU15bC9RTWZyNThq?=
+ =?utf-8?B?YVNVcFU3Q3hOT2FlK0VleE1ibUloelUrMWFmWlFXYUZId3JMVVhQaXEzd3hP?=
+ =?utf-8?B?aE9qMVlwcElmdUNtWDdJak5MY0duT2l0Wk4yMkRLV1BHQkwyVWtoVkxkOThS?=
+ =?utf-8?B?d0ZFNFNWOE45cElHTjNFWThrc3A2UkR4SEs2MTVKbFprTDZqWVp3OTluNk1O?=
+ =?utf-8?B?eVg0OEpqenFUMGlheEs1cU1Lby9aczllTk1LWWRLRllXT2lTWmZ3dU8rSHBI?=
+ =?utf-8?B?ejVRUElrVGh5UEpxU0tVcFlOa1VMMW5xSlFiMWM5bGl0ZjZ3bVB1QUhxbFEz?=
+ =?utf-8?B?LzhhemJNektpcFVPcElXNjN4RHJwQWV1Q1BCa0RLV1dhT2I1K2xIR3BXYWFE?=
+ =?utf-8?B?M25BSGRlNkkvOXZGSEN2NHhWMnV6RHdRNVBiSlJ3Vkp5MFd5bU9QVHJ5VHBL?=
+ =?utf-8?B?eXZUZmxmVXh1MndNRWo4SC9iS3pxelBGTUk2eFI3bk5NT25qbnlLNHF0WHhu?=
+ =?utf-8?B?cGxvaUxsRWdPQnp5M0dNTXZ2dk9SQ1FsSjRvNEI4NCtncitJalJQNjU5a2Z1?=
+ =?utf-8?B?Tk16ZHpIZUU2MzhmREJtUks5cTBwZUpVT3FLeFV5VkJIczdqUTFIRjh5ZUxR?=
+ =?utf-8?B?ZXNrRnE3bmZ2Zm9pbFp0SXhna3dMTExOdVpmVjBOZUJsSjU1T3MwdXJFNVpi?=
+ =?utf-8?B?eUJHbWpUMHJrdEZXM0o4RUY1TFlVZkVGcWsrM1JONUVnY3JHd0ZxVkV4TWh0?=
+ =?utf-8?B?TlV5Ykc2ZEZJU1pRNDVHNXU5Z2JEclBkYTFRVkZ5QnVpai9vOXBWdlQzZmd1?=
+ =?utf-8?B?b2lpREx6Tzh0cUo5V0p3MGF1K0Rxb0RWT0VpWWhUSDlEbGxod1F0YUk2N0hL?=
+ =?utf-8?B?NGVSRGI2NXRkYUhyZDQ0MmNoTGhNeGhYWitkK0R5dGNHZ0V2S05uWjFCSDNs?=
+ =?utf-8?B?amZTb1FGOWRwUFF5a0c0QWw1TFNlWFRraEh5MTlwdGZVVkpSUHQyd3ZJNGNN?=
+ =?utf-8?B?MjRiV1NMcE1RQkt4bUNZWkhBdDZ3MFEvb0hrRlhhS09JQkwwcmJmcGVuQSsz?=
+ =?utf-8?B?WS9mQ24rNWdUbkhnbFEvaVMxUFZKa294emt0Zmdzb2dSMlErNkZYVHZYc1Zx?=
+ =?utf-8?B?d3NFUDVOaUVjR3AySXFsWDMvNUVCbTZwMm1EdGlNYTlHdEpHbi9XcmJpb1Qw?=
+ =?utf-8?B?dTRsL2w4ei9lbDR6VUFyeXplV2FSZ0k4cjlmZlRodkZJM0NCYi9EakNlaUhy?=
+ =?utf-8?B?TU1EMFlvc0czTzVDS09heVF6dUxTek5qQ3hWbHVrc0RVNUx3c1cyeHVKKzRK?=
+ =?utf-8?B?a3RSUkhTbzE4R25HUjh2b0x0SkdEZUNmS1hlQmpWVjd3NFZPdFFobitLVjlw?=
+ =?utf-8?B?Q1I2QklmaVNWNktNc1VvSzdGaFdpYzRNUFdubUhxdHpoS3c4M3FTSVdZUExE?=
+ =?utf-8?B?bWhxdGhXdENjTWVxR0NKSXY0YjR2OCs0cEtxbC9wTEcyZ1huZHZEWnljV3F6?=
+ =?utf-8?B?SlhSKzFxc1BwcGRwc3d6V1BEcEFUcm0zWUtBdzdNcEhJNjJLek1lK3RodSs1?=
+ =?utf-8?B?NXNyNkJ0ZExCRjZ0UHBucjZpbW9DK2N2N1dqeHR5cmpMdmhoRGRaOTV2SDFy?=
+ =?utf-8?B?ZXJJM0RSWVRNcVV0UEgyZDFOY1JGQ2pQQnphWGF2T0NBMWtvcnFobXhKekE0?=
+ =?utf-8?B?OURVZnR6bWIxM1l2V1pyaUYxbGJVZmNtaTBUUU1RYkp1bXVRY3JUVHdub1BG?=
+ =?utf-8?B?ZGJuWkdVbUFzNW9JcTNxeTVVZW1lbHRGd0l3dHRMUkVBWDRpMTRIQW54RlRl?=
+ =?utf-8?B?bUtGSzd1VCs0NDRJa0xJaExOajhHWmJoaVlsRVNnYjF0S1U1a3R5WnNsdTA1?=
+ =?utf-8?B?ZzlkU0Y0RVIyYnM5RUlOS0l1bFNSb1VCVXNTQ3pSUG5IOUJwSmhXd2EwL1hL?=
+ =?utf-8?B?T1o5OXFqVVN3NWU2bXdvaU1OOGlIdEJrZG5GOXFVMnNORnI5UEFsTWE3M1ZZ?=
+ =?utf-8?Q?aCZFnVg2r65/ZzmTwi2RqJK0p2Z7zN?=
+MIME-Version: 1.0
+
+------=_Part_208545_1241117303.1775059634861
+Content-Type: multipart/alternative;
+	boundary="----=_Part_208546_667155269.1775059634861"
+
+------=_Part_208546_667155269.1775059634861
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+Bonjour null,
+
+Voici le mot de passe =C3=A0 usage unique (OTP) pour acc=C3=A9der au partag=
+e :
+
+iBzxbIje
+Copiez et collez le code dans la fen=C3=AAtre d=E2=80=99acc=C3=A8s. Il est =
+valable 30 minutes, pass=C3=A9 ce d=C3=A9lai, il vous sera demand=C3=A9 de =
+recommencer l=E2=80=99op=C3=A9ration.
+
+
+
+------=_Part_208546_667155269.1775059634861
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"http://www.w3.org/1999/xht=
+ml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micros=
+oft-com:office:office" style=3D"height:100%;margin:0;padding:0;"><head><!--=
+[if gte mso 9]><xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml><![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+		<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+		<meta name=3D"format-detection" content=3D"telephone=3Dno,date=3Dno,addre=
+ss=3Dno,email=3Dno,url=3Dno">
+		<title>title</title>
+		<style type=3D"text/css">
+=09
+	body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-a=
+djust:100%; margin:0; padding:0;}
+	table td {border-collapse: collapse;}
+	img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+	a img {border:none;}
+	p {margin: 1em 0;}
+	.image_fix {display:block;}
+	#backgroundTable {margin:0; padding:0; width:100% !important; line-height:=
+ 100% !important;}
+=09
+	#outlook a {padding:0;}
+	.ExternalClass {width:100%;}
+	.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font=
+, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+</style>
+
+	=09
+
+		<style type=3D"text/css">
+			body,table tr,table td,a,span,table.MsoNormalTable {
+				font-family:Arial,sans-serif; font-size:14px;
+			}
+		</style>
+	</head>
+	<body style=3D"height:100%;margin:0;padding:0;font-size:14px;font-family:A=
+rial,sans-serif;">
+		<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" id=3D"backgroundT=
+able" bgcolor=3D"#F2F2F2" style=3D"background-color:#F2F2F2;margin:0;paddin=
+g:0;width:100%;height:100%;line-height:100%;"><tr><td valign=3D"top">
+	<!--[if mso]>
+	<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" w=
+idth=3D"580"><tr><td>
+	<![endif]-->
+	<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"text-alig=
+n:left;color:black;background-color:#F2F2F2;max-width:580px;width:100%;marg=
+in:auto;"><tr><td>
+		<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%">
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"width:100%; height: 60px; background-color: #FFF; margin-to=
+p:16px; border-collapse: collapse; border-radius: 6px; overflow: hidden; ve=
+rtical-align: top">
+				<tr style=3D"border-bottom: 1px solid #E5E5E5;">
+					<td>
+						<img src=3D"https://transfert.credit-agricole.fr/themes/ca-morbihan-p=
+ostfiles/banner.png" width=3D"580" height=3D"116.0" align=3D"bottom" border=
+=3D"0" style=3D"display: block;" alt=3D"Oodrive Share">
+					</td>
+				</tr>
+
+				<tr>
+					<td style=3D"padding-top:32px;">
+						<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" style=3D"width:100%; line-height: 1.4em; color: #333">
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%">
+	<tbody style=3D"color:#333; font-size: 14px; line-height: 1.4em;">
+		<tr>
+			<td class=3D"message" style=3D"padding-top: 0; padding-right: 24px; padd=
+ing-bottom: 0; padding-left: 24px; font-size: 16px; font-weight: bold; line=
+-height: 1em;" x-ms-format-detection=3D"none">
+			=09
+					Bonjour,
+			=09
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%">
+	<tbody style=3D"color: #333; font-size: 14px;">
+		<tr>
+			<td class=3D"message" style=3D"padding-top: 0; padding-right: 24px; padd=
+ing-bottom: 0; padding-left: 24px; line-height: 22px;">
+			 Voici le mot de passe =C3=A0 usage unique (OTP) pour acc=C3=A9der au pa=
+rtage :
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td height=3D"8">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%">
+				<tbody>
+					<tr>
+						<td style=3D"padding-top: 0; padding-right: 24px; padding-bottom 0; p=
+adding-left: 24px;">
+							<span style=3D"background-color: #f2f2f2; border-radius: 6px; height=
+: 26px; display: inline-block; padding-top: 4px; padding-bottom: 4px; paddi=
+ng-right: 8px; padding-left: 8px; line-height: 24px; color: #333; font-weig=
+ht: bold; letter-spacing: 0.5px; font-size: 18px;">
+								iBzxbIje
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height=3D"18">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%">
+				<tbody>
+					<tr>
+						<td style=3D"padding-top: 0; padding-right: 24px; padding-bottom 0; p=
+adding-left: 24px;">
+							<span style=3D"font-size: 14px; line-height: 20px;">
+									Copiez et collez le code dans la fen=C3=AAtre d=E2=80=99acc=C3=A8s=
+. Il est valable 30 minutes, pass=C3=A9 ce d=C3=A9lai, il vous sera demand=
+=C3=A9 de recommencer l=E2=80=99op=C3=A9ration.
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height=3D"32">&nbsp;</td>
+	</tr>
+</table>
+
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"margin-top: 16px; margin-bottom: 16px; margin-right: 0; mar=
+gin-left: 0; width: 100%;">
+				<tr>
+					<td align=3D"left" style=3D"color: #9A9A9A; text-align: left; font-siz=
+e: 12px; line-height: 16px; ">
+						Cet e-mail est une notification. Merci de ne pas y r=C3=A9pondre.
+					</td>
+					<td align=3D"right" style=3D"text-align: right; ">
+						<img src=3D"https://transfert.credit-agricole.fr/assets/emails/i5/ood=
+rive.png" width=3D"67" height=3D"21" alt=3D"Oodrive Share">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+	</td></tr></table>
+	<!--[if mso]>
+	</td></tr></table>
+	<![endif]-->
+</td></tr></table>
+
+	</body>
+</html>
+
+
+
+
+------=_Part_208546_667155269.1775059634861--
+
+------=_Part_208545_1241117303.1775059634861--

@@ -1,0 +1,215 @@
+Received: from VI0P250MB1371.EURP250.PROD.OUTLOOK.COM (2603:10a6:800:2cd::11)
+ by VI6PPF5FBC185B3.EURP250.PROD.OUTLOOK.COM with HTTPS; Tue, 28 Apr 2026
+ 05:55:06 +0000
+Received: from CWLP265CA0435.GBRP265.PROD.OUTLOOK.COM (2603:10a6:400:1d7::8)
+ by VI0P250MB1371.EURP250.PROD.OUTLOOK.COM (2603:10a6:800:2cd::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9846.26; Tue, 28 Apr
+ 2026 05:55:05 +0000
+Received: from DB5PEPF00014B8E.eurprd02.prod.outlook.com
+ (2603:10a6:400:1d7:cafe::a0) by CWLP265CA0435.outlook.office365.com
+ (2603:10a6:400:1d7::8) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9846.26 via Frontend Transport; Tue,
+ 28 Apr 2026 05:55:05 +0000
+Authentication-Results: spf=pass (sender IP is 213.41.95.26)
+ smtp.mailfrom=chronopost.fr; dkim=pass (signature was verified)
+ header.d=chronopost.fr;dmarc=pass action=none
+ header.from=chronopost.fr;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of chronopost.fr designates
+ 213.41.95.26 as permitted sender) receiver=protection.outlook.com;
+ client-ip=213.41.95.26; helo=proxysmtp2.chronopost.fr; pr=C
+Received: from proxysmtp2.chronopost.fr (213.41.95.26) by
+ DB5PEPF00014B8E.mail.protection.outlook.com (10.167.8.202) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9846.18
+ via Frontend Transport; Tue, 28 Apr 2026 05:55:04 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:323C60A033926C40807BBA66C476EEEA87B50E128404B39022F9ACBC727EE71D;UpperCasedChecksum:B47A3DC911C63C6235CFF6127FD06DDE5C8A13BF5A0CA1825664DB64F6BCFEB8;SizeAsReceived:1054;Count:11
+DKIM-Filter: OpenDKIM Filter v2.11.0 proxysmtp1.chronopost.fr 86B2B613B4D
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=chronopost.fr;
+	s=onprem; t=1777355704;
+	bh=ebJjbZ6mpFEGP39Lj0PJhi8D0fituUbLgdIjPD4HePI=;
+	h=Date:From:To:Subject:From;
+	b=WWdqrPeIpOn9O6t8QGEyjMBJq8cKpz+iTXP4HEpkr60eL8IYjukp4lfoStW3gMTIo
+	 nHtmB0COHBdYYWK0MHhyP7P6YL+J1qWnUCir46L+jwNxFFurXWgvHBiUThhriKTpYo
+	 GYRNI1WRUwrEnuYuOrWjrDSeKOhSiuru4/e/Vt5u9Cp3AgiYBwTOd4kg2qzR4dkZ5w
+	 N+5dta+Pa6eQyfxpBBbreQaIJcc3L2EjhRSS00a/2HwLVs+/Q/oq+bXR/qaUzce6yX
+	 czc2YBK9zYLIl+XIHiAUhbjI9kQWwIdxkkApNvKKtZIRtZBF9PC22c4zbM5BwYaLku
+	 ESEwSIAmcxZcg==
+Date: Tue, 28 Apr 2026 07:55:04 +0200 (CEST)
+From: Chronopost <avisage-ne-pas-repondre@chronopost.fr>
+To: jeromesimon56@hotmail.com
+Message-ID: <1909559582.119130.1777355704541.JavaMail.tibco@lyn1e126.tlt>
+Subject: Information sur votre colis XM008092524TS
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-CHRONOPOST-TAG: typeMail=AVISAGE,numeroColis=XM008092524TS
+X-IncomingHeaderCount: 11
+Return-Path: avisage-ne-pas-repondre@chronopost.fr
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Apr 2026 05:55:04.9035
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 4b5ff2da-5477-4b89-0a74-08dea4eab203
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB5PEPF00014B8E:EE_|VI0P250MB1371:EE_|VI6PPF5FBC185B3:EE_
+X-MS-Exchange-Organization-AuthSource: DB5PEPF00014B8E.eurprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 4/28/2026 5:28:44 AM
+X-MS-Office365-Filtering-Correlation-Id: 4b5ff2da-5477-4b89-0a74-08dea4eab203
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 213.41.95.26
+X-SID-PRA: AVISAGE-NE-PAS-REPONDRE@CHRONOPOST.FR
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;ARA:1444111002|10300799038|3151999006|9400799043|32080799006|68400799013|1680799066|5139299004|461199028|9000799056|1290799033|6089299003|1380799030|1370799030|1360799030|1602099012|4302099013|440099028|3412199025|4119299003|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Apr 2026 05:55:04.8305
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4b5ff2da-5477-4b89-0a74-08dea4eab203
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: DB5PEPF00014B8E.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI0P250MB1371
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3998089
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9846.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90010023)(91010020)(91040095)(9050020)(9100341)(944500132)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MEJCaEs1MWxEV25RSlFzWTcxSXNzbEFMOG9pa3F5bXh1cW1xOFViTlJlSnUy?=
+ =?utf-8?B?UEh3SEJQNGVNMnNQeE96dmJNZHVPVjcxbGo1Q25VbzN6R29qTnF4cW53Ynph?=
+ =?utf-8?B?Qm81NTNrYmU5TS83aHRMK29SQWdSUld6dVYrOXZYeksyV2xyUkhaNE5ZTE1m?=
+ =?utf-8?B?dENGenZmd09GVFQxNC9RR0s0OE4rTWRqTjluZENWVXJkYWFNN0pHSTkvKzM0?=
+ =?utf-8?B?cUwyUDZHNVFyUU1yb2NPbW5HdEhyelIxNm8wN3dsaUxMOEtBR1hvNGF6bzMv?=
+ =?utf-8?B?Mk1Fa3FFK1RaY2svMm5LZnQwV3cwYk11RmhFcXR5ZEY0K0dLMzZuSDQzMlJj?=
+ =?utf-8?B?UUFYcGJucjI4azhCaDV4WGNNVnRXNk5nT0N6RTdNRTFHajBGQ2pZWW1jZldj?=
+ =?utf-8?B?c3hBZklhbVRpRmNhZ1pmUDZ3YW82U0dPbDR6K0txV0lLT0RiWHl4R1ZlN1JR?=
+ =?utf-8?B?a1NjWDQ3WmN4UzhoWWY2dHVhdmRUdE9IUlF1dUFINnltSWVYMzRmN1ZPbkp6?=
+ =?utf-8?B?b3BLZENPdVl0SlQ5dG1rZzVwamJTYjNwUEhZdHBBbEpPSEZWM3J4VFUwNys4?=
+ =?utf-8?B?S1MvZ0diYnIzaUZVVmZ4RFBjWHBhK00vcldnU0JXT0Q2ZndUc0hNaEVmL01y?=
+ =?utf-8?B?REpXRk5vajhxY3ZVNm5xc1p6aTBhZWJ0RElwdUNYM3lLdzJIaXVGNk5YMmh6?=
+ =?utf-8?B?Y1Mxa3ZJMGdHMVlONjZlcFBiaWM0UFl6OEtYR3N6NUIvYzBic3ZPRkFzL0xz?=
+ =?utf-8?B?N00ranFCM0ZMTmVaT1BzNUUxTXBvSk9yRFVaNlU3UjFvZzhXTzAwTkFITE56?=
+ =?utf-8?B?T0xqL2U4MUw4MWJ0cjRyeWhLSDE5UlRYQzA5ZmlFMFRzY01uQmdHM3FOWEJG?=
+ =?utf-8?B?K0p5TUNRUkdTZXNMOENBKzY0VDJ6emtiTExNUmJPWUlpU2RvQXVwUlcyRUw0?=
+ =?utf-8?B?S1dIMmlodFlPdUx2WStyTEE4VzYyOWlVUzM2L0NobHZERkpCQTd6MDZxTXZQ?=
+ =?utf-8?B?UHJ0cVlRVzdCWW1KUG9VZHQ2NStjMTUrdjhSeGxoLzJYamZFZXN3SW9oQ3Ja?=
+ =?utf-8?B?SkZ2RlQ3ZmNDeUs0aW5NcG1YdkYxTkp5U2FEWVQyZXBFZ0JCR0RNQTVaZHhS?=
+ =?utf-8?B?Wm00MllxaEZuQXJkSmRPa2ZITzBHSGdwMVVISVoxakxmR2Z5T05MaUh5c1E0?=
+ =?utf-8?B?S25ZNm1xTm1WOW9xdmQxbGNZSi9XSlZBOE9uRFRnTE11U0gzVHlYUVAveXRO?=
+ =?utf-8?B?akpXeHFwZTZSdDBoOW54RE0zV3VIeGgwd0xGLzA3aE90VVp0bGpLMTdqVThT?=
+ =?utf-8?B?SEtxTmk1U01SenJrOXNYeDF5d0pGMTdHaFJxU0hOVzROa0loNWgxVGdiaVVo?=
+ =?utf-8?B?YVorSG0wQXRXTWVvejJpMG1LNVBkaFhIYzlXSjNIVjJkcm9RYmladzBPTFYr?=
+ =?utf-8?B?aC9HRHhNeDFLdjZJSVk4TFlWZW1GR05SSllqbFhYclNzZkdUbjFWNnR4K0FW?=
+ =?utf-8?B?L1hRZFlqS1huSUdhNFN6NU50Q2I4U2ZnVFBmemtuenJXTXd2WmpUbHJKMjZ3?=
+ =?utf-8?B?QUNjK1dqNHdpZWJ5N1dORnVXR252eEVmQmtXNUxDRlhRa1pJNVZIRFdtaFl1?=
+ =?utf-8?B?dXVsdGd6WHQzNFFCQlJxWjlvQTZmc3JJdHU5Y3lSZFh4VXVFNko4dExlbFR3?=
+ =?utf-8?B?dDJHQ0l4RmprZS8xK3oxeUtzTnNzNit3WFUxaEQ3MDlxSG92d3ZwTS96aWxJ?=
+ =?utf-8?B?T09iVWxZYnQrZXV6bVBzRGZFV2FJbCttTDc2Yno0Skd2VW5sZkFLaUl0T21G?=
+ =?utf-8?B?WDY3R3FFVFI5NjY5b3MrS1RoblBUQ3hFaklHaGlTb2EyZWpQdWFGTkZacmd0?=
+ =?utf-8?B?dXFxQW1TRmtLWVpLZXdtQzVqUUJSUjlNZ1BJbHQyVm5nclNPMit4djVpTnBU?=
+ =?utf-8?B?ekhUUjlLc2tBTmtOd2pMSE04TGlUZmdOeDF6cjIyTHhtWHpsWEwwSXp6R0dL?=
+ =?utf-8?B?SzI4L2g1SjJIcmJZOEFTa0pQUEloM3g2citkUTYzNUlHS1ErWkF1U2JVL2lq?=
+ =?utf-8?B?QjRqTHZobzNvYWE5KzBsMkZnaFg5ZEFQMnIwMW02T0xoVmlPZS9BUnVuYTZy?=
+ =?utf-8?B?aXM5NTMxdkZSSHBodDN1bDhNSm11d0Z0M2RVVVdPbitVYTlOcE43aFZWUzlO?=
+ =?utf-8?B?TDhaZXlla2ozWEZWN0ZNMTU4MmtOY1Vqejd6UUc4dTZzOVRiM1VtQ0xaZE5D?=
+ =?utf-8?B?NTZkM2wxYmVaTHJDSzgxMFF3MTVkT3hIZVZyajZZaWtwM2I0VkhIeENLOSt2?=
+ =?utf-8?B?WlFHRmp3Z3dNdnd3OGplTWhKSkQycFk4azZqMVo5aXhzWlNsUGlQd3pOMmpF?=
+ =?utf-8?B?clV2MEpWbVpNNHF5Y3BvVythU1hENnB1R2xjME9TOUhBZ1ZDV0ZCalk5dFB3?=
+ =?utf-8?B?NHp4L1lSeHkyVXRaZWFidW92ZVlXcVBQZEk5dStVVzJmRlNnbG5VZysvY0RQ?=
+ =?utf-8?B?WXdCd21wRkZIU0FPNndNa1p5UGJPbzI2S2FpVTlCdEdrM2xJOFRxeW9yQnBm?=
+ =?utf-8?B?TklMUFJMc3g2L1JUelM1OFBFMmFKUVUxYkpDQmZkU2xERmtlOC9UZitjZmll?=
+ =?utf-8?B?ZmRQeWJDVVN4UE8rdGovT2JzcURiemt0UkQ1TDRhOGVqTmo1ZzlSamkwK3hT?=
+ =?utf-8?Q?x/F/?=
+MIME-Version: 1.0
+
+<html xmlns:soapenv=3D"http://schemas.xmlsoap.org/soap/envelope/" xmlns:fo=
+=3D"http://www.w3.org/1999/XSL/Format" xmlns:msxsl=3D"urn:schemas-microsoft=
+-com:xslt"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta content=3D"width=3Ddevice-width, initial-scale=3D1" name=3D"viewport"><=
+style>
+		@media screen and (max-width: 600px) {
+			img.logo {
+				display: none;
+			}
+		}
+			.column {
+			  width: 48%;
+			  padding: 5px;
+			}
+			.left{
+				float:left;
+				}
+			.right{
+			float:right;
+			}
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			.text-block {
+			clear: both;
+			}
+		.main-div {
+		max-width:600px;
+		margin: auto;
+		}a:hover=20
+				{
+				background-color: #E1F3FB;
+				}
+			=09
+		</style></head><body><div class=3D"main-div" style=3D"font-size:14px; fon=
+t-family :Arial ; color :#434343 ;"><div><table border=3D"0" cellspacing=3D=
+"0" width=3D"100%" cellpadding=3D"0"><tr><td align=3D"left"><img src=3D"htt=
+ps://www.chronopost.fr/transport-express/jsp/jahia/templates/chronov4/webpr=
+o_templates/images/avisage/2clk_Chronopost_HEADER.png" alt=3D"Le logo Chron=
+opost"></td><td align=3D"right"><img width=3D"50%" src=3D"http://www.chrono=
+post.fr/transport-express/jsp/jahia/templates/chronov4/webpro_templates/ima=
+ges/MAS/client_adevinta-france.png" alt=3D"=0A=
+								   Le logo de votre exp=C3=A9diteur=0A=
+								"></td></tr></table><br><img class=3D"logo" src=3D"https://www.chro=
+nopost.fr/transport-express/jsp/jahia/templates/chronov4/webpro_templates/i=
+mages/avisage/2clk_banniere_mas_autre.png" alt=3D"Statut de votre colis" wi=
+dth=3D"600px"><img height=3D"1" src=3D"https://www.chronopost.fr/tagmail/ta=
+g.gif?CODE_APPLICATION=3DEAI&amp;NUMERO_COLIS=3DXM008092524TS&amp;ID=3D3565=
+275007&amp;DATE_ENVOI=3D202604280755&amp;INFORMATION=3DMAS_DESTI_PROACTIF,M=
+AIL" alt=3D"" width=3D"1"><div class=3D"text-block"></div><p>Bonjour,</p><p=
+>La livraison de votre colis Leboncoin <strong>XM008092524TS</strong> deman=
+de un peu plus de temps que pr=C3=A9vu.<br>
+				Rassurez-vous, il sera disponible dans les prochains jours dans votre R=
+elais Pickup.<br>
+				Vous serez averti par email d=C3=A8s son arriv=C3=A9e.
+				</p><br><br>Retrouvez le suivi de colis en <a href=3D"https://www.chron=
+oshop2shop.fr/tracking/#/numlt/XM008092524TS"><u>cliquant ici.</u></a><br><=
+br><p>Une question ? <br>
+									Consulter <a href=3D"https://www.chronopost.fr/fr/aide/faq"><u>not=
+re aide</u></a> en ligne=09
+								<br><br>
+							A bient=C3=B4t.<br></p><table border=3D"0" cellspacing=3D"0" width=
+=3D"100%" cellpadding=3D"0"><tr><td align=3D"left"><img src=3D"https://www.=
+chronopost.fr/transport-express/jsp/jahia/templates/chronov4/webpro_templat=
+es/images/avisage/2clk_Dpd_FOOTER.png" alt=3D"Le logo DPD"></td><td align=
+=3D"right"><img src=3D"https://www.chronopost.fr/transport-express/jsp/jahi=
+a/templates/chronov4/webpro_templates/images/avisage/2clk_Chronopost_FOOTER=
+.png" alt=3D"Le logo Chronopost"></td></tr></table><br><p style=3D"font-siz=
+e:9px; font-family :Arial; text-align: center;">
+					Cet e-mail est envoy=C3=A9 de fa=C3=A7on automatique. Il n'est donc pa=
+s possible d'y r=C3=A9pondre en retour.<br></p><p style=3D"font-size:9px; f=
+ont-family :Arial ; color :grey; text-align: center;">
+						=C2=A9 Chronopost 2020. Tous droits r=C3=A9serv=C3=A9s.<br>
+						Chronopost SAS capital de 32 632 000 =E2=82=AC, 3 Boulevard Romain Ro=
+lland 75014 Paris -- RCS Paris 383 960 135<br><br>
+						CHRONOPOST traite vos donn=C3=A9es, transmises par votre exp=C3=A9dit=
+eur, pour vous informer sur la livraison de votre colis. <br>
+						En savoir plus sur la <a href=3D"https://www.chronopost.fr/fr/politiq=
+ue-informatique-et-libertes">gestion de vos donn=C3=A9es</a> et <a href=3D"=
+https://www.chronopost.fr/fr/exercice-des-droits-sur-les-donnees-personnell=
+es">vos droits</a>.<br><br>
+						Toute demande relative =C3=A0 l'ex=C3=A9cution de la prestation de tr=
+ansport doit =C3=AAtre adress=C3=A9e au Service Client. <br></p></div></bod=
+y></html>

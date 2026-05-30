@@ -1,0 +1,181 @@
+Received: from AS8P250MB0840.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:549::12)
+ by VI6PPF5FBC185B3.EURP250.PROD.OUTLOOK.COM with HTTPS; Wed, 29 Apr 2026
+ 08:04:24 +0000
+Received: from AM9P250CA0019.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:21c::24)
+ by AS8P250MB0840.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:549::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9870.20; Wed, 29 Apr
+ 2026 08:04:24 +0000
+Received: from AS8P195MB2212.EURP195.PROD.OUTLOOK.COM
+ (2603:10a6:20b:21c:cafe::81) by AM9P250CA0019.outlook.office365.com
+ (2603:10a6:20b:21c::24) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9846.29 via Frontend
+ Transport; Wed, 29 Apr 2026 08:04:24 +0000
+Received: from DUZPR01CA0117.eurprd01.prod.exchangelabs.com
+ (2603:10a6:10:4bc::23) by AS8P195MB2212.EURP195.PROD.OUTLOOK.COM
+ (2603:10a6:20b:5bc::18) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9870.20; Wed, 29 Apr
+ 2026 08:04:23 +0000
+Received: from DB1PEPF000509FD.eurprd03.prod.outlook.com
+ (2603:10a6:10:4bc:cafe::ef) by DUZPR01CA0117.outlook.office365.com
+ (2603:10a6:10:4bc::23) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9846.29 via Frontend Transport; Wed,
+ 29 Apr 2026 08:04:23 +0000
+Authentication-Results: spf=pass (sender IP is 195.83.95.170)
+ smtp.mailfrom=ac-versailles.fr; dkim=pass (signature was verified)
+ header.d=ac-versailles.fr;dmarc=pass action=none
+ header.from=ac-versailles.fr;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of ac-versailles.fr
+ designates 195.83.95.170 as permitted sender)
+ receiver=protection.outlook.com; client-ip=195.83.95.170;
+ helo=smtpout4.ac-versailles.fr; pr=C
+Received: from smtpout4.ac-versailles.fr (195.83.95.170) by
+ DB1PEPF000509FD.mail.protection.outlook.com (10.167.242.39) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9791.48
+ via Frontend Transport; Wed, 29 Apr 2026 08:04:22 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:117D828ECC0589CCEF6F01B7FCB957FFA6CA2ADE448EDF4ED355ECDE730F31CA;UpperCasedChecksum:00B96D01B7B4E3D405F2A47323D699C75854AD4442AA1175416E98E584354C59;SizeAsReceived:2441;Count:20
+Received: from localhost (localhost [127.0.0.1])
+	by smtpout4.ac-versailles.fr (Postfix) with ESMTP id 653DA5A0277;
+	Wed, 29 Apr 2026 10:04:22 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed; d=ac-versailles.fr; h=from
+	:message-id:date:mime-version:subject:content-type
+	:content-transfer-encoding:to; s=s2026-smtpout; bh=Ib43kQZfIUShH
+	3nWxWJ6m3pY2CryxlI1C0xpytkEslU=; b=kSLDwIpk0d4rsprazkS81ya5DJvGg
+	V58MsFQ7pfWbJcp4ksQjWXwjFkedN6OQZ1PnkozWzYfLPORlh7LIQTRasxqgaBwP
+	og3BKH2dmIFjrJtm93N+sHMeUa0qaetBZLBJvt1+dxb37cz1rY6kjzwxtCCYWXjd
+	qO1uU2k1h04ktZw1D+91FzJmvGsj4Q7T0HkAU6O9B8XE9kEUPxMWtYGLsZjDu0tg
+	JydDyqZCcRd5hZqH8+44lR15ig1/KVP6H9hGcd3Xm2cPpyhW69hhvdU3Z7oxADTV
+	BV6vPOmpH3vDXU9FNyRMyKp1sh8Kmb6UUW8WYzyqktDC6aTazXCJyRS1A==
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=ac-versailles.fr; h=from
+	:message-id:date:mime-version:subject:content-type
+	:content-transfer-encoding:to; q=dns; s=s2026-smtpout; b=jDq8H9I
+	Vv0FOMP0J6LXnHBcPqLg7d/xBUH1CF7Gsnksn0bgHLehJXuSX/1cHAKTG7h5Ixl3
+	vf9jfI1vG3hcV/D4n5bw/q7VeoYx8WuqLLtoCPFululMEowF6mPSVOrz2Hr3OMBF
+	AxSXjMPDfYfDUfqPYFTvqcDKzXvGHfJStvnwWzBYS53cXMZImWFln2xFGzJM2hap
+	RZnFlVJxFB5CWJpxwW1d4JgqI4c7Dx98c1FKUx11mMqGgAjtR/aXDRtZYTm1eRyE
+	kZCj2bTDM//04NczhHmjP3/l9zJxg3A87NpuuiGn6A6od7dbXCd6tVCiKOrcjjJ4
+	+hV+1ez/HEL7aiw==
+X-Virus-Scanned: Debian amavisd-new at smtpout4.in.ac-versailles.fr
+Received: from smtpout4.ac-versailles.fr ([127.0.0.1])
+	by localhost (smtpout4.in.ac-versailles.fr [127.0.0.1]) (amavisd-new, port 10025)
+	with ESMTP id gU-ZVTZypQ3m; Wed, 29 Apr 2026 10:04:22 +0200 (CEST)
+Received: from mailproxyd.in.ac-versailles.fr (mailproxyd.in.ac-versailles.fr [172.29.17.228])
+	by smtpout4.ac-versailles.fr (Postfix) with ESMTP id CC3615A0063;
+	Wed, 29 Apr 2026 10:04:21 +0200 (CEST)
+Received: from [172.29.17.228] (Forwarded-For: 83.204.172.101) by
+ mailproxyd.in.ac-versailles.fr (mshttpd); Wed, 29 Apr 2026 10:04:21
+ +0200
+From: "92E E.M.PU ROBESPIERRE - RUEIL-MALMAISON"
+ <0920791k@ac-versailles.fr>
+Message-ID: <37a91266369e14d3.69f1d7a5@ac-versailles.fr>
+Date: Wed, 29 Apr 2026 10:04:21 +0200
+X-Mailer: Oracle Communications Messenger Express
+Content-Language: fr
+Subject: =?utf-8?Q?Sortie_=C3=A0_la_ferme_le_4_MAI_-_PS13?=
+X-Accept-Language: fr
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+To: undisclosed-recipients:;
+X-IncomingHeaderCount: 20
+Return-Path: 0920791k@ac-versailles.fr
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Apr 2026 08:04:22.9670
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: d27f902f-d4fc-4d5a-5804-08dea5c5ec97
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB1PEPF000509FD:EE_|AS8P195MB2212:EE_|AS8P250MB0840:EE_|VI6PPF5FBC185B3:EE_
+X-MS-Office365-Filtering-Correlation-Id: d27f902f-d4fc-4d5a-5804-08dea5c5ec97
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 195.83.95.170
+X-SID-PRA: 0920791K@AC-VERSAILLES.FR
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:1444111002|3069299007|5149299006|29090799004|461199028|1380799030|1360799030|1370799030|3412199025|440099028|5090599003|26104999006;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Apr 2026 08:04:22.7983
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d27f902f-d4fc-4d5a-5804-08dea5c5ec97
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: DB1PEPF000509FD.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS8P195MB2212
+X-MS-Exchange-Organization-AuthSource: DB1PEPF000509FD.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 4/29/2026 7:35:23 AM
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.0455875
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9846.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90012020)(91020020)(91040095)(9050020)(9100341)(944500132)(2008001181)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?SkxhN0xnYmtyUFNXMVJLVXRJL0laRHNiSFpPZ2Q2aVM4ZlR2TjF4UEM4dkcx?=
+ =?utf-8?B?WkVyNEJGYzJXcFlaaXNxQ1lsOUV1dDBwV0FBRHd4OW9qMjNPRTZPdVF3SURt?=
+ =?utf-8?B?NndySkhvQVNyaklydnNHeG40YWhQVk5WcTFIVERJZnowRlFPRXVwRDhkVW1a?=
+ =?utf-8?B?Z3VNNGRCVlAreXIwaW1NZFpKVFR4eHNRRzR0VmpUc0ZRZzZHamNPMjNqcXRV?=
+ =?utf-8?B?dnpiWTJacHFhOEdVVGp0aVV4Z2Z5Z2FxZjlwUzNIQ0FZc1IwYm9QTDQxMHVj?=
+ =?utf-8?B?Z3REdWlyL0FnYndDdUE1K1k5NFVqeDk3UC9NUk5DRFo2SjFLRFhXVGFMWWQ3?=
+ =?utf-8?B?Ym0zdjJFRk8wdjR3b2JZMTJXVktRcjlNb3ZIWGZTYTdLNnhQa2xxNTVXQ2Rq?=
+ =?utf-8?B?d1VzQ1doNVlzOWpTRlhrRlBEc0VnRmJtQjhDK29tZEttSitVbDAvNFIyK2kz?=
+ =?utf-8?B?WnR3K0JiY0cvd2E3aHh0eVkyeDRhVWZWVEZYR2VMZFhFVm9mNDg1elFuMUxZ?=
+ =?utf-8?B?V2picmFTM0xMeGFWbEtFUDEwYjN3ZGhHaGNyWVFhU2hJMEdiMk5xR0hOSGV3?=
+ =?utf-8?B?Rkt3WTdvZCtuNXQrdVRYRlZIdEFEZDdMci9ZdXRZeTY3anhjaWtBZFhTMEMy?=
+ =?utf-8?B?SlBFQWVpWDdtS2JxMTd4d1JXR2xRc1Vkak9sV1Zvd3dWeHZZelN5OVlVYVRO?=
+ =?utf-8?B?NElER0NLVDNMaGJncUd3Z0NMYURVUEVQN2RkVHVUNmo4NjdKcU90T3BNR2lJ?=
+ =?utf-8?B?WjFwMnBFcFJYRGNDdzNtc0xML1NHQzY1bEdKVlRKcy92U1NGdHljOW9BS1RF?=
+ =?utf-8?B?YjZ2YkxxZTVoWjJXemtOMWxJcFdVVDdvbjlXNysvSTFBZGdnZmpXWGc0WFdm?=
+ =?utf-8?B?R3MrbmF3NDZva1BHME94NFJpSTFhQWVkVmUrM2djMVlmb2toMFJ3TFpoYSt0?=
+ =?utf-8?B?RGJyV0oyTVNqcEF4Y0FqNjluY0J3Mjgxd0J3NjZ0b3ZPV2w1NmNBb3c2MnNv?=
+ =?utf-8?B?SkJQV1dtdFZjQm9aY21tY3pJaUkxM0RpQkduL1ozeDhMOUNXMzhnNm5LTjFL?=
+ =?utf-8?B?akxoS0d0SXBQZGhmbkpPdmZIUnpqS1MxK0JQYzhWVEtPRS92bDkzNjBvbWh2?=
+ =?utf-8?B?TkVMMlZqTkZqeGNzdTk4STNCbmdraDZrVzNXNkFzV1A3R2RncGhpTTRCdW8x?=
+ =?utf-8?B?YzQ1SEVFNHRtY1QxWDhQUml1TlNqcmkzdU5nVCtoVC8zMWxGUlVsdXJ2bGtr?=
+ =?utf-8?B?eDgvUHBjR1BTVzZYQytQM0hVbEFWK1JtTlZ6MzhuV0hvODZhQnhoWTJFbHRN?=
+ =?utf-8?B?MEdLeVdROVJxUFZFNGVmWlYwNjJPMUIzQ2VaVTJTTzdhNVdacnBOenhraXdt?=
+ =?utf-8?B?NTNqd3ZWVGlnTWh2VXVCR2lrSitpdnNGMXRRcnpvUUNJMi9rSkkvM1V5Mk9p?=
+ =?utf-8?B?cWk4TnozbUJGb0VmVmdnOGkxc0pwSytsSm1jeWl3MHRNYlVzTjJtdUxNRkpV?=
+ =?utf-8?B?TFdmeS9xcHVtWFh4TFRsSU1QRkY1MHZUVTROaHVGbVUwZi9FWHZ6dU9UOWNQ?=
+ =?utf-8?B?UEx3UTJZVnFqVHU3TjNpMVBXckQyVFZGY1JsbllXSVFiN1Fnd1UyTWNmbzFu?=
+ =?utf-8?B?QmYwV1ZRRzdJTmgvV3FudkdndmplQTI0Wm5tSTByNGdlSWZCTmovZzdJdVdp?=
+ =?utf-8?B?anAxYS9oUGhxczdBbWVLZU4weE56WWRGSVBFdnhkczFpazlSR2FMOThUTnd1?=
+ =?utf-8?B?enNERUxGc1V6L3RHWm5wTld4bWxEUzBaSHRIbXluZ0RxRkJWZGIvazJJM3dk?=
+ =?utf-8?B?WllCcjBIdXR1ZFRRZVd1MVBOSFl3MVZwd1YxV2VNRlIyT3kyaDJHMUNuUm9Z?=
+ =?utf-8?B?c0FxSkE2SnIwMzdUWDRObzBhdUZlVEhDOGtZa211S0YwUEpkT1RKNTNMNDky?=
+ =?utf-8?B?QTFEVkZ1QmJmY3UxQkpUaXZsSWpCZTQ5MU1OZGlyRjYrZ1Q3ZGhBU2VYTXBP?=
+ =?utf-8?B?RjZKYStFOVdHVlZoN0tUZG5ZYUxUb3NIbzBGbzQwc01SUW5SUWdYY2E4Z0Zx?=
+ =?utf-8?B?Y0dDZG1PNzJPRU9DeEU4RG5QOCtUeUJSZUdkQnQwNFJ5S2w1UG5aekxHNWIz?=
+ =?utf-8?B?OXVNclNVaEZxS2JXZXdjQkhuS0ErUzByRzVnQVY0WGFwTjJ6TEo0WXV6OFQ0?=
+ =?utf-8?B?SjZxV3Y2LzJiR3krWW5BUjA5aWh1L1NUNzRxUXJtbTltRENFYllpWCs5RHVK?=
+ =?utf-8?B?K01zekhpdmxvbC9jZTZTcVJFTS9NdWdyTWZKSm5RMFdVdGpDdW9NL0kyS1hQ?=
+ =?utf-8?B?ZG1NdEZHemRoTWxnMHMxaHZTTkNQZ0FDMlVJRkRkbGlLM2lDcEpkdz09?=
+MIME-Version: 1.0
+
+Chers parents,
+
+Mme Soustiel vous a inform=C3=A9s=C2=A0avant les vacances,=C2=A0par le biai=
+s de la pochette de correspondance, que vos enfants seront en sortie le LUN=
+DI 4 MAI durant la matin=C3=A9e.
+En effet, la classe se rendra =C3=A0 la ferme lundi matin prochain ; le d=
+=C3=A9placement se fera en car.
+
+Je vous remercie de veiller =C3=A0 ce que ce jour-l=C3=A0, votre enfant por=
+te une tenue adapt=C3=A9e =C3=A0 la m=C3=A9t=C3=A9o =C3=A9ventuelle et la m=
+arche en ext=C3=A9rieur.
+
+Cordialement,
+
+--=20
+Charlotte de Sal=C3=A9on - Bouton
+Directrice
+Ecole Maternelle Robespierre
+9, rue Gustave Flaubert
+92500 Rueil-Malmaison
+
+=E2=9C=89 0920791k@ac-versailles.fr
+=E2=9C=86 01 47 08 46 68

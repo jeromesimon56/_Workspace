@@ -1,0 +1,148 @@
+Received: from AS2P250MB1014.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:596::12)
+ by PAVP250MB0931.EURP250.PROD.OUTLOOK.COM with HTTPS; Tue, 31 Mar 2026
+ 16:25:49 +0000
+Received: from BN0PR10CA0030.namprd10.prod.outlook.com (2603:10b6:408:143::9)
+ by AS2P250MB1014.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:596::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9769.15; Tue, 31 Mar
+ 2026 16:25:48 +0000
+Received: from BL02EPF00029927.namprd02.prod.outlook.com
+ (2603:10b6:408:143:cafe::4e) by BN0PR10CA0030.outlook.office365.com
+ (2603:10b6:408:143::9) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9745.29 via Frontend Transport; Tue,
+ 31 Mar 2026 16:25:19 +0000
+Authentication-Results: spf=pass (sender IP is 145.242.11.195)
+ smtp.helo=mail.dgfip.finances.gouv.fr; dkim=pass (signature was verified)
+ header.d=dgfip.finances.gouv.fr;dmarc=pass action=none
+ header.from=dgfip.finances.gouv.fr;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ mail.dgfip.finances.gouv.fr designates 145.242.11.195 as permitted sender)
+ receiver=protection.outlook.com; client-ip=145.242.11.195;
+ helo=mail.dgfip.finances.gouv.fr; pr=C
+Received: from mail.dgfip.finances.gouv.fr (145.242.11.195) by
+ BL02EPF00029927.mail.protection.outlook.com (10.167.249.52) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9745.21
+ via Frontend Transport; Tue, 31 Mar 2026 16:25:46 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:0116BED10C598760FD630D509EB444FE0DB8CC823FF7F8AA0C4750CC3AE8938F;UpperCasedChecksum:AA1816F69A75ECDD163713CCD02AB15A4823B1DACB19706AB960C98F8255D0FF;SizeAsReceived:1172;Count:15
+DKIM-Filter: OpenDKIM Filter v2.11.0 pf3pgsi002-a.pfz3 4flYQ14hRHzMygpZ
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+	d=dgfip.finances.gouv.fr; s=pf3; t=1774974345;
+	bh=LSadhvcxgiihwTyVltkFd4Rq7uben5jmTu9ertbaInY=;
+	h=Date:From:To:Subject:In-Reply-To:From;
+	b=aC5p9AzkzNCv0QWePYu7PhYUViCUPIMrsbRx3jRBJa/RMPIvS2Y2V+ef+Kvn5Zd+Y
+	 DbzMkZIRM/n5cO9enm/e6Z6Y/qUkM+u5MgoggQTVfc0uNi4W8nsBKtlKWYrVKyAGjo
+	 sVPVywrQG5QOpCfKnmQtB3PLsE7zHTHSr2Yo9SZVsmeNwOczEriQbuNNVQThjrVcgt
+	 VCFd0mF4YOjLm+0mCWyqi/agzQh0cI2WppIaaJIeiGWbfy31XZPggWzWVbZZ9Ac2D8
+	 rb7orHiZcVdl6TCiU2rP9VEmz65kqnOWcrVXheSO2d+XXgzjjWhEpbxZvCXeCAJuQL
+	 o0e71VOEBI8yg==
+Message-ID: <cmu-sieve-86561-1774974345-108@noeud1>
+Date: Tue, 31 Mar 2026 18:25:45 +0200
+X-Sieve: CMU Sieve 2.4
+From: <spf.vannes1.enregistrement@dgfip.finances.gouv.fr>
+To: <jeromesimon56@hotmail.com>
+Subject: Auto: Re: assurance vie
+In-Reply-To: <PAVP250MB09313240CDAB7AC400D6766EA053A@PAVP250MB0931.EURP250.PROD.OUTLOOK.COM>
+Auto-Submitted: auto-replied (vacation)
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+X-FEAS-Client-IP: 10.154.71.2
+X-FE-Policy-ID: 7:3:2:SYSTEM
+X-IncomingHeaderCount: 15
+Return-Path: <>
+X-MS-Exchange-Organization-ExpirationStartTime: 31 Mar 2026 16:25:47.3179
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 0585fa5f-d0f0-4f15-3d51-08de8f422a48
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BL02EPF00029927:EE_|AS2P250MB1014:EE_|PAVP250MB0931:EE_
+X-MS-Exchange-Organization-AuthSource: BL02EPF00029927.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 3/31/2026 4:25:11 PM
+X-MS-Office365-Filtering-Correlation-Id: 0585fa5f-d0f0-4f15-3d51-08de8f422a48
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 145.242.11.195
+X-SID-PRA: SPF.VANNES1.ENREGISTREMENT@DGFIP.FINANCES.GOUV.FR
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:1444111002|45200799018|69000799018|3069299007|461199028|27400799015|25000799016|26400799015|1290799033|22300799015|5149299006|23070799003|35120799006|9800799015|36140799009|1370799030|1380799030|1360799030|3412199025|440099028;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 31 Mar 2026 16:25:46.9984
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 0585fa5f-d0f0-4f15-3d51-08de8f422a48
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: BL02EPF00029927.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS2P250MB1014
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.9251822
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9745.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;OFR:SpamFilterPass;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90013020)(91025020)(91040095)(9050020)(9065024)(9100341)(1010050)(944500132)(2008001181)(4810010)(4910033)(9920006)(9510006)(10105021)(9320005)(9230038)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?cE50MWFrQThOMlBmcndHMTVHZFBobzF5L25pUmVrUHhCU2o2cXdiL3hQRjZk?=
+ =?utf-8?B?bWhYeFN3K3AwUW9Nbzg0SGt1aDUrdDdCMFNqdzAyZmRTMWhXUjZxS0pVd3VO?=
+ =?utf-8?B?UFpzbmRSZDgwbkpUcS92ZS9EdDQ0QlIxczlCY2FDWFg5aG9ZUys1SE9FdW1Z?=
+ =?utf-8?B?S3dBY1ArQVROTDdpWUNjWngvZXZ2YmdBNWVZZy9xVC9pais2N0Z3RUZEK2dO?=
+ =?utf-8?B?YUtqRjRhOTVzVHhjK3gzOThwZFA0NWdvL2RhRy8xS3FjRE8xQVJYY002RUla?=
+ =?utf-8?B?S1VuZTNEZE1JK05VcGdKb3ZjZ2pLd2ZDc3JYOGE4UzI0a3hPemxSY2hJdSt6?=
+ =?utf-8?B?QXFrdW9ranNTWERLdWZKTDMvTGJqRXFtRmNEQVBmZTBQM3hBZEg0Zm5hb1JW?=
+ =?utf-8?B?bkhMbGdoaFZHUzJUSnJHR1I5ZWRkWW1mdVpwZDhTNVc5Zkw2aUlURG5ObzBB?=
+ =?utf-8?B?SXc3aTNudVJsOHROaDMyQ2lVUkIxQndyR3FrcnY2ZkZKL1RXZ1E2bEN4REtG?=
+ =?utf-8?B?YWJCaU11UFM1a2MvRWw0ek9CYlZCOHEvQTgwQjUyZnZmWTFzcnBZQlFkd2k0?=
+ =?utf-8?B?WDYrQ2hGR0J2ekFDdFcrMXAxTUVlZmJSNjQrdkQzaGxGd2ZpK2NtSWNoZU1M?=
+ =?utf-8?B?dDJzemZmUDVyUVRkd0l3L2NIZ29PaTRLUHZ3bXBseTV3Z3BmTjUwTS9Uem1T?=
+ =?utf-8?B?U2lFOTR3UGk5NEtTTFg2WThPa1gxQlVQSGtNRU5yV3l3ajBGN3ZaTGliS3Mw?=
+ =?utf-8?B?RTQ2YXl0blF3ZklTbU8wc3Y4THZBYXBJeXJHbUdDc2xycHRRTzlTTjBidTZk?=
+ =?utf-8?B?VFZXVEZzL3I1RGZHdzVQU1RSLzBmSllLcStvVDlrOFNHREZOVzhBaWxLQzFT?=
+ =?utf-8?B?V0NONVVzNG1Zc0JmT2ZHWks1aDVQbkMwUE85NE1Ka21KZ1NhdlRLNmVwdURp?=
+ =?utf-8?B?RVJYVTFZdTNqUnRhQ0oveWFWb2RhaURVS2kxeU1MWm9icGxZQjM2MDIxMW9l?=
+ =?utf-8?B?S0RjRUszTk9QMkhjbUJjKzBWMnhPLyt2eDF4cGRkSnYzMVA4TmJBdC9kYlpa?=
+ =?utf-8?B?NUROU1BpQnc0cUEzeTlTeFRtbGFEZDZpeXNSWVdjT1o0c2pFaDhVRjd6aEtj?=
+ =?utf-8?B?V1Y4VUFVZlRkWllHZmJVdFpjNms5M1lxNEtuV1g5Q3ZvZjA0VHdSWmx2Sjla?=
+ =?utf-8?B?Q3drK0t0eThpYytyOGRObU1UZGovMkhXN3NIeWRnME52YVZXOXJFYWxhUUJu?=
+ =?utf-8?B?cW5LY0hib05ML0Zlbkp4OENxN1BlNFpoK3F4azZmcWJhTkxmT3l1ZlFYK0c3?=
+ =?utf-8?B?dEp0QU14b0VnOFJzbGRCMUJ6NndhZUkvblIzT1dzekFJK2pKQ2EyWHdDc0pR?=
+ =?utf-8?B?amp3L2xhVEpibmxYOW4zc09oeHdvRnNDZGhONmVJL1JIM3hkQWNXNkd0UnFh?=
+ =?utf-8?B?Q2lIbkdMNHU1OTdaV0RKbXo2V0srU0pWVHdqektyeXVibzRtNS9xMCtYVFRN?=
+ =?utf-8?B?elkyUGI0WjZ3eWpaZ0poNEtaUHF1VUVHcXV3Y0hmR2I0UU9QSlNRQ09oS2xC?=
+ =?utf-8?B?RFZKTmFPRVpUb2Q3RXNqeDJvY0ZVZ2RYYW45T1l4U04xejRZbkVZU2ZWNzl4?=
+ =?utf-8?B?d2dYVzVTWXJxV0FNZ2ROY3JsYXY1SU1yb2dEUG1YQkdiRDArem1LWFlMbWsv?=
+ =?utf-8?B?VUcrdG9wVmxaRGFyQVlTbXJaNExIVFNLYU9JSjV2VWlBUmpOL2ZtcFFBR0FX?=
+ =?utf-8?B?ZFNwS3V5ZDFEa0FINzZHaFcyRHdiR0VjWFVZeWtTKzEvSkdJM2oxeGVjZXJp?=
+ =?utf-8?B?dG9SN0NSOGZWOURoN2V6U3pWQll3c0RtVSsrbGdKZmV0MExSaWlWc203VDhl?=
+ =?utf-8?B?YitHNTZBa0ZYRmovc1pFWGxrK0U0Q1h0cmdLUTBxeGQxeXQxNVl6UjhWdTUz?=
+ =?utf-8?B?TFZ3VkxzNW1aYktjWHBjUDdpQmZlOGhNODIvVDFzMFd4d3V0OUpZNEJ2T3Ew?=
+ =?utf-8?B?d2YxdUlsWEhmNXZkMk4yTWZRTGpoOWpqNkZnZDh2di9KKzNjQi9KTFpFVDdt?=
+ =?utf-8?B?WWxHTGlWYzZJeWw3bFRpazFDS3VYRG9Eb2I3ZVN6ejdrNHl4ODFrdU8rLzlG?=
+ =?utf-8?B?emU2NGdlVWpTSk9NWTArVkVzNDV4eGpyWE9lSnlwMXdmWHorZjl4eElNa29p?=
+ =?utf-8?B?QzM0YjFBenBkckpoYnREM09iaVVBblBQbitFM2d3QXBHaksyQW16RDZPRTR3?=
+ =?utf-8?B?Ulo0YXVBbE43eEp6YXlDa3VQV3hkaGxMYUhDa3hyaDRFU3A3MzNyTXRHM2Fw?=
+ =?utf-8?B?RDM2MEpYaTF2MFBVbTNtRFkzK2dSZUZRMDhIU2d6RnJpUkZqaXg0MW42VFRl?=
+ =?utf-8?B?dmorWFY4bHYrckJKZE1RRENMZ1pNSFNtaFNNVm1iU1l6cGFIbmxvdC9wVURp?=
+ =?utf-8?B?bDJJMU02UHl4Q05WVDRYUnhyTEtoL1lPdWw0dkZiaVh5eXpyMnpCbytrdmZo?=
+ =?utf-8?B?N2RRWUlpWUh3ZEVrWVYrUXhyV2pkUnpudVFVb2ZTMU5HU0huZkpjaVhicUtW?=
+ =?utf-8?B?Z0hyRFdKcnNJN0twTTVNVWg4VkZhNnc5Q0tON1hvMUVSQTk5YVB2YllHQllR?=
+ =?utf-8?B?dkxoc1lZVndaREY5dEpsOVYweHV6QnV5dnBGVk5nRFlBeVBKMmhOK2cza1V4?=
+ =?utf-8?B?UGZzQnNhcHhBeW5zOFk5MVJQMTUrTzVoR3N4WUF2MmVFRUxNUTNCdzBCbzcy?=
+ =?utf-8?B?M0dsb3k1NDRIeHNyaUFYYmkxbmdKWk1sRFBTT0p4ZThxMDFwRzhXYWFKOVhQ?=
+ =?utf-8?B?Vm41dDk5bG9HQmN3aENrT0tWSi9paVJmZ3dxMzlreW5Yc0N4UTZuQ1dCSVpk?=
+ =?utf-8?B?WW5uRUM1YVFUdHhCSUFYY3JaTkxuQktUbERIRmV2UFgwMnRyN0dSWFh2SXFw?=
+ =?utf-8?B?dU9mV0VrRU9wUUxraFBmNVVmbTV5ZHBzMnNDaGNybVBKcDE3K1hpL1V2S096?=
+ =?utf-8?B?S1BhYkF6dHp0aXY1RzFPbytubUxRSUM3c0FCZDhCdUF6Ym9RSWFqcHZoVWds?=
+ =?utf-8?B?cmV4WWNCT2NkekhaeDhLL3pRRU9FLzJQelExYzVxcWYxL2xlaTV6UzArY1h0?=
+ =?utf-8?B?UUtoOGlTWjlNeWxNNlpXUUFKQ1NqSkQ2M2Fnd3NYdTViOUpEMWx1OGJ3RnNo?=
+ =?utf-8?B?Y0hGb1RVUStZaUUvTkFpeS9McDZHcXVhWnp4RXFlNVYwKzNGT1ZXbGY2bE0r?=
+ =?utf-8?Q?Er9lOJ2zy4jyOouoDozukqLbh32m80KFFeNbwPlWeqkIiDN?=
+MIME-Version: 1.0
+
+Nous vous informons que votre demande a bien été prise en compte. Nous allons y répondre dans les meilleurs délais, merci de ne pas réitérer votre demande.
+Par ailleurs, pensez à consulter le site www.impots.gouv.fr, vous y trouverez les réponses aux questions les plus fréquentes, régulièrement actualisées.
+Cet accusé réception est généré automatiquement, merci de ne pas y répondre.
+
+

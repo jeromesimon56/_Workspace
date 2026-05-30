@@ -1,0 +1,384 @@
+Received: from PR3P250MB0033.EURP250.PROD.OUTLOOK.COM (2603:10a6:102:14c::22)
+ by VI6PPF5FBC185B3.EURP250.PROD.OUTLOOK.COM with HTTPS; Tue, 5 May 2026
+ 06:00:30 +0000
+Received: from CH0PR04CA0062.namprd04.prod.outlook.com (2603:10b6:610:74::7)
+ by PR3P250MB0033.EURP250.PROD.OUTLOOK.COM (2603:10a6:102:14c::22) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9870.25; Tue, 5 May
+ 2026 06:00:28 +0000
+Received: from CH3PEPF0000000B.namprd04.prod.outlook.com
+ (2603:10b6:610:74:cafe::cf) by CH0PR04CA0062.outlook.office365.com
+ (2603:10b6:610:74::7) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9870.25 via Frontend Transport; Tue,
+ 5 May 2026 06:00:27 +0000
+Authentication-Results: spf=pass (sender IP is 156.70.17.119)
+ smtp.mailfrom=bounce-credit-agricole.fr; dkim=pass (signature was verified)
+ header.d=ca-morbihan.fr;dmarc=pass action=none
+ header.from=ca-morbihan.fr;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ bounce-credit-agricole.fr designates 156.70.17.119 as permitted sender)
+ receiver=protection.outlook.com; client-ip=156.70.17.119;
+ helo=mta-70-17-119.credit-agricole.fr.sparkpostmail.com; pr=E
+Received: from mta-70-17-119.credit-agricole.fr.sparkpostmail.com
+ (156.70.17.119) by CH3PEPF0000000B.mail.protection.outlook.com
+ (10.167.244.38) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9891.9 via Frontend
+ Transport; Tue, 5 May 2026 06:00:27 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:4EB2E0A906B2A7575C8424DDE39E51FC1B702124F9D36DB7833478D29B45300C;UpperCasedChecksum:253AB27B618BD1F7C6FDE34F406F2F800E92337D80622D6FEF63A66B51837487;SizeAsReceived:1474;Count:13
+Return-Path: ca-gestion-bounces@bounce-credit-agricole.fr
+X-MSFBL: W+OanVw4wfDsVqz8NGGNwSrFg5k1ZSKg0w9XYeDlnog=|eyJjdXN0b21lcl9pZCI
+	6IjEiLCJtZXNzYWdlX2lkIjoiNjlmODc1NDlmOTY5YTk1YTA2YjYiLCJzdWJhY2N
+	vdW50X2lkIjoiMjgiLCJyIjoiamVyb21lc2ltb241NkBob3RtYWlsLmNvbSIsInR
+	lbmFudF9pZCI6ImNyZWRpdGFnIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ca-morbihan.fr;
+	s=scph0417; t=1777944949; i=@ca-morbihan.fr;
+	bh=yxMNyF6A4enYQZZIGfdYuFNGM+trsj1ihM5cwNSsth8=;
+	h=Message-ID:Subject:From:To:Date:Content-Type:From:To:Cc:Subject;
+	b=nBq5Eue/p75NhDKnsNMI69Iljc6FQ4GlOlwn3fqMUmkV+FnNUfDQjBTAAYinmRrhB
+	 cTgTATz6UifvES8I39l5+9k4PMAbQmj319FpwR02feHV+iqf5w16RGMTO1JyJUnGPQ
+	 IhXfcb/DeNDQ6Xnk3M+SfbPplrKYN7F4pRSrdegM=
+Received: from [10.95.194.93] ([10.95.194.93])
+	by i-0f649643bf28ba518.mta3vrest.sd.prd.sparkpost (ecelerity 5.2.0.75649 r(msys-ecelerity:tags/5.2.0.20)) with REST
+	id 6B/68-04328-57949F96; Tue, 05 May 2026 01:35:49 +0000
+Message-ID: <6B.68.04328.57949F96@i-0f649643bf28ba518.mta3vrest.sd.prd.sparkpost>
+X-Mailer: Quadient Inspire Designer MIME
+Subject: =?UTF-8?B?Vm9zIGRvY3VtZW50cyDCq8KgQmFucXVlLCBBc3N1cmFuY2XCoMK7?=
+	=?UTF-8?B?IMOgIGRpc3Bvc2l0aW9u?=
+From: =?UTF-8?B?Q3LDqWRpdCBBZ3JpY29sZQ==?= <contact@ca-morbihan.fr>
+To: <jeromesimon56@hotmail.com>
+Reply-To: <contact@credit-agricole.fr>
+Date: Tue, 05 May 2026 01:35:28 GMT
+Content-Type: multipart/alternative;
+	boundary="--_=_NextPart_003_01C39C9D.5EAC49D8"
+X-IncomingHeaderCount: 13
+X-MS-Exchange-Organization-ExpirationStartTime: 05 May 2026 06:00:27.5258
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 885cd7fb-4e25-4d9e-8b4a-08deaa6b9b33
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: CH3PEPF0000000B:EE_|PR3P250MB0033:EE_|VI6PPF5FBC185B3:EE_
+X-MS-Exchange-Organization-AuthSource: CH3PEPF0000000B.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/5/2026 5:03:13 AM
+X-MS-Office365-Filtering-Correlation-Id: 885cd7fb-4e25-4d9e-8b4a-08deaa6b9b33
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 156.70.17.119
+X-SID-PRA: CONTACT@CA-MORBIHAN.FR
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;ARA:1444111002|10300799038|9400799043|9000799056|70100799019|2120399003|35120799006|5139299004|1680799066|461199028|4089299007|36140799009|3600799018|1370799030|1360799030|1380799030|1602099012|4302099013|440099028|3412199025|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 05 May 2026 06:00:27.2120
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 885cd7fb-4e25-4d9e-8b4a-08deaa6b9b33
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: CH3PEPF0000000B.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PR3P250MB0033
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.1560488
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9846.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;ex:0;auth:1;dest:I;OFR:TrustedSenderList;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90012020)(91020020)(91040095)(9050020)(9065024)(9100341)(944500132)(4810010)(4910033)(9575002)(10195002)(9439006)(9310011)(9220031)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?NU1RQUZhc05Ib1RyajFta3o2TVY4TW52Vmc0RkREQ0hUSDZWQ0ZUNkNtSTFl?=
+ =?utf-8?B?bkRQMlQxR3IrWEdxOCtUaGJmZlpTQ2h0Y0NsUnV2OXMraHJSb3pFRkVaWXMx?=
+ =?utf-8?B?Q1RxWTFBWDJwd2h0N1JXdFpPVGtvS3dNa2JhbkFXZVpKWGFoTmE2MFE3N1E2?=
+ =?utf-8?B?UUJtcDNQdExZQUJPQ0pUT1B6V2FTNHVTb1QvMEpmdVJBRXpDTDFRdUhOZldM?=
+ =?utf-8?B?bzB3ZWxBTG9jSHNYUXR3d0pQMTdFTHZGZEIwZ1ZLNnVxL05BdVRSWWx5RG4y?=
+ =?utf-8?B?QzZXREZjdGQ1cXIzaVc1ZkRRcUd1M2NzUVk4YXB2UHVTRkMwNVY5UExYOU1Y?=
+ =?utf-8?B?Y3ZDZ2FpeW5tRHJuQnRuM090UzZHM001dWJZZ2c4aHlkZTMxN3gwYzdqaktX?=
+ =?utf-8?B?Z3psQ29DdW8wclQ4cXg1RENETW14b1c2bjUzcGRSQ1R1RXlwSE1QYWpHT3lZ?=
+ =?utf-8?B?RnJibzFzZTFGQ1dmT01sK3hTRmFhTGtyWFA3ckxGRHRTWU5vK1UvaW1TNVZu?=
+ =?utf-8?B?Tyt6UXNocGh5alYwa1AzSFdwem5jNjZ1NUlaU3ZESWVYazJIaTFrVmlwOW9h?=
+ =?utf-8?B?anc5Mm5hdlZ0KytsVDhZaU5DU0JDWUloWHVRQjdLQkFaTXplZ3ZWSytmeU83?=
+ =?utf-8?B?OExZZDlPU2t3cnNmcnZ2UTR4RDFiUjNDczJCaEd3NnVWQmx4SHUwRFllM3Jo?=
+ =?utf-8?B?TGxDdHN5aE1Fc2hTYlFDWm9LNkI1S2doSUh5dUVqQjltTklseVN3SGZ2QTJF?=
+ =?utf-8?B?VU5VRVZnc2hlY01mNUFEU01sUkQzSTh0N0x4N1FIRnN3QTFRNFcrZGk0bU9G?=
+ =?utf-8?B?MW1CdTFnZ3o1aVdmVW11VThMeXRXT3dOZGQyMG1qVEYrUUtKbEQ4NkcvNk1w?=
+ =?utf-8?B?U256cXF1ZDBVQ3BnNUYwNHhXRWE5WFU1elR4UUtKTlUwLzBPbnp2SVFTT1Bz?=
+ =?utf-8?B?VVdqaXpUSkU1VWw2d3RCWHRUaHlQc3lKVEZpcGFUVXNqUHplS1c1UzVrVjdI?=
+ =?utf-8?B?NURKcllndHpDcGRRLzR2aDU5b2hxSXEvMG0reTVlM0Y3UEZ2R3dQTlBOK1lv?=
+ =?utf-8?B?Q0l5VlQ0YThSY2o3cVdPRHlLVFdyQmN5T2dKTkNpdm0ybzBCNnpvdlViZElF?=
+ =?utf-8?B?azRvdk5BbUR0ejI3RVBGanl5QkdhL1VCN2x3U0wzWVhDZXFZV0V5bmRXNjFE?=
+ =?utf-8?B?cGxPekpRRm9TL2FtYm44ZXVPS2dyR2xxZ00xaVNQcTNMVFBmcVRmeTkxRGFt?=
+ =?utf-8?B?TGhSU0hDUU9sQ3BCNzhBbUgydmJha0tRNXVHZG5RYzNxZWYwc1hFV2UyNjNT?=
+ =?utf-8?B?M3NLYXprc2RFbDN0azVBdVFhUitTTndSbzhqWWN6aHdVME5yUXRyUlRCWWxF?=
+ =?utf-8?B?RzBhOE0xSGZOWCtpNkVCM25iM2I1c21WR1VDWXJTV016QTVSdVpnMXRWTWVZ?=
+ =?utf-8?B?dncxM24zNC9lRnBkNDdsUEc2R1ZpMlVIUm5GalZVOGtyeUV2TFJrYlBySUw4?=
+ =?utf-8?B?bVF4eUVYNTZVUm5hZ1dBalNkY2JsZkZsYWJsMkRwMGtYdkNyRGxZKzdPSmJi?=
+ =?utf-8?B?TjNrWStaWTYrWnVqRlNhR3IwNy9ITktrM0RxMnlYMTQzQ1JLYW9qdFA3T292?=
+ =?utf-8?B?d3dMYXhYaDBQSjlPZS80NThYanJQZnJnYWU2b3dtcHY3SEswelBlVW81cEtP?=
+ =?utf-8?B?MFphZVd1Z3lGQlgyVUIwMk8wVG1FMlBrSlM0clFBN3o5SkVhQnE5MkJHRGNV?=
+ =?utf-8?B?LzIram5ISzR3TkFpMENoM25NM09PM3VQRnRtQmVlRzY3LzF0UUpRMW1IL0U0?=
+ =?utf-8?B?V3VkMmt5OHFMSXRPQ3RyQVpKRmFYaFE0Y2x6c1JGamYxaHc3c2RTMG5QTzJu?=
+ =?utf-8?B?SjZWOUFhZ3MyL1pTempBcER5Sm9sU0hLQjRnN1gra3plSE0vcXN1eitwUWxr?=
+ =?utf-8?B?WHZjMmRSMXN1VXJ5THFXaHRXVGVIU1RnQld6ZGN2TnBZdUdjZnZFWTlQVmFl?=
+ =?utf-8?B?MW43WTRyZnVvMDF5VXdWL21YekxiaElUT2ZMZE14Z3lVRitYY1NSa2ZPdVE3?=
+ =?utf-8?B?dExzOUhhRWgra0lmOUplTWlRK0xVdDZPN3hZdWRJQlFBQkIyRUZ2c1p2akp6?=
+ =?utf-8?B?MDI0RExEQTNNWk10ZWFlQ2QxSGZLRGJrMXRSZjBhL1NEUmFyTjRZZ2lKRWlo?=
+ =?utf-8?B?OEg2b08wck1mRVcyQkF0c1pLWTdRNVBRWUhHRzlVZW1US0xkMit6TDFPKzZE?=
+ =?utf-8?B?Y0lsdk1XOGYzdHNvK2V2emhIenJzbjYwY2NuSXpDd3dNRHpjQm9ONjgwMGdT?=
+ =?utf-8?B?clN1WTBRNU0xMnF1MEc5NUZSRXpRVmk1dE8rYkRReW9nY0pvdG9TaFkwNXUy?=
+ =?utf-8?B?WHo1U3FvaFc4OU55YjZTN1FKc1RLS3JOemtxYzVudWVWM1NhVEdQaUxabXMr?=
+ =?utf-8?B?VlVWNUNlaWEzYmhaYWRVUTIrQzM2dWJLVDRlWDJlQU01OFVTbTlyUDl2TWJ4?=
+ =?utf-8?B?OC9XcW91cndvR004ODRiYXBzTURSK3JNQkZnWlFrcEZMYkd0a2dPcVArTSti?=
+ =?utf-8?B?T3luTHZlOW1USUV5eWV3aEJVa2t6am1XTVhhV3NQckc3bUQwZFdzSEdLa214?=
+ =?utf-8?B?NmUwQWtTcDBZZkplMkNHczdpYmhuQllZMGhGYmxjRnFpRUFWaWh6WE9DRUo0?=
+ =?utf-8?B?aFppRWhwZFFsNFBlMDArRndMUm5TQWVaU1Rocmt3cDVJOU9zTzVBNGtVcFY4?=
+ =?utf-8?B?L1FFRGVSTEQ1WGloNlRNSU55Q280MFVWdWRyZGQybFloYUEySDFENnJJeEUr?=
+ =?utf-8?B?UGpxV3FIM21BLzVOd1lvdjIvMWRLTmorZjg5OEM5RFBEUlRpcW40SEttalJ3?=
+ =?utf-8?Q?4f4LEKhIuPq5ow54aaxXYglkJaDTfreHUQ8IjNzc=3D?=
+MIME-Version: 1.0
+
+----_=_NextPart_003_01C39C9D.5EAC49D8
+Content-Type: text/plain;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour,=0DVos nouveaux E-documents sont =C3=A0 votre disposition dans votr=
+e espace personnel de consultation en ligne :=0D- Relev=C3=A9 de comptes=
+=0DAvec votre espace E-documents vous visualisez vos documents cl=C3=A9s et=
+ nos derni=C3=A8res communications.=0D=C3=80 tr=C3=A8s bient=C3=B4t. Cr=C3=
+=A9dit Agricole Morbihan=0D=C3=80 tr=C3=A8s bient=C3=B4t. Cr=C3=A9dit Agric=
+ole Morbihan
+
+----_=_NextPart_003_01C39C9D.5EAC49D8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.0"=
+><title>=0D</title><meta name=3D"To" content=3D", "><!--[if mso]><style typ=
+e=3D"text/css">body, table, td {font-family: Arial, Helvetica, sans-serif !=
+important;}</style><![endif]--><style type=3D"text/css">@media (max-width: =
+600px){	.c1{text-align:center !important;text-align-last:auto !important;ma=
+rgin-bottom:24px !important;margin-left:0px !important;margin-top:24px !imp=
+ortant;margin-right:0px !important;}	.c2{text-align:left !important;text-al=
+ign-last:auto !important;margin-bottom:0px !important;margin-left:20px !imp=
+ortant;margin-right:20px !important;}	.c3{color:#009597 !important;font-fam=
+ily:Montserrat,Arial,Tahoma,Impact,'Arial Black',sans-serif !important;font=
+-size:25px !important;font-style:normal !important;font-weight:bold !import=
+ant;letter-spacing:-1px !important;}	.c4{text-align:right !important;text-a=
+lign-last:auto !important;margin-bottom:0px !important;margin-left:20px !im=
+portant;margin-right:20px !important;}	.c5{color:#006a4e !important;font-fa=
+mily:Montserrat,Arial,Tahoma,Impact,'Arial Black',sans-serif !important;fon=
+t-size:25px !important;font-style:normal !important;font-weight:bold !impor=
+tant;letter-spacing:-1px !important;}	.c6{text-align:left !important;text-a=
+lign-last:auto !important;margin-bottom:0px !important;margin-left:20px !im=
+portant;margin-top:24px !important;margin-right:20px !important;}	.c7{text-=
+align:left !important;text-align-last:auto !important;margin-bottom:0px !im=
+portant;margin-left:20px !important;margin-top:24px !important;margin-right=
+:20px !important;}	.c8{text-align:left !important;text-align-last:auto !imp=
+ortant;margin-bottom:0px !important;margin-left:20px !important;margin-righ=
+t:0px !important;}	.c9{text-align:left !important;text-align-last:auto !imp=
+ortant;margin-bottom:0px !important;margin-left:0px !important;margin-top:1=
+2px !important;margin-right:0px !important;}}</style></head><body style=3D"=
+margin:auto;"><div style=3D"text-align:left;text-align-last:auto;"><!--[if =
+mso]><center><![endif]--><!--[if mso]><table width=3D"600" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0"><tbody><tr><td><![endif]--><table cellspac=
+ing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"border-collapse:collaps=
+e;border-style:none;margin:auto;max-width:600px;"><tbody><tr><td valign=3D"=
+top" width=3D"100%" style=3D"padding:0px 0px 0px 0px;"><div style=3D"text-a=
+lign:left;text-align-last:auto;"><table cellspacing=3D"0" cellpadding=3D"0"=
+ width=3D"100%" style=3D"border-collapse:collapse;border-style:none;"><tr><=
+td valign=3D"top" width=3D"100%"><div style=3D"text-align:center;text-align=
+-last:auto;margin-bottom:24px;margin-left:16px;margin-top:24px;margin-right=
+:16px;" class=3D"c1"><span style=3D"font-family:'Open Sans',Calibri,Arial;f=
+ont-size:14px;color:#071621;font-style:normal;font-weight:normal;"><a targe=
+t=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/ABJaOkBgJJH3pX6oZq_qWw=
+~~/AAAAARA~/tnchuG8rqmRBbGHQl_T0xvoPC6jL3bUqiR7k0LDxaNrUzD2zDihor_KiYQj8oYX=
+zeTgkO0iAdqiyAocfpF7pnQe0bUAzs2PfPle-YUyqK0WsX8UwZ_d_bPhKVlsH5wyncAXZpWYd4t=
+i8sVlWLcwHHA78gbOe0N2Z7BMYigp3TZGrQCb8JipXlGTdLLw84MyZejEnWSolfJewqQVF6iHVv=
+5Q4zosXoCFpT_v9iKOL57seP9vITTjPEXq3s6UMCchr-OwBiqdGzMkOQA0BQSAOJQ~~" style=
+=3D"color:#071621;">Voir la version en ligne</a></span></div></td></tr></ta=
+ble></div></td></tr><tr><td valign=3D"top" width=3D"100%" style=3D"padding:=
+0px 0px 0px 0px;"><div style=3D"text-align:center;text-align-last:auto;"><a=
+ target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/d80IAnNg0O89I4ZH=
+iOrfLg~~/AAAAARA~/T0AwY0cCKPc0ttxmzqAEx7bgcUbV5A8kpcPO1foWTO14uqBShBqEvT7da=
+V-rI5cpXaUVryDB18UaCk5loGPeHG6n6bD3YlH3uhAFdKHSmTWEQEAPlgK5pvkgddugAbCHParD=
+bXaa0ItznHNX34ajBZ3CFuzGWvLTCgQEWBdJY_k~"><span style=3D"height:100%"><img =
+src=3D"https://images-courriel.credit-agricole.fr/IMG/V_LOGO_860_2022.png" =
+alt=3D"Credit Agricole" width=3D"auto" height=3D"100%" border=3D"0" style=
+=3D"display:block;margin:0 auto;"></span></a></div></td></tr><tr><td valign=
+=3D"top" width=3D"100%" style=3D"padding:0px 0px 0px 0px;"><div style=3D"te=
+xt-align:left;text-align-last:auto;"><table cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"border-collapse:collapse;border-style:none;"=
+><tr><td valign=3D"top" width=3D"100%" style=3D"padding:24px 0px 0px 0px;">=
+<div style=3D"text-align:left;text-align-last:auto;"><table cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"100%" style=3D"border-collapse:collapse;borde=
+r-style:none;"><tr><td valign=3D"top" width=3D"100%"><div style=3D"text-ali=
+gn:left;text-align-last:auto;margin-bottom:0px;margin-left:40px;margin-righ=
+t:40px;" class=3D"c2"><span style=3D"font-family:Montserrat,Arial,Tahoma,Im=
+pact,'Arial Black',sans-serif;font-size:25px;color:#009597;font-style:norma=
+l;font-weight:bold;letter-spacing:-1px;" class=3D"c3">V</span><span style=
+=3D"font-family:Montserrat,Arial,Tahoma,Impact,'Arial Black',sans-serif;fon=
+t-size:25px;color:#009597;font-style:normal;font-weight:bold;letter-spacing=
+:-1px;">OS</span><span style=3D"font-family:Montserrat,Arial,Tahoma,Impact,=
+'Arial Black',sans-serif;font-size:25px;color:#009597;font-style:normal;fon=
+t-weight:bold;letter-spacing:-1px;" class=3D"c3">&nbsp;</span><span style=
+=3D"font-family:Montserrat,Arial,Tahoma,Impact,'Arial Black',sans-serif;fon=
+t-size:25px;color:#009597;font-style:normal;font-weight:bold;letter-spacing=
+:-1px;">DOCUMENTS</span><span style=3D"font-family:Montserrat,Arial,Tahoma,=
+Impact,'Arial Black',sans-serif;font-size:25px;color:#009597;font-style:nor=
+mal;font-weight:bold;letter-spacing:-1px;" class=3D"c3"> &quot;B</span><spa=
+n style=3D"font-family:Montserrat,Arial,Tahoma,Impact,'Arial Black',sans-se=
+rif;font-size:25px;color:#009597;font-style:normal;font-weight:bold;letter-=
+spacing:-1px;">ANQUE</span><span style=3D"font-family:Montserrat,Arial,Taho=
+ma,Impact,'Arial Black',sans-serif;font-size:25px;color:#009597;font-style:=
+normal;font-weight:bold;letter-spacing:-1px;" class=3D"c3">, A</span><span =
+style=3D"font-family:Montserrat,Arial,Tahoma,Impact,'Arial Black',sans-seri=
+f;font-size:25px;color:#009597;font-style:normal;font-weight:bold;letter-sp=
+acing:-1px;">SSURANCE</span><span style=3D"font-family:Montserrat,Arial,Tah=
+oma,Impact,'Arial Black',sans-serif;font-size:25px;color:#009597;font-style=
+:normal;font-weight:bold;letter-spacing:-1px;" class=3D"c3">&quot;</span></=
+div></td></tr><tr><td valign=3D"top" width=3D"100%"><div style=3D"text-alig=
+n:right;text-align-last:auto;margin-bottom:0px;margin-left:40px;margin-righ=
+t:40px;" class=3D"c4"><span style=3D"font-family:Montserrat,Arial,Tahoma,Im=
+pact,'Arial Black',sans-serif;font-size:25px;color:#006a4e;font-style:norma=
+l;font-weight:bold;letter-spacing:-1px;" class=3D"c5">A DISPOSITION</span><=
+/div></td></tr></table></div></td></tr></table></div></td></tr><tr><td vali=
+gn=3D"top" width=3D"100%" style=3D"padding:20px 0px 24px 0px;"><div style=
+=3D"text-align:left;text-align-last:auto;margin-bottom:0px;margin-left:40px=
+;margin-top:24px;margin-right:40px;" class=3D"c6"><span style=3D"font-famil=
+y:'Open Sans',Calibri,Arial;font-size:16px;color:#071621;font-style:normal;=
+font-weight:normal;line-height:26px;">Bonjour,</span></div><div style=3D"te=
+xt-align:left;text-align-last:auto;margin-bottom:0px;margin-left:40px;margi=
+n-top:24px;margin-right:40px;" class=3D"c6"><span style=3D"font-family:'Ope=
+n Sans',Calibri,Arial;font-size:16px;color:#071621;font-style:normal;font-w=
+eight:normal;line-height:26px;">Vos nouveaux E-documents sont =C3=A0 votre =
+disposition dans votre espace personnel de consultation en ligne :</span></=
+div><div style=3D"text-align:left;text-align-last:auto;margin-bottom:0px;ma=
+rgin-left:40px;margin-top:24px;margin-right:40px;" class=3D"c6"><span style=
+=3D"font-family:'Open Sans',Calibri,Arial;font-size:16px;color:#071621;font=
+-style:normal;font-weight:normal;line-height:26px;"> <span>&nbsp;</span><sp=
+an>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span><span style=3D=
+"font-family:'Open Sans',Calibri,Arial;font-size:16px;color:#071621;font-st=
+yle:normal;font-weight:normal;line-height:26px;">- Relev=C3=A9 de comptes</=
+span></div><div style=3D"text-align:left;text-align-last:auto;margin-bottom=
+:0px;margin-left:40px;margin-top:24px;margin-right:40px;" class=3D"c6"><spa=
+n style=3D"font-family:'Open Sans',Calibri,Arial;font-size:16px;color:#0716=
+21;font-style:normal;font-weight:normal;line-height:26px;">Avec votre espac=
+e E-documents vous visualisez vos documents cl=C3=A9s et nos derni=C3=A8res=
+ communications.</span></div><div style=3D"text-align:left;text-align-last:=
+auto;margin-bottom:0px;margin-left:40px;margin-top:24px;margin-right:40px;"=
+ class=3D"c6"><span style=3D"font-family:'Open Sans',Calibri,Arial;font-siz=
+e:16px;color:#071621;font-style:normal;font-weight:normal;line-height:26px;=
+">&nbsp;</span></div><div style=3D"text-align:left;text-align-last:auto;mar=
+gin-bottom:0px;margin-left:40px;margin-top:24px;margin-right:40px;" class=
+=3D"c6"><span style=3D"font-family:'Open Sans',Calibri,Arial;font-size:16px=
+;color:#071621;font-style:normal;font-weight:normal;line-height:26px;">=C3=
+=80 tr=C3=A8s bient=C3=B4t. </span></div><div style=3D"text-align:left;text=
+-align-last:auto;margin-bottom:0px;margin-left:40px;margin-top:24px;margin-=
+right:40px;" class=3D"c7"></div><div style=3D"text-align:left;text-align-la=
+st:auto;margin-bottom:0px;margin-left:40px;margin-top:24px;margin-right:40p=
+x;" class=3D"c7"><span style=3D"font-family:'Open Sans',Calibri,Arial;font-=
+size:16px;color:#666e8a;font-style:normal;font-weight:normal;line-height:26=
+px;">Cr=C3=A9dit Agricole Morbihan</span></div><div><span style=3D"font-siz=
+e:16px;">&nbsp;</span></div><div style=3D"text-align:left;text-align-last:a=
+uto;margin-bottom:0px;margin-left:40px;margin-top:24px;margin-right:40px;" =
+class=3D"c7"></div></td></tr><tr></tr><tr><td valign=3D"top" width=3D"100%"=
+ style=3D"padding:0px 0px 0px 0px;"><div style=3D"text-align:left;text-alig=
+n-last:auto;"><table cellspacing=3D"0" cellpadding=3D"0" style=3D"border-co=
+llapse:collapse;border-style:none;"><tr><td valign=3D"top"><div style=3D"te=
+xt-align:left;text-align-last:auto;"><table cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"border-collapse:collapse;border-style:none;"=
+><tr><td valign=3D"top" width=3D"100%" bgcolor=3D"#071621" style=3D"backgro=
+und-color:#071621;border-bottom:1px solid #666e8a;border-left:1px solid #07=
+1621;border-right:1px solid #071621;border-top:1px solid #071621;padding:28=
+px 0px 23px 0px;"><div style=3D"text-align:center;text-align-last:auto;"><a=
+ target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/W7VyboRk6TEcf0oE=
+qFCciA~~/AAAAARA~/jPdDHrBhxR9rYbThoB90oImG8ULSdRD2UVIs00-ivNvxgwn2yNo9XNRHd=
+SZ14oy86fD-edzh9h4xY_mjQhTr1v2zJuVfr5PpRgD6faMyhK3QNyGr4dzx2mHO5ofW4EXbd3BY=
+sSGHhYAu--F-CRFisi6T2wp8eUsS7TuT2Vwp-Aw~"><img src=3D"https://images-courri=
+el.credit-agricole.fr/IMG/V_PICTO_RS_facebook.png" alt=3D"Logo Facebook" wi=
+dth=3D"40" height=3D"40" border=3D"0"></a><span style=3D"font-family:'Open =
+Sans',Calibri,Arial;font-size:16px;color:#071621;font-style:normal;font-wei=
+ght:normal;">&nbsp;&nbsp;</span><a target=3D"_blank" href=3D"http://click.c=
+a-morbihan.fr/f/a/uyJmlaT-7bNbR6UQNzdozw~~/AAAAARA~/lWJpDMSxv5NwzC5PvPyenwu=
+3_uI8cmgwSCNIX5LWfnJRdQTbiOJU0-P-RzpUsQpIBJ88yj9EY3UjNSEmiqq712AiZo-29a15K8=
+N0a-pWBWRdsuHk17rehJWQE1eeJHecvJCb9cKRGTVl8iPxshZ5mLEdnCtm3yXfXwnyiCt_6xg~"=
+><img src=3D"https://images-courriel.credit-agricole.fr/IMG/V_PICTO_RS_yout=
+ube.png" alt=3D"Logo Youtube" width=3D"40" height=3D"40" border=3D"0"></a><=
+span style=3D"font-family:'Open Sans',Calibri,Arial;font-size:16px;color:#0=
+71621;font-style:normal;font-weight:normal;">&nbsp;&nbsp;</span><a target=
+=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/jJxE93b_-iCEjXcaubGGUQ~=
+~/AAAAARA~/tm4aNTA26AQJPUK2zY78vKmyfIl8I_L4nuyVjMxomSld1mlzQMioITyQ_N5l4Omz=
+cJ83C3Go73f2_1fxhryuHy23cQWLFe5mdpz8NzigCCoDJ3wCGySIAvxmrKE-HPzk9u3v7STcYiM=
+HufmwF8iakFaupQf0b66mGYU-mBf9m_U~"><img src=3D"https://images-courriel.cred=
+it-agricole.fr/IMG/V_PICTO_RS_instagram.png" alt=3D"Logo Instagram" width=
+=3D"40" height=3D"40" border=3D"0"></a><span style=3D"font-family:'Open San=
+s',Calibri,Arial;font-size:16px;color:#071621;font-style:normal;font-weight=
+:normal;">&nbsp;&nbsp;</span><a target=3D"_blank" href=3D"http://click.ca-m=
+orbihan.fr/f/a/EMTt0SHCh5LxLX3mbFTNLg~~/AAAAARA~/moUD-9wYUE-QfLvDDif4Qn_IN9=
+xjoBVRZ2-1E0SoM5Nx_a0oixn4NzPtFXRtSy3t7UaT2KmempNqbIzJLNtrYldsqFcWPEnIB747I=
+Zb5Gc0wa5D71gl0rNBrxczf2N2HE6UtU8IZbvw1ViufuRPpfUaBPIms6VPlKqRqIPaQVA4~"><i=
+mg src=3D"https://images-courriel.credit-agricole.fr/IMG/V_PICTO_RS_linkedi=
+n.png" alt=3D"Logo LinkedIn" width=3D"40" height=3D"40" border=3D"0"></a></=
+div></td></tr></table></div></td></tr><tr><td valign=3D"top"><div style=3D"=
+text-align:left;text-align-last:auto;"><table cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"border-collapse:collapse;border-style:none;"=
+><tr><td valign=3D"top" width=3D"3%" bgcolor=3D"#071621" style=3D"backgroun=
+d-color:#071621;border:1px solid #071621;padding:32px 0px 32px 0px;"><span =
+style=3D"line-height:16px;">&nbsp;</span><div style=3D"text-align:left;text=
+-align-last:auto;margin-bottom:0px;margin-left:40px;margin-right:0px;" clas=
+s=3D"c8"></div></td><td valign=3D"top" width=3D"95%" bgcolor=3D"#071621" st=
+yle=3D"background-color:#071621;border:1px solid #071621;padding:32px 0px 3=
+2px 0px;"><div style=3D"text-align:center;text-align-last:auto;margin-botto=
+m:8px;margin-left:0px;margin-top:32px;margin-right:0px;"><!--[if mso]><cent=
+er><![endif]--><!--[if mso]><table width=3D"215" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0"><tbody><tr><td><![endif]--><table cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"100%" style=3D"border-collapse:collapse;border-s=
+tyle:none;margin:auto;max-width:215px;"><tr><td valign=3D"top"><div style=
+=3D"text-align:center;text-align-last:auto;"><a target=3D"_blank" href=3D"h=
+ttp://click.ca-morbihan.fr/f/a/d80IAnNg0O89I4ZHiOrfLg~~/AAAAARA~/T0AwY0cCKP=
+c0ttxmzqAEx7bgcUbV5A8kpcPO1foWTO14uqBShBqEvT7daV-rI5cpXaUVryDB18UaCk5loGPeH=
+G6n6bD3YlH3uhAFdKHSmTWEQEAPlgK5pvkgddugAbCHParDbXaa0ItznHNX34ajBZ3CFuzGWvLT=
+CgQEWBdJY_k~"><span style=3D"height:123"><img src=3D"https://images-courrie=
+l.credit-agricole.fr/IMG/V_COMPA_860_2022.png" alt=3D"Credit Agricole" widt=
+h=3D"215" height=3D"123" border=3D"0" style=3D"display:block;margin:0 auto;=
+"></span></a></div></td></tr></table><!--[if mso]></td></tr></table><![endi=
+f]--><!--[if mso]></center><![endif]--></div><div style=3D"text-align:cente=
+r;text-align-last:auto;margin-bottom:8px;margin-left:0px;margin-top:32px;ma=
+rgin-right:0px;"><span style=3D"font-family:Montserrat,Arial,Tahoma,Impact,=
+'Arial Black',sans-serif;font-size:14px;color:#ffffff;font-style:normal;fon=
+t-weight:normal;">Cr=C3=A9dit Agricole du Morbihan - Caisse R=C3=A9gionale =
+de Cr=C3=A9dit Agricole Mutuel - Soci=C3=A9t=C3=A9 coop=C3=A9rative =C3=A0 =
+capital variable, agr=C3=A9=C3=A9e en tant qu'=C3=A9tablissement de cr=C3=
+=A9dit. Si=C3=A8ge social&nbsp;: Avenue de K=C3=A9ranguen - 56956 Vannes Ce=
+dex 9 - 777&nbsp;903&nbsp;816 RCS Vannes. Soci=C3=A9t=C3=A9 de courtage d'a=
+ssurance immatricul=C3=A9e au Registre des Interm=C3=A9diaires en Assurance=
+ sous le n=C2=B0&nbsp;07&nbsp;022&nbsp;976</span></div></td><td valign=3D"t=
+op" width=3D"3%" bgcolor=3D"#071621" style=3D"background-color:#071621;bord=
+er:1px solid #071621;padding:32px 0px 32px 0px;"><span style=3D"line-height=
+:16px;">&nbsp;</span><div style=3D"text-align:left;text-align-last:auto;mar=
+gin-bottom:0px;margin-left:40px;margin-right:0px;" class=3D"c8"></div></td>=
+</tr></table></div></td></tr></table></div></td></tr><tr><td valign=3D"top"=
+ width=3D"100%" style=3D"padding:0px 0px 0px 0px;"><div style=3D"text-align=
+:left;text-align-last:auto;"><table cellspacing=3D"0" cellpadding=3D"0" wid=
+th=3D"100%" style=3D"border-collapse:collapse;border-style:none;"><tr><td v=
+align=3D"top" width=3D"100%" bgcolor=3D"#f7f8fa" style=3D"background-color:=
+#f7f8fa;padding:28px 20px 24px 20px;"><div style=3D"text-align:left;text-al=
+ign-last:auto;margin-bottom:0px;margin-left:20px;margin-top:12px;margin-rig=
+ht:20px;" class=3D"c9"><span style=3D"font-family:'Open Sans',Calibri,Arial=
+;font-size:12px;color:#071621;font-style:normal;font-weight:normal;line-hei=
+ght:20px;">Facebook est une marque d=C3=A9pos=C3=A9e de Facebook Inc.<br>Yo=
+uTube est une marque d=C3=A9pos=C3=A9e de Google Inc.<br>Instagram est une =
+marque d=C3=A9pos=C3=A9e d'Instagram LLC.<br>Apple et le logo Apple sont de=
+s marques d'Apple Inc., d=C3=A9pos=C3=A9es aux =C3=89tats-Unis et dans d'au=
+tres pays. App Store est une marque de service d'Apple Inc.<br>Android, Goo=
+gle Play et le logo Google Play sont des marques de Google Inc.</span></div=
+></td></tr></table></div></td></tr></tbody></table><!--[if mso]></td></tr><=
+/table><![endif]--><!--[if mso]></center><![endif]--></div>
+<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"http://click.ca-=
+morbihan.fr/q/REm0n_bDSOwNJjzM3jRyrw~~/AAAAARA~/xiGpSlgt_KsGkQp6fW0rIGaAKHv=
+WXUZwSS-e5Ifw9afCmzwA6TNK64HKCOUcIF9Odg1qhc8n5YuC3M1ZtLLLTg~~">
+</body></html>
+
+----_=_NextPart_003_01C39C9D.5EAC49D8--

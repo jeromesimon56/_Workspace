@@ -1,0 +1,447 @@
+Received: from AS8P250MB0744.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:541::14)
+ by AS8P250MB0937.EURP250.PROD.OUTLOOK.COM with HTTPS; Tue, 24 Mar 2026
+ 21:34:08 +0000
+Received: from BY5PR13CA0009.namprd13.prod.outlook.com (2603:10b6:a03:180::22)
+ by AS8P250MB0744.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:541::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9700.19; Tue, 24 Mar
+ 2026 21:34:06 +0000
+Received: from SJ5PEPF000001F5.namprd05.prod.outlook.com
+ (2603:10b6:a03:180:cafe::42) by BY5PR13CA0009.outlook.office365.com
+ (2603:10b6:a03:180::22) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9723.31 via Frontend Transport; Tue,
+ 24 Mar 2026 21:34:05 +0000
+Authentication-Results: spf=pass (sender IP is 185.189.236.115)
+ smtp.mailfrom=bnc3.yousign.app; dkim=pass (signature was verified)
+ header.d=yousign.app;dmarc=pass action=none
+ header.from=yousign.app;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of bnc3.yousign.app
+ designates 185.189.236.115 as permitted sender)
+ receiver=protection.outlook.com; client-ip=185.189.236.115;
+ helo=o115.p25.mailjet.com; pr=C
+Received: from o115.p25.mailjet.com (185.189.236.115) by
+ SJ5PEPF000001F5.mail.protection.outlook.com (10.167.242.73) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.9723.19 via Frontend Transport; Tue, 24 Mar 2026 21:34:04 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:4E2F640D0C54DF9E90B0FD1B74A1B5B9BF9C27BD707AF319C0B98D0AEEFAF8F8;UpperCasedChecksum:0AFCA9388E1A43D40AC841CF4DC1851F33B62E0CC01301DEEE10FD7E918FE70D;SizeAsReceived:1957;Count:15
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; q=dns/txt;
+  d=yousign.app; i=notifications@yousign.app; s=mailjet; x=1774395243;
+  h=message-id:from:from:to:to:subject:subject:date:date:list-unsubscribe-post:list-unsubscribe:
+  feedback-id:x-csa-complaints:x-mj-mid:x-report-abuse-to:mime-version:
+  content-type;
+  bh=QZWYomnceSnLtsXai/03cujV0rKSQ6US8MP+3qLuMUo=;
+  b=RsotGiuuXxqLyBih2/HbiuOiTiyIKYqzXfU+jifuDdWlS1SElGCr92zvg
+ eqZX7QKnBUjLJZbECr5OSCGOs67bAovJb/HYNs7EccDXFJrv2GVQg4gwh571
+ GKUGJo12W7q2x4dlkJQg7I2E/mDpgfROw2EY4+Xt/MAQPqCNakQrgvRWS+us
+ GTaIUwGhrhM+jXyesJ2Au7z/pHsG7DGFuDqFEnsuBr8CmPb/sVb8OH3Zqbez
+ Aiv7gdgqkpXn9snoU/Cajpvp34/igGFAXQB03o28EkMgXp5zqfMoVAxVHpom
+ b1x0KgzlV37PezT7liqryVK5fSrPk0MXr1PXUa9Q0wTog==
+Return-Path: f9f999d2.BAAACGnSiDEAAAAAAAAAAcmXpiMAAAAAqm0AAAAAAB3UfgBpwwNK@bnc3.yousign.app
+Message-Id: <f9f999d2.BAAACGnSiDEAAAAAAAAAAcmXpiMAAAAAqm0AAAAAAB3UfgBpwwNK@mailjet.com>
+From: "Yousign pour (56038) OFFICE NOTARIAL PORTE DES INDES"
+	<notifications@yousign.app>
+To: jeromesimon56@hotmail.com
+Subject: =?UTF-8?Q?Votre_nouveau_lien_pour_acc=C3=A9der_?=
+ =?UTF-8?Q?=C3=A0_PROCURATIONS_SUCCESSION_?=
+ =?UTF-8?Q?J=C3=A9r=C3=B4me_SIMON_sur_Yousign?=
+Date: Tue, 24 Mar 2026 21:34:03 +0000
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <mailto:unsub-f9f999d2.0551k.vps6hq6yyj4g@bnc3.mailjet.com>,
+	<https://0551k.mjt.lu/unsub2?m=BAAACGnSiDEAAAAAAAAAAcmXpiMAAAAAqm0AAAAAAB3UfgBpwwNKkYBCjMWiRna-ZMTxWcc-JQABJ0k&b=f9f999d2&e=22fd7f39&x=mIxD9p74pISlHWU1_sjvOH9uPgF5eQTSBaVyS6iXN-w>
+Feedback-Id: 019d21c4-dacc-edc6-e1f8-733cfb542795.1954942.75593:MJ
+X-CSA-Complaints: csa-complaints@eco.de
+X-MJ-Mid: BAAACGnSiDEAAAAAAAAAAcmXpiMAAAAAqm0AAAAAAB3UfgBpwwNKkYBCjMWiRna-ZMTxWcc-JQABJ0k
+X-REPORT-ABUSE-TO: Message sent by Mailjet please report to
+	abuse@mailjet.com with a copy of the message
+Content-Type: multipart/mixed; boundary="=-aPkdbx+o4EevQ1kkWcaR"
+X-IncomingHeaderCount: 15
+X-MS-Exchange-Organization-ExpirationStartTime: 24 Mar 2026 21:34:04.8392
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 32a89395-b8ea-4851-bc04-08de89ed12c5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SJ5PEPF000001F5:EE_|AS8P250MB0744:EE_|AS8P250MB0937:EE_
+X-MS-Exchange-Organization-AuthSource: SJ5PEPF000001F5.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 3/24/2026 9:28:31 PM
+X-MS-Office365-Filtering-Correlation-Id: 32a89395-b8ea-4851-bc04-08de89ed12c5
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 185.189.236.115
+X-SID-PRA: NOTIFICATIONS@YOUSIGN.APP
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;ARA:1444111002|461199028|1290799033|42300799018|10300799038|3151999006|58200799021|47200799024|6092099016|68400799013|9400799043|3069299007|39102599003|1380799030|1360799030|1370799030|1602099012|1701999012|3412199025|440099028|4601999015|30041999003|4302099013|26104999006|18021999003|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Mar 2026 21:34:04.3306
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 32a89395-b8ea-4851-bc04-08de89ed12c5
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: SJ5PEPF000001F5.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS8P250MB0744
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.1253100
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9723.008
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90010023)(91010020)(91040095)(9050020)(9100341)(944500132)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?bHFJZk94cFQ0RkRYS0pJRnRtWmZBbnplRUhMQVBCcmNzcXdGUnZtZWc5ZTVZ?=
+ =?utf-8?B?aGd5R1ViL1EzclJVYjQxZStkRDJDVWhKV1BQd0ZkZkRzNDlpcEZrOU5tT0cv?=
+ =?utf-8?B?Q2lIVWdoS3ZackV4TUN6aXMvQ2FRQjdJQ1BJQm4zY2RiOUZBYmE2emFmSXhw?=
+ =?utf-8?B?Qk5veURldVZYbGRaOFVLRmc4U2hSYUtBRUkvYVkzUVBxd1ExVVgvdXdaSFJ1?=
+ =?utf-8?B?ZkNuMUpKS1V5MW5wdExkSkdvcEtWeGlqSGg3dVZkZWo2Nzh0WGZoM0Jiamxa?=
+ =?utf-8?B?MlpvV29qbGN3bmtOY25yNytMVmZkaFg3bVZsN3U2aGxOWVRPd2dVSExiZytR?=
+ =?utf-8?B?QVliVTY5UVdkR1BEdDZVMXo4Lzk4VUtmUjI1K2lpa3pOS0FpdTlhUTlLbGVa?=
+ =?utf-8?B?SnYrTGQ5VlNqQnMzRTBOQkJRVGd0YVF3aTBmNUl0bUFwY1Zzc1dmS1BIbkhG?=
+ =?utf-8?B?eWRmUmJwTTJ0eUpnSStDSmtUblB3RmVoSVY3RVVJOFNCS3llK2dQVDJHZzUr?=
+ =?utf-8?B?UVFsRjR2SVQ5STI2MUVjejREcGdoMnBlQy82U3VsMGZ3S1dVSFcvcUJISEFL?=
+ =?utf-8?B?d1BtSHQyWk14RndhYStJRFF0VFN4a0lZQUxLc20wdTRxY255ZUhXTGo3UHR1?=
+ =?utf-8?B?SG43azZJR09VTzBtZ0ZyVE1FZ0NDd3AyYllNaEF2L2p6TTNyNVVITE5pYnFZ?=
+ =?utf-8?B?UTFBbkN6eGxJODl6bnBNZ09NeVpEZFd3T0gyMUhjZ2hHYXgwQmRPajZKSkFF?=
+ =?utf-8?B?MFdOVlkvQVFJNWk2UVEvVVlRVjZxckRuUVZaWE9rSjdUWGVHMFZ4UnlqMzVP?=
+ =?utf-8?B?ZDhPTE5UdDRQZUttTGtTTkJMNXJBYUdoZjlDWlE2WTlrd1VpOElycTh1R2dq?=
+ =?utf-8?B?OGsvbEJZa2JTczFTVzRYTFB0WmlDQ3hSazkxc21EL2dCM2RRdm5tTGJxclZn?=
+ =?utf-8?B?ZjNuVXp6ajVJbWxvNWE4QjIwWmVEY2V5eDgxaVUvZmE3Y3I5TWVxdUZjS256?=
+ =?utf-8?B?SVhFSXhla0pFUENwSU5LemxNR2lEbXdYZy93c1drOFVnMU9EcHZuZkNQeEU1?=
+ =?utf-8?B?S2N0NkxHQWt5M3l6WlpNQVNUYzV3a09nNWNhNzFBMXZGZ3Nrb2NncEM4K2FU?=
+ =?utf-8?B?bkExa0d6Ukk1K0c4OTBvZWJQRUhPaXRBWlhrT3E0b1RWd1dLQVpVWndIYjJ3?=
+ =?utf-8?B?djRoZVNxT3JhV1RCbTQvVjFCNjZRR1lINVRYOWZBblc0a25XQU1hVmM4WU94?=
+ =?utf-8?B?UTBBVzZsS3g2cG1COHNkaHROd2RVK2N0dndWZmNRT0tjMG9CbWJKcmdEa09x?=
+ =?utf-8?B?a0JBV2Yyc3Y4a0g3b09nNDlSUi9vTzRBYlJsbERvNjJIRTVIVFFRSWwvVjhJ?=
+ =?utf-8?B?LzlVNjBMakhVRHNNL1NmamdGUnlvUTM0ZVN2T3hobWJPREgzNFQzREpBa0JI?=
+ =?utf-8?B?ajNKdEErNDNwNmd2VmZ4MjdobEZlRFdQaVRvNDNvWjFLOVgvWFR3Z0NPRWUy?=
+ =?utf-8?B?UzhQS0pJc0xJZFpiNlJDSU5HRWdBdW5xZi9OdGhBTkVjc0I5Tm5xbVVJVWNv?=
+ =?utf-8?B?SVZGbUFkbkR6bks5MU04dVR6ZVd5cTc1dDFFZzUyZENFZkVpbkMzUDFuWDM3?=
+ =?utf-8?B?b29uSEJ5TnUzajJOVGtDRmhSNitNWWpmU3dXM2RIMnAwNk1IZW02MU1CRWdI?=
+ =?utf-8?B?ZW1JNFdCQWpoNHpxanc0UExSZDB4aHk1eFBobXJMbi9mdFlDbTFPQTljNlJq?=
+ =?utf-8?B?MEdDWkg0R0NOUE5laVc5R3FQTlpNQ0ZuRXlHZmhPSUd5eFd3Q0lxcWVUNTFt?=
+ =?utf-8?B?WHFOeTJEQWtWaDNnOXFDOWMrVDNnUmlUSHVJZ1ZFL2lPYjhzRk9PZi85alVy?=
+ =?utf-8?B?NjdETjNKbFE4RDFqbTJGTXMxRW5hNjg5T3FHRlVjWXpHbUNyTjd2ejlERXJZ?=
+ =?utf-8?B?emRaU0NVVFltVTBuTWVFNGdSczBSODBVRU5Vbjg5eTNaQVR2d1hKVWlkVEIr?=
+ =?utf-8?B?S05LNXV4STdhTnFqWExSWUNpZWM1NmdFODVLMEpDUlZPZDJwVjJYbHdDeWN4?=
+ =?utf-8?B?YVR0a0gvUnN5VkpZdHRrbSthNzdJeTVST1h2TG1MSms5SFI2ZUM4cWlWdHJR?=
+ =?utf-8?B?VjM2dDNPNHUxYWhYZE03dm41MGZMd25SNnpSOTJYeEtDL0hsalAwVk01QWta?=
+ =?utf-8?B?L0Y0cUVIOE5RUmN1Uk5uSFE4ZXBDTXRIUGNyUEs3MjhkSGVVL2JNb1BtZWUx?=
+ =?utf-8?B?VmorbXRUSk95QllLVTh2OVRMVXNlaTcxQjgwSnU1K2s5OC9wWE9ITkZwQTli?=
+ =?utf-8?B?M3NpQWtyT1NlN3QxTFhVNTdaZm5UM3NXcm5xZmVZS0JDL2FMa3ptdmdGQmF2?=
+ =?utf-8?B?clVlcVJPQmdubGZKSUI2S2xSL1FTbHMrc0RYdXZ1V3FPRXlqa0Zvd1pwM1NM?=
+ =?utf-8?B?Q2dxMnh6YjM4Zmo4WmxCWnNIOEljVTZBWGZQUVI1b2FVSzE5eENab3h1bmR5?=
+ =?utf-8?B?VDA2eGl4eXB3S2UwazFzR0FNUjdsbHdCMkhRM1lIQ09TNHFnRURIb3F1SzdB?=
+ =?utf-8?B?NUNoYlJRWCsvdG1rUXFOTk1xdkM0TWVuOHZxaXcwdlZBZkw5WTIvZzNUTnBK?=
+ =?utf-8?B?c1djcDc0ak9CUHRYSTZwVG9ZNSsrUTFJV0dHRjRRVlFkMW9xNUQ1bXRtYzc5?=
+ =?utf-8?B?V25XajZEQXhZcnh6QlUwUldWcXU3S2dtYlg4endJdmtOQ3RiOXd2S00wenpY?=
+ =?utf-8?B?SWFwRzRHZTdmMHo1cW9kNUMzcEV2aFZhVlNjT2xXK1BqakZabTlpYnZUWFI1?=
+ =?utf-8?B?Mm9mYjZzS3Q0K1kwRUEyUGpGY0oyV2c4dkxDWGlER3pZUUVFVXArandrZEY0?=
+ =?utf-8?B?TkFlTlpXeXhucVNEaXcyYVpORWpjM2NOQis3eHQyRjdGaHFTMGR0c3V4RHdq?=
+ =?utf-8?B?NUszQnJFMTNIZnViUWRJUVdtZ3g1WTNMVk45cStEdHVEaWhpRGpUSFRVVndv?=
+ =?utf-8?B?VDAxWjFwcWNSS1hLSFR4aEVKTG5IWUZDNUFQOHN1UXFxTjkzdFJ1QXdQdEQ4?=
+ =?utf-8?B?MEpHRFZyU045VFZyQkFKd0dENmRxVTFmZGwwQStud3RNeEVBdWczcHB1NlpH?=
+ =?utf-8?B?UnZzNXF4OFFHakVEeTdQcHRCUjR0YlV0d3ZRcmFSaTNxWFZ1YVZ2czl6aWwy?=
+ =?utf-8?B?N0djQVI1VG5PbDBBYW5WMmdsaW53YkRya1BDMk5wRkZzd1ltL094WGMzZjdu?=
+ =?utf-8?Q?UkIwrYdx/g+Cy50BHuqEg3KEcw=3D?=
+MIME-Version: 1.0
+
+--=-aPkdbx+o4EevQ1kkWcaR
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html lang=3D"und" dir=3D"auto" xmlns=3D"http://www.w3.org/1=
+999/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas=
+-microsoft-com:office:office" style=3D"color-scheme: light;"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>Votre nouveau lien pour acc=C3=A9der =C3=A0 PROCURATIONS SUCCESSION J=
+=C3=A9r=C3=B4me SIMON sur Yousign</title><!--[if !mso]><!--><meta http-equi=
+v=3D"X-UA-Compatible" content=3D"IE=3Dedge"><!--<![endif]--><meta name=3D"v=
+iewport" content=3D"width=3Ddevice-width,initial-scale=3D1"><style type=3D"=
+text/css">#outlook a { padding:0; }
+      body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size=
+-adjust:100%; }
+      table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-r=
+space:0pt; }
+      img { border:0;height:auto;line-height:100%; outline:none;text-decora=
+tion:none;-ms-interpolation-mode:bicubic; }
+      p { display:block;margin:13px 0; }</style><!--[if mso]>
+    <noscript>
+    <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]--><!--[if lte mso 11]>
+    <style type=3D"text/css">
+      .mj-outlook-group-fix { width:100% !important; }
+    </style>
+    <![endif]--><style type=3D"text/css">@media only screen and (min-width:=
+640px) {
+        .mj-column-px-480 { width:480px !important; max-width: 480px; }
+.mj-column-per-100 { width:100% !important; max-width: 100%; }
+      }</style><style media=3D"screen and (min-width:640px)">.moz-text-html=
+ .mj-column-px-480 { width:480px !important; max-width: 480px; }
+.moz-text-html .mj-column-per-100 { width:100% !important; max-width: 100%;=
+ }</style><style type=3D"text/css">@media only screen and (max-width:639px)=
+ {
+      table.mj-full-width-mobile { width: 100% !important; }
+      td.mj-full-width-mobile { width: auto !important; }
+    }</style><style type=3D"text/css">@media screen {
+      @font-face {
+          font-family: 'Arial';
+      }
+
+      @font-face {
+          font-family: 'Arial';
+      }
+  }
+
+  @media only screen and (max-width:480px) {
+      .table-responsive td {
+          display: block !important;
+          width: 100% !important;
+          text-align: center !important;
+      }
+
+      .table-responsive img {
+          margin-left: auto !important;
+          margin-right: auto !important;
+      }
+  }
+
+  @media only screen and (min-width:480px) {
+            .sender-logo-column {
+      width: 30px !important;
+    }
+  }</style></head><body style=3D"word-spacing:normal;background-color:#f7f7=
+f7;"><div style=3D"padding: 10px 20px; min-height: 90vh; background-color: =
+#f7f7f7;" lang=3D"und" dir=3D"auto"><!--[if mso | IE]><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"wrapper-outloo=
+k" role=3D"presentation" style=3D"width:600px;" width=3D"600" bgcolor=3D"#f=
+fffff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule=
+:exactly;"><![endif]--><div class=3D"wrapper" style=3D"background:#ffffff;b=
+ackground-color:#ffffff;margin:0px auto;max-width:600px;"><table align=3D"c=
+enter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"box-shadow: inset 0 0 0 1px #f5f5f5; overflow: hidden; backgrou=
+nd: #ffffff; background-color: #ffffff; width: 100%;" width=3D"100%" bgcolo=
+r=3D"#ffffff"><tbody><tr><td style=3D"border:1px solid #f5f5f5;direction:lt=
+r;font-size:0px;padding:40px 20px;text-align:center;"><!--[if mso | IE]><ta=
+ble role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0">=
+<tr><td class=3D"" width=3D"600px" ><table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"" role=3D"presentation" style=3D=
+"width:558px;" width=3D"558" ><tr><td style=3D"line-height:0px;font-size:0p=
+x;mso-line-height-rule:exactly;"><![endif]--><div style=3D"margin:0px auto;=
+max-width:558px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" role=3D"presentation" style=3D"width:100%;"><tbody><tr><td =
+style=3D"direction:ltr;font-size:0px;padding:0px;text-align:center;"><!--[i=
+f mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:480px;"=
+ ><![endif]--><div class=3D"mj-column-px-480 mj-outlook-group-fix" style=3D=
+"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-=
+align:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" width=3D"100%"><tbody><tr><td style=3D"vertical-a=
+lign:top;padding:0px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" width=3D"100%"><tbody><tr><td align=3D"center" cl=
+ass=3D"cover" style=3D"font-size:0px;padding:0px;padding-bottom:20px;word-b=
+reak:break-word;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" style=3D"border-collapse:collapse;border-spacing:0px;"=
+><tbody><tr><td style=3D"width:60px;"><img alt=3D"" src=3D"cid:sender-logo"=
+ style=3D"object-fit: cover; border: 0; display: block; outline: none; text=
+-decoration: none; height: 60px; width: 100%; font-size: 13px;" width=3D"60=
+" height=3D"60"></td></tr></tbody></table></td></tr><tr><td align=3D"center=
+" style=3D"font-size:0px;padding:0px;padding-bottom:10px;word-break:break-w=
+ord;"><div style=3D"font-family:Arial;font-size:24px;line-height:28px;text-=
+align:center;color:#191e1e;"><strong>Voici le nouveau lien demand=C3=A9 pou=
+r acc=C3=A9der =C3=A0</strong> PROCURATIONS SUCCESSION J=C3=A9r=C3=B4me SIM=
+ON</div></td></tr><tr><td align=3D"center" style=3D"font-size:0px;padding:0=
+px;padding-top:20px;word-break:break-word;"><div style=3D"font-family:Arial=
+;font-size:14px;line-height:19px;text-align:center;color:#191e1e;">Veuillez=
+ t=C3=A9l=C3=A9charger et sauvegarder une copie dans vos dossiers d=C3=A8s =
+que possible, sinon elle pourrait =C3=AAtre effac=C3=A9e =C3=A0 tout moment=
+.</div></td></tr><tr><td align=3D"center" class=3D"button" style=3D"font-si=
+ze:0px;padding:0px;padding-top:20px;word-break:break-word;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"b=
+order-collapse:separate;line-height:100%;"><tbody><tr><td align=3D"center" =
+bgcolor=3D"#ceff8f" role=3D"presentation" style=3D"border:none;border-radiu=
+s:4px;cursor:auto;mso-padding-alt:12px 22px 11px 22px;background:#ceff8f;" =
+valign=3D"middle"><a href=3D"https://yousign.app/signatures/9c8936c2-df52-4=
+9e0-aa58-f07b010093c6?s=3Dffb2b907feb4eebe6f2d2f4ada086e6157942cd3b91b77e9f=
+774c8b678dd58db2479b496dfdb1d3184dce6b83df041a6e28f8f7a1e4eddb30d9db74e7f12=
+9728&amp;r=3D3ece3fae28073b56fa840c5554b88bd6&amp;source=3Demail&amp;lang=
+=3Dfr&amp;magic_link_id=3Dc7208699-ee57-42fd-ad1b-13faa34a64b1&amp;domain_i=
+d=3D9c949a2c1c&amp;k=3DShPs2j5QDcjFTCaT0zW84hkzBT3fufxt" style=3D"display: =
+inline-block; background: #ceff8f; color: #191E1E; font-family: Arial; font=
+-size: 12px; font-weight: bold; line-height: 22px; letter-spacing: 0.06em; =
+margin: 0; text-decoration: none; text-transform: uppercase; padding: 12px =
+22px 11px 22px; mso-padding-alt: 0px; border-radius: 4px;" target=3D"_blank=
+">T=C3=A9l=C3=A9charger le document</a></td></tr></tbody></table></td></tr>=
+<tr><td align=3D"left" style=3D"font-size:0px;padding:0px;padding-top:30px;=
+word-break:break-word;"><div style=3D"font-family:Arial;font-size:16px;line=
+-height:22px;text-align:left;color:#191e1e;">Bonne signature,<br><b>(56038)=
+ OFFICE NOTARIAL PORTE DES INDES</b></div></td></tr></tbody></table></td></=
+tr></tbody></table></div><!--[if mso | IE]></td></tr></table><![endif]--></=
+td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr=
+></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td=
+></tr></table><table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"" role=3D"presentation" style=3D"width:600px;" width=
+=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-ru=
+le:exactly;"><![endif]--><div style=3D"margin:0px auto;max-width:600px;"><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"width:100%;"><tbody><tr><td style=3D"direction:l=
+tr;font-size:0px;padding:0px;padding-top:26px;text-align:center;"><!--[if m=
+so | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:600px;" ><=
+![endif]--><div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"f=
+ont-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-al=
+ign:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" width=3D"100%"><tbody><tr><td style=3D"vertical-ali=
+gn:top;padding:0px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" width=3D"100%"><tbody><tr><td align=3D"center" styl=
+e=3D"font-size:0px;padding:0px;word-break:break-word;"><table border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-c=
+ollapse:collapse;border-spacing:0px;"><tbody><tr><td style=3D"width:25px;">=
+<a href=3D"https://yousign.com/fr-fr" target=3D"_blank" style=3D"color: #00=
+757F; text-decoration: underline;"><img alt=3D"Yousign" src=3D"cid:greyLogo=
+" style=3D"border: 0; display: block; outline: none; text-decoration: none;=
+ height: 25px; width: 100%; font-size: 13px;" width=3D"25" height=3D"25"></=
+a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></t=
+able></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbod=
+y></table></div><!--[if mso | IE]></td></tr></table><table align=3D"center"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" role=3D"presen=
+tation" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:=
+0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style=3D"=
+margin:0px auto;max-width:600px;"><table align=3D"center" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"width:100%;"=
+><tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:0px;text-align=
+:center;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:t=
+op;width:600px;" ><![endif]--><div class=3D"mj-column-per-100 mj-outlook-gr=
+oup-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display:inlin=
+e-block;vertical-align:top;width:100%;"><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><td st=
+yle=3D"vertical-align:top;padding:0px;"><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><td al=
+ign=3D"center" style=3D"font-size:0px;padding:0px;padding-top:16px;word-bre=
+ak:break-word;"><div style=3D"font-family:Arial;font-size:14px;line-height:=
+19px;text-align:center;color:#696969;"><a href=3D"https://yousign.com/fr-fr=
+" style=3D"color: #00757F; text-decoration: underline;">En savoir plus sur =
+Yousign et la signature =C3=A9lectronique</a></div></td></tr></tbody></tabl=
+e></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><![en=
+dif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table>=
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"" role=3D"presentation" style=3D"width:600px;" width=3D"600" ><tr><t=
+d style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![=
+endif]--><div style=3D"margin:0px auto;max-width:600px;"><table align=3D"ce=
+nter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation=
+" style=3D"width:100%;"><tbody><tr><td style=3D"direction:ltr;font-size:0px=
+;padding:0px;padding-top:26px;text-align:center;"><!--[if mso | IE]><table =
+role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr>=
+<td class=3D"" style=3D"vertical-align:top;width:600px;" ><![endif]--><div =
+class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0px;tex=
+t-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10=
+0%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presen=
+tation" width=3D"100%"><tbody><tr><td style=3D"vertical-align:top;padding:0=
+px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presen=
+tation" width=3D"100%"><tbody><tr><td align=3D"center" style=3D"font-size:0=
+px;padding:0px;padding-top:13px;word-break:break-word;"><div style=3D"font-=
+family:Arial;font-size:14px;line-height:19px;text-align:center;color:#69696=
+9;"><b>Vous rencontrez des difficult=C3=A9s pour acc=C3=A9der aux liens con=
+tenus dans cet e-mail ? </b>Collez l'URL suivante dans votre navigateur web=
+ :</div></td></tr><tr><td align=3D"center" style=3D"font-size:0px;padding:0=
+px;padding-top:13px;word-break:break-word;"><div style=3D"font-family:Arial=
+;font-size:14px;line-height:19px;text-align:center;color:#696969;">https://=
+yousign.app/signatures/9c8936c2-df52-49e0-aa58-f07b010093c6?s=3Dffb2b907feb=
+4eebe6f2d2f4ada086e6157942cd3b91b77e9f774c8b678dd58db2479b496dfdb1d3184dce6=
+b83df041a6e28f8f7a1e4eddb30d9db74e7f129728&amp;r=3D3ece3fae28073b56fa840c55=
+54b88bd6&amp;source=3Demail&amp;lang=3Dfr&amp;magic_link_id=3Dc7208699-ee57=
+-42fd-ad1b-13faa34a64b1&amp;domain_id=3D9c949a2c1c&amp;k=3DShPs2j5QDcjFTCaT=
+0zW84hkzBT3fufxt</div></td></tr></tbody></table></td></tr></tbody></table><=
+/div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></ta=
+ble></div><!--[if mso | IE]></td></tr></table><![endif]--></div></body></ht=
+ml>
+
+--=-aPkdbx+o4EevQ1kkWcaR
+Content-Type: image/png; charset=utf-8; name=greyLogo
+Content-Transfer-Encoding: base64
+Content-Disposition: inline; filename="greyLogo"
+Content-ID: <greyLogo>
+
+iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAABOGlDQ1BBZG9iZSBSR0IgKDE5OTgp
+AAAokZWPvUrDYBSGny8IFoVaMYiDQyZRUExbB4tT0pYiCNbqkGRr0lClNAlfPn96EY5uHVzcvQIn
+RwdB8Qq8A8Wpg0OE4FT6TM95ORzOC5ppNeymVoJhpGSnZRuO6xnzrxRYZIUqB90gTax2+wggiqOQ
+/wj4+UAAvO1YDbvJbCwEiVTABKj0wjQAYQKDa5UoEGNA9weJAvEI6PKsUwfxDBT7mb8DRT/zT6Ao
+HdcD8Q3ofcf1QCsAup/5OqCr8EYB1ONkJC/658qomKZpWL3YD43TUarCYWocRkEsk1h2VdgDsv8A
+WM4WOy3b2CzXavtbM/aeiuN6RmZfJwhArL7kWU5wKa/+VGjV6XN+Y7wGxw8wN8mzvVu434aluzzb
+KENpF57Gv8WcUHAkca2VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE8WlUWHRYTUw6Y29tLmFkb2Jl
+LnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtj
+OWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUg
+WE1QIENvcmUgNS42LWMxNDggNzkuMTY0MDM2LCAyMDE5LzA4LzEzLTAxOjA2OjU3ICAgICAgICAi
+PiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5
+bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6
+Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxl
+bWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hv
+cC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s
+bnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50
+IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoTWFjaW50b3NoKSIgeG1w
+OkNyZWF0ZURhdGU9IjIwMjAtMDEtMDNUMTA6NDA6MjcrMDE6MDAiIHhtcDpNb2RpZnlEYXRlPSIy
+MDIwLTAxLTAzVDExOjE1OjUyKzAxOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIwLTAxLTAzVDEx
+OjE1OjUyKzAxOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0i
+MyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozYTFmYmE1MC03OWU3LTQxNTMtODc2OS1mMDAy
+MDg3ODFjYTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M2ExZmJhNTAtNzllNy00MTUzLTg3
+NjktZjAwMjA4NzgxY2EzIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6M2ExZmJh
+NTAtNzllNy00MTUzLTg3NjktZjAwMjA4NzgxY2EzIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2Vx
+PiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlp
+ZDozYTFmYmE1MC03OWU3LTQxNTMtODc2OS1mMDAyMDg3ODFjYTMiIHN0RXZ0OndoZW49IjIwMjAt
+MDEtMDNUMTA6NDA6MjcrMDE6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hv
+cCAyMS4wIChNYWNpbnRvc2gpIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpE
+ZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pqvk
+sPsAAANjSURBVEiJtZZNTBtXEMf/8553zVdCxEe5QGlaQnIoqEqo4uLkkp57yMW9RblZilKUODIp
+XxegRsYGVVYstYeK+0rtrceISwICqnxVkZI4kSJVhFZViIuwIWvvmx6idde7CzVCGWmlffNm5jfz
+9r15S8wMp6QSU5cZ/BF8hCBex0fHs0SkAGB+fr7FKm5fVsRH3baSxKMbI+O/AEDAPcmgVoDd6ncQ
+ZrIBAGCZxbAQ9Bxa/e0qu1Kpi9n6yh57IAK8roBTfhCpiSX7PZvNNhXzm/1Bkj9cjccLTrvUd5Of
+Ccjf/ovpzlaKV75lQBQaj7U/tEe7+fxZgHNXR0dfO63S6XQbQJ+06/rqnhDB0hciJa1Eo9ESAGQy
+maBF1ueyXtz1JGnuDEKKB5cc1XkgjS0tHggRmR/qDWv2+O329mkw/ozFxteddslk8ohi9Em9frkq
+cXfAaDRaFEx5F+VeJBbbAQDDMCRU+Qto5KlCKPMss3oWi8U294W8C4pKNUSkmlu0SmYvc7k+FrQz
+PDyRc7pkMpkgMw/Ua3VeuC/D8fGJxO/R6Lf/VByENUia91vsbucHBMTGNzdvepbbF8KSK2utKaps
+27lEolcpCnZ3n3jstDcMQzJTSA/wHb94vpBgsPkVEZkC9OTa2Nhftl7BCssALUciEctp/8eLJ/1S
+cGFoeOJFzZChoaG3jc2tmaNtHT/bukwy2QnGB13He+9VVc1MlqJBQbpnCZ1GVc9eMjsz/XVqZuqC
+W/99cupkKjF5jZk9Cdsx/XeXS27dSrSS4p6OQN2Ke84scxjAsrOnuaUmSGHLCjPh4SVXj5qbm+5i
+UHt3z6n7+/n/LySbzTYJRl+grnHJPWeZOAeo1UgkYh4KUtzaDLEgzylOp9NtpPhjoTes7uVbE6Ry
+ioXm2Tm8Wwgz4X7ctYQHhpSKW2f8TvFPyeQRkPi06VhgeS/fmiCGYUilVEiQ9FTxplwOEeHplSsj
+bw4FWX+Z62PQTmxk5LlTv7CwUGdBDfjdJQeCMDOVSipM7A3098bGGQKvX78+tnEoyOzsdC8AvftE
+dSNcXFwMCLZCfnfJfkLuVkJESM1MX2QgoAt+5JyzyqJTkeqJj078WEtwO7bnbwUAgkJbM63Sl2aZ
+z1cnoKyg1H89SBWATyXvQ/4FKSJnKRKxVgQAAAAASUVORK5CYII=
+
+--=-aPkdbx+o4EevQ1kkWcaR
+Content-Type: image/gif; charset=utf-8; name=sender-logo
+Content-Transfer-Encoding: base64
+Content-Disposition: inline; filename="sender-logo"
+Content-ID: <sender-logo>
+
+R0lGODlheAB4APQAABkeHiYrKzI4OD9FRUtTU32GhoqUlJagoKOurq+7u7zIyMjV1dTi4uHv7+Tx
+8ev09PD39/T5+f///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkA
+ABIALAAAAAB4AHgAAAj+ACUIHEiwoMGDCBMajAChoYOHDSJGfNgQQgSFGDNq3Mix40IIDiSKHElS
+pAOLHlOqXLmRYciSMGOOPHmRpc2bLSHI3MlzJEqcQIOC7Em06MmgSFXqLMqU6c+kUBEubUrVaM2o
+WKdW3UrUAVaoWrmK7QnhK84IL8eq7engqlmPYdfKlVn2LUe0c/OydWtXqt6/ZPsmTAu4MEyvggsS
+Nsx4ZuKBixtLnsj3a4TJmEtWhno5s2eRm4N2/ky6Qeibo0uTPs0ysmrMiJG6fg1bNm3asW3Gvf25
+LsvUvFWzzjg7eObcHosbz+y7I/DlwlMqh167427qpJtnxG58OGTuwbX+I3wOPjrG6eUxiy9IPn1p
+1tfd91YIGID9+/jz6z8g8oD+/wACFlp8YgFoIH78SeTfgQcCtp4EhdlnQAIUVmjhhQnYl2BEC2Lo
+YYUG2AcYcgK1p5Z9CTClYX8iFpUhAIVVRmCBAKRY1IoKtkjUi4WJZxiKKgKwYQMLMsVjYez9WGOQ
+Qxbpoo5/uTUjjTYShSOHUPJ0pIMEoccVkDcKySKMT5I5IkGMgWmlmDma2dOWApaY5pJhNpnlTnBG
+KdCUVDI5ppF35lWXl1/SuaadACyg6KKMNroAAoHOhVhjavZ0JZEMNsiYQJQaaimbWGYa4KYmylUp
+T5cy4OiqrDbGUKf+VX46ZHkNweqnfLXOGSuqoKY3lK63ugcRsHWKpEAByCar7LLMNkZon8W2Kap+
+zkp26k6XLkjAttx26y0BA0Qqn0jXypStuCXlOS5J5cZ0rptaoruufQEIYO+9+OYrwLuAwjtip9Pm
+h2i/kj27FbMIJ6zAn2U6a/BrTu4or1onjRvxmxOPlat7F8frr14bp9cxnhmLZVFjH6Zs4QIMS/xx
+XhcBHPB9AzfMWMxzzkxzyxi/PJdADzdlHwKsssqvzYUhxmehu2Lb68gyqSuonEo2be7TJUck9Vw1
+lXqip7zW7PLN30UIttNi92xYbktX1S5MR4/dI0FeQ3sozx4bxlf+1cFi6nO6WVNlUNtCn3112nlz
+mWR9hruL9d8kba3WZkF/OqHKF76L+YUhQs6VX3/pjOCYonte1YN1u13646UDphDh6/71INWxv4cR
+7LWvReJCuX/mnQS4977V7gelLvzkHAV/fFGzI1T58jwRr5Dx0DP1++DVS9pa9hTbRD33MF2fkPLg
+N8/R89lLLx34TKmvEvrCu6/S99mL7xz7O9nvEf3C658S/7Xz3/zgB562PEYCBKSO/LCSQOMs8Cvk
+W475+oKX+AkwK72b4AElUEH5GHCDG4mgekC4Pu48hYTOaeBcTojC/4lwLSxsIUt+5RmayJAzLyRK
+DG+YFJf8xYYZPExMBHzIFZpcMIiiYYhDFvOQkzTkiFEJCAA7
+
+--=-aPkdbx+o4EevQ1kkWcaR--

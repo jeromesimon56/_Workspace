@@ -1,0 +1,1241 @@
+Received: from GVUP250MB1488.EURP250.PROD.OUTLOOK.COM (2603:10a6:150:362::19)
+ by VI6PPF5FBC185B3.EURP250.PROD.OUTLOOK.COM with HTTPS; Sat, 23 May 2026
+ 06:03:47 +0000
+Received: from PH1PEPF00013304.namprd07.prod.outlook.com (2603:10b6:518:1::16)
+ by GVUP250MB1488.EURP250.PROD.OUTLOOK.COM (2603:10a6:150:362::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.48.14; Sat, 23 May
+ 2026 06:03:45 +0000
+Received: from SJ1PEPF000023D5.namprd21.prod.outlook.com
+ (2a01:111:f403:c902::13) by PH1PEPF00013304.outlook.office365.com
+ (2603:1036:903:47::9) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.48.17 via Frontend Transport; Sat, 23
+ May 2026 06:03:44 +0000
+Authentication-Results: spf=pass (sender IP is 156.70.17.113)
+ smtp.mailfrom=bounce-credit-agricole.fr; dkim=pass (signature was verified)
+ header.d=ca-morbihan.fr;dmarc=pass action=none
+ header.from=ca-morbihan.fr;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ bounce-credit-agricole.fr designates 156.70.17.113 as permitted sender)
+ receiver=protection.outlook.com; client-ip=156.70.17.113;
+ helo=mta-70-17-113.credit-agricole.fr.sparkpostmail.com; pr=E
+Received: from mta-70-17-113.credit-agricole.fr.sparkpostmail.com
+ (156.70.17.113) by SJ1PEPF000023D5.mail.protection.outlook.com
+ (10.167.244.70) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.71.0 via Frontend
+ Transport; Sat, 23 May 2026 06:03:43 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:B2C263D6DD49A3E15F04632D68187956218A91D6C553E7FD83AE0AD937CC93E6;UpperCasedChecksum:11B084FFAFEFA3E73067297D21557D52CAE465927C5930661BB69DCC51FE5853;SizeAsReceived:1501;Count:13
+Return-Path: ca-gestion-bounces@bounce-credit-agricole.fr
+X-MSFBL: RWfNjM7/aDLX0c66hr3bn9YWWqvNLFqkLhMBGVPx04Y=|eyJtZXNzYWdlX2lkIjo
+	iNmExMDNlNDMxMTZhMWI5NzIxNDIiLCJjdXN0b21lcl9pZCI6IjEiLCJzdWJhY2N
+	vdW50X2lkIjoiMjgiLCJyIjoiamVyb21lc2ltb241NkBob3RtYWlsLmNvbSIsInR
+	lbmFudF9pZCI6ImNyZWRpdGFnIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ca-morbihan.fr;
+	s=scph0417; t=1779516222; i=@ca-morbihan.fr;
+	bh=riyAbEYGdvfeJ1ct+/5GDU9ZshA1k1cZ6pWFsF2CI4A=;
+	h=Message-ID:Subject:From:To:Date:Content-Type:From:To:Cc:Subject;
+	b=DnscZwUANCf2UoM9rqfB4X8c/+nX4Of0IlWdYby/vYxV+Rp+HbQkWZ8fNRrA1eF2U
+	 GJloKyerCCmMKr5VOozWd+ibtMCvlaf1kK2WWNx8a5T0QdPt04o1DH9/2Jf5JgQPrp
+	 E4nZjmXqo7NKeuaplS+D9KIOgPw0B2ONy9zni3BI=
+Received: from [10.95.192.248] ([10.95.192.248])
+	by i-0c21d3cf4c78e687f.mta3vrest.sd.prd.sparkpost (ecelerity 5.2.0.75900 r(msys-ecelerity:tags/5.2.0.29)) with REST
+	id 24/1A-25432-E33411A6; Sat, 23 May 2026 06:03:42 +0000
+Message-ID: <24.1A.25432.E33411A6@i-0c21d3cf4c78e687f.mta3vrest.sd.prd.sparkpost>
+X-Mailer: Quadient Inspire Designer MIME
+Subject: =?UTF-8?B?TW9uc2lldXIgU0lNT04sIHN1aXRlIMOgIG5vdHJlIGVudHJldGll?=
+	=?UTF-8?B?bg==?=
+From: =?UTF-8?B?Q3LDqWRpdCBBZ3JpY29sZSBkdSBNb3JiaWhhbg==?=
+ <nepasrepondre@ca-morbihan.fr>
+To: "JEROME SIMON" <jeromesimon56@hotmail.com>
+Reply-To: <nepasrepondre@ca-morbihan.fr>
+Date: Sat, 23 May 2026 06:03:36 GMT
+Content-Type: multipart/alternative;
+	boundary="--_=_NextPart_003_01C39C9D.5EAC49D8"
+X-IncomingHeaderCount: 13
+X-MS-Exchange-Organization-ExpirationStartTime: 23 May 2026 06:03:43.9001
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 77dafeda-3317-4b73-6409-08deb8910baf
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SJ1PEPF000023D5:EE_|GVUP250MB1488:EE_|VI6PPF5FBC185B3:EE_
+X-MS-Exchange-Organization-AuthSource: SJ1PEPF000023D5.namprd21.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/23/2026 3:32:50 AM
+X-MS-Office365-Filtering-Correlation-Id: 77dafeda-3317-4b73-6409-08deb8910baf
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 156.70.17.113
+X-SID-PRA: NEPASREPONDRE@CA-MORBIHAN.FR
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:4;ARA:1444111002|12119299003|36140799009|9000799056|32080799009|5301999021|10300799038|1680799066|35120799006|5139299004|6401999021|9400799043|2120399003|3069299007|70100799019|970799063|4302099013|3412199025|440099028|18021999003|30041999003|1360799030|1370799030|1380799030|1602099012;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 May 2026 06:03:43.2560
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 77dafeda-3317-4b73-6409-08deb8910baf
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: SJ1PEPF000023D5.namprd21.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: GVUP250MB1488
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.6441419
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0048.002
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(920221120095)(90000117)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?YU9KNWhZTmlvL1N6UStrNVN1ZWVNSFBMd1ZveVVaYS8zbmsvRVdrQVZ2STZa?=
+ =?utf-8?B?OTBnaHFDSnZkbGF1a1Z2S2g0azBPR2JtNU9BYUNjN1h4dXhVNytXMGFiZWRm?=
+ =?utf-8?B?UG1IUFhBNE1UQ21KcjJUZHhMYkhlTXZ2NEowK0lCT09mTENzM3VJcG9oeGJa?=
+ =?utf-8?B?ano3QXpBMG5nc2VnemhqWmhKd0QxUnZhbjFYNzZaZE55clNWZytXS1ROV3JH?=
+ =?utf-8?B?MHN4L0pRNzZXdDdJaXFWeHRaS3JIbXJUalVWcFRXRjFvMFRwN0dQT3J6WFhB?=
+ =?utf-8?B?NEZpbE8zYks5VDg4M3hXaTlaZSt1cURldGNnMEM5SVNvbGlOcGpUWDJDY0Yv?=
+ =?utf-8?B?cDRTOG5JMCsvWUM0eSs5bk4ycEVMMmROZ1hsT1hhNEhqaGlhbHZEcWpyekgw?=
+ =?utf-8?B?TjdNUzFCTGJQcDUrYzl3U0t0S05iL0JxTkV6bURKQTQ0TVMzUXdFNkhyNnJO?=
+ =?utf-8?B?aEFDdDU0dDdOSFd5Y0lMSGRldThPcnE4ckNpMTVFUS93TUFtT1hqMitzZ2Ja?=
+ =?utf-8?B?bDBwam9NaEtWT05vaGdEL0d2eitNMFo3Z25rclBTOHBLNlNBZGllUERobU1Z?=
+ =?utf-8?B?VVBGQ3ByamJNVzVFZXFqcDI0Vk1MTE05SXdrd05Bbnl1c1V0dUYvckREc3hJ?=
+ =?utf-8?B?Ykhia1NrZUh6aHpGWVRqN3pVS1lJU3ZTMllzUmkvZGxEM2VKZG02a055cHlQ?=
+ =?utf-8?B?Q2JKVTFTWUlQVkJlcFBONkd1V3YxTGlXbzI3NU5CWU02dnlsa1NjWGlFSk5N?=
+ =?utf-8?B?SVNGRWRUWXQ1QndyNHFJcXNHQXp5VXZCa3Btb3dlNGxpenVzeW96bEdQN2xL?=
+ =?utf-8?B?QnBXdmlFTWIvdVltZDBobWErY2ZQZHlLcy9jL2szWWFUVm4yMFZIblBNOXd6?=
+ =?utf-8?B?MUJ4dGpONFphdmV3VUxRQWhYRVNXaGM3UXNwSGRvclN0RDZPaTltUS9XVm05?=
+ =?utf-8?B?TDZTN1VzSGhaRXFDNU1DNjNPVUFKb09uMjdUTlZsbncxM1Q0ZGkxa2lCQ2p5?=
+ =?utf-8?B?RDhXK3ZZdXFQMCt4cHN2QVJ2K1dCZlE0RktCRlJGMWlzY3VScEhjY0M1a0Rt?=
+ =?utf-8?B?Q093aERPdGFqNDY0Q1pDTXpwa2Zkc0hETk5OQmdwbjhSN3FFdTZSNjVVVTlG?=
+ =?utf-8?B?bGVnVWhNNWZuZkVlZFY4WGYyalc5aDJ2ck9ON2t3M2pBKzFiOG5acTdvWVo5?=
+ =?utf-8?B?WXdGKyt6c3BkWEpPdTd3dGZRNklIT2F6bmRqZ1V4SXZoSkt1V1R3Ylp1N0VD?=
+ =?utf-8?B?Y2pZcEt1VENTMndjYTlnUlZWNi9yL3dzTVIxWGErcWFGd1pMSkxpNUtTQkty?=
+ =?utf-8?B?Wmt0RDdPMUtoeUJLbi93Q21LWE5MMVgyN2pTRkY3NVE0U1dHNkF3ZTVHUnJm?=
+ =?utf-8?B?MWJOUTNpQlBsbmMzV2NtVlF6dUd2a2Eza3lJOGxlZFlsbUpkbFVZcEwyeWNy?=
+ =?utf-8?B?bElvQ2pIZEhZOGJZb2FWcDJ0bndFRnAxSzNWUmNGamlUVTNiN1Zac1dyQ0xN?=
+ =?utf-8?B?YkJSN3ZaUkF0WlFkRERIK3dBdlREQjFqNmFXOTUwaEtneU9ycnFGcmFWOS9t?=
+ =?utf-8?B?Tk1nNlk1RTBBSEJkMlZtd1F5dktzUytVUkw1VmRwTm1OWXZDSHhLYVM1Z0ZK?=
+ =?utf-8?B?b0U3K2FxNW14VTBQUnFSQWRUVGVOd0ZvUnhGYTFLZ21kdTFPSTllYkFZblcx?=
+ =?utf-8?B?ZVpzUjA0UzBsR2FWcUhyejlLeFVLaDhjYVFtTURTT2hTTFhLYXpVa0hOTXFM?=
+ =?utf-8?B?MUhOZVBnWklsWXVNbjBBWThXeGlQQThnRkoxL2s0Y00zai9wTWNHZ1hoVXpt?=
+ =?utf-8?B?TVlTeEY3T3pHclZpSEtVTzE0Y1BhLzNwcFV1MHM1TklmdmZYNmJMd1FkcCt0?=
+ =?utf-8?B?MEJTUUQ4T2hkbngrd2pFcGNXeEJDcUVTeGU4c3I3ZDZPQzB3dnI4MUVha3g3?=
+ =?utf-8?B?aGNKTDBHQnZ6R1lZUnJXdy8xQkZKdGpwUStTRzFTMEdLd1BSRWN6YzFpMnB5?=
+ =?utf-8?B?SnBVWTF0V3BVd0xBcVhLY01udTNlS3J2Z2xsUjRlVExwRmozbnFOSExLV05N?=
+ =?utf-8?B?OCtUYmNjY3E4MjEwSG1TQUhtS2ljWnlNYjI3OUMxdXJQKzZyZko4VndXdHFV?=
+ =?utf-8?B?RUNiajJ3RGhxbEpsMWVMNElzaHY4NGhIeFlxR1FLY2I5dXQvS25yMDhDZEJB?=
+ =?utf-8?B?aDJBV20rZlFtVE9vRG9IYVhwN0pLR0N4eXVldURRNGlSTGZEV2lPeUhWVGxw?=
+ =?utf-8?B?c0JkTCsvclFZOFI3aEpReEV0b0JvYmNpcGNZcWRnTnYvb2JCUmhZejBnL1ky?=
+ =?utf-8?B?OERtMENLelREamVTUXVnVHpTT3JsWVBSYVNOMk9NSy9GSmpvSnRidStYQjkz?=
+ =?utf-8?B?NFpzTkxlZ2dPaERteEhjcHBNSnl6aW9yWjV3ZFNNZ0dQSEFHeGJNZk55UlhX?=
+ =?utf-8?B?QkViWWttT0RXR3FWZ05wU05HTUdsMFBjMkp3VkJTNDVMcnY3cEs3OVlROUUr?=
+ =?utf-8?B?R2dhdUhWMzFzK2RIVExkLzJiOTVVWnAzR1REbWhsaUUwS0gxZC9IUzVVMXJV?=
+ =?utf-8?B?Sk1KQkQxM3lRRktEdXJ4YUcwSlplR291a3dnTmg3SnhyNU8rRkJiZHJQU21K?=
+ =?utf-8?B?a2xuNTN4bUN2MEZSd2lpZUV3cy9aM0tRdHBwQUt0R2RzbXJhSnZaUGFmWXVE?=
+ =?utf-8?Q?CIQw?=
+MIME-Version: 1.0
+
+----_=_NextPart_003_01C39C9D.5EAC49D8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+=0D=C3=8Ates-vous globalement satisfait de l=E2=80=99accompagnement effectu=
+=C3=A9 par votre agence =3F=0D=0DVoir la version en ligne=0D=0D=E2=80=8C=0D=
+Cr=C3=A9dit Agricole - Banque et assurances=0DVOTRE AVIS=0D=0DCr=C3=A9dit A=
+gricole - Banque & Assurances =0DCOMPTE POUR NOUS=0D=0D=E2=80=8C=0DMadame, =
+Monsieur,=0D=0DNous n=E2=80=99avons pas eu l=E2=80=99occasion d=E2=80=99=C3=
+=A9changer r=C3=A9cemment avec vous sur vos besoins =0Det vos attentes.=0D=
+=0DParce que la satisfaction de nos clients est au coeur de nos priorit=C3=
+=A9s, nous =0Dvous sollicitions quelques minutes pour r=C3=A9pondre =C3=A0 =
+ce questionnaire et ainsi =0Dparticiper =C3=A0 l=E2=80=99am=C3=A9lioration =
+de la qualit=C3=A9 de notre relation et de nos services.=0D=0DMerci d=E2=80=
+=99avance pour votre contribution.=0D=0D=E2=80=8C=0D=C3=8Ates-vous globalem=
+ent satisfait de l=E2=80=99accompagnement effectu=C3=A9 par votre agence =
+=0D=3F(1)=0D=0D(cliquez sur l'=C3=A9toile pour noter, l'=C3=A9toile 5 =C3=
+=A9tant la meilleure note)=0D=0D=E2=80=8C=0D=C3=80 tr=C3=A8s bient=C3=B4t,=
+=0D=0DLe Cr=C3=A9dit Agricole de=0D=0D=E2=80=8C=0DVos contacts=0DVotre cons=
+eiller=0DT=C3=A9l : *=0D=0DMail :=0D=0DVotre agence=0DT=C3=A9l : *=0D=0DMai=
+l :=0D=0DT=C3=A9l=C3=A9chargez l=E2=80=99application Ma Banque=0DApp StoreG=
+oogle Play=0DAcc=C3=A9dez au site web=0Dcredit-agricole.fr=0Dfacebook      =
+         youtube        instagram               linkedin=0DCr=C3=A9dit Agri=
+cole - signature=0DCr=C3=A9dit Agricole du Morbihan - Caisse R=C3=A9gionale=
+ de Cr=C3=A9dit Agricole Mutuel - =0DSoci=C3=A9t=C3=A9 coop=C3=A9rative =C3=
+=A0 capital variable, agr=C3=A9=C3=A9e en tant qu=E2=80=99=C3=A9tablissemen=
+t de =0Dcr=C3=A9dit. Si=C3=A8ge social : Avenue de K=C3=A9ranguen - 56956 V=
+annes Cedex 9 - 777 903 816 =0DRCS Vannes. Soci=C3=A9t=C3=A9 de courtage d=
+=E2=80=99assurance immatricul=C3=A9e aupr=C3=A8s de l'ORIAS sous =0Dle n=C2=
+=B0 07 022 976 (www.orias.fr.) Titulaire de la carte professionnelle =0DTra=
+nsaction, Gestion Immobili=C3=A8re et Syndic n=C2=B0 CPI 5605 2021 000 000 =
+014 =0Dd=C3=A9livr=C3=A9e par la CCI du Morbihan, b=C3=A9n=C3=A9ficiant de =
+la Garantie Financi=C3=A8re et =0DAssurance de Responsabilit=C3=A9 Civile P=
+rofessionnelle d=C3=A9livr=C3=A9es par CAMCA, 53 rue =0DLa Bo=C3=A9tie 7500=
+8 Paris.=0DIdentifiant Unique CITEO : FR234397_03YDWF=0D=0DCr=C3=A9dit phot=
+o : Istock=0D=0D(1) Enqu=C3=AAte de satisfaction r=C3=A9alis=C3=A9e par la =
+soci=C3=A9t=C3=A9 CRITIZR, SAS au capital de =0D706 900 euros, immatricul=
+=C3=A9e au RCS Lille M=C3=A9tropole sous le num=C3=A9ro 521 950 626, =0Ddon=
+t le si=C3=A8ge social est situ=C3=A9 =C3=A0 4, avenue des Saules, 59160 Li=
+lle. Goodays est =0Dune marque d=C3=A9pos=C3=A9e par la soci=C3=A9t=C3=A9 C=
+RITIZR.=0D=0D*Appel non surtax=C3=A9, co=C3=BBt selon op=C3=A9rateur. Num=
+=C3=A9ro accessible aux horaires =0Dd=E2=80=99ouverture de votre agence dis=
+ponibles sous =0Dhttp://click.ca-morbihan.fr/f/a/J2oizdqQRmRMDbTfpMbiew~~/A=
+AAAARA~/FxGotk1ESuSYWQkQLYM_Li0fBVNr7-0NQJxb4Fdoq0dwhAD26HtqhGPXoRxjUNWWQnB=
+VVIavlS5VBM_hDTF_frYvGnH9x_uLcqFW8tqd8WgAqfZ8eORlKgGy3wfBqb83ygiKOcC30xI_qe=
+P7fMioGJHW-ddXMXrgf_Z_Ky3kIdg-oaHXUEc0t7SEoIXIjrqb2ZmAAl7WhZhl-BwQOQToNZDvt=
+3Z6OYBooAxD4baoB3A~=0D=0DT=C3=A9l=C3=A9chargement et acc=C3=A8s gratuits de=
+ l=E2=80=99application Ma Banque, hors co=C3=BBts de =0Dcommunication selon=
+ op=C3=A9rateurs. L=E2=80=99utilisation de l=E2=80=99application n=C3=A9ces=
+site la =0Dd=C3=A9tention d=E2=80=99un terminal de communication compatible=
+ avec acc=C3=A8s =C3=A0 Internet et =0Dl=E2=80=99abonnement au service Cr=
+=C3=A9dit Agricole En Ligne.=0D=0DFacebook est une marque d=C3=A9pos=C3=A9e=
+ de Facebook Inc.=0DInstagram est une marque d=C3=A9pos=C3=A9e d=E2=80=99In=
+stagram LLC.=0DYouTube est une marque d=C3=A9pos=C3=A9e de Google LLC.=0DLi=
+nkedIn, le logo LinkedIn, le logo IN sont des marques d=C3=A9pos=C3=A9es ou=
+ des marques =0Dcommerciales de LinkedIn Corporation et de ses filiales aux=
+ =C3=89tats-Unis et/ou =0Ddans d'autres pays.=0DApple et le logo Apple sont=
+ des marques d=E2=80=99Apple Inc., d=C3=A9pos=C3=A9es aux =C3=89tats-Unis =
+=0Det dans d=E2=80=99autres pays. App Store est une marque de service d=E2=
+=80=99Apple Inc.=0DAndroid, Google Play et le logo Google Play sont des mar=
+ques de Google LLC.=0D=0DLes donn=C3=A9es =C3=A0 caract=C3=A8re personnel r=
+ecueillies par votre Caisse r=C3=A9gionale de =0DCr=C3=A9dit Agricole en qu=
+alit=C3=A9 de responsable du traitement dans le cadre de =0Dl=E2=80=99enqu=
+=C3=AAte de satisfaction seront utilis=C3=A9es pour les finalit=C3=A9s suiv=
+antes : =0Dam=C3=A9lioration de la qualit=C3=A9 des relations et des servic=
+es, personnalisation des =0Doffres et des services propos=C3=A9s, fond=C3=
+=A9es sur l=E2=80=99int=C3=A9r=C3=AAt l=C3=A9gitime. Vos donn=C3=A9es =0Dse=
+ront conserv=C3=A9es pendant une p=C3=A9riode maximale de trois ans.=0D=0DV=
+ous pouvez =C3=A0 tout moment dans les conditions pr=C3=A9vues par la loi, =
+acc=C3=A9der =C3=A0 vos =0Ddonn=C3=A9es personnelles, vous opposer =C3=A0 l=
+eur traitement, les faire rectifier, =0Ddemander leur effacement, la limita=
+tion de leur traitement, leur portabilit=C3=A9, =0Dou communiquer des instr=
+uctions sur leur sort en cas de d=C3=A9c=C3=A8s.=0D=0DPour toute demande en=
+ lien avec vos donn=C3=A9es personnelles, vous pouvez contacter =0Dle D=C3=
+=A9l=C3=A9gu=C3=A9 =C3=A0 la Protection des Donn=C3=A9es du Cr=C3=A9dit Agr=
+icole du Morbihan par l=E2=80=99un =0Ddes canaux suivants :=0D1. Par lettre=
+ simple, =C3=A0 l=E2=80=99adresse : Cr=C3=A9dit Agricole du Morbihan, Servi=
+ce Ecoute =0DClients, Avenue de Keranguen 56956 Vannes Cedex 9. Les frais d=
+e timbre vous =0Dseront rembours=C3=A9s sur simple demande de votre part.=
+=0D2. Par e-mail =C3=A0 : delegue.protection.donnees@ca-morbihan.fr.=0D3. E=
+n ligne en compl=C3=A9tant le formulaire : RGPD.=0DNotre politique de prote=
+ction des donn=C3=A9es personnelles (PPD) est disponible sur =0Dnotre site =
+internet : PPD.=0DEn cas de contestation, vous pouvez former une r=C3=A9cla=
+mation aupr=C3=A8s de la CNIL =0Ddont le site internet est accessible =C3=
+=A0 l=E2=80=99adresse suivante http://click.ca-morbihan.fr/f/a/9-q-eT9l4Fkr=
+Hdxun4XfQg~~/AAAAARA~/wtvDsuhNkH-25Sim7jSvUMc4o3XVUKkdIkEl2AAQmkVF7icb_dy8Q=
+05g21o9F9NO4DkxkkNfexgRyuMB9Sk5mLtPNWrcWWL-diO8guWr54EtO7L5h8DseM2vJ9pO8crT=
+ =0Det le si=C3=A8ge est situ=C3=A9 3 Place de Fontenoy, 75007 Paris.=0D=0D=
+Vous pouvez vous d=C3=A9sabonner en cliquant sur le lien me d=C3=A9sabonner=
+=0D=0D=0A=0D=0A
+----_=_NextPart_003_01C39C9D.5EAC49D8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html><html lang=3D"en" xmlns:v=3D"urn:schemas-microsoft-com:vml">=
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+  <meta name=3D"x-apple-disable-message-reformatting">
+  <meta http-equiv=3D"x-ua-compatible" content=3D"ie=3Dedge">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">
+  <meta name=3D"format-detection" content=3D"telephone=3Dno, date=3Dno, add=
+ress=3Dno, email=3Dno">
+  <meta name=3D"color-scheme" content=3D"light dark">
+  <meta name=3D"supported-color-schemes" content=3D"light dark">
+  <!--[if mso]>
+		<noscript>
+			<xml>
+				<o:OfficeDocumentSettings xmlns:o=3D"urn:schemas-microsoft-com:office:o=
+ffice">
+					<o:PixelsPerInch>
+						96
+					</o:PixelsPerInch>
+				</o:OfficeDocumentSettings>
+			</xml>
+		</noscript>
+		<![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+		<style type=3D"text/css">
+			td,th,div,p,a,h1,h2,h3,h4,h5,h6
+			{
+				font-family: "Segoe UI", sans-serif;
+				mso-line-height-rule: exactly;
+			!important}
+
+			.mso-fallback-font-heading
+			{
+				font-family: Arial, Tahoma, Impact, Arial Narrow, Arial Black, sans-ser=
+if !important;
+				font-weight: bold;
+				letter-spacing: -0.05em;
+			}
+
+			table
+			{
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+			sup
+			{
+				font-size: 100% !important;
+			}
+
+		</style>
+		<![endif]-->
+  <title></title>
+  <link rel=3D"preconnect" target=3D"_blank" href=3D"https://fonts.googleap=
+is.com">
+  <link rel=3D"preconnect" target=3D"_blank" href=3D"https://fonts.gstatic.=
+com" crossorigin=3D"">
+  <link target=3D"_blank" href=3D"https://fonts.googleapis.com/css2?family=
+=3DOpen+Sans:wght@300;400;700&amp;display=3Dswap" rel=3D"stylesheet" media=
+=3D"screen">
+  <style>
+			@media screen
+			{
+				@font-face
+				{
+					font-family: Tahoma;
+					font-style: normal;
+					font-weight: 900;
+					src: local(' XNarrow Black'), local(' XNarrow Black'), url(https://mor=
+bihan.credit-agricole.fr/CRB_EMAILING/COMCLI/CHARTE-2022-2023/XNarrow-Black=
+.woff2) format('woff2');
+				}
+			}
+
+			@media (max-width: 600px)
+			{
+				.sm-mx-0
+				{
+					margin-left: 0 !important;
+					margin-right: 0 !important;
+				}
+
+				.sm-mt-2
+				{
+					margin-top: 8px !important;
+				}
+
+				.sm-ml-0
+				{
+					margin-left: 0 !important;
+				}
+
+				.sm-block
+				{
+					display: block !important;
+				}
+
+				.sm-hidden
+				{
+					display: none !important;
+				}
+
+				.sm-h-auto
+				{
+					height: auto !important;
+				}
+
+				.sm-w-full
+				{
+					width: 100% !important;
+				}
+
+				.sm-p-0
+				{
+					padding: 0 !important;
+				}
+
+				.sm-px-5
+				{
+					padding-left: 20px !important;
+					padding-right: 20px !important;
+				}
+
+				.sm-px-4
+				{
+					padding-left: 16px !important;
+					padding-right: 16px !important;
+				}
+
+				.sm-py-7_5
+				{
+					padding-top: 30px !important;
+					padding-bottom: 30px !important;
+				}
+
+				.sm-text-center
+				{
+					text-align: center !important;
+				}
+
+				.sm-text-xl
+				{
+					font-size: 20px !important;
+				}
+
+				.sm-leading-6
+				{
+					line-height: 24px !important;
+				}
+			}
+	=09
+</style>
+ </head>
+   =20
+   =20
+   =20
+ <body style=3D"word-break: break-word; -webkit-font-smoothing: antialiased=
+; margin: 0; width: 100%; background-color: #F7F8FA; padding: 0">
+  <div role=3D"article" aria-roledescription=3D"email" aria-label=3D"Cr=C3=
+=A9dit Agricole - Banque &amp; Assurances" lang=3D"fr">
+   <table style=3D"width: 100%; font-family: 'Open Sans', Roboto, ui-sans-s=
+erif, 'Segoe UI', Arial, -apple-system, sans-serif" cellpadding=3D"0" cells=
+pacing=3D"0" role=3D"presentation">
+    <tr>
+     <td align=3D"center">
+                       =20
+                       =20
+      <table class=3D"sm-w-full" style=3D"width: 560px" cellpadding=3D"0" c=
+ellspacing=3D"0" role=3D"presentation">
+       <tr>
+        <td class=3D"sm-px-4" style=3D"text-align: center">
+
+
+<p style=3D"margin: 0; margin-top: 24px; margin-bottom: 5px; font-size: 14p=
+x">
+
+=C3=8Ates-vous globalement satisfait de l=E2=80=99accompagnement du Cr=C3=
+=A9dit Agricole?
+
+</p>
+
+
+         <p style=3D"margin: 0; margin-top: 5px; margin-bottom: 24px; font-=
+size: 12px">
+<a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/ZJkjfmoFZkTvXt=
+CEdVFIUQ~~/AAAAARA~/BVUl_mpkXj3H1KC8h_idw7wYas1IOq91pFHHHjn_LHoJpMwFGIDn_Fy=
+4R8Enncj3Q-fY0u7M9GUgRpVcbxuzgVtlqifUQVDc8swJcu6cm_c1ZqMVCmtI6Xe_VAdJbbBZ7U=
+eOZ6My-VUva9Ws1ozzbbfLIv8lWk46j4Oo3l2pVz3oCIZ_OiR9W4cA6XR0npZpOBZLEn69hob__=
+J3BUu4pR7_4AjZLXFbXC5D_d58_FiHVSL1m_mYo5cEPM7ZtqnyPKUA8uQ87EBn1T-pZ-o7D7A~~=
+" target=3D"_blank" style=3D"color: #071621;">Voir la version en ligne</a>
+     =20
+         </p>
+        </td>
+       </tr>
+      </table>
+                       =20
+                       =20
+                       =20
+      <table class=3D"sm-w-full" style=3D"width: 560px" cellpadding=3D"0" c=
+ellspacing=3D"0" role=3D"presentation">
+       <tr>
+        <td style=3D"background-color: #fefefe">
+                                   =20
+         <table style=3D"width: 100%" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation">
+    =20
+
+<tr>
+   <td style=3D"line-height: 20px">=E2=80=8C</td>
+ </tr>
+=20
+
+
+
+  <tr>
+           <td>
+            <table align=3D"center" style=3D"width: 100%" cellpadding=3D"0"=
+ cellspacing=3D"0" role=3D"presentation">
+             <tr>
+              <td class=3D"sm-hidden" style=3D"width: 33.333333%"></td>
+              <td class=3D"sm-w-full" style=3D"width: 33.333333%; padding-t=
+op: 24px; padding-bottom: 24px; text-align: center">
+
+
+
+
+             =20
+                                    <a target=3D"_blank" href=3D"http://cli=
+ck.ca-morbihan.fr/f/a/vpis-tCfFzDBtjLnFJK4Cg~~/AAAAARA~/h3Q-F2RTi3Nqgkb6wMC=
+rIl3oViCv5rQAjUUNCJ3bL0reMukMv5YUnBNZEis5bYBoyfkMrbFO3Ec5v-Bqc_-ZC9GAYCfHrk=
+psQTtymyC1XNtZSGOcwYqaPn6Fn9AUYkYXYP-cXqn71hihZklcSoyUDZmbU-m-M3prhxqZhU7i8=
+RE~" target=3D"_blank" style=3D"display: inline-block;">
+                    <img src=3D"https://morbihan.credit-agricole.fr/CRB_EMA=
+ILING/COMCLI/logos/logo_ca_cr_56.png" alt=3D"Cr=C3=A9dit Agricole - Banque =
+et assurances" style=3D"border: 0; line-height: 100%; max-width: 100%; vert=
+ical-align: middle; width: 155px; height: auto;" width=3D"155" height=3D"70=
+">
+                  </a>
+              =20
+
+
+
+</td>
+              <td class=3D"sm-hidden" style=3D"width: 33.333333%"></td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+   =20
+         =20
+        =20
+
+
+                              =20
+                                       =20
+=20
+<tr>
+           <td align=3D"center" class=3D"sm-px-5" style=3D"padding-left: 40=
+px; padding-right: 40px">
+                                               =20
+                                               =20
+            <table style=3D"width: 100%" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation">
+             <tr>
+              <td>
+               <p class=3D"sm-text-xl mso-fallback-font-heading" style=3D"m=
+argin-top: 0; margin-bottom: 0; text-align: left; font-family:  Tahoma, Ari=
+al, Impact, Arial Black, sans-serif; font-size: 30px; font-weight: 700; tex=
+t-transform: uppercase; line-height: 1; letter-spacing: -0.025em; color: #0=
+09597">
+                VOTRE AVIS
+               </p>
+               <p class=3D"sm-text-xl mso-fallback-font-heading" style=3D"m=
+argin-top: 0; margin-bottom: 0; text-align: right; font-family:  Tahoma, Ar=
+ial, Impact, Arial Black, sans-serif; font-size: 30px; font-weight: 700; te=
+xt-transform: uppercase; line-height: 1; letter-spacing: -0.025em; color: #=
+009597">
+            =20
+               </p>
+              </td>
+             </tr>
+            </table>
+                                               =20
+                                               =20
+            <table style=3D"width: 100%" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation">
+             <tr>
+              <td align=3D"center" class=3D"sm-px-5" style=3D"padding-top: =
+4px; padding-bottom: 4px">
+               <img src=3D"https://morbihan.credit-agricole.fr/CRB_EMAILING=
+/COMCLI/E536/header.jpg" width=3D"100%" alt=3D"Cr=C3=A9dit Agricole - Banqu=
+e &amp; Assurances " class=3D"sm-w-full sm-h-auto" style=3D"border: 0; bord=
+er-width: 0px; ">
+              </td>
+             </tr>
+            </table>
+                                               =20
+                                               =20
+            <table style=3D"width: 100%" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation">
+             <tr>
+              <td>
+               <p class=3D"sm-text-xl mso-fallback-font-heading" style=3D"m=
+argin-top: 0; margin-bottom: 0; text-align: left; font-family:  Tahoma, Ari=
+al, Impact, Arial Black, sans-serif; font-size: 30px; font-weight: 700; tex=
+t-transform: uppercase; line-height: 1; letter-spacing: -0.025em; color:#00=
+6A4E
+ ">
+        =20
+               </p>
+   <p class=3D"sm-text-xl mso-fallback-font-heading" style=3D"margin-top: 0=
+; margin-bottom: 0; text-align: right; font-family:  Tahoma, Arial, Impact,=
+ Arial Black, sans-serif; font-size: 30px; font-weight: 700; text-transform=
+: uppercase; line-height: 1; letter-spacing: -0.025em; color: #006A4E">
+               COMPTE POUR NOUS !
+               </p>
+              </td>
+             </tr>
+            </table>
+                                               =20
+                                               =20
+           </td>
+          </tr>
+                                       =20
+             =20
+
+                                =20
+                                   =20
+
+                                       =20
+   =20
+=20
+       <tr>
+           <td style=3D"line-height: 40px">
+            =E2=80=8C
+           </td>
+          </tr>
+                                  =20
+                                       =20
+  =20
+                                   =20
+  =20
+      =20
+ =20
+
+<tr>
+           <td class=3D"sm-px-5" style=3D"padding-left: 40px; padding-right=
+: 40px; font-size: 16px; line-height: 26px; color: #071621">
+            <p style=3D"margin: 0;">
+           Monsieur SIMON,
+
+            </p>
+            <p style=3D"margin: 0; margin-top: 24px; text-align: justify;">
+
+
+
+Vous avez r=C3=A9cemment eu un entretien avec un conseiller du Cr=C3=A9dit =
+Agricole du Morbihan et nous souhaiterions recueillir votre avis concernant=
+ ce dernier rendez-vous.<br><br>
+Nous vous sollicitons quelques minutes pour r=C3=A9pondre =C3=A0 ce questio=
+nnaire et ainsi participer =C3=A0 l=E2=80=99am=C3=A9lioration de la qualit=
+=C3=A9 de notre relation et de nos services.<br><br>
+Merci d=E2=80=99avance pour votre contribution.
+
+            </p>
+           </td>
+  =20
+       </tr>
+                                  =20
+ =20
+
+
+                                     =20
+=20
+       <tr>
+           <td style=3D"line-height: 20px">
+            =E2=80=8C
+           </td>
+          </tr>
+    =20
+
+
+ =20
+
+               <tr>
+            <td align=3D"center" style=3D"padding: 0px 0 0 0;">
+                <table style=3D"border-collapse: collapse;" align=3D"center=
+" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"480">
+                    <tr>
+           =20
+                        <td style=3D"font-size: 15px; color: #ffffff; font-=
+weight: bold; font-family: Arial, sans-serif; text-align: center; backgroun=
+d-color: #007D8F; margin: 15px" width=3D"500">
+                                   =20
+                                        <p>Comment avez-vous globalement ap=
+pr=C3=A9ci=C3=A9 votre dernier entretien avec un conseiller du Cr=C3=A9dit =
+Agricole du Morbihan ?<sup style=3D"vertical-align: super; font-size: 0.7em=
+">(1)</sup><br><br> (cliquez sur l=E2=80=99=C3=A9toile pour noter, l=E2=80=
+=99=C3=A9toile 5 =C3=A9tant la meilleure note)</p>
+                                   =20
+                        </td>
+                    </tr>
+
+
+                    <tr>
+           =20
+                        <td style=3D"font-size: 15px; color: #ffffff; font-=
+weight: bold; font-family: Arial, sans-serif; text-align: center; backgroun=
+d-color: #007D8F; padding: 10px" width=3D"500">
+
+
+
+
+<center>
+<table>
+<tr>
+<td style=3D"text-align: center;">
+<a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/l4-KnOPCt_8b0J=
+sZzlI1Jg~~/AAAAARA~/mGQVEbbHySYto7S3-GXo-hu9TNouSNAvVfshdMY88Kw7Bd4qMgf4hOC=
+7RcgNq87rcmNX_U5E8QxZYJv-Hbvgo3ccVMmhEv1UfEzShX5JtbE2cgzcFVjUHncs45QgRWAhxl=
+zuoKMrZUBS-V39msPT--te9wmWqZBmfRRg1TA4LxqhfzJks_80gm3_ijCOgJHo-vDsXHBa5dkQL=
+D8SZMz8QH4eo6glQJRteohLQvhvYD6O6vbx2pOLmTP7RqcgxoT1AGOnRp63mDS9oei1yqUvaJLI=
+lzcZ-i3wA_Qq8r4d5RgLAqwXSKGbGy3Aokzjix0OlMMholJV7NEVBLQ3Tn8f-dKfx1FlarLwzra=
+JEuT3xd2LI7tbEfUVBjQ1gBsgeywNzTDxjZ3ASNVe0F5AJDAaDrgsCJFu5zaN1Nk7J18gqrvU4C=
+szyW0_v8Z9sKo7-aRiWFUhNkpit2X0sTYtXV-G2g~~"><img src=3D"https://www.ca-fini=
+stere.fr/Vitrine/ObjCommun/Fic/Finistere/Critizr/etoile-1.png"></a></td>
+
+<td style=3D"text-align: center;">
+<a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/vaZV07NxdZl0ks=
+T9JJSflQ~~/AAAAARA~/mGQVEbbHySYto7S3-GXo-hu9TNouSNAvVfshdMY88Kw7Bd4qMgf4hOC=
+7RcgNq87rcmNX_U5E8QxZYJv-Hbvgo3ccVMmhEv1UfEzShX5JtbE2cgzcFVjUHncs45QgRWAhxl=
+zuoKMrZUBS-V39msPT--te9wmWqZBmfRRg1TA4LxqhfzJks_80gm3_ijCOgJHo-vDsXHBa5dkQL=
+D8SZMz8QCXSPukI6WdR0tXd82LrGt0oro8023HIB6FOzkBuXgNvHozFjaE__J8-iCkZ6IG3xoXs=
+ZTc_5VvvCbqrZXdJernK7gDilszA2owdFrh3DGtwQuZ1qE9CzljPMOiAJ_NANLkabsP8sYszIQo=
+pR0fPedFXoh0q9QtfBoVvuYY5FWeTwcCmpzbOYQKiuBGJJEtVR0z_9R9UCZYhkyHITt2LBwVm5k=
+zXWwX3ROtR3yUAMupGRyPLVpkiIcbftcSPnl_JlA~~"><img src=3D"https://www.ca-fini=
+stere.fr/Vitrine/ObjCommun/Fic/Finistere/Critizr/etoile-2.png"></a></td>
+
+
+<td style=3D"text-align: center;">
+<a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/KpMc8vL1ZjgE5o=
+8p3zvMZw~~/AAAAARA~/mGQVEbbHySYto7S3-GXo-hu9TNouSNAvVfshdMY88Kw7Bd4qMgf4hOC=
+7RcgNq87rcmNX_U5E8QxZYJv-Hbvgo3ccVMmhEv1UfEzShX5JtbE2cgzcFVjUHncs45QgRWAhxl=
+zuoKMrZUBS-V39msPT--te9wmWqZBmfRRg1TA4LxqhfzJks_80gm3_ijCOgJHo-vDsXHBa5dkQL=
+D8SZMz8QMct975QCrLFqJWnbRBS4350rsCEjHRA2nlEJRCGW7OUZ_qcIxJJ4gbEhewK63mMyihH=
+skz9v97w-u5wQZsbBvKxtKnsVnQ-FfLe5Rz5u0nzc78XYVFkNpu_X3Y-O9anKRBm-jyH6qRcshI=
+TwZMXT7yGU3F6tvCgDWcu1MUMITqqFn3EElnAC6qVjXSMBmIpBYcSvbWikgvKNRlBIoDuwk9xAq=
+X58Q7HF3YYvMe2v5nimyb_SYK2M6LZKYiPfbGb0g~~"><img src=3D"https://www.ca-fini=
+stere.fr/Vitrine/ObjCommun/Fic/Finistere/Critizr/etoile-3.png"></a></td>
+
+<td style=3D"text-align: center;">
+<a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/W4bO5meLCO15wp=
+GRePM9kQ~~/AAAAARA~/mGQVEbbHySYto7S3-GXo-hu9TNouSNAvVfshdMY88Kw7Bd4qMgf4hOC=
+7RcgNq87rcmNX_U5E8QxZYJv-Hbvgo3ccVMmhEv1UfEzShX5JtbE2cgzcFVjUHncs45QgRWAhxl=
+zuoKMrZUBS-V39msPT--te9wmWqZBmfRRg1TA4LxqhfzJks_80gm3_ijCOgJHo-vDsXHBa5dkQL=
+D8SZMz8QOtJXbCUaa3bwNJawK5oSA7acGPJQgYlZGYaU94RyMUf_WP5guodyYSoypZAhLKKXTlD=
+E5qIedDXbBwJP2JtrTdJJp2aXFFW-dl8iJawBieiOFevqthoAYwe90i7J0aK4sXCCXMVyNiytZt=
+ry6e7Ndy6xpRJaCzCZZYgeZ2xjvq887HrpR-TMC-LrGVlmCoM4GJ6Ow_6frLbHrx5nf2eRkE6_h=
+LupFw8kfrB1s8-PYjFz8P2BB6r4c8sxDONoTsBtg~~"><img src=3D"https://www.ca-fini=
+stere.fr/Vitrine/ObjCommun/Fic/Finistere/Critizr/etoile-4.png"></a></td>
+
+<td style=3D"text-align: center;">
+<a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/eKajsJ_J1hpAIx=
+sbrP1m_w~~/AAAAARA~/mGQVEbbHySYto7S3-GXo-hu9TNouSNAvVfshdMY88Kw7Bd4qMgf4hOC=
+7RcgNq87rcmNX_U5E8QxZYJv-Hbvgo3ccVMmhEv1UfEzShX5JtbE2cgzcFVjUHncs45QgRWAhxl=
+zuoKMrZUBS-V39msPT--te9wmWqZBmfRRg1TA4LxqhfzJks_80gm3_ijCOgJHo-vDsXHBa5dkQL=
+D8SZMz8QAcluD-4BZTdNUzchu7c2iBfwjftVp_8j6eMhCFMpPJeuRjcIleqIyW8Z6gdC8GfW3RM=
+4WczSyi5EwOcwYQ4WD9764SSLoERGb76sTwEIxC03L6UGcncoORBd4U9YR9TBVijolbnw9abQZl=
+P1PfXKBytOuDiUSRVtvJNIc_Muas-5Y5-QhCcjbPiMMb6izQsDlXhuNDEmyMAeROc0H3mFgIKXA=
+gpEveqa644m_qoCQ2Ep_c1zi5Mzj5j3thIb0kkFw~~"><img src=3D"https://www.ca-fini=
+stere.fr/Vitrine/ObjCommun/Fic/Finistere/Critizr/etoile-5.png"></a></td>
+
+</tr>
+</table>
+</center>
+
+
+
+
+
+
+
+
+                        </td>
+                    </tr>
+
+
+
+
+                </table>
+            </td>
+        </tr>
+             =20
+
+
+
+
+
+       <tr>
+           <td style=3D"line-height: 20px">
+            =E2=80=8C
+           </td>
+          </tr>
+
+
+
+
+=20
+<tr>
+           <td class=3D"sm-px-5" style=3D"padding-left: 40px; padding-right=
+: 40px; font-size: 16px; line-height: 26px; color: #071621; text-align: jus=
+tify;">
+            <p style=3D"margin: 0; margin-top: 24px">
+            =C3=80 tr=C3=A8s bient=C3=B4t,
+            </p>
+            <p style=3D"margin: 0; margin-top: 24px; ">
+Olivier BENOIT<br>
+Directeur D=C3=A9veloppement de la Relation Clients<br>
+Cr=C3=A9dit Agricole du Morbihan
+
+            </p>
+           </td>
+          </tr>
+                               =20
+   =20
+
+       <tr>
+           <td style=3D"line-height: 40px">
+            =E2=80=8C
+           </td>
+          </tr>
+
+                                       =20
+                                       =20
+      =20
+<tr>
+           <td class=3D"sm-px-5" style=3D"padding-left: 40px; padding-right=
+: 40px; font-size: 16px; line-height: 26px; color: #071621; text-align: jus=
+tify;">
+            <p style=3D"margin: 0; margin-top: 24px">
+
+Les donn=C3=A9es =C3=A0 caract=C3=A8re personnel recueillies par votre Cais=
+se r=C3=A9gionale de Cr=C3=A9dit Agricole en qualit=C3=A9 de responsable du=
+ traitement dans le cadre de l=E2=80=99enqu=C3=AAte de satisfaction seront =
+utilis=C3=A9es pour les finalit=C3=A9s suivantes : am=C3=A9lioration de la =
+qualit=C3=A9 des relations et des services, personnalisation des offres et =
+des services propos=C3=A9s, prospection commerciale, =C3=A9tudes statistiqu=
+es, fond=C3=A9es sur l=E2=80=99int=C3=A9r=C3=AAt l=C3=A9gitime. Vos donn=C3=
+=A9es seront conserv=C3=A9es pendant une p=C3=A9riode maximale de trois ans=
+.<br><br>
+Vous pouvez =C3=A0 tout moment, sans frais et sans justification, vous oppo=
+ser =C3=A0 l=E2=80=99utilisation de vos donn=C3=A9es =C3=A0 des fins de pro=
+spection commerciale par le Cr=C3=A9dit Agricole du Morbihan.<br><br>
+
+Pour toute demande en lien avec vos donn=C3=A9es personnelles, vous pouvez =
+contacter le D=C3=A9l=C3=A9gu=C3=A9 =C3=A0 la Protection des Donn=C3=A9es d=
+u Cr=C3=A9dit Agricole du Morbihan par l=E2=80=99un des canaux suivants :=20
+                    <br>
+1. Par lettre simple, =C3=A0 l=E2=80=99adresse :  Cr=C3=A9dit Agricole du M=
+orbihan, D=C3=A9l=C3=A9gu=C3=A9 =C3=A0 la Protection des Donn=C3=A9es, Aven=
+ue de Keranguen, 56956 Vannes Cedex 9. Les frais de timbre vous seront remb=
+ours=C3=A9s sur simple demande de votre part.=20
+                    <br>
+2. Par e-mail =C3=A0 : <a target=3D"_blank" href=3D"mailto:delegue.protecti=
+on.donnees@ca-morbihan.fr" data-track=3D"mail-DPO" style=3D"color: #4b4b4b;=
+ text-decoration: underline;" target=3D"_blank">delegue.protection.donnees@=
+ca-morbihan.fr.</a>
+                    <br>
+3. En ligne en compl=C3=A9tant le formulaire : <a target=3D"_blank" href=3D=
+"http://click.ca-morbihan.fr/f/a/zPYpU4_EWBmY8l34x4kueA~~/AAAAARA~/5_NXsxZG=
+dB2cEL1Zem1q0-bmGcuGYH3EnkGBdMmnU9NexRYmdMDJYE7n5CZj8C-EnhXxq1U7D22iw3DpXFw=
+HOVvj1HwjIdlk-s1tsGOm1F6Mr2JMjax4kAynPdFh_X0-sqCngQBtcSfRodmsyS2l9mlgHiRlXl=
+eoUSNpX3CA4CJNI4n0cQBbvLg1Y68CB5lh" data-track=3D"formulaire-RGPD" style=3D=
+"color: #4b4b4b; text-decoration: underline;" target=3D"_blank">RGPD</a>.=20
+                    <br>
+Notre politique de protection des donn=C3=A9es personnelles (PPD) est dispo=
+nible sur notre site internet : <a target=3D"_blank" href=3D"http://click.c=
+a-morbihan.fr/f/a/mCV76ALewhNBVL_UqHO42Q~~/AAAAARA~/PmEGJwdG6ZrytPUbZ3wlFMg=
+fFNjrFuJ1JM8-QiD1H-1LCq_mYQDgM7Qcfn4HvJKRpBzf7MLrOiWGnKZjcQWEuab69IzIq4-gR1=
+mzYEIC1rT3hXSMa40737SQUIL4WkFwTN6Xw_gFeG3ULIL3EXgpkTX_uVqd5wLePW1CrjAPEyVuQ=
+ieOiwvkDOAmJ_sP-zlrFzMwJ29hdvc7-5UKrnblFl2u5GJpwKzxCX7FtoqesXsq_HOlqrpr_bis=
+GqOfMT33PPgVD0d9JPWulsK6ZMrNsTqDaIm7-4w1hf6_txYINh4~" data-track=3D"donnees=
+ personnelles" style=3D"color: #4b4b4b; text-decoration: underline;" target=
+=3D"_blank">PPD</a>.
+                    <br>
+En cas de contestation, vous pouvez former une r=C3=A9clamation aupr=C3=A8s=
+ de la CNIL dont le site internet est accessible =C3=A0 l=E2=80=99adresse s=
+uivante <a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/9-q-eT=
+9l4FkrHdxun4XfQg~~/AAAAARA~/wtvDsuhNkH-25Sim7jSvUMc4o3XVUKkdIkEl2AAQmkVF7ic=
+b_dy8Q05g21o9F9NO4DkxkkNfexgRyuMB9Sk5mLtPNWrcWWL-diO8guWr54EtO7L5h8DseM2vJ9=
+pO8crT" data-track=3D"CNIL" style=3D"color: #4b4b4b; text-decoration: under=
+line;" target=3D"_blank">https://www.cnil.fr</a> et le si=C3=A8ge est situ=
+=C3=A9 3 place de Fontenoy, 75007 Paris.
+                    <br><br>
+</p>
+</td>
+</tr>
+
+
+
+
+                        =20
+                            =20
+
+       <tr>
+           <td style=3D"line-height: 40px">
+            =E2=80=8C
+           </td>
+          </tr>
+
+                                       =20
+                      =20
+
+ <tr>
+           <td class=3D"sm-px-5" style=3D"background-color: #ECEDF0; paddin=
+g-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 40px;=
+ line-height: 24px; color: #071621">
+            <h2 style=3D"margin: 0; font-size: 24px; font-weight: 700; colo=
+r: #071621">Vos contacts</h2>
+            <table style=3D"width: 100%" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation">
+             <tr>
+              <td style=3D"padding-top: 40px">
+               <table style=3D"width: 100%" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation">
+                <tr>
+                 <td width=3D"5" style=3D"border-radius: 9999px; background=
+-color: #308276"></td>
+                 <td style=3D"padding-left: 20px">
+                  <h3 style=3D"margin: 0; margin-bottom: 8px; font-size: 18=
+px; font-weight: 700">
+Votre conseill=C3=A8re</h3>
+                  <p style=3D"margin: 0; font-size: 14px">
+                   GWENDOLINE LETELLIER
+                  </p>
+                  <p style=3D"margin: 0; font-size: 14px">
+                   <strong>T=C3=A9l :</strong>
+                   0297851578*
+                  </p>
+                  <p style=3D"margin: 0; font-size: 14px">
+                   <strong>Mail :</strong>
+                   Gwendoline.LETELLIER@ca-morbihan.fr
+                  </p>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+
+            <table style=3D"width: 100%" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation">
+             <tr>
+              <td style=3D"padding-top: 24px">
+               <table style=3D"width: 100%" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation">
+                <tr>
+                 <td width=3D"5" style=3D"border-radius: 9999px; background=
+-color: #308276"></td>
+                 <td style=3D"padding-left: 20px">
+                  <h3 style=3D"margin: 0; margin-bottom: 8px; font-size: 18=
+px; font-weight: 700">Votre agence</h3>
+                  <p style=3D"margin: 0; font-size: 14px">
+                  HENNEBONT
+                  </p>
+                  <p style=3D"margin: 0; font-size: 14px">
+                   27 AVENUE DE LA LIBERATION
+                  </p>
+                  <p style=3D"margin: 0; font-size: 14px">
+                   56700 HENNEBONT
+                  </p>
+                  <p style=3D"margin: 0; font-size: 14px">
+                   <strong>T=C3=A9l :</strong>
+                   0297850345*
+                  </p>
+                  <p style=3D"margin: 0; font-size: 14px">
+                   <strong>Mail :</strong>
+                      HENNEBONT@CA-MORBIHAN.FR
+                  </p>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+
+            <h3 style=3D"margin: 0; margin-top: 32px; margin-bottom: 16px; =
+font-size: 18px; font-weight: 700">T=C3=A9l=C3=A9chargez l=E2=80=99applicat=
+ion Ma Banque</h3>
+            <table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation=
+">
+             <tr>
+              <td class=3D"sm-w-full" style=3D"display: inline-block">
+               <a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a=
+/7SwXYHf3xmltAs8LdIUffQ~~/AAAAARA~/I_ZKzImjDlNScS0sZiOZe5GVZbVbr1dKevc21fpb=
+Cc6eFqq5yzlewhvC6AiBFyhTOIXYH5JZcypZhe9hIpi8tK3yhPRUTHYIxfZp9ZUlx7BeJMG7GPD=
+VEIyWkXpSnDNBwAUWWZcV4mv6W7lkKRWBSpJ4xkci_KmaeeuFUO35DkY~" target=3D"_blank=
+" style=3D"text-decoration-line: none">
+<img src=3D"https://morbihan.credit-agricole.fr/CRB_EMAILING/COMCLI/CHARTE-=
+2022-2023/images/common/badge-appstore.png" width=3D"auto" height=3D"47" al=
+t=3D"App Store" style=3D"border: 0; border-width: 0px; vertical-align: midd=
+le"></a>
+              </td>
+              <td class=3D"sm-hidden" width=3D"8" style=3D"display: inline-=
+block"></td>
+              <td class=3D"sm-w-full" style=3D"display: inline-block">
+               <a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a=
+/Ci2s6-A95LRWZtpJxwM3Rw~~/AAAAARA~/3E8-ICiXRNNmDAVFr-p7eVVtsoW86X_dPuSJ5Ouv=
+CSgWfnW6ecJAEUXJiN8jnEBM3rHUie_gGV39Uvg9zGUNdxx_0QdaqhlWLNAMNrMYIkz2Km_NA-U=
+fdEGV7VLzjayL6tU47qM_-sUiAZj4tk_I7_nof-W90igb8aetoP1JTpJ06eSVr0c-M8l1w1vGiQ=
+QABJCBs5hLFjtsVK_Z695kcQ~~" target=3D"_blank" class=3D"sm-block sm-mt-2 sm-=
+ml-0" style=3D"margin-left: 8px; text-decoration-line: none">
+<img src=3D"https://morbihan.credit-agricole.fr/CRB_EMAILING/COMCLI/CHARTE-=
+2022-2023/images/common/badge-googleplay2.png" width=3D"auto" height=3D"47"=
+ alt=3D"Google Play" style=3D"border: 0; border-width: 0px; vertical-align:=
+ middle"></a>
+              </td>
+             </tr>
+            </table>
+
+            <h3 style=3D"margin: 0; margin-top: 32px; margin-bottom: 16px; =
+font-size: 18px; font-weight: 700">Acc=C3=A9dez au site web</h3>
+            <table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation=
+">
+             <tr>
+              <th style=3D"mso-padding-alt: 16px 32px; border-radius: 9999p=
+x; border-width: 1px; border-style: solid; border-color: #308276">
+               <a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a=
+/vpis-tCfFzDBtjLnFJK4Cg~~/AAAAARA~/h3Q-F2RTi3Nqgkb6wMCrIl3oViCv5rQAjUUNCJ3b=
+L0reMukMv5YUnBNZEis5bYBoyfkMrbFO3Ec5v-Bqc_-ZC9GAYCfHrkpsQTtymyC1XNtZSGOcwYq=
+aPn6Fn9AUYkYXYP-cXqn71hihZklcSoyUDZmbU-m-M3prhxqZhU7i8RE~" target=3D"_blank=
+" style=3D"text-decoration: none; display: block; padding-left: 32px; paddi=
+ng-right: 32px; padding-top: 18px; padding-bottom: 18px; font-size: 14px; l=
+ine-height: 100%; color: #308276">credit-agricole.fr</a>
+              </th>
+             </tr>
+            </table>
+           </td>
+          </tr>
+                                       =20
+                =20
+                                    =20
+                                       =20
+                               =20
+                                       =20
+      =20
+               =20
+
+  <tr>
+           <td align=3D"center" style=3D"background-color: #071621; color: =
+#fff">
+            <table style=3D"width: 100%" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation">
+             <tr>
+              <td align=3D"center" style=3D"padding-bottom: 12px; padding-t=
+op: 28px">
+               <table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentat=
+ion">
+                <tr>
+                 <td width=3D"40" align=3D"center">
+                  <a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/=
+f/a/6BgRm3oEaRwGt-x8fk7fdw~~/AAAAARA~/d3BSvbjPdF_VV1cT-Fho6D35oL_PlGaRFmvsH=
+AZUNYh3cNFKEO-VCJT4bFg7_QQqfharpKZssZN7RlEvpZrdkZWAjlFlikmmZVCdhq0XurVG2Xte=
+pDGjTPAbZ3TYyXkWlYnpQgYD-k4TJM0RfMos1CphAH04J5KroHc9LBloWug~" target=3D"_bl=
+ank" height=3D"40" width=3D"40" class=3D"sm-mx-0" style=3D"margin-left: 4px=
+; margin-right: 4px; display: inline-block; text-decoration-line: none"><im=
+g src=3D"https://morbihan.credit-agricole.fr/CRB_EMAILING/COMCLI/CHARTE-202=
+2-2023/images/common/footer-rs-facebook.png" width=3D"40" height=3D"40" alt=
+=3D"facebook" style=3D"border: 0; display: block; border-width: 0px; vertic=
+al-align: middle"></a>
+                 </td>
+                 <td width=3D"8"></td>
+                 <td width=3D"40" align=3D"center">
+                  <a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/=
+f/a/OF8SLsiEN83gkDknoHWaTg~~/AAAAARA~/royp3HZfAo_3aZrL_1gkjc-HfBp2ku1sjjUyX=
+2zNZPLj0RFWqQgYg5Ha-syD83jrWSSJMKVVUf9rX3ZaDibiuJyk2Z-8QoinpA-7RqnWXR_HGNcT=
+P0SNubrtOwVIaujXybIhZ2DwR-uBpqARG0MZK-JCQtrNBOoW9i2A__lamzw~" target=3D"_bl=
+ank" height=3D"40" width=3D"40" class=3D"sm-mx-0" style=3D"margin-left: 4px=
+; margin-right: 4px; display: inline-block; text-decoration-line: none"><im=
+g src=3D"https://morbihan.credit-agricole.fr/CRB_EMAILING/COMCLI/CHARTE-202=
+2-2023/images/common/footer-rs-youtube.png" width=3D"40" height=3D"40" alt=
+=3D"youtube" style=3D"border: 0; display: block; border-width: 0px; vertica=
+l-align: middle"></a>
+                 </td>
+                 <td width=3D"8"></td>
+                 <td width=3D"40" align=3D"center">
+                  <a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/=
+f/a/YWiP_uRCg95s6NxfU43mEQ~~/AAAAARA~/I_ZKzImjDlNScS0sZiOZe8_BYBcNbrJvp_70Q=
+Ip92AGBtw57_rjxlT_AWgF3eWr3Fd72xhOrOVn-bJavQkh0eq2uGzdLQVes8Mx99GvmWPdWQL0e=
+H08aYmTb-A29cD1ypZd11ndAmK_peGyrZfRBa_9ad5HrTUtLMD0WcBVSRYk~" target=3D"_bl=
+ank" height=3D"40" width=3D"40" class=3D"sm-mx-0" style=3D"margin-left: 4px=
+; margin-right: 4px; display: inline-block; text-decoration-line: none"><im=
+g src=3D"https://morbihan.credit-agricole.fr/CRB_EMAILING/COMCLI/CHARTE-202=
+2-2023/images/common/footer-rs-instagram.png" width=3D"40" height=3D"40" al=
+t=3D"instagram" style=3D"border: 0; display: block; border-width: 0px; vert=
+ical-align: middle"></a>
+                 </td>
+                 <td width=3D"8"></td>
+                 <td width=3D"40" align=3D"center">
+                  <a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/=
+f/a/Wp-j1PbWn_amIHLWqQCMEA~~/AAAAARA~/P53RKUtvvuWdYWAg0xLSfhYNd6eJ_gv6PETOO=
+fd48DqSFRj58WyQhBtSKhJbIZ_TZy5Qbvmvi_1XMeCEcsYl-62fuUv4UEpENbKn-TCIFqKShbZb=
+NkROqaPWlCbryp5SMAT9yw8nch3dKIXTO3z-nGTi0gQmiRyATodpL2lPf94~" target=3D"_bl=
+ank" height=3D"40" width=3D"40" class=3D"sm-mx-0" style=3D"margin-left: 4px=
+; margin-right: 4px; display: inline-block; text-decoration-line: none"><im=
+g src=3D"https://morbihan.credit-agricole.fr/CRB_EMAILING/COMCLI/CHARTE-202=
+2-2023/images/common/footer-rs-linkedin.png" width=3D"40" height=3D"40" alt=
+=3D"linkedin" style=3D"border: 0; display: block; border-width: 0px; vertic=
+al-align: middle"></a>
+                 </td>
+           =20
+                 <td width=3D"8"></td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               <hr style=3D"border: 0; height: 1px; width: 100%; max-width:=
+ 100%; border-width: 0px; background-color: #666E8A">
+              </td>
+             </tr>
+             <tr>
+              <td align=3D"center" class=3D"sm-px-5" style=3D"padding-left:=
+ 40px; padding-right: 40px; padding-top: 32px; padding-bottom: 32px">
+               <img src=3D"https://morbihan.credit-agricole.fr/CRB_EMAILING=
+/COMCLI/CHARTE-2022-2023/images/common/footer-logo-ca.png" width=3D"215" he=
+ight=3D"122" alt=3D"Cr=C3=A9dit Agricole - signature" style=3D"border: 0; d=
+isplay: block; border-width: 0px">
+               <p style=3D"margin: 0; margin-top: 32px; margin-bottom: 8px;=
+ font-size: 14px; color: #fff; text-align : center; ">
+
+       =20
+                  =20
+Cr=C3=A9dit Agricole du Morbihan - Caisse R=C3=A9gionale de Cr=C3=A9dit Agr=
+icole Mutuel - Soci=C3=A9t=C3=A9 coop=C3=A9rative =C3=A0 capital variable, =
+agr=C3=A9=C3=A9e en tant qu=E2=80=99=C3=A9tablissement de cr=C3=A9dit. Si=
+=C3=A8ge social : Avenue de K=C3=A9ranguen - 56956 Vannes Cedex 9 - 777 903=
+ 816 RCS Vannes.
+                  =20
+Soci=C3=A9t=C3=A9 de courtage d=E2=80=99assurance immatricul=C3=A9e aupr=C3=
+=A8s de l'ORIAS sous le n=C2=B0 07 022 976  <a target=3D"_blank" href=3D"ht=
+tp://click.ca-morbihan.fr/f/a/SRkH-yiXh3-w79rbBGGPRg~~/AAAAARA~/X2ghwwGdERE=
+ji6MHthf-IRKXI_cuu1caG9dwqr6eIr_9nucyxu-0JuYLYW8hBtzDve5HJphb-Xfnz144s4S4Qo=
+OJPYjK45xCa5YEVXhdGSHNKmLFZn_y2CgGpb6NSGzs" data-track=3D"ORIAS" style=3D"c=
+olor: #b9baba; text-decoration: underline;" target=3D"_blank">(www.orias.fr=
+.)</a>=20
+Titulaire de la carte professionnelle Transaction, Gestion Immobili=C3=A8re=
+ et Syndic n=C2=B0 CPI 5605 2021 000 000 014 d=C3=A9livr=C3=A9e par la CCI =
+du Morbihan, b=C3=A9n=C3=A9ficiant de la Garantie Financi=C3=A8re et Assura=
+nce de Responsabilit=C3=A9 Civile Professionnelle d=C3=A9livr=C3=A9es par C=
+AMCA, 53 rue la Bo=C3=A9tie 75008 Paris.
+ <br>
+Identifiant Unique CITEO : FR234397_01JKUP             =20
+      </p>
+              </td>
+             </tr>
+             <!--[if mso]>
+													<tr>
+														<td style=3D"line-height: 8px">
+															&zwnj;
+														</td>
+													</tr>
+													<![endif]-->
+            </table>
+           </td>
+          </tr>        =20
+
+                                    =20
+           =20
+                                    =20
+                                       =20
+                                       =20
+                                       =20
+                                       =20
+          =20
+
+   <tr>
+           <td style=3D"background-color: #F7F8FA; padding-left: 20px; padd=
+ing-right: 20px; padding-top: 28px; padding-bottom: 0; font-size: 12px; lin=
+e-height: 20px; color: #071621;  text-align:justify;">
+           =20
+
+            <p style=3D"margin: 0; margin-top: 12px; font-weight: 300; ">
+           Cr=C3=A9dit photo : Istock<br><br>
+(1) Goodays est une marque d=C3=A9pos=C3=A9e par la soci=C3=A9t=C3=A9 CRITI=
+ZR, SAS au capital de 831 850 euros, immatricul=C3=A9e au RCS Lille M=C3=A9=
+tropole sous le num=C3=A9ro 521 950 626, dont le si=C3=A8ge social est situ=
+=C3=A9 =C3=A0 4, avenue des Saules, 59160 Lille, repr=C3=A9sent=C3=A9e par =
+Nicolas HAMMER, Pr=C3=A9sident.
+            </p>
+
+
+
+
+
+
+  <p style=3D"margin: 0; margin-top: 12px; font-size: 12px; font-weight: 30=
+0; color: #071621; text-align:justify;">
+
+*Appel non surtax=C3=A9, co=C3=BBt selon op=C3=A9rateur. Num=C3=A9ro access=
+ible aux horaires d=E2=80=99ouverture de votre agence disponibles sous
+     <a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/a/J2oizdqQR=
+mRMDbTfpMbiew~~/AAAAARA~/FxGotk1ESuSYWQkQLYM_Li0fBVNr7-0NQJxb4Fdoq0dwhAD26H=
+tqhGPXoRxjUNWWQnBVVIavlS5VBM_hDTF_frYvGnH9x_uLcqFW8tqd8WgAqfZ8eORlKgGy3wfBq=
+b83ygiKOcC30xI_qeP7fMioGJHW-ddXMXrgf_Z_Ky3kIdg-oaHXUEc0t7SEoIXIjrqb2ZmAAl7W=
+hZhl-BwQOQToNZDvt3Z6OYBooAxD4baoB3A~" data-track=3D"donnees personnelles" s=
+tyle=3D"color: #4b4b4b; text-decoration: underline;" target=3D"_blank">http=
+s://www.credit-agricole.fr/ca-morbihan/particulier/acces-cr-et-agence/local=
+isation-agence.html</a>
+     <br>
+     <br>
+     T=C3=A9l=C3=A9chargement et acc=C3=A8s gratuits de l=E2=80=99applicati=
+on Ma Banque, hors co=C3=BBts de communication selon op=C3=A9rateurs. L=E2=
+=80=99utilisation de l=E2=80=99application n=C3=A9cessite la d=C3=A9tention=
+ d=E2=80=99un terminal de communication compatible avec acc=C3=A8s =C3=A0 I=
+nternet et l=E2=80=99abonnement au service Cr=C3=A9dit Agricole En Ligne.
+     <br>
+     <br>
+  Facebook et Instagram sont des marques d=C3=A9pos=C3=A9es de Meta Platfor=
+ms.
+<br>
+Instagram est une marque d=C3=A9pos=C3=A9e d=E2=80=99Instagram LLC.
+<br>
+Youtube est une des marques d=C3=A9pos=C3=A9es de Google Inc.
+<br>
+LinkedIn, le logo LinkedIn, le logo IN sont des marques d=C3=A9pos=C3=A9es =
+ou des marques commerciales de LinkedIn Corporation et de ses filiales aux =
+=C3=89tats-Unis et/ou dans d=E2=80=99autres pays.
+<br>
+Apple et le logo Apple sont des marques d=E2=80=99Apple Inc., d=C3=A9pos=C3=
+=A9es aux Etats-Unis et dans d=E2=80=99autres pays. App Store est une marqu=
+e de service d=E2=80=99Apple Inc.
+<br>
+Android, Google Play et le logo Google Play sont des marques de Google Inc
+   =20
+
+
+            </p>
+
+
+         =20
+
+
+
+
+
+
+           </td>
+          </tr>
+                                   =20
+                                       =20
+                                       =20
+    =20
+=20
+     <tr>
+           <td align=3D"center" style=3D"background-color: #F7F8FA; padding=
+-top: 24px; padding-bottom: 24px; line-height: 24px; color: #071621">
+            <hr style=3D"border: 0; height: 1px; width: 100%; max-width: 10=
+0%; border-width: 0px; background-color: #ECEDF0">
+            <table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation=
+">
+             <tr>
+              <td align=3D"center" class=3D"sm-px-5" style=3D"padding-left:=
+ 40px; padding-right: 40px">
+               <p style=3D"font-size: 14px; line-height: 20px; color: #0716=
+21">
+           Si vous ne voulez plus =C3=AAtre destinataire de nos e-mails pub=
+licitaires, acc=C3=A9dez =C3=A0 la page de d=C3=A9sabonnement en cliquant s=
+ur=20
+                <a target=3D"_blank" href=3D"http://click.ca-morbihan.fr/f/=
+a/3qTlkCOxSXjoQE_RkX7pxg~~/AAAAARA~/yjjjMTBqVzL7NMF4u6umSz7eF0JFirIabET3Nbw=
+8D8gfB-VHnO4EXbD3RBskS9m8SJiLqNXrBSreUXxQL6RGVTR5JiBv9Bl9lSa3JfNn648YXRQKlD=
+h6XTCickVJqiteVLGhmIWe_iUqGS4WYqoGw02uFXMALdfeKBZepnxXwZkaFomislVZjhIUudwXD=
+3kuPrszMyjCpW5B3PazOxPzNzArxfPuRKZeBOn-SCF1c3IQEs6tjH0qSMoheeFPHMP7W--nwOdc=
+p0YmNsGr863Ob6i3dnomNOfOUzGw-PHXKTY~" style=3D"color: #071621; text-decorat=
+ion-line: underline"> ce lien.</a>
+               </p>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+                       =20
+         =20
+                                       =20
+                    =20
+                                       =20
+                                       =20
+                                       =20
+         </table>
+        </td>
+       </tr>
+                           =20
+      </table>
+     </td>
+    </tr>
+               =20
+   </table>
+
+  </div>
+=20
+<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"http://click.ca-=
+morbihan.fr/q/MHSJCnAHP7W4j_rrukptxA~~/AAAAARA~/WFIv57wjRYzAWRhgyqNqj8RNcy5=
+StN6ux9UXQxWgCEmXcGwnBNH9SDZw6uDhjfWSZ9S1vGoiAoYbTQ-l_ubFKA~~">
+</body>
+</html>
+
+
+----_=_NextPart_003_01C39C9D.5EAC49D8--

@@ -1,0 +1,866 @@
+Received: from DU0P250MB0913.EURP250.PROD.OUTLOOK.COM (2603:10a6:10:3e9::21)
+ by VI6PPF5FBC185B3.EURP250.PROD.OUTLOOK.COM with HTTPS; Wed, 27 May 2026
+ 07:42:56 +0000
+Received: from SJ0PR05CA0160.namprd05.prod.outlook.com (2603:10b6:a03:339::15)
+ by DU0P250MB0913.EURP250.PROD.OUTLOOK.COM (2603:10a6:10:3e9::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.71.11; Wed, 27 May
+ 2026 07:42:55 +0000
+Received: from SJ5PEPF000001D1.namprd05.prod.outlook.com
+ (2603:10b6:a03:339:cafe::1f) by SJ0PR05CA0160.outlook.office365.com
+ (2603:10b6:a03:339::15) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.71.12 via Frontend Transport; Wed, 27
+ May 2026 07:42:53 +0000
+Authentication-Results: spf=pass (sender IP is 130.248.165.111)
+ smtp.mailfrom=em.linkedin.com; dkim=pass (signature was verified)
+ header.d=em.linkedin.com;dmarc=pass action=none
+ header.from=em.linkedin.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em.linkedin.com
+ designates 130.248.165.111 as permitted sender)
+ receiver=protection.outlook.com; client-ip=130.248.165.111;
+ helo=r111.em.linkedin.com; pr=C
+Received: from r111.em.linkedin.com (130.248.165.111) by
+ SJ5PEPF000001D1.mail.protection.outlook.com (10.167.242.53) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.21.71.7 via Frontend Transport; Wed, 27 May 2026 07:42:53 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:61CB6DD35FA1838E32E2C6121A4139E39362DFCB16D378F1053B5EC6FC6BA88E;UpperCasedChecksum:0B6DEA5357CE84C7C4162599D20E23E90FB441DB356FC8E8BA8AF533B58290A0;SizeAsReceived:2421;Count:16
+Return-Path: bounce@em.linkedin.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=em.linkedin.com;
+	s=lnkd; t=1779867773;
+	bh=1+WKXbCwDf3/YoPcpzYeOgwvCZ/P6FHu0eDEoEOPbxA=;
+	h=From:Subject:Date:To:MIME-Version:Message-ID:List-Unsubscribe:
+	 List-Unsubscribe-Post:Content-Type;
+	b=evMyPpItKc0Lr+8IvTwm308yDggmtfD6GYmZEL/W6dVlFcZWFw9ZfsqcPfaIPY/XO
+	 YA4xmrvTnkGa+UZUh+EokFP3Ldt+ONDk40afHXGrZ2xCuWCHbNQi0XVSS1xAipjDSi
+	 hyXtoMgU+xkP958PcY20D1HrODSzeUjqR9GxCN9EiKroCJyPf8MFEyL8ZzTrQeSHSL
+	 wRCWLkzEI23BQmzB+e3p9n9vpG1j35H//UGE3ZtVfPzvRdmi8J3NqkJtpEzXlZ5Wim
+	 ZWdTrWgzmEt5InS72cAtc3CIXp4pPK9DgBUsHLBFbRPfj47eQstaZiSR7nMQ/g4AVz
+	 LJZfj/RTJXhLA==
+X-MSFBL: 4VSSS/OsK8xrw//XFN9EMZVdAM5+pHCoqNweO9NDeqo=|eyJyIjoiamVyb21lc2l
+	tb241NkBob3RtYWlsLmNvbSIsInJjcHRfbWV0YSI6eyAiaW4iOiAibG5rZF9taWR
+	fcHJvZDIiLCAiciI6ICJqZXJvbWVzaW1vbjU2QGhvdG1haWwuY29tIiwgIm0iOiA
+	iNTc1M2ZkNjQtYWNiMi00NTU1LWFiZDItODRhZWQxMDc2MWZkIiwgImQiOiAiNzA
+	yMzA1OCIsICJpIjogIjE0MjE1RTNENTk5NUM1N0MwQTQ5NUM1NUBBZG9iZU9yZyI
+	gfSwiZyI6InByb2QuZGVmYXVsdF84ODQ3YWQ0YS01ZjRiLTRhZDctOGU2YS1kOTc
+	zNDUzNzU1NWMiLCJiIjoibG5rZF8xMzAuMjQ4LjE2NS4xMTFfcHJvZC5kZWZhdWx
+	0Xzg4NDdhZDRhLTVmNGItNGFkNy04ZTZhLWQ5NzM0NTM3NTU1YyJ9
+Received: from [10.1.1.247] ([10.1.1.247:47997] helo=r110.em.linkedin.com) by or2-prod1-mta-b-i-0b815baeeac073d7f (envelope-from <bounce@em.linkedin.com>) (ecelerity 4.4.1.20033 r(msys-ecelerity:tags/4.4.1.0^0)) with ESMTP id 07/90-38578-D70A61A6; Wed, 27 May 2026 07:42:53 +0000
+From: "LinkedIn Premium" <linkedin@em.linkedin.com>
+Subject: Jerome, merci de compter parmi nos membres
+Date: Wed, 27 May 2026 00:42:53 -0700
+To: <jeromesimon56@hotmail.com>
+Reply-To: "LinkedIn" <donotreply@em.linkedin.com>
+X-mailer: nlserver, Build 8.9.2
+Message-ID: <NMFFDA5753fd64-acb2-4555-abd2-84aed10761fd006B29D2lnkd_mid_prod2@em.linkedin.com>
+List-Unsubscribe: <https://www.linkedin.com/mysettings-api/settingsApiEmailSubscriptionPost?loid=AQE9Ill1zXeABAAAAZ5d_FxIPgO-xPqjWfWAwh4nFefqO1_HtQNzIKKH5AkohnhOhyvM9ED0D-l6YtmAgbNvGBI&eid=eml-adobe-unsub%3ACAMPAIGNID%3Alinkedin.4816838%3BLAUNCHID%3A8999082%3BLAUNCHDATE%3A2026-05-27>, <mailto:bounce@em.linkedin.com?subject=unsubscribe%3CNMFFDA5753fd64-acb2-4555-abd2-84aed10761fd006B29D2lnkd_mid_prod2@em.linkedin.com%3E>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-IncomingHeaderCount: 16
+X-MS-Exchange-Organization-ExpirationStartTime: 27 May 2026 07:42:53.8275
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 3e878a39-8530-40f6-4375-08debbc38fc5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SJ5PEPF000001D1:EE_|DU0P250MB0913:EE_|VI6PPF5FBC185B3:EE_
+X-MS-Exchange-Organization-AuthSource: SJ5PEPF000001D1.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/27/2026 6:08:13 AM
+X-MS-Office365-Filtering-Correlation-Id: 3e878a39-8530-40f6-4375-08debbc38fc5
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 130.248.165.111
+X-SID-PRA: LINKEDIN@EM.LINKEDIN.COM
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;ARA:1444111002|10300799038|9400799043|5301999021|1680799066|6401999021|8120399003|3069299007|5149299006|5139299004|10049299003|9000799056|68400799013|1360799030|1380799030|1370799030|1602099012|3412199025|4302099013|440099028|5090599003|18021999003|30041999003|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 May 2026 07:42:53.7255
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3e878a39-8530-40f6-4375-08debbc38fc5
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: SJ5PEPF000001D1.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DU0P250MB0913
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.9713796
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0071.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90010023)(91010020)(91040095)(9050020)(9100341)(944500132)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?cVNWYXNJaW5EUXVlRW5IUE1EZnBEL3JIN2FOR0J5Ui9ham1mS0o0SEtuYVhw?=
+ =?utf-8?B?M1ZSeFIrOGZaWFptWU1qTkdONHIvNG9EZG9YbCtCY1R5cWt4aHpncVZVcEpM?=
+ =?utf-8?B?azFQNUdjbEJxbEprUnRUNmVPbUhNMDBSRmtJaHJKbkUyNkwvUGZSSk0xUWlv?=
+ =?utf-8?B?Tk1LNVU2N0lMR0lQbjcxcllCWEZZQXZlV3NXU1ZOQ3Eybm9DZERsMmprNnVZ?=
+ =?utf-8?B?MEViTEdXN3FtTXFqcXlpdHl1TWlCWFlXTzN0bzBmTlI4T3c4Q2xzdTVoeGlB?=
+ =?utf-8?B?SDRHR2NHWE1ONVVEWXlkSFZadG03NkdjcUxCOC8vK0VQNFl4b2ZncWpQdUd0?=
+ =?utf-8?B?dkJCcWdhd1BZbmNWbEFLSldhNlZWTkNRejJGMkk3d1pVcGFmNkNNdHBlRlBr?=
+ =?utf-8?B?NFBjNFp5WEd0Zlk1RG11MElUMWVuMGp3MHYwa1M5dW1ZZ2JjZktORkRPT1dv?=
+ =?utf-8?B?RmpseENYNFVFN2xKNGVxZFU3VHRmS3NNZHJsZ0c4SUZ2UnkxYWs0ZTZQWGdN?=
+ =?utf-8?B?cGpSdmlac2tpWE93eEZxSjZxZmxSYjJLQU9qNnVwejhoZnBBWk9qRU1FRTRk?=
+ =?utf-8?B?U0pyVCtsUHh6d0kreGYveWJuME54K04rRHBYT0dlWm9MbDNmZmpMdnNSc0wz?=
+ =?utf-8?B?bnk4NE9KZlAwN2VyQ0E2WjhHRDF3NDFoeGRaZU9rcFdmUTZUbFNZSHVaZnA2?=
+ =?utf-8?B?ZS9EVXo4V3FTQ1NJTFlET3ExS2tGbHRHU1lWWVYxRDZVWUR2UUNMZ2Qrb1Fw?=
+ =?utf-8?B?d1BrdElXTFN3L2pOSDREWVpqQ0g5NG1KMnhuNitkdVF0UE9qTU1hVHVOd3FQ?=
+ =?utf-8?B?KzZGcCtVaFZYSDhpZWdDNlhkZVNCaWorOW9FaXVJLzlrb2h5dFg3eGl4bFQr?=
+ =?utf-8?B?UkdjMGZOWjM0V1loR1djdnU5elNkRHlENlJ3UU1DNHBxM2FVOENhOXhwSG1D?=
+ =?utf-8?B?Z0czeUtUZGhJU1NHS0dUd280UXA5blVrSFYyS28wMVdRUkErWkZFRGpEYnFi?=
+ =?utf-8?B?RWQyS1dLSm5xMkxJQW5NcnVyR1VxYlduVmQvT2picFJ2akVxbmFPRGlENkFr?=
+ =?utf-8?B?SzBZOUdVdHoxdkRRM1NQd1VLYmp4TFcydHBmaU5CN1B3RzNHaUtFTlBVMGZF?=
+ =?utf-8?B?UC9BWFkxV0VYVlRoeWcyaGhKOTNNeFZBR3RqVitiYXJ0QTY1akxGWDlGTzY3?=
+ =?utf-8?B?K1lKRm1weWxSQ2J2cHJFMnN3dzY4TFpaTWtRQWQ4K0xxWnVsMHB3bFJzZnRh?=
+ =?utf-8?B?QnQwRW9rVy9TdWtGaStvUzY4MGowV0d0c2dGck0rekF1Zzgrb3FwWS9EUnc2?=
+ =?utf-8?B?YXVWRTR4bGtQN1JCbzdQRlZ1YUJGMm83UmhpRjVQRUJ6UERCVGVQN3hTQkhP?=
+ =?utf-8?B?THV4ZnBHZ240M3o0YXJ2UDFmWWh5eUhxNTVQbnVSbllUYkIrakZ5ZEFtS1hP?=
+ =?utf-8?B?SG80MHM2dHhmdXEwWXdFaTA2UmY4dEJyb1o3ZCtDZGN0LzdBOFh5VEQ0cVBE?=
+ =?utf-8?B?OVA3bDB1MU41SFRRSmpoSDd2b2FPMDF4U3ppcTFuaWIyaHJkaHlBempNSjRN?=
+ =?utf-8?B?WjZ6aTFzNnhhQXpndy9HSnB1SUViR1FGRk5OMzJPdDdzNGhDMWI3aU9FWlh3?=
+ =?utf-8?B?cldKb0QwQldqNGlOV3BhUG1NbmZkRjc2NDVNZitsSlVFWkVCQUd0Qll5QWJU?=
+ =?utf-8?B?V3RYTGlHSU1MZU0zMkY5cUFJbEpaaldwMTdqaTh2R2ZTbnMyRTI1RUlENVc5?=
+ =?utf-8?B?UmgzZHZUNkNxMFVzcStKZTZ1YzVZenVBSGpUd2V4MFRqcld4ZFdWQ0ErYm1t?=
+ =?utf-8?B?NUZxRUJFQ2RLL3l1bGhoSHIxUm9UZ0t5MlpPblR5dEpnek1DSmhHallHd1V5?=
+ =?utf-8?B?NndHRmJYME14RnJNRnZGRjBIK3ZJNTdESWdJbmh6VTVxVVVUY3pxTDNCZ002?=
+ =?utf-8?B?NFlnQ3d2TkZRZU5VYjBtdmFCQUR0aHBiZ05mTnkreHJZZzRaR29qVmlHSjZi?=
+ =?utf-8?B?dWZpMWoxTWs4OWduMm5kME03RUZxZnVzb1B1aDh5UWVYUStYQ29SaFdZaUdx?=
+ =?utf-8?B?eHJwTmcvTHFGU0NOSlkvN25ISnp5WFhTOE1La1pnbUpTUGJpby80S3dTclpa?=
+ =?utf-8?B?dG9panFDNHRkQVdjdUpIVFdpOGEvbElZOWQ0alhpVjNtVklMKzlNcnpjSlhr?=
+ =?utf-8?B?UFdwQXFnK24rNmluRnhVcjhpR2JkdWtXeGRFTFNka0hIcmt2M3dINy9qWjQv?=
+ =?utf-8?B?VDZXajhIeGFNU2lKeWFJOVl3SU4rQUJzdWRiMHdoR1dpVzFDOU5GOFVWR0Fx?=
+ =?utf-8?B?WjAvT0VuRzRkTlVDN3Z4amdWelc2Ymh5VVpRdDBXM052WmczY3JyU0djbk9y?=
+ =?utf-8?B?bVYvbUhabkREZS9ZdHdNL2w4NDZsSzFlU2lWL2MwcHhUdzhFelprRVFZWjl4?=
+ =?utf-8?B?bm5uM09ZNDlIZTkySWpseEtHVEprbk5vd0NaSzl1QzVZL1hyK05NTjhuY3dl?=
+ =?utf-8?B?SEFlUDBJV3A0SGhOZ1RnSUt4OXl3bWxiWTRaV2xBWm9DRGpuaWh3SGhSOFp4?=
+ =?utf-8?B?UDJLRDlXYWdUZWMraHo1WnVKeFF3WDJtckVnSEJjdUNHUFJPT3BlWWJGUEtJ?=
+ =?utf-8?B?bEN4RUZucXJURDRFZWxEODBBeFY2eEFaVG0xaE5nQkx6dURxR2NFYXI1cFVC?=
+ =?utf-8?B?NzBGaUpCOGdtWHNucnVSTndveUdTSFBwUFdSdncyenNqVWp0TnNBTnJoZVpW?=
+ =?utf-8?B?OUgxQitLRWV0d01HdkNmUGM2b2UxeHZoWm1iM3ExQWNTdlhHNnM5bDAwQkx3?=
+ =?utf-8?B?PT0=?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><html lang=3D"en" style=3D"width: 100%;" =
+xml:lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schem=
+as-microsoft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:vml"><=
+head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta content=3D"width=3Ddevice-width; initial-scale=3D1.0; maximum-sca=
+le=3D1.0; user-scalable=3Dno;" name=3D"viewport">
+    <meta content=3D"width=3Ddevice-width" name=3D"viewport">
+    <meta content=3D"noindex, no follow" name=3D"robots">
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <title>LinkedIn</title>
+    <style type=3D"text/css">
+      .ExternalClass { width:100%; }
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass=
+ font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+      table td p { border-collapse: collapse; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; }
+      h1, h2, h3, h4, h5, h6 { font-size: inherit; padding: 0; margin: 0; c=
+olor: black; line-height: 100%; }
+      .applelinks a { text-decoration: none; color: inherit !important; }
+      a { color: black; text-decoration: none; }
+      a, a:link, a:visited { color: inherit; text-decoration: none; }
+      span.MsoHyperlink { mso-style-priority: 99; color: inherit; }
+      span.MsoHyperlinkFollowed { mso-style-priority: 99; color: inherit; }
+      img { border: 0px !important; }
+     =20
+      body { font-family: Segoe UI, Arial, sans-serif; font-size: 14px; -we=
+bkit-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-font-smoot=
+hing: antialiased; margin: 0; padding: 0; width: 100% !important; }
+     =20
+      .linkopacity:hover { opacity: 0.8 !important; }
+     =20
+      .button { -webkit-border-radius: 50px; -moz-border-radius: 50px; bord=
+er-radius: 50px; overflow: hidden; }
+     =20
+     =20
+      @media only screen and (max-width: 480px) {
+      .w100m, .column50, .column33, .column25, .column75, .column66 { width=
+: 100% !important; }
+      .w90m { width: 90% !important;}
+      .expandm { width: 100% !important; display: block !important; }
+      .resizem { width: 100% !important; height: auto !important; }
+      .hidem { display: none !important; }
+      .h1m { font-size: 22px !important;}
+      .h2m { font-size: 15px !important;}
+      .h3m { font-size: 13px !important;}
+      .tcenterm { text-align: center !important; }
+      .tleftm { text-align: left !important; }
+      .trightm { text-align: right !important; }
+      .height0m { height: 0 !important; }
+      .showm { display: block !important; max-height: 1000px !important; wi=
+dth: 100% !important; overflow: visible !important; align: center !importan=
+t; }
+     =20
+      .logo { width: 150px !important; height: auto !important; }
+     =20
+      .border0m { border: 0px !important; }
+      .borderlr0m { border-left: 0px !important; border-right: 0px !importa=
+nt; }
+      .pad0m { padding: 0px !important; }
+      .padlr0m { padding-left: 0px !important; padding-right: 0px !importan=
+t; }
+      .padt0m { padding-top: 0px !important; }
+      .padt5m { padding-top: 5px !important; }
+      .padt10m { padding-top: 10px !important; }
+      .padt20m { padding-top: 20px !important; }
+      .padt30m { padding-top: 30px !important; }
+      .padb0m { padding-bottom: 0px !important;}
+      .padb5m { padding-bottom: 5px !important;}
+      .padb10m { padding-bottom: 10px !important;}
+      .padb20m { padding-bottom: 20px !important;}
+      .padb30m { padding-bottom: 30px !important;}
+      }
+     =20
+      @media only screen and (max-width: 512px) {
+      .ow100 { width: 100% !important; }
+      .w100 { width: 100% !important; }
+      .w90 { width: 90% !important; }
+      .hide { display: none !important; }
+      .resize { width: 100% !important; height: auto !important; }
+      .resize img { max-width: 100% !important; height: auto !important; }
+      .resize a { width: auto !important; height: auto !important; }
+      .expand { width: 100% !important; display: block !important; }
+      .height0 { height: 0 !important; }
+      .column50 { width: 50%; }
+      .column50a { width: 50%; }
+      .column33 { width: 33.33%; }
+      .column25 { width: 25%; }
+      .column75 { width: 75%; }
+      .column66 { width: 66%; }
+      .tcenter { text-align: center !important; }
+      .show { display: block !important; max-height: 1000px !important; wid=
+th: 100% !important; overflow: visible !important; align: center !important=
+; }
+     =20
+      .bannerside { padding-top: 105px !important; }
+     =20
+      .border0 { border: 0px !important; }
+      .borderlr0 { border-left: 0px !important; border-right: 0px !importan=
+t; }
+      .pad0 { padding: 0px !important; }
+      .padlr0 { padding-left: 0px !important; padding-right: 0px !important=
+; }
+      .padt0 { padding-top: 0px !important; }
+      .padt5 { padding-top: 5px !important; }
+      .padt10 { padding-top: 10px !important; }
+      .padt20 { padding-top: 20px !important; }
+      .padt30 { padding-top: 30px !important; }
+      .padb0 { padding-bottom: 0px !important; }
+      .padb5 { padding-bottom: 5px !important; }
+      .padb10 { padding-bottom: 10px !important; }
+      .padb20 { padding-bottom: 20px !important; }
+      .padb30 { padding-bottom: 30px !important; }
+      }
+    </style>
+    <!--[if mso>
+<style type=3D"text/css">
+body { margin: 0 !important; padding: 0 !important; font-family: Segoe UI, =
+Arial, sans-serif; }
+table, td, div, p { font-family: Segoe UI, Arial, sans-serif; line-height: =
+normal; }
+</style>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif-->
+  </head>
+
+  <body class=3D"tli" style=3D"-webkit-text-size-adjust: none;-ms-text-size=
+-adjust: none; padding: 0; margin: 0; background-color: white;">
+    <!-- HIDDEN PREHEADER START --><!-- [if !mso]><!-- -->
+    <div style=3D"display: none; font-size: 0; max-height: 0; width: 0; mso=
+-hide: all; overflow: hidden; visibility: hidden;"><span style=3D"display: =
+none; font-size: 0; max-height: 0; width: 0; mso-hide: all; overflow: hidde=
+n; visibility: hidden;">Profitez de votre essai gratuit.</span></div>
+    <!-- DO NOT REMOVE preheader spacing below -->
+    <div style=3D"display: none; max-height: 0px; overflow: hidden;">&nbsp;=
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C&nbsp;&nbsp;=E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C&nbsp;&nbsp;=E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C&nbsp;&nbsp;=E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C&nbsp;&nbsp;=E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C&nbsp;&nbsp;=E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C&nbsp; =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C&nbsp;&nbsp;=E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C&nbsp;&nbsp;=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C&nbsp;</div>
+    <!--<!
+    [endif]-->
+    <p></p>
+    <!-- HIDDEN PREHEADER END -->
+    <p></p>
+    <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"width: 100%;" width=3D"100%">
+      <tbody>
+        <tr>
+          <td align=3D"center" style=3D"background-color: #f3f2ef;">
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" class=3D"w100" role=3D"presentation" width=3D"512">
+              <tbody>
+                <tr>
+                  <td align=3D"center">
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" role=3D"presentation" width=3D"100%"><!-- /// SPACING STA=
+RT -->
+                      <tbody>
+                        <tr><!-- COPY START -->
+                          <td style=3D"padding-top: 10px; padding-bottom: 1=
+0px; text-align: center; font-size: 13px; line-height: 1.3em; color: #19191=
+9; font-family: Helvetica Neue, Arial, sans-serif;"></td>
+                          <!-- COPY END -->
+                        </tr>
+                        <!-- SPACING END /// --><!-- /// HEADER START -->
+                        <tr>
+                          <td align=3D"center" class=3D"padt10m" style=3D"b=
+ackground-color: #fce2ba; padding-top: 16px; padding-bottom: 16px;">
+                            <table align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"87%">
+                              <tbody>
+                                <tr><!-- LOGO START -->
+                                  <td align=3D"left" style=3D"padding-right=
+: 12px;" width=3D"100"><a href=3D"https://t1.em.linkedin.com/r/?id=3Dh5753f=
+d64-acb2-4555-abd2-84aed10761fd,8950aa,734c4a&amp;e=3DbWNpZD03MjYyOTAwMjYxO=
+Tk4NzE4OTc2JnRyaz1lbWwtbWt0Zy1wcmVtLWFjcS1mdC1jYXJlZXItdXBtJnNyYz1lLWVtbA&a=
+mp;s=3D3B_4WvNXdi0bBdT0w-ZnKnLvEAYS3SW0IDfowBS3il0" _label=3D"LOGO" _catego=
+ry=3D"CTA"><img alt=3D"LinkedIn" src=3D"https://res1.em.linkedin.com/res/im=
+g/F4F21F263E4CC482C065677687C174D2.png" style=3D"width: 100%; max-width: 10=
+0px; display: block; border: 0; color: black; font-size: 20px; font-weight:=
+ bold; font-family: sans-serif;" width=3D"100"></a></td>
+                                  <!-- LOGO END --><!-- NAME/PROFILE START =
+-->
+                                  <td align=3D"right" class=3D"h3m" style=
+=3D"padding-top: 3px; font-size: 14px; color: #191919; font-family: Helveti=
+ca Neue, Arial, sans-serif;" valign=3D"top" width=3D"150">
+                                   =20
+                                    <a href=3D"https://t1.em.linkedin.com/r=
+/?id=3Dh5753fd64-acb2-4555-abd2-84aed10761fd,8950aa,734c4b&amp;e=3DbWNpZD03=
+MjYyOTAwMjYxOTk4NzE4OTc2JnRyaz1lbWwtbWt0Zy1wcmVtLWFjcS1mdC1jYXJlZXItdXBtJnN=
+yYz1lLWVtbA&amp;s=3D_SCa61BUi9GuvvXOFoip2_NRVzbeXbr0W-U4ZPktNzo" _label=3D"=
+PROFILE" _category=3D"CTA" style=3D"color: #191919; text-decoration: none;"=
+>Jerome Simon</a>
+                                   =20
+</td>
+<!-- NAME/PROFILE END --></tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- HEADER END /// --><!-- /// MODULES START - ADD NEW MODULES BELOW THIS =
+LINE --><!-- /// BANNER LIGHT START -->
+<tr>
+<td>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"background-color: #fce2ba; padding-bottom: 12=
+px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" width=3D"87%"><!-- HEADLINE START -->
+<tbody>
+<tr>
+<td style=3D"padding-top: 16px; text-align: center; font-size: 24px; color:=
+ #191919; font-family: Helvetica Neue, Arial, sans-serif;">Besoin d=E2=80=
+=99un coup de&nbsp;pouce&nbsp;?</td>
+</tr>
+<!-- HEADLINE END --> <!-- COPY START --></tbody>
+<tbody>
+<tr>
+<td style=3D"padding-top: 4px; text-align: center; font-size: 16px; line-he=
+ight: 1.5em; color: #191919; font-family: Helvetica Neue, Arial, sans-serif=
+;">Profitez gratuitement de LinkedIn Premium&nbsp;pendant un&nbsp;mois.</td=
+>
+</tr>
+<!-- COPY END --> <!-- / PRIMARY CTA START -->
+<tr>
+<td style=3D"padding-top: 16px; padding-bottom: 16px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"button" style=3D"background-color: #0a66c2; p=
+adding: 14px 24px; font-size: 16px; color: white; font-family: Helvetica Ne=
+ue, Arial, sans-serif; text-align: center; font-weight: bold;"><a href=3D"h=
+ttps://t1.em.linkedin.com/r/?id=3Dh5753fd64-acb2-4555-abd2-84aed10761fd,895=
+0aa,734c4d&amp;e=3DbWNpZD03MjYyOTAwMjYxOTk4NzE4OTc2JnRyaz1lbWwtbWt0Zy1wcmVt=
+LWFjcS1mdC1jYXJlZXItdXBtJnNyYz1lLWVtbA&amp;s=3DaK9HTpv3QQ42t0cQl_UZjhpM2yWv=
+usOmkL-qXvBp2kI" _label=3D"CTA_JSS" _category=3D"CTA" style=3D"color: #ffff=
+ff; text-decoration: none;"><span style=3D"display: block; width: 100%;">Ac=
+c=C3=A8s gratuit</span></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- PRIMARY CTA END / --></tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- BANNER LIGHT END /// --><!-- /// LOCKUP START -->
+<tr>
+<td>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" width=3D"100%"><!-- IMAGE START -->
+<tbody>
+<tr>
+<td align=3D"center" bgcolor=3D"#FCE2BA"><img alt=3D"Photo d=E2=80=99une fe=
+mme en train de consulter son t=C3=A9l=C3=A9phone" title=3D"Photo d=E2=80=
+=99une femme en train de consulter son t=C3=A9l=C3=A9phone" class=3D"resize=
+" src=3D"https://res1.em.linkedin.com/res/img/40223F6C4234F68D6FC0993085DDE=
+7F9.png" style=3D"display: block; border: 0; background-color: #fce2ba; max=
+-width: 100%;" width=3D"512"></td>
+</tr>
+<!-- IMAGE END --></tbody>
+</table>
+</td>
+</tr>
+<!-- LOCKUP END /// --><!-- /// TEXT LEFT START -->
+<tr>
+<td align=3D"center" style=3D"background-color: #ffffff; padding-top: 16px;=
+ padding-bottom: 12px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" width=3D"87%"><!-- HEADLINE START --><!-- HEADLINE END =
+--> <!-- COPY START -->
+<tbody>
+<tr>
+<td style=3D"padding-top: 4px; text-align: left; font-size: 16px; line-heig=
+ht: 1.5em; color: #191919; font-family: Helvetica Neue, Arial, sans-serif;"=
+>Bonjour Jerome,<br><br>Nous sommes ravis de vous compter parmi les membres=
+ de la communaut=C3=A9 LinkedIn. Pour vous remercier de votre confiance, no=
+us vous offrons un mois d'acc=C3=A8s gratuit&nbsp;=C3=A0 <a href=3D"https:/=
+/t1.em.linkedin.com/r/?id=3Dh5753fd64-acb2-4555-abd2-84aed10761fd,8950aa,73=
+4c4e&amp;e=3DbWNpZD03MjYyOTAwMjYxOTk4NzE4OTc2JnRyaz1lbWwtbWt0Zy1wcmVtLWFjcS=
+1mdC1jYXJlZXItdXBtJnNyYz1lLWVtbA&amp;s=3Di9BzfmrZYITnvnSQkVNPRVrxgRGGY7UzWA=
+qUklJ7Rrs" _label=3D"CTA_JSS" _category=3D"CTA" style=3D"text-decoration: u=
+nderline; color: #0084bf;">LinkedIn&nbsp;Premium</a>.<br><br><strong>Les av=
+antages de&nbsp;Premium &nbsp;:</strong>
+                                  </td>
+                                </tr>
+                                <!-- COPY END --> <!-- / SECONDARY CTA STAR=
+T --><!-- SECONDARY CTA END / -->
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- TEXT LEFT END /// --><!-- /// VALUE PROP START=
+ -->
+                        <tr>
+                          <td>
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td align=3D"center" style=3D"background-=
+color: #ffffff; padding-bottom: 12px;">
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"87%">
+                                      <tbody>
+                                        <tr>
+                                          <td align=3D"center" style=3D"pad=
+ding-top: 12px;">
+                                            <table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation">
+                                              <tbody>
+                                                <tr><!-- 48x48 IMAGE -->
+                                                  <td align=3D"center" widt=
+h=3D"94"><img src=3D"https://res1.em.linkedin.com/res/img/164E4FBAC623F2D51=
+E8FF412F2C5016F.png" style=3D"display: block; border: 0;" width=3D"66"></td=
+>
+                                                  <!-- 48x48 END --><!-- CO=
+PY START -->
+                                                  <td class=3D"h2m" style=
+=3D"padding-left: 10px; padding-top: 5px; font-size: 16px; font-family: Hel=
+vetica Neue, Arial, sans-serif; color: #191919; text-align: left; line-heig=
+ht: 1.4em;"><strong>LinkedIn Learning</strong><br>Acc=C3=A9dez =C3=A0 plus =
+de 24,000+ cours dispens=C3=A9s par des experts pour approfondir vos&nbsp;c=
+omp=C3=A9tences.</td>
+                                                  <!-- COPY END -->
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- VALUE PROP END /// --><!-- /// VALUE PROP STAR=
+T -->
+                        <tr>
+                          <td>
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td align=3D"center" style=3D"background-=
+color: #ffffff; padding-bottom: 12px;">
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"87%">
+                                      <tbody>
+                                        <tr>
+                                          <td align=3D"center" style=3D"pad=
+ding-top: 12px;">
+                                            <table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation">
+                                              <tbody>
+                                                <tr><!-- 48x48 IMAGE -->
+                                                  <td align=3D"center"><img=
+ src=3D"https://res1.em.linkedin.com/res/img/A87B951B91B8370777A100474B262B=
+E7.png" style=3D"display: block; border: 0;" width=3D"94"></td>
+                                                  <!-- 48x48 END --><!-- CO=
+PY START -->
+                                                  <td class=3D"h2m" style=
+=3D"padding-left: 10px; padding-top: 5px; font-size: 16px; font-family: Hel=
+vetica Neue, Arial, sans-serif; color: #191919; text-align: left; line-heig=
+ht: 1.4em;"><strong>Qui a consult=C3=A9 votre&nbsp;profil ?</strong><br>Tra=
+nsformez les vues de votre profil en&nbsp;opportunit=C3=A9s.</td>
+                                                  <!-- COPY END -->
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- VALUE PROP END /// --><!-- /// VALUE PROP STAR=
+T -->
+                        <tr>
+                          <td>
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td align=3D"center" style=3D"background-=
+color: #ffffff; padding-bottom: 12px;">
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"87%">
+                                      <tbody>
+                                        <tr>
+                                          <td align=3D"center" style=3D"pad=
+ding-top: 12px;">
+                                            <table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation">
+                                              <tbody>
+                                                <tr><!-- 48x48 IMAGE -->
+                                                  <td align=3D"center"><img=
+ src=3D"https://res1.em.linkedin.com/res/img/941696F4948361712B53F28A1517D9=
+86.png" style=3D"display: block; border: 0;" width=3D"94"></td>
+                                                  <!-- 48x48 END --><!-- CO=
+PY START -->
+                                                  <td class=3D"h2m" style=
+=3D"padding-left: 10px; padding-top: 5px; font-size: 16px; font-family: Hel=
+vetica Neue, Arial, sans-serif; color: #191919; text-align: left; line-heig=
+ht: 1.4em;"><strong>Plus de messages&nbsp;InMail</strong><br>=C3=89tendez v=
+otre r=C3=A9seau et connectez-vous avec des&nbsp;recruteurs.</td>
+                                                  <!-- COPY END -->
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- VALUE PROP END /// --><!-- /// VALUE PROP STAR=
+T -->
+                        <tr>
+                          <td>
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td align=3D"center" style=3D"background-=
+color: #ffffff; padding-bottom: 12px;">
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"87%">
+                                      <tbody>
+                                        <tr>
+                                          <td align=3D"center" style=3D"pad=
+ding-top: 12px;">
+                                            <table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation">
+                                              <tbody>
+                                                <tr><!-- 48x48 IMAGE -->
+                                                  <td align=3D"center"><img=
+ src=3D"https://res1.em.linkedin.com/res/img/5A8B5ECA9FA5522D420D76207C34B9=
+13.png" style=3D"display: block; border: 0;" width=3D"94"></td>
+                                                  <!-- 48x48 END --><!-- CO=
+PY START -->
+                                                  <td class=3D"h2m" style=
+=3D"padding-left: 10px; padding-top: 5px; font-size: 16px; font-family: Hel=
+vetica Neue, Arial, sans-serif; color: #191919; text-align: left; line-heig=
+ht: 1.4em;"><strong>Pr=C3=A9paration aux&nbsp;entretiens</strong><br>Pr=C3=
+=A9parez-vous =C3=A0 marquer les esprits lors de votre prochain&nbsp;entret=
+ien.</td>
+                                                  <!-- COPY END -->
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- VALUE PROP END /// --><!-- /// BANNER LIGHT ST=
+ART -->
+                        <tr>
+                          <td>
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td align=3D"center" style=3D"background-=
+color: #ffffff; padding-bottom: 12px;">
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"87%"><!-- =
+HEADLINE START --><!-- HEADLINE END --><!-- COPY START --><!-- COPY END -->=
+<!-- / SECONDARY CTA START -->
+                                      <tbody>
+                                        <tr>
+                                          <td style=3D"padding-top: 16px; p=
+adding-bottom: 5px; background-color: #ffffff;">
+                                            <table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation">
+                                              <tbody>
+                                                <tr>
+                                                  <td align=3D"center" clas=
+s=3D"button" style=3D"border: 1px solid #0A66C2; padding: 14px 24px; font-s=
+ize: 16px; color: white; font-family: Helvetica Neue, Arial, sans-serif; te=
+xt-align: center; font-weight: bold;"><a href=3D"https://t1.em.linkedin.com=
+/r/?id=3Dh5753fd64-acb2-4555-abd2-84aed10761fd,8950aa,734c4f&amp;e=3DbWNpZD=
+03MjYyOTAwMjYxOTk4NzE4OTc2JnRyaz1lbWwtbWt0Zy1wcmVtLWFjcS1mdC1jYXJlZXItdXBtJ=
+nNyYz1lLWVtbA&amp;s=3Dznp_3LDpAqaiI-oDhHnmG6De57g-FgljMpaaZiUVFMY" _label=
+=3D"CTA_JSS" _category=3D"CTA" style=3D"color: #0a66c2; ; text-decoration: =
+none;"><span style=3D"display: block; width: 100%;">Acc=C3=A8s gratuit</spa=
+n> </a></td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- SECONDARY CTA END / --><!-- //=
+/ TEXT CENTER START -->
+                                        <tr>
+                                          <td align=3D"center" style=3D"bac=
+kground-color: #ffffff; padding-top: 16px; padding-bottom: 12px;">
+                                            <table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"8=
+7%"><!-- HEADLINE START --><!-- HEADLINE END --><!-- COPY START -->
+                                              <tbody>
+                                                <tr>
+                                                  <td style=3D"padding-bott=
+om: 5px; text-align: center; font-size: 16px; line-height: 1.5em; color: #1=
+91919; font-family: Helvetica Neue, Arial, sans-serif;"><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<span>Annulation facile. Offre valable jusqu'au</span>
+
+</body>
+</html> 2026-06-03.</td>
+                                                </tr>
+                                                <!-- COPY END --><!-- / SEC=
+ONDARY CTA START --><!-- SECONDARY CTA END / -->
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- TEXT CENTER END /// -->
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- BANNER LIGHT END /// --> <!-- /// TERMS & COND=
+ITIONS START -->
+                        <tr>
+                          <td style=3D"padding-top: 12px; background-color:=
+ #f3f2ef;">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td align=3D"center" style=3D"background-=
+color: #f3f2ef;">
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"87%"><!-- =
+COPY START -->
+                                      <tbody>
+                                        <tr>
+                                          <td style=3D"padding-top: 12px; t=
+ext-align: left; font-size: 14px; line-height: 1.3em; color: #191919; font-=
+family: Helvetica Neue, Arial, sans-serif;">Une fois la p=C3=A9riode promot=
+ionnelle expir=C3=A9e, vous serez automatiquement factur=C3=A9 pour votre a=
+bonnement sur une base mensuelle ou annuelle (=C3=A0 votre convenance) sauf=
+ si vous annulez. La promotion expirera le 2026-06-03. <a href=3D"https://t=
+1.em.linkedin.com/r/?id=3Dh5753fd64-acb2-4555-abd2-84aed10761fd,8950aa,734c=
+50&amp;e=3DbWNpZD03MjYyOTAwMjYxOTk4NzE4OTc2JnRyaz1lbWwtbWt0Zy1wcmVtLWFjcS1m=
+dC1jYXJlZXItdXBtJnNyYz1lLWVtbA&amp;s=3DU339oYmlRgBHIlhoTHfvfHxu-TpqyUMsqlh6=
+Q3ybp0w" _label=3D"LEARN_MORE" _category=3D"CTA"><span style=3D"color: #0a6=
+6c2; text-decoration: underline;">En savoir plus</span></a><br><br>Le pr=C3=
+=A9nom et le nom des utilisateurs qui ont choisi de rester anonymes ou semi=
+-anonymes via leurs pr=C3=A9f=C3=A9rences de confidentialit=C3=A9 peuvent n=
+e pas s=E2=80=99afficher dans le module =E2=80=9CQui a consult=C3=A9 votre =
+profil=E2=80=9D. Les cr=C3=A9dits InMail expirent apr=C3=A8s 90 jours ou qu=
+and l'abonnement prend fin.</td>
+                                        </tr>
+                                        <!-- COPY END --><!-- / BORDER DIVI=
+DER START -->
+                                        <tr>
+                                          <td align=3D"center" style=3D"pad=
+ding-top: 24px;">
+                                            <table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"1=
+00%">
+                                              <tbody>
+                                                <tr>
+                                                  <td style=3D"border-top: =
+1px solid lightgrey;"></td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- BORDER DIVIDER END / -->
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- TERMS & CONDITIONS END /// --> <!-- MODULES EN=
+D - DO NOT ADD MODULES BELOW THIS LINE /// --><!-- /// FOOTER START -->
+                        <tr>
+                          <td style=3D"background-color: #f3f2ef; padding-t=
+op: 12px; padding-bottom: 36px;"><html lang=3D"fr">
+<head>
+<title>Footer Mercado French</title>
+</head>
+<body>
+<table role=3D"presentation" width=3D"87%" border=3D"0" align=3D"center" ce=
+llpadding=3D"0" cellspacing=3D"0"><!-- COPY START -->
+<tbody>
+<tr>
+<td style=3D"padding-top: 24px; text-align: left; font-size: 14px; line-hei=
+ght: 1.3em; color: #191919; font-family: Helvetica Neue, Arial, sans-serif;=
+">Cet e-mail =C3=A9tait destin=C3=A9 =C3=A0 Jerome Simon (Ing=C3=A9nieur d=
+=C3=A9veloppement chez ADP) <br><a href=3D"https://t1.em.linkedin.com/r/?id=
+=3Dh5753fd64-acb2-4555-abd2-84aed10761fd,8950aa,734c51&amp;e=3DbWNpZD03MjYy=
+OTAwMjYxOTk4NzE4OTc2JnRyaz1lbWwtbWt0Zy1wcmVtLWFjcS1mdC1jYXJlZXItdXBtJnNyYz1=
+lLWVtbA&amp;s=3DLpJ8TzqIRPIDx3ShOhAWq6Cez_IUT3YK55MaHBsG9jQ" _label=3D"Secu=
+rity_Footer" _category=3D"Footer"><span style=3D"color: #0a66c2; text-decor=
+ation: underline;">D=C3=A9couvrez pourquoi nous avons inclus ceci.</span></=
+a> <br><br>Ce message fait partie d'un envoi ponctuel pour vous aider =C3=
+=A0 tirer le meilleur parti de LinkedIn. <br><br><a href=3D"https://t1.em.l=
+inkedin.com/r/?id=3Dh5753fd64-acb2-4555-abd2-84aed10761fd,8950aa,734c52&amp=
+;e=3DbWNpZD03MjYyOTAwMjYxOTk4NzE4OTc2JnRyaz1lbWwtbWt0Zy1wcmVtLWFjcS1mdC1jYX=
+JlZXItdXBtJnNyYz1lLWVtbCZwMT1BUUU5SWxsMXpYZUFCQUFBQVo1ZF9GeElQZ08teFBxaldmV=
+0F3aDRuRmVmcU8xX0h0UU56SUtLSDVBa29obmhPaHl2TTlFRDBELWw2WXRtQWdiTnZHQkkmcDI9=
+NDgxNjgzOCZwMz04OTk5MDgyJnA0PTIwMjYtMDUtMjc&amp;s=3Do2SyukyQ0e6HIr-AKrjiQx6=
+aSvqC_ORONUlhyIaKKnw" _label=3D"UNSUB" _category=3D"unsub"><span style=3D"c=
+olor: #0a66c2; text-decoration: underline;">Se d=C3=A9sinscrire</span></a>&=
+nbsp;&nbsp;=C2=B7&nbsp;&nbsp;<a href=3D"https://t1.em.linkedin.com/r/?id=3D=
+h5753fd64-acb2-4555-abd2-84aed10761fd,8950aa,734c53&amp;e=3DbWNpZD03MjYyOTA=
+wMjYxOTk4NzE4OTc2JnRyaz1lbWwtbWt0Zy1wcmVtLWFjcS1mdC1jYXJlZXItdXBtJnNyYz1lLW=
+VtbA&amp;s=3Di1-EvzG1t3-iKj1B8pFwkRT6tlg1r1sootx8QyFJgsU" _label=3D"HELP_FR=
+ENCH" _category=3D"Help"><span style=3D"color: #0a66c2; text-decoration: un=
+derline;">Aide</span></a></td>
+</tr>
+<!-- COPY END --> <!-- IMAGE START -->
+<tr>
+<td style=3D"padding-top: 25px;"><a href=3D"https://t1.em.linkedin.com/r/?i=
+d=3Dh5753fd64-acb2-4555-abd2-84aed10761fd,8950aa,734c54&amp;e=3DbWNpZD03MjY=
+yOTAwMjYxOTk4NzE4OTc2JnRyaz1lbWwtbWt0Zy1wcmVtLWFjcS1mdC1jYXJlZXItdXBtJnNyYz=
+1lLWVtbA&amp;s=3DyHIANZV9nriwsL9JtsnqPF01JOeR3mwy6f9pVC6HpCQ" _label=3D"LOG=
+O" _category=3D"Footer"><img src=3D"https://res1.em.linkedin.com/res/tracki=
+ng/linkedin-blue-80x20.png" width=3D"80" alt=3D"LinkedIn" style=3D"display:=
+ block; border: 0; color: black; font-size: 20px; font-weight: bold; font-f=
+amily: sans-serif;"></a></td>
+</tr>
+<!-- IMAGE END --> <!-- COPY START -->
+<tr>
+<td style=3D"padding-top: 20px; text-align: left; font-size: 14px; line-hei=
+ght: 1.3em; color: #191919; font-family: Helvetica Neue, Arial, sans-serif;=
+">=C2=A92026,
+
+LinkedIn Ireland Unlimited Company.
+
+Tous droits r=C3=A9serv=C3=A9s. <br>
+
+LinkedIn Ireland Unlimited Company, Gardner House, Wilton Plaza, Wilton Pla=
+ce, Dublin 2, Irlande.
+
+<br>LinkedIn et le logo de LinkedIn sont des marques d=C3=A9pos=C3=A9es de =
+LinkedIn.</td>
+</tr>
+<!-- COPY END --></tbody>
+</table>
+</body>
+</html></td>
+                        </tr>
+                        <!-- FOOTER END /// -->
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+
+</html>
+
+
+<img height=3D"0" width=3D"0" alt=3D"" src=3D"https://t1.em.linkedin.com/r/=
+?id=3Dh5753fd64-acb2-4555-abd2-84aed10761fd,8950aa,1">
+

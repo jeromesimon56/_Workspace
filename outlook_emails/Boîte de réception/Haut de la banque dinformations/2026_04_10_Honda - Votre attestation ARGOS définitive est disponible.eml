@@ -1,0 +1,470 @@
+Received: from AMBP250MB1491.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:769::14)
+ by PAVP250MB0931.EURP250.PROD.OUTLOOK.COM with HTTPS; Fri, 10 Apr 2026
+ 08:31:09 +0000
+Received: from AS4P195CA0015.EURP195.PROD.OUTLOOK.COM (2603:10a6:20b:5e2::12)
+ by AMBP250MB1491.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:769::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9769.17; Fri, 10 Apr
+ 2026 08:31:08 +0000
+Received: from AMS0EPF000001AF.eurprd05.prod.outlook.com
+ (2603:10a6:20b:5e2:cafe::42) by AS4P195CA0015.outlook.office365.com
+ (2603:10a6:20b:5e2::12) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9769.42 via Frontend Transport; Fri,
+ 10 Apr 2026 08:31:08 +0000
+Authentication-Results: spf=pass (sender IP is 185.41.28.128)
+ smtp.mailfrom=aa.d.sender-sib.com; dkim=pass (signature was verified)
+ header.d=honda-secure.com;dmarc=pass action=none
+ header.from=honda-secure.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of aa.d.sender-sib.com
+ designates 185.41.28.128 as permitted sender)
+ receiver=protection.outlook.com; client-ip=185.41.28.128;
+ helo=aa.d.sender-sib.com; pr=C
+Received: from aa.d.sender-sib.com (185.41.28.128) by
+ AMS0EPF000001AF.mail.protection.outlook.com (10.167.16.155) with Microsoft
+ SMTP Server id 15.20.9769.17 via Frontend Transport; Fri, 10 Apr 2026
+ 08:31:08 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:365F597D99C5A586EF979B62FFB257946332CEC4E1BFBEA10EB5465E3E094E84;UpperCasedChecksum:86DFC0D2277CF498468B6E221AA3AEF4EB609E3F6CA9208B99B608745F9425EB;SizeAsReceived:1779;Count:15
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=honda-secure.com;
+ q=dns/txt; s=mail; bh=l/NE8e1GeGaTsI0nsMkUVwJY+AmLuSvrUZ1rITQmhNM=;
+ h=from:subject:date:to:mime-version:content-type:list-unsubscribe:x-csa-complaints:list-unsubscribe-post:message-id:x-sib-id:feedback-id;
+ i=contact@honda-secure.com;
+        b=KvFxVqv+YV0O3to7eZf3ISN8pGniDcP1hZDjVsL0P596aylklrozmwdxdGVYYZgba/FR5T9D3rzx
+        vvpAOLbqG+5OFTS1aC4xjRmRBbS3JYFSsx3kP3kDMK2EWWFYPDBg7RBv9DPA39Sp+emHwhymbDKs
+        ecP3cjy8zQl2Xv86uM8=
+Message-Id: <fa4295bc-cab1-4e0d-ad7b-ffd36e15bce2@smtp-relay.sendinblue.com>
+Origin-messageId: <39e978ec944bfa6b33ff3aa17103de6d@honda-secure.com>
+Feedback-ID: 185.41.28.128:1816093_-1:1816093:Sendinblue
+X-CSA-Complaints: csa-complaints@eco.de
+X-Mailin-EID: NjAwOTQyNzB%2BamVyb21lc2ltb241NkBob3RtYWlsLmNvbX48MzllOTc4ZWM5NDRiZmE2YjMzZmYzYWExNzEwM2RlNmRAaG9uZGEtc2VjdXJlLmNvbT5%2BYWEuZC5zZW5kZXItc2liLmNvbQ%3D%3D
+To: <jeromesimon56@hotmail.com>
+Subject: =?utf-8?q?Honda_-_Votre_attestation_ARGOS_d=C3=A9finitive_est_disponible_?= =?utf-8?q?!?=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+From: <contact@honda-secure.com>
+List-Unsubscribe: <https://bibgajd.r.bh.d.sendibt3.com/tr/un/li/TXDJwc8H04X6dClrRyWhAYmVq2KTYv816ZFXDkwgGvqQFNghQ0xZ6OK6vlTF0pqZenuBQJNdqGkqfZHCjIHHKZ3a3QyoE7ZnqffhYu_gSNlKrBR6nBtPB7bzSmB5p3eyURhBsVbQtmn1kCoRPgNKf8fvOKgHDy6bHaF46yQ2iVqhqpP_V-13d0F6HfXw36tdqEbXqk9vD4r5mvfuaaLNObSJI86QniNSJXqWvmCP96BgEVCKXGY5FsP39M4>
+Date: Fri, 10 Apr 2026 08:31:06 +0000
+X-sib-id: QlKhnrtgpCgXTfFp6banb1khS_P1i6ih3K4zlvIzXwlsWaWpp4lM8kQ4kp3dH5v0OlARQTGvm5jaR9EBcBtFSkIM-Y4F9uZfWAAXRk62D_x9E3NddDsLJOPzUsSO6TmOpoF8ROC7K0IqvT9X2_ok1Hr6zgWUfibzcf2xNAxiy87fhOa7oVd5
+Content-Type: multipart/alternative; boundary=etBYG3Jd
+X-IncomingHeaderCount: 15
+Return-Path: bounces-60094270-2910288967@aa.d.sender-sib.com
+X-MS-Exchange-Organization-ExpirationStartTime: 10 Apr 2026 08:31:08.1356
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 536d56f8-212b-4c81-61e2-08de96db837f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: AMS0EPF000001AF:EE_|AMBP250MB1491:EE_|PAVP250MB0931:EE_
+X-MS-Exchange-Organization-AuthSource: AMS0EPF000001AF.eurprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 4/10/2026 8:10:35 AM
+X-MS-Office365-Filtering-Correlation-Id: 536d56f8-212b-4c81-61e2-08de96db837f
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 185.41.28.128
+X-SID-PRA: CONTACT@HONDA-SECURE.COM
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:1444111002|10300799038|32080799006|5139299004|1290799033|57050799003|47200799024|58200799021|9000799056|970799060|1680799066|9400799043|9109299003|35120799006|36140799009|7059299006|461199028|1370799030|1360799030|1380799030|1602099012|440099028|3412199025|30041999003|4302099013|18021999003|26104999006|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 10 Apr 2026 08:31:08.0866
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 536d56f8-212b-4c81-61e2-08de96db837f
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: AMS0EPF000001AF.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AMBP250MB1491
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.9294492
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9769.015
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UmhhOVBDWk82VTd3ZDBReW9CZkRtc2U3SGM1b2ovYUF0Qms4Y3FsNVNHQjlV?=
+ =?utf-8?B?eXk5R3prMGhjVVRvZkJhWFFMZm51Wm05b3ZFK0lJdVN2UnBRMExWUFE2elBm?=
+ =?utf-8?B?UGdRZDR1K2dSR1F2RTE0WU0wSWdrWE5Ra3BSV2ptdTBqTmhscGZlcVBpWUpp?=
+ =?utf-8?B?eGRFRzhxUmdlR2dkb2pEQkJOaXBpMTEza055dllyamVNakhEdUNhZGs0bWxL?=
+ =?utf-8?B?NzlUd0ZBZ0ZHc3FXWjhoV3dQdVlxdGQ2NzQ2dUQ1dTNPQ050dUQzem5QVFpG?=
+ =?utf-8?B?K1Q3d3lVSGEwNDdtUjlMTG1RdFF5K1RqMkhVWlFHQ2UzaWY1Z3ZDQmp0Uzkw?=
+ =?utf-8?B?dzVzR1lXQTRZWVl4bDh1N0RORnBVQ3BYUElieVJBMk1FS2VpUzlBNm5XZ3V0?=
+ =?utf-8?B?QlZGM1BrMmlQSk1ES1JyTmpYbW45N3VWWnN5Y3gxaWwwcldIY2ZzUXZKSTZY?=
+ =?utf-8?B?N3lVbUo0Vk5RNEs2K1dRdFpabytKMmxkWUIxbVplb285TDk4cmQ2c2dwNHp6?=
+ =?utf-8?B?VlBCYjgwNXNMRjE5cHgvZXpOcHJtSHozWDlaQXVJZkxDYWdlakhUc1l3UmF6?=
+ =?utf-8?B?S1owUUFiNHBZa1BLeG93Zjg1M3cxSFlFTTJnVEpCNTZzYU5mVG85YjhUS3FF?=
+ =?utf-8?B?czZOQWdhbGNrUzVNTnVpK2JXRVQrK2p4Vk1CMVpZSms5dkc2Wmd6UjJCU1l2?=
+ =?utf-8?B?S0hZWFJLNFlGc2dydjhYM2VjcGYza3AyeUdKa0lJekVnNUQzUzA4M3UxdmxQ?=
+ =?utf-8?B?bVBpV1ZaSHc1Z0hGTTNRVVdkNkZiZUtYeHNsSDBET1ZvUmFtdXI1NlhpMVNn?=
+ =?utf-8?B?cHp5RFNkWlRkd3NNUDRsSVZVbUdoYUNWb2JKQ2N5Z3N1ZzZ6L0RRKzFEUThU?=
+ =?utf-8?B?cmpMV2VyN1N1dndNWnRZd2x6NmhBdFZ5SFArTk41RUMvZFBtRjhjejVUaEkv?=
+ =?utf-8?B?SkF6WHdlYU9ES05sWW83VWZCNUlUcWJXeFBwdnVoQVdINmNMMHY1a0UyZmp3?=
+ =?utf-8?B?T2NKeFlNY3pNV2dveXNObTVDQ21iZ3QzU21iNFQyZTF6dTYrdnRFLzMzWVhs?=
+ =?utf-8?B?SzBYb0lKK1JYUVhZNURTUkY5WDlPcTUzS295aFhCYVNaN0x5cEh3OW9oOGRK?=
+ =?utf-8?B?T29Nemd3aFRnOGdzaHNNQXBpUzExVGNxQldWVk1NcERnVDNPcFA4TFdFelNu?=
+ =?utf-8?B?WjJQRzMzZnk2c01GQTIzWXRDaTU1MXkwM2NCeEg1NG8rYmZCRytUNzFCQUc0?=
+ =?utf-8?B?VlhseDFmRDNiWlhLMlU1R2lkSWFTL1FVSjl0ejhFcGFkUld3bEpxVmVFZ1dS?=
+ =?utf-8?B?MllHMjFLSnhHZWFNZ3JFUzVUSGZJdTErZVZLck1Ob3dWVUVEamQ0R0ZzM3Y5?=
+ =?utf-8?B?RWNhVlpBdUgwL3VOanF1dWtTenJFeDdSWHkzRVNBTkFGQllzTWY1SUdCSm44?=
+ =?utf-8?B?Q0JUOGFDN3VoNlc2RDFhS3RqSTFmQW10b1orOWlFbXNEREJLakpLQkRLVFVm?=
+ =?utf-8?B?OFBDcVl0anBZV0hFNUFQRGNEeEo5ZUJVMnFDY2t6NXNLUkdNMnZrREdXVHVZ?=
+ =?utf-8?B?TWFjaEIwam5IaWVLZHpNWTRLeUUyNk1tUVRtNCs4dnV0ditPZG9WTlIrd3Z1?=
+ =?utf-8?B?S25iOHlEbStUd2syeGlXZXJGUUNhemF0bzI1RVYzRDFUMjJLY0xFWWdNczd0?=
+ =?utf-8?B?TUxGTTdHYlBXZk9lVXB1dXVJOGRRYitOOVNjSG00Q3YyVFBBdHN4K3lnUUtP?=
+ =?utf-8?B?LzZVVFp6VS9LSk1CSStXajhrQ3BwSTBVSUFaL21qZkw0RlRmM3c5dEdXelJo?=
+ =?utf-8?B?ZEIyM0VJM1E1aUhiWW82ZUY5RnIyRTcvRnFOTllBenVTR2xGcjJFQWZFT0h1?=
+ =?utf-8?B?dWVYeVkwbjR5SS9VOHh1MTBxVWtHaTVUM0xtZFhHczlrbzhEelhhUUpKTnF5?=
+ =?utf-8?B?alptMm13a0JlMWF6QW5GZ29iM2VIZkdLRlZvTzZrUHQ1aDZaNjZMd2RCVWdT?=
+ =?utf-8?B?UHI0c1lpUUhqNFdNbGVRb1JIdENqeHJsL1VVem8yb2lGWE0wVXJ6VCt2bE45?=
+ =?utf-8?B?MzhsVFd1aWJLTnZhdHFBOGQwbzVJSW9vc3I2TFlraXlSWXQrSVNrV2ovMFlN?=
+ =?utf-8?B?UkcvWEJYTk1QRUkxdGt1VE9Qc29aQnY2OEZyVUNEdnIveEZpZ2VqV2JQdWd1?=
+ =?utf-8?B?bGxOSkk5M3NKeGN0MUpBVkR2Y0VUMklwOWxMK1FCaWc3UXFWaEFNak1FYmVB?=
+ =?utf-8?B?UmVRMTB4UWJNV00rV1YyUStGMkxCNVpGTHFWVklKMFNJbUhwcVhURDNTNlVx?=
+ =?utf-8?B?akp6Z25IYjFHdUlvaWdxemdxWWFpWFB2TElEaExCUXovY1R0SVJFV1dBaFFq?=
+ =?utf-8?B?Y0IrTUVOVlhZdS9xQmhrZkdLa3Q4RGN6aEZqNm0zbS94QjlTb1FIcCt4bjJJ?=
+ =?utf-8?B?YU11WUMvV3c1Nm9DYXJveDg4Tm1lYW9uRnpqVlh1L0hUSDdMV2gwV3Zvc3Zn?=
+ =?utf-8?B?ajk0VmplaUs4R05weThIZmZpN0pjQUdTYmhBYVRXS0F4SE9BTXVWZVdVM0hW?=
+ =?utf-8?B?bnB3SjhOUjFMSWV4T1RDaHVrOEhpTDNMVHh1ZXRvNi8ySFVueXdsNVBBNS9M?=
+ =?utf-8?B?b3VvZC9EcEhpTkJ5b1NnWWZxUWsydXdQZFRwOXdnUXV2NXZKaElsMVZSMnJu?=
+ =?utf-8?B?TWppOS9YSEpPR3JOT3RQbmt6YVpJUUl4b3djYVYwVm5YdktJVGFPdU9LTGFC?=
+ =?utf-8?B?UTVCNEVtcFpqNngwc2lYcHhKa1B4SjVnano4ell0dXBEcmR0M3U2N1Z4TzZO?=
+ =?utf-8?B?N3RTRk5QcGszOVFkQno5bU1naUFLOUJkMEN1aGtuNlBPWVlUN1hLbEZsRHp2?=
+ =?utf-8?B?RUJSMkFXWXZTcmdDeTJvUWYzdzA4aXZHQ3lUR3hucjV3aTVNMm40OG1oaFVV?=
+ =?utf-8?B?aU9QWnRhSE1iMTRQYlpjVExqaGRQTUdjOGFDeVUyL1hzSnY3cGsyYTQrTUgx?=
+ =?utf-8?Q?nO8Bt6h7oySWJrGjKwlc+XcDoFemuw1ti/o?=
+MIME-Version: 1.0
+
+--etBYG3Jd
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+[](https://www.auvray-security.com)
+
+    .additional-guarantees .guarantee-icons {
+        display: flex;
+
+        @media screen and (max-width: 570px) {
+            flex-direction: column;
+        }
+    }
+
+    .header_th {
+        @media screen and (max-width: 500px) {
+            width: 70% !important;
+        }
+
+        @media screen and (max-width: 425px) {
+            width: 80% !important;
+        }
+
+        @media screen and (max-width: 400px) {
+            width: 100% !important;
+        }
+    }
+
+    .header .title {
+        font-size: 48px;
+        line-height: 45px;
+
+        @media screen and (max-width: 375px) {
+            font-size: 40px !important;
+        }
+    }
+
+    .header .title .second-part {
+        margin-top: 5px;
+        font-size: 38px;
+
+        @media screen and (max-width: 375px) {
+            font-size: 32px!important;
+        }
+    }
+
+**Votre attestation ARGOS d=C3=A9finitive est disponible !**
+
+Votre v=C3=A9hicule a bien =C3=A9t=C3=A9 enregistr=C3=A9 par ARGOS et dispo=
+se d=C3=A9sormais d=E2=80=99un num=C3=A9ro d=E2=80=99enregistrement valable=
+ pendant 6 ans.
+
+Votre num=C3=A9ro ARGOS est : **3926012351**
+
+Vous trouverez votre attestation d=C3=A9finitive sur votre espace membre.
+
+J'acc=C3=A8de =C3=A0 mon espace *: https://membre.honda-secure.com/folders/=
+397098?mail_backdoor=3Dtrue&token=3DUkDTWqRZPlpHKNq3nURuRbwqndCbZPPRDI8zAAC=
+YsDE5WG5E7HqP9QbPrDVE1kzt
+
+* Ce lien est valable jusqu'au 17/04/2026
+
+Cordialement, l'=C3=A9quipe Honda.
+
+Conform=C3=A9ment =C3=A0 la loi n=C2=B078-17 du 6 janvier 1978 dite loi Inf=
+ormatique et Libert=C3=A9s, vous disposez d=E2=80=99un droit d=E2=80=99acc=
+=C3=A8s, d=E2=80=99opposition et de rectification des informations personne=
+lles vous concernant et pouvez l=E2=80=99exercer en nous envoyant directeme=
+nt un message.
+Num=C3=A9ro de d=C3=A9pot =C3=A0 la CNIL : 1757891 v 0
+
+
+--etBYG3Jd
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>motorcycle-root</title>
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+
+<meta name=3D"color-scheme" content=3D"light">
+<meta name=3D"supported-color-schemes" content=3D"light">
+<style>
+@media only screen and (max-width: 600px) {
+.inner-body {
+width: 100% !important;
+}
+
+.footer {
+width: 100% !important;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.button {
+width: 100% !important;
+}
+}
+</style>
+</head>
+<body style=3D"box-sizing: border-box; font-family: Arial, sans-serif; back=
+ground-color: #f8fafc; color: #74787e; height: 100%; hyphens: auto; line-he=
+ight: 1.4; margin: 0; -moz-hyphens: auto; -ms-word-break: break-all; width:=
+ 100% !important; -webkit-hyphens: auto; -webkit-text-size-adjust: none; wo=
+rd-break: break-word; font-weight: 300;"><img width=3D"1" height=3D"1" src=
+=3D"https://bibgajd.r.bh.d.sendibt3.com/tr/op/LIUL1crBYlDxIuyQacG4khtGEkbXW=
+u9xHqBXLI44epjQs9xzf-AZp8JqCbDV84MwCC786cwgOGktusfudA_PRfPZ2vg0afWp1hqOB3P-=
+N8mBvbnmJGcN64CeobOYO0wrJ4SWjSu4OOGBEcTWdNhnA7aPhHUl9bDe3_pH4W2J4XuY4kGdA5b=
+XzcDJl_RhTXnozkWZdCw9H_V7_zvnDP6p0vRcR1hVJHUb_CFLg_q6" style=3D"mso-hide:al=
+l">
+
+<table class=3D"wrapper" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" style=3D"box-sizing: border-box; background-color: #=
+f8fafc; margin: 0; padding: 0; width: 100%; -premailer-cellpadding: 0; -pre=
+mailer-cellspacing: 0; -premailer-width: 100%;">
+<tbody><tr>
+<td align=3D"center" style=3D"box-sizing: border-box;">
+<table class=3D"content" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" style=3D"box-sizing: border-box; margin: 0; padding:=
+ 0; width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -pre=
+mailer-width: 100%;">
+<tbody><tr>
+    <td style=3D"box-sizing: border-box;">
+        <table class=3D"header" style=3D"box-sizing: border-box; max-width:=
+ 570px; width: 100%; height: 250px; background-repeat: no-repeat; margin: 0=
+ auto; background-image: url(https://motorcycle.root.auvray.io/images/banne=
+r-honda.jpg);">
+            <tbody style=3D"box-sizing: border-box;">
+            <tr>
+                <th width=3D"55%" class=3D"header_th" style=3D"box-sizing: =
+border-box;">
+                    <a href=3D"https://bibgajd.r.bh.d.sendibt3.com/tr/cl/NZ=
+-4maYd3d5POIx42DmwPGlm-tLTiQOnaLE1lmKIBdlUBj99r4kkLbCJTCnEAgYOKP5myB6fP0a4C=
+e91prH44yh5W25LwdkcdB4zj8Er37O292aYgl8-b7F-U9kZ56Fcx0cHz9PzbZXJ9cJIQ-Gw8stW=
+i-k1bfh9RYmam5uzlCz_HrpkfXxioP4t4UeYDHy9RT6RAGHl74i-2FRJp__42Wjg7W2XKGUpjyJ=
+fBmmdCriP6B6cPL7EW4-CRpjG4t3OVktF7fFnmziNgdc2JULPhdZQdNoVJcKwfyLw" style=3D=
+"box-sizing: border-box; display: block; width: 100%; height: 100%; color: =
+inherit; text-decoration: none;">
+                        <h1 class=3D"title" style=3D"box-sizing: border-box=
+; font-stretch: normal; font-style: normal; letter-spacing: normal; text-al=
+ign: left; font-size: 48px; line-height: 45px; font-family: 'Saira Semi Con=
+densed', sans-serif; font-weight: 300; max-width: 300px; color: #fff; paddi=
+ng: 85px 0 0 31px; margin: 0; text-decoration: none;">
+                            Attestation<br>
+                            <span class=3D"second-part" style=3D"box-sizing=
+: border-box; margin-top: 5px; font-size: 38px;">ARGOS disponible</span>
+                        </h1>
+                    </a>
+                </th>
+                <th style=3D"box-sizing: border-box;">
+                    <a href=3D"https://bibgajd.r.bh.d.sendibt3.com/tr/cl/YH=
+kJgO9XJn69UY0cFob0bSCmP_tHv7EsIABlDAoFFr8LJ1fozL01kch6l3YTqAEMOlD6hdHJ4m3li=
+s8seJwJ3yH6Y3Lr0y0MbOovKVbZV88Vz43wNvCyd6mduzlNQfFaYR1FDEOQSFKIyxfYmCEFgZwR=
+2kL9DeCtqAYuD4murrb9p0qzFyowBs1YRPvHjMnpA29wgrVuEICNKPqwWocoEB2aU_b6iZa1pCW=
+s98BCWZ969xxhRKLAoXL213PzDgnSqZcQCO08g0PlDLKfX4X9_3ifj-yMO0c6QNmr" style=3D=
+"box-sizing: border-box; display: block; width: 100%; height: 100%; color: =
+inherit; text-decoration: none;"></a>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+<!-- Email Body -->
+<tr>
+<td class=3D"body" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"box-sizing: border-box; background-color: #ffffff; border-bottom: 1px s=
+olid #edeff2; border-top: 1px solid #edeff2; margin: 0; padding: 0; width: =
+100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-widt=
+h: 100%; color: #4f5f67; font-weight: 300; font-family: Arial, sans-serif; =
+border: hidden !important;">
+<table class=3D"inner-body" align=3D"center" width=3D"570" cellpadding=3D"0=
+" cellspacing=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; =
+background-color: #ffffff; margin: 0 auto; padding: 0; max-width: 570px; -p=
+remailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 570px=
+;">
+<!-- Body content -->
+<tbody><tr>
+<td class=3D"content-cell" style=3D"box-sizing: border-box; padding: 24px 0=
+ 0;">
+<link rel=3D"preconnect" href=3D"https://fonts.googleapis.com" style=3D"box=
+-sizing: border-box; margin-left: 48px; margin-right: 48px;">
+<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com" crossorigin=3D"=
+" style=3D"box-sizing: border-box; margin-left: 48px; margin-right: 48px;">
+<link href=3D"https://fonts.googleapis.com/css2?family=3DAnton&amp;family=
+=3DLobster&amp;family=3DOswald&amp;family=3DPoppins:ital,wght@0,100;0,200;0=
+,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,60=
+0;1,700;1,800;1,900&amp;family=3DSaira+Semi+Condensed:wght@100;200;300;400;=
+500;600;700;800;900&amp;display=3Dswap" rel=3D"stylesheet" style=3D"box-siz=
+ing: border-box; margin-left: 48px; margin-right: 48px;">
+<style style=3D"margin-left: 48px; margin-right: 48px;">
+    .additional-guarantees .guarantee-icons {
+        display: flex;
+<pre><code>    @media screen and (max-width: 570px) {
+        flex-direction: column;
+    }
+}
+
+.header_th {
+    @media screen and (max-width: 500px) {
+        width: 70% !important;
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 80% !important;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 100% !important;
+    }
+}
+
+.header .title {
+    font-size: 48px;
+    line-height: 45px;
+
+    @media screen and (max-width: 375px) {
+        font-size: 40px !important;
+    }
+}
+
+.header .title .second-part {
+    margin-top: 5px;
+    font-size: 38px;
+
+    @media screen and (max-width: 375px) {
+        font-size: 32px!important;
+    }
+}
+
+</style>
+<p style=3D"box-sizing: border-box; color: #4f5f67; font-size: 16px; line-h=
+eight: 1.5em; margin-top: 0; text-align: left; margin-left: 48px; margin-ri=
+ght: 48px;"><strong style=3D"box-sizing: border-box; font-weight: bold;">Vo=
+tre attestation ARGOS d=C3=A9finitive est disponible !</strong></p>
+<p style=3D"box-sizing: border-box; color: #4f5f67; font-size: 16px; line-h=
+eight: 1.5em; margin-top: 0; text-align: left; margin-left: 48px; margin-ri=
+ght: 48px;">Votre v=C3=A9hicule a bien =C3=A9t=C3=A9 enregistr=C3=A9 par AR=
+GOS et dispose d=C3=A9sormais d=E2=80=99un num=C3=A9ro d=E2=80=99enregistre=
+ment valable pendant 6 ans.</p>
+<p style=3D"box-sizing: border-box; color: #4f5f67; font-size: 16px; line-h=
+eight: 1.5em; margin-top: 0; text-align: left; margin-left: 48px; margin-ri=
+ght: 48px;">Votre num=C3=A9ro ARGOS est : <strong style=3D"box-sizing: bord=
+er-box; font-weight: bold;">3926012351</strong></p>
+<p style=3D"box-sizing: border-box; color: #4f5f67; font-size: 16px; line-h=
+eight: 1.5em; margin-top: 0; text-align: left; margin-left: 48px; margin-ri=
+ght: 48px;">Vous trouverez votre attestation d=C3=A9finitive sur votre espa=
+ce membre.</p>
+<div class=3D"action" align=3D"center" width=3D"100%" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; font-=
+family: 'Saira Semi Condensed', sans-serif; font-weight: 600; display: bloc=
+k; margin: 32px 0; padding: 0; text-align: center; width: fit-content; -pre=
+mailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%; m=
+argin-left: 48px; margin-right: 48px;">
+    <a href=3D"https://bibgajd.r.bh.d.sendibt3.com/tr/cl/OueJDrS0s9PkXjgPWt=
+819e0iCq5tP69GtqdN4zq6Og19DqmreBYiMObc4sO_cZ22YXrFp2zrtqA_HEQ_sob1yYtML2oZ4=
+JgVgWpKmlHXHp67wAaKCmehDD8zkukukSdDaO8RjxRXfqoX2dULJgt6T2oVwY_5cykSPZKFl38-=
+9AvbWgwa47gjP9JtNWd7-m_f9LCrVimhElQcZv2t6V47Matn685_Bku6LmNTb6a5bNCbx-GNAnk=
+b_rM4d4wfIvwAIBT1Wv86-sXP6c0SBVvZfPC8d1ZygWTQOg4mMR-Gng_IKPnQ5yNsORNr95VNvD=
+tSzcKdyZ2dRLSO7URO_uw5d6GvYcBLyVsNp-YPn8uVLLO92gd9lN5wOtmNjRSmcUNcmA5rKdBGD=
+UHpC2XjPHYyvTKEVQZCfAJD3wV1qINGqlGjwG20zCq7-qovcHL2YQPk" class=3D"button bu=
+tton-primary" target=3D"_blank" style=3D"box-sizing: border-box; display: b=
+lock; text-decoration: none; -webkit-text-size-adjust: none; border-radius:=
+ 40px; padding: 6px; background-color: #ED3833; border-top: 10px solid #ED3=
+833; border-right: 18px solid #ED3833; border-bottom: 10px solid #ED3833; b=
+order-left: 18px solid #ED3833; font-family: 'Saira Semi Condensed', sans-s=
+erif; font-weight: 600; font-size: 16px; font-stretch: normal; font-style: =
+normal; line-height: 1.39; letter-spacing: normal; text-align: center; colo=
+r: #ffffff;">J'acc=C3=A8de =C3=A0 mon espace *</a>
+</div>
+<ul style=3D"box-sizing: border-box; line-height: 1.4; text-align: left; ma=
+rgin-left: 48px; margin-right: 48px;">
+<li style=3D"box-sizing: border-box;">Ce lien est valable jusqu'au 17/04/20=
+26</li>
+</ul>
+<p style=3D"box-sizing: border-box; color: #4f5f67; font-size: 16px; line-h=
+eight: 1.5em; margin-top: 0; text-align: left; margin-left: 48px; margin-ri=
+ght: 48px;">Cordialement, l'=C3=A9quipe Honda.</p>
+<a href=3D"mailto:adv@auvray-security.com" style=3D"box-sizing: border-box;=
+ color: #74787e;">
+<img class=3D"company-information" src=3D"https://bibgajd.r.bh.d.sendibt3.c=
+om/im/1816093/962bf8012ad354d3b054225a71f565e24d9ab061c7fb1b37b4f21eae6a83a=
+a1a.png?e=3Dp3rfyFXiyCyWP58dYBrug26pl5fqZoS41DNxfx4WCKVD8GVUYBaqMwImzIrTzXP=
+pZNTrf-dtbdOTuMewdPcehL8GrS8li7eIt8NN4TQSHAYK1yDM9ES8zHRlXILeuQtHtjJ2VjqITa=
+Z2uooPFaS3v_i11JQaSm1dp9TyWhPUIqKAktZv3-XcUqUKl-Tutg49I6Z2Cmg8NayGlbpkmE04r=
+AL4ZkPqgcKooH8PoaoBjjTI99ft7HjKgsjcMR4GubfjJJKqhw8fQilJOK4rV1AWdeSm" style=
+=3D"box-sizing: border-box; border: none; max-width: 570px; width: 100%; ma=
+rgin-top: 32px;">
+</a>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+
+<tr>
+<td style=3D"box-sizing: border-box;">
+<table class=3D"footer" align=3D"center" width=3D"570" cellpadding=3D"0" ce=
+llspacing=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; marg=
+in: 0 auto; padding: 0; text-align: center; max-width: 570px; -premailer-ce=
+llpadding: 0; -premailer-cellspacing: 0; -premailer-max-width: 570px;">
+<tbody><tr>
+<td class=3D"content-cell" align=3D"center" style=3D"box-sizing: border-box=
+; padding: 24px 0 0;">
+<p style=3D"box-sizing: border-box; line-height: 1.5em; margin-top: 0; colo=
+r: #aeaeae; font-size: 12px; text-align: center;">Conform=C3=A9ment =C3=A0 =
+la loi n=C2=B078-17 du 6 janvier 1978 dite loi Informatique et Libert=C3=A9=
+s, vous disposez d=E2=80=99un droit d=E2=80=99acc=C3=A8s, d=E2=80=99opposit=
+ion et de rectification des informations personnelles vous concernant et po=
+uvez l=E2=80=99exercer en nous envoyant directement un message.
+Num=C3=A9ro de d=C3=A9pot =C3=A0 la CNIL : 1757891 v 0</p>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+</body></html>
+
+--etBYG3Jd--

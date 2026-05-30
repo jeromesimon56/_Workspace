@@ -1,0 +1,588 @@
+Received: from PA1P250MB1088.EURP250.PROD.OUTLOOK.COM (2603:10a6:102:461::5)
+ by VI6PPF5FBC185B3.EURP250.PROD.OUTLOOK.COM with HTTPS; Wed, 20 May 2026
+ 18:32:01 +0000
+Received: from CH2PR08CA0002.namprd08.prod.outlook.com (2603:10b6:610:5a::12)
+ by PA1P250MB1088.EURP250.PROD.OUTLOOK.COM (2603:10a6:102:461::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.48.14; Wed, 20 May
+ 2026 18:31:59 +0000
+Received: from BN1PEPF00006000.namprd05.prod.outlook.com
+ (2603:10b6:610:5a:cafe::15) by CH2PR08CA0002.outlook.office365.com
+ (2603:10b6:610:5a::12) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9870.22 via Frontend Transport; Wed,
+ 20 May 2026 18:31:58 +0000
+Authentication-Results: spf=pass (sender IP is 193.164.197.242)
+ smtp.mailfrom=bounce.leboncoin.fr; dkim=pass (signature was verified)
+ header.d=leboncoin.fr;dmarc=pass action=none
+ header.from=leboncoin.fr;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of bounce.leboncoin.fr
+ designates 193.164.197.242 as permitted sender)
+ receiver=protection.outlook.com; client-ip=193.164.197.242;
+ helo=mta242.leboncoin.fr; pr=C
+Received: from mta242.leboncoin.fr (193.164.197.242) by
+ BN1PEPF00006000.mail.protection.outlook.com (10.167.243.232) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.48.11
+ via Frontend Transport; Wed, 20 May 2026 18:31:58 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:1E72561FC5EF5484A06A7627EDC7BACCD23B3277702D5386EAE4AAA534C61A73;UpperCasedChecksum:8E395FB45C85A23C2B66A5B6DC4BE77731C9DBA0B0A910A10DE97B1C72ADD1A8;SizeAsReceived:1273;Count:12
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=mailers; d=leboncoin.fr;
+ h=Mime-Version:From:To:Subject:Content-Type:Content-Transfer-Encoding:
+ Message-ID:Date:From:To:Subject:CC:Date; i=no.reply@leboncoin.fr;
+ bh=t58waSejDSB/wp0hiXIb90U6v7ltIlIr4P0VX4bKg6I=;
+ b=NBHIAEEHbPnzo19wu0x0rQKdYTeAN4yb9yh88ZJ7+bbhvT0FoaTWvPaO2ccDVcFZVnTn34pNbWmX
+   ovSNMTyI1FYwQch9uxNWcFGc5/RSwF+NBeoFjXxw+ngMQ+V4asSwc+jZhX2NbaVDebQjmFz4iS+9
+   YrjcPTU0Lax9w1hBZOZ9GBWQTRpCO3NUHNGPtFMVBlRhHYsawtGdS8jdgSEXwCyFMiBYcaoMHHhA
+   B62BmV/z/97BdhFhOAfGPSSxwl5+VPHTmehaHv1VEkLXGO097CQ/Z5aXn4Rmj4sJwBExII/8NFdl
+   pI1oRwLn6FdZXgdt9s/a/dNwox/0/UfRy7R9Lw==
+Received: by mta242.leboncoin.fr id h1nv1q3bl48i for <jeromesimon56@hotmail.com>; Wed, 20 May 2026 20:31:57 +0200 (envelope-from <no-reply@bounce.leboncoin.fr>)
+jobId: emailer_ads_accepted_ad_v2
+From: leboncoin <no.reply@leboncoin.fr>
+To: jeromesimon56@hotmail.com
+Subject: =?UTF-8?q?Votre_annonce_"Objectif_Olympus_Plan_40X_/_0,65_=E2=88=9E/0,17_?=
+ =?UTF-8?q?pour_Microscope"_est_en_ligne?=
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <0.0.0.51.1DCE886F08C57B0.0@mta242.leboncoin.fr>
+Date: Wed, 20 May 2026 20:31:58 +0200
+X-Virtual-MTA: mta-242
+X-IncomingHeaderCount: 12
+Return-Path: no-reply@bounce.leboncoin.fr
+X-MS-Exchange-Organization-ExpirationStartTime: 20 May 2026 18:31:58.4406
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: fccc5cf6-37fe-4fd3-5f25-08deb69e13ad
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN1PEPF00006000:EE_|PA1P250MB1088:EE_|VI6PPF5FBC185B3:EE_
+X-MS-Exchange-Organization-AuthSource: BN1PEPF00006000.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/20/2026 6:19:58 PM
+X-MS-Office365-Filtering-Correlation-Id: fccc5cf6-37fe-4fd3-5f25-08deb69e13ad
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 193.164.197.242
+X-SID-PRA: NO.REPLY@LEBONCOIN.FR
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;ARA:1444111002|5149299006|5139299004|3069299007|9000799056|10300799038|9400799043|68400799013|1680799066|1370799030|1380799030|1360799030|1602099012|440099028|3412199025|4302099013|5090599003|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 May 2026 18:31:58.1372
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: fccc5cf6-37fe-4fd3-5f25-08deb69e13ad
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: BN1PEPF00006000.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PA1P250MB1088
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.3594360
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0025.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;ex:0;auth:1;dest:I;OFR:TrustedSenderList;ENG:(5062000311)(920221119095)(920221120095)(90000117)(90011020)(91015020)(91040095)(9050020)(9065024)(9081003)(9100341)(944500132)(4810010)(4910033)(9930004)(9545005)(10172021)(9414026)(9310011)(9220031)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?alpPVVBhdktxRHYyNi90cUVmamx0b3pWRzhRSVVJRHpBcG9GMEZtaEw3VGNx?=
+ =?utf-8?B?eXVWNEQ5em9VSzY0Rk8rcjRGNnF2VU11NVp6eG0zM1Nwd2hHV3hmcWNGazlN?=
+ =?utf-8?B?K0JWS0hsRy9WeGNnSjVib1dIYW40SUpPNFFzOU14N0dVd1pUcWFwUUxRVTBT?=
+ =?utf-8?B?Ti81ZEdVQU94QjhKVlVNN3pFSHhjdXNtSi9PY0prVFJCQ1J4NWV2S3BJL1Bj?=
+ =?utf-8?B?Z2pSZCs3bk9BbG5KSXo4OTFoTWgwak5PSjU0YUR3UVZIRU5TT0M0M296Rmhq?=
+ =?utf-8?B?cW9XMFFIT1U2OWtuRE5JR09ScUhJZHZXc29pMEFvcU01cGVvb0xiY1E4SjYz?=
+ =?utf-8?B?WFpiTU9wOWNvNi9OaW5IclF3NXA0NEFqRnlzNzcxSllXQnRWSFVJT0dlODlk?=
+ =?utf-8?B?alVySmtkbW9YU05nYnBuTkdvaW5DNHlSeXRQeWZNU0d6bjhCZ21WV1ZWYU9s?=
+ =?utf-8?B?QlNEcVFsYXRnbEhnY29WZTl1MVQrdFFNd09PR0pGSmR0NWRMVzFnWnhvVFR6?=
+ =?utf-8?B?em5wK29GNnY3eGkvZURBKzc4WlRGdG9TYVB5VUlNY2RWZEFDdHdUckVNQjlB?=
+ =?utf-8?B?OWZrUlJYOGZkb1pYTG8xQ1ZGdFBGMWVqL0trYjd5M29BZlpyZTdLMHdCRi9B?=
+ =?utf-8?B?NVh4cjRUcSs0T1lVYURtVStlY2Zjc3dNMExoTS9QT05WRzNrNWhXV3h4azJQ?=
+ =?utf-8?B?NTNMY1pMQ1JRcHdjczJhWjBvMlVERXRlUlhGWHc3VGNMWElYQTFHbnI1T0NT?=
+ =?utf-8?B?WHByU29oK1FNYnZUNmQxUnZJd2R1d09ha3BMWkJrZTE4Z0NBaXUwN3JaeEpI?=
+ =?utf-8?B?aCtNRFFIYmc2YUsyMkRoUW4zenVycFBQbEJqOTVqZC9PbUZEVnJ2L3EycWRO?=
+ =?utf-8?B?VmZSdGp1VmZIQUJ2QkY0YzB1SFdSTXl6bCtadnBLU2FDT1dsbXpRK2I2MUs2?=
+ =?utf-8?B?S3JFYThSQ1dSSWtoREJtSlRHWFp1bUJ1c2JRdnZxK0M3WmYySVdDSkxYaVlM?=
+ =?utf-8?B?L2IyM0xlRnZpbXdoWU9yZm41NlNqWWJNTnBRd2sycm55SnMwZnVqWTNYS1Bw?=
+ =?utf-8?B?UkdrNXZaTWp5WlN4L0NTTDM4SGFRdXJVMEJkTWNSNEVSOXRNVnR5Qlp4dnpT?=
+ =?utf-8?B?Mk04Y2VIaUFheUhHckFwemFDejYwTVJHM3p1Z1pLLytwems5V1drQzNTWEc3?=
+ =?utf-8?B?TUVhL3gzSkExZEpvSTZ0dzVNc01ncFZzZVZLNTJMVHVqbTFETktWWnNMalhh?=
+ =?utf-8?B?SUp3eXJ0NGpjRG95R21jNFFMd1hmV3U5ZUtqU2Z3bDRGTUdCdHMxbnVCa3gx?=
+ =?utf-8?B?Q1RJOTNxc09ZcWI2cXlsclNBQzlqVnUrb1k4N0ZMSXdyTTRqaGtBK2JtWS9R?=
+ =?utf-8?B?VUdyRXRGOU5KUWo0VTVTSUNIVE9ITHEzdEVOZDA1SkRrQkJXdk4wMWJQQ080?=
+ =?utf-8?B?NHhUMXVXNy9WR2JiTHd0K0VzaG83NFFkL1RuUTNVVzhrZFZhRW1iaXkvWUdT?=
+ =?utf-8?B?TlVmNkVaM0RZd2FJNzJLSXgvQXkzQXlYam00RVdoQ0d2alIyWW5yNzdyUWxS?=
+ =?utf-8?B?U1g0cnVjQ3VFS2h1cXM3MmZYMDRVN1dBNkZuUGFrMVdjcC9wcW5SYUIrVjBF?=
+ =?utf-8?B?N3ArQTZHN25YNnEzMERsUFRzTXI1STh4ckFSMDNHOUVEWEc5ZHBGVFRyL0Ir?=
+ =?utf-8?B?VGRoT1RZVlQ4c0NiUDQzaWFLS3Qzd1BFbW1kcEMwQklFVXRpU3FLaTBuZStM?=
+ =?utf-8?B?dEJtOExZTzVIdnJyME8wU2Z5elV2ME5zVlRiZFUwQnJRTkFvbHZ5N1QrYXQr?=
+ =?utf-8?B?NDVkWS9JNjIzV1Y0dGs5S3F0Z3laU0RlaWlxYVRYTzA2ck1Fc3dVb2k3UlFZ?=
+ =?utf-8?B?T0VKWThmTUNtclNDclpJNk1SaUZGbnN0aHQ3TEo3UHVmcmJTNjZnUUhHMm4w?=
+ =?utf-8?B?ektrb1lzRUFRZzY3alJaL3F0aEZTeHZObXJrcFNxRkNnQlNDTHZkeFB5TXZI?=
+ =?utf-8?B?STd6cUF5QktjbHJ6bjlIdmR5ZWVncXBtVXU5RHdLakQ5T3NQWUpSTTVockFn?=
+ =?utf-8?B?SmY0eStNV1A2OFA1MmcvNk53RkpxdDhkS04rcmtXOXpkL3VwekkvK3NlUm4v?=
+ =?utf-8?B?RW0vaDU5eE1oamNNZ3cxbE43MC9nbjE2U09Wbk9JR0VYS291VXZiSGgzdGJs?=
+ =?utf-8?B?STMyYzJ6WGpHYkkyV2NPSHp6VGowQzdMRFRxeGVpM2NuaW5EcktLZnFNd0Jj?=
+ =?utf-8?B?KzhYUERFalhIeVcyT3p3Rmp1M3gwM1VNdTNlbXJodDNJYW4yZmttbDM1Vlkw?=
+ =?utf-8?B?N1UwTjY1Q3A5Y0dPaGtLcm5FNytCMnF6NGw5Mjd6cWlSZnVXQ0pURk9WeEF5?=
+ =?utf-8?B?RTdLa0M0STZiOTdSM0tsNmI5M2dMU2tZMnY3WGtkWXlxUDRrRzFXVHplYW9y?=
+ =?utf-8?B?d2VLR2ltVVRoTExSMDBmaUpLTkxhdFcxdFdRejFERmY1UTF6L0dlK01oRzlJ?=
+ =?utf-8?B?Qm9SS0xINVc3emNvYmxDYzNjY1dmQ1I5YjBlSFkyeWhLQVNkUFlSRTRPK3hX?=
+ =?utf-8?B?WFYxWUNuRS9haGxiU2pnM0VrT0crSWRZVit1dzlxY0Vkb00xU1NjUU5sVkFH?=
+ =?utf-8?B?MTRCMzdUeEZHQW1rTEM3VjdZeHpjYkd4VXRJVi9iOENwZ1F5cEZHc3luQWVr?=
+ =?utf-8?B?ZVArOHNHcUtQNjYwSmpTODhjTzFReFU5NDZCMUxPOENrclpsZVVMZHRWNWlP?=
+ =?utf-8?B?SCtta0kwMTA4Wlo5WnE0ZWo1WGRvNUhzb3hCNmd4TmowdUhla3NTOFBmU3Rk?=
+ =?utf-8?B?bWtrMG1UdytoWTRHOUtva3p0MWdFNDg5WGZiWVI2bHpLLzlYeVhnMmNHR21M?=
+ =?utf-8?B?aC9QV05NQUtYVGpPeE5OWFljTmNxZ21UZytJVXdGclR1L0hVZzVhOGJuSjY3?=
+ =?utf-8?B?YWtDZzJGU0pHUDIvUU1HR3lhcHNJV0lIWDkvZ3RLc2RwZzhJKzY5ZXdBK29L?=
+ =?utf-8?B?K205dXoydElyNnBndDJ5N2NkTExMOVpEM2pYUk05ZStXbVZpY2w0K2E5dndU?=
+ =?utf-8?B?RG0zaHlhVGRQRWR0T3JvUnNxKzlhWnhabGQzUzNZL1JRZ1Q4dVFVSXhrUlVB?=
+ =?utf-8?B?VmpQc2VoQmdkQ1JYR1BPUVJnWHFGVFdkR2FtalR5OTVzUUM0NVpRcmFwSUw5?=
+ =?utf-8?B?YUwrQW1JK1IxQ1M4SG1GZkYvSVNhZ0RLcWlEeW9id1BUdWtlZndMTERxUHgy?=
+ =?utf-8?Q?DyCsXH/sXREtoPK+Exa88C+UQ5X2sP5OpqIpFXRGg0ihwXk?=
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang=3D"en" xmlns=3D"https://www.w3.org/1999/xhtml" xm=
+lns:o=3D"urn:schemas-microsoft-com:office:office"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=
+=3D1">
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <meta name=3D"generator" content=3D"emailer">
+    <meta name=3D"description" content=3D"ads_accepted_ad_v2">
+   =20
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+   =20
+    <link href=3D"https://fonts.googleapis.com/css?family=3DNunito+Sans:400=
+,700" rel=3D"stylesheet" type=3D"text/css">
+    <title></title>
+   =20
+    <style type=3D"text/css">
+        @media screen and (max-width: 375px) {
+            .two-col .column {
+                max-width: 100% !important;
+            }
+
+            .two-col img {
+                width: 100% !important;
+            }
+        }
+
+        @media screen and (min-width: 376px) {
+            .two-col .column {
+                max-width: 50% !important;
+            }
+        }
+    </style>
+</head>
+
+<body style=3D"margin:0;padding:0;word-spacing:normal;background-color:#fff=
+fff;font-family: 'Nunito Sans',sans-serif;">
+    <div role=3D"article" aria-roledescription=3D"email" lang=3D"en" style=
+=3D"-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-colo=
+r:#ffffff;">
+        <table role=3D"presentation" style=3D"width:100%;border:0;border-sp=
+acing:0;">
+            <tr>
+                <td align=3D"center">
+                   =20
+                    <div class=3D"outer" style=3D"width:96%;max-width:640px=
+;margin:20px auto;">
+                       =20
+=20
+
+  <table role=3D"presentation" style=3D"width:100%;border:0;border-spacing:=
+0;">
+    <tr>
+      <td>
+       =20
+
+
+=09
+
+<a href=3D"https://www.leboncoin.fr" title=3D"leboncoin" target=3D"_blank" =
+style=3D"text-decoration: none; padding-top: 24px; display: block">
+  <img src=3D"https://img8.leboncoin.fr/Emails_contact/logo-lbc.png" alt=3D=
+"leboncoin" style=3D"display: block; width: 164px; height: auto" class=3D"L=
+ogo_Lbc">
+</a>
+
+
+
+
+
+      </td>
+    </tr>
+    <tr>
+      <td style=3D"height: 28px"></td>
+    </tr>
+  </table>
+
+ =20
+
+
+
+
+
+
+
+
+
+
+<div class=3D"two-col" style=3D"text-align:center;font-size:0;direction:rtl=
+;">
+ =20
+  <div class=3D"column" style=3D"width:100%;max-width:320px;display:inline-=
+block;vertical-align:middle;direction:ltr;">
+    <div style=3D"font-size:14px;line-height:18px;">
+      <p style=3D"margin:0; margin-bottom:32px;font-family:Arial,sans-serif=
+;">
+        <img src=3D"https://email-static.leboncoin.fr/classified/accepted/y=
+ata.png" style=3D"display:block;width:140px;max-width:140px;height:auto;mar=
+gin:0 auto;" width=3D"140" height=3D"140">
+      </p>
+    </div>
+  </div>
+ =20
+  <div class=3D"column" style=3D"width:100%;max-width:320px;display:inline-=
+block;vertical-align:middle;direction:ltr;">
+    <div style=3D"font-size:14px;line-height:18px;text-align:left;">
+      <p style=3D"font-size: 20px;line-height: 28px; font-weight:bold; marg=
+in:0; margin-bottom:8px;">Bonjour
+        jeromes78,</p><p style=3D"font-size: 18px;line-height: 24px; margin=
+:0; margin-bottom:4px;"><strong>Votre annonce est
+          en ligne
+          !</strong>
+      <p style=3D" font-size: 16px;line-height: 24px;margin:0;">Votre annon=
+ce =C2=AB Objectif Olympus Plan 40X / 0,65 =E2=88=9E/0,17 pour Microscope =
+=C2=BB vient
+        d=E2=80=99=C3=AAtre valid=C3=A9e
+        pour =C3=AAtre mise en ligne.</p></div>
+  </div>
+ =20
+</div>
+
+<div class=3D"spacer" style=3D"line-height:24px;height:24px;mso-line-height=
+-rule:exactly;">&nbsp;</div>
+
+<table role=3D"presentation" style=3D"width:100%;border:0;border-spacing:0;=
+">
+  <tr>
+    <td>
+     =20
+
+<table>
+  <tr>
+    <td style=3D"vertical-align:top">
+     =20
+      <div style=3D"width: 75px; height: 75px; border-radius: 4px; backgrou=
+nd-image: url(https://img.leboncoin.fr/api/v1/lbcpb1/images/e5/cb/76/e5cb76=
+fa0ba7fce823093c12e63cd47ca0eadf76.jpg?rule=3Dad-private); background-size:=
+ cover; background-position: center;">
+      </div></td>
+    <td valign=3D"top" style=3D"padding: 0 10px">
+      <p style=3D"margin: 0;font-size: 16px;font-weight: bold;color: #1a1a1=
+a;display: -webkit-box; -webkit-line-clamp: 2;-webkit-box-orient: vertical;=
+overflow: hidden;margin-bottom:7px;">
+        Objectif Olympus Plan 40X / 0,65 =E2=88=9E/0,17 pour Microscope</p>
+
+      <p style=3D" font-size: 14px;color: #1a1a1a;margin: 0;align-self: cen=
+ter;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical=
+;overflow: hidden;margin-bottom:7px">
+        92500</p>
+
+     =20
+      <span style=3D"font-size: 16px;font-weight: bold;color: #1a1a1a;margi=
+n: 5px 0 0 0;">155&nbsp;=E2=82=AC</span></td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+
+<div class=3D"spacer" style=3D"line-height:24px;height:24px;mso-line-height=
+-rule:exactly;">&nbsp;</div>
+
+<div class=3D"two-col" style=3D"text-align:center;font-size:0;direction:rtl=
+;">
+ =20
+  <div class=3D"column" style=3D"width:100%;max-width:320px;display:inline-=
+block;vertical-align:middle;direction:ltr;">
+  </div>
+ =20
+  <div class=3D"column" style=3D"width:100%;max-width:320px;display:inline-=
+block;vertical-align:middle;direction:ltr;">
+    <a rel=3D"nofollow noreferrer noopener" target=3D"_blank" title=3D"Voir=
+ mon annonce" href=3D"https://www.leboncoin.fr/ad/photo_audio_video/3201940=
+834" style=3D"display: inline-block; width:100%; max-width: 343px;text-deco=
+ration:none;color:#FFFFFF;font-weight:bold;font-size:16px;background-color:=
+#EC5A13; text-align: center; border-radius: 16px; padding:8px 0px; line-hei=
+ght:24px;">
+      Voir mon annonce
+    </a>
+  </div>
+ =20
+</div>
+
+<table role=3D"presentation" style=3D"width:100%;border:0;border-spacing:0;=
+">
+  <tr>
+    <td style=3D"text-align:left;">
+      <p style=3D"font-size: 12px; line-height:16px">Dans certains cas, le =
+lien est inactif.
+        Veuillez copier le lien suivant dans la barre d=E2=80=99adresse de =
+votre navigateur :
+        <br> <strong>https://www.leboncoin.fr/ad/photo_audio_video/32019408=
+34</strong>
+      </p>
+    </td>
+  <tr>
+</table>
+
+<hr style=3D"border:none; border-bottom:1px solid #ACB8C7;"><table role=3D"=
+presentation" style=3D"width:100%;border:0;border-spacing:0;">
+  <tr>
+    <td style=3D"padding:24px; text-align:center;border-radius: 4px; backgr=
+ound-color: #FFE9DE;">
+      <p style=3D"font-size: 16px;font-weight: bold;line-height: 24px; marg=
+in-bottom:15px;">=C3=80 tout moment, vous pouvez g=C3=A9rer l=E2=80=99ensem=
+ble de vos annonces<br>en ligne en vous connectant
+        sur votre
+        compte personnel.</p>
+
+      <a rel=3D"nofollow noreferrer noopener" href=3D"https://www.leboncoin=
+.fr/compte/part/mes-annonces" target=3D"_blank" style=3D"display: inline-bl=
+ock; text-decoration:none;color:#FFFFFF;font-weight:bold;font-size:16px;lin=
+e-height:24px;background-color:#EC5A13; text-align: center; border-radius: =
+16px;  padding:8px 16px;" title=3D"Voir mon compte personnel">Voir mon comp=
+te personnel</a>
+    </td>
+  </tr>
+</table><table role=3D"presentation" style=3D"width:100%;border:0;border-sp=
+acing:0;">
+  <tr>
+    <td class=3D"padded" height=3D"30" styles=3D"width:100%;">
+      <p style=3D"font-size:12px;line-height:14px;">
+        Dans le cadre de la diffusion automatique de vos annonces sur le si=
+te occasion.largus.fr, en accord avec
+        les
+        <a rel=3D"nofollow noreferrer noopener" target=3D"_blank" title=3D"=
+Voir les cgu de l'Argus" href=3D"https://www.largus.fr/cgu/" style=3D"font-=
+size:12px;line-height:14px;color:black;">
+          conditions g=C3=A9n=C3=A9rales d=E2=80=99utilisation
+        </a>
+        du site largus.fr, nous nous r=C3=A9servons le droit de ne pas diff=
+user certains contenus. Pour plus de
+        renseignements, merci de consulter
+        <a rel=3D"nofollow noreferrer noopener" target=3D"_blank" title=3D"=
+Voir les cgu de l'Argus" href=3D"https://www.largus.fr/cgu/" style=3D"font-=
+size:12px;line-height:14px;color:black;">
+          les conditions g=C3=A9n=C3=A9rales d=E2=80=99utilisation et les r=
+=C3=A8gles de diffusion
+        </a>
+        du site occasion.largus.fr
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p style=3D"font-size:20px;font-weight:bold;line-height:28px;margin:1=
+6px 0;">Quelques astuces pour
+        vendre vite
+        et bien !</p>
+      <p style=3D"font-size:16px;font-weight:bold;line-height:24px;">Photos=
+</p>
+      <p style=3D"font-size: 16px;line-height:24px;">Ajoutez des photos et =
+obtenez 7 fois plus de
+        consultations sur
+        votre annonce !<br>N=E2=80=99h=C3=A9sitez pas =C3=A0 les modifier, =
+changez l=E2=80=99ordre et attention =C3=A0 la
+        lumi=C3=A8re&nbsp;! </p>
+      <p style=3D"font-size:16px;font-weight:bold;line-height:24px;">=C3=80=
+ la une</p>
+      <p style=3D"font-size: 16px;line-height:24px;">Mettez votre annonce e=
+n avant dans un emplacement
+        sp=C3=A9cial =C3=A0
+        droite des listes des annonces et gagnez en visibilit=C3=A9 !</p>
+      <p style=3D"font-size:16px;font-weight:bold;line-height:24px;">Remont=
+=C3=A9e en t=C3=AAte de liste</p>
+      <p style=3D"font-size: 16px;line-height:24px;">Faites remonter automa=
+tiquement chaque semaine
+        votre annonce
+        dans les premi=C3=A8res pages de r=C3=A9sultats comme si elle venai=
+t d=E2=80=99=C3=AAtre publi=C3=A9e (65% des contacts
+        ont lieu
+        pendant les 5 premiers jours de diffusion de votre annonce).</p>
+      <p style=3D"font-size:16px;font-weight:bold;line-height:24px;">Logo u=
+rgent</p>
+      <p style=3D"font-size: 16px;line-height:24px;">Signalez aux acheteurs=
+ potentiels le caract=C3=A8re
+        urgent de votre
+        vente dans la liste de r=C3=A9sultats et vendez plus vite.</p>
+    </td>
+  </tr><tr>
+    <td class=3D"padded" styles=3D"width:100%;">
+      <p style=3D"margin-bottom:25px;font-size:16px;font-weight:bold;line-h=
+eight:20px;padding-bottom:10px;">A
+        bient=C3=B4t sur
+        leboncoin</p>
+    </td>
+  </tr>
+</table>
+</div>
+
+
+
+
+
+
+
+<div class=3D"outer" style=3D"width:100%;max-width:640px;margin:0px auto;">
+  <table role=3D"presentation" style=3D"width:100%;border:0;border-spacing:=
+0;background-color:#2b3441;">
+
+   =20
+   =20
+    <tbody>
+      <tr>
+        <td width=3D"40"></td>
+        <td height=3D"50"></td>
+        <td width=3D"40"></td>
+      </tr>
+      <tr>
+        <td width=3D"40"></td>
+        <td>
+          <a href=3D"https://www.leboncoin.fr" title=3D"leboncoin" target=
+=3D"_blank" style=3D"text-decoration: none;">
+            <img src=3D"https://img8.leboncoin.fr/Emails_contact/logo-lbc-w=
+hite.png" alt=3D"leboncoin" style=3D"display: block;" height=3D"30" border=
+=3D"0">
+          </a>
+        </td>
+        <td width=3D"40"></td>
+      </tr>
+      <tr>
+        <td width=3D"40"></td>
+        <td height=3D"30" style=3D"border-bottom: 1px solid white"></td>
+        <td width=3D"40"></td>
+      </tr>
+      <tr>
+        <td width=3D"40"></td>
+        <td height=3D"20"></td>
+        <td width=3D"40"></td>
+      </tr>
+      <tr>
+        <td width=3D"40"></td>
+        <td>
+          <table width=3D"100" align=3D"left" height=3D"40" style=3D"table-=
+layout: fixed; margin-bottom: 10px">
+            <tr>
+              <td width=3D"28" height=3D"24">
+                <a href=3D"https://www.facebook.com/leboncoin-1565057520410=
+527/" title=3D"Facebook" target=3D"_blank" style=3D"text-decoration: none; =
+border: none; display: inline-block; vertical-align: middle;">
+                  <img src=3D"https://img8.leboncoin.fr/Emails_contact/face=
+book.png" class=3D"wautoh" alt=3D"Facebook" style=3D"display: block; line-h=
+eight: normal; font-family: Arial; font-size: 12px;" width=3D"24" height=3D=
+"24" border=3D"0">
+                </a>
+              </td>
+              <td width=3D"28" height=3D"24" style=3D"vertical-align: middl=
+e; padding: 0 5px">
+                <a href=3D"https://twitter.com/leboncoin?lang=3Dfr" title=
+=3D"Twitter" target=3D"_blank" style=3D"text-decoration: none; border: none=
+; display: inline-block; vertical-align: middle;">
+                  <img src=3D"https://img8.leboncoin.fr/Emails_contact/twit=
+ter.png" class=3D"wautoh" alt=3D"Twitter" style=3D"display: block; line-hei=
+ght: normal; font-family: Arial; font-size: 12px;" width=3D"24" height=3D"2=
+4" border=3D"0">
+                </a>
+              </td>
+              <td width=3D"28" height=3D"24" style=3D"vertical-align: middl=
+e">
+                <a href=3D"https://www.instagram.com/leboncoin/?hl=3Dfr" ti=
+tle=3D"Instagram" target=3D"_blank" style=3D"text-decoration: none; border:=
+ none; display: inline-block; vertical-align: middle;">
+                  <img src=3D"https://img8.leboncoin.fr/Emails_contact/inst=
+agram.png" alt=3D"Instagram" style=3D"display: block; line-height: normal; =
+font-family: Arial; font-size: 12px;" class=3D"wautoh" width=3D"24" height=
+=3D"24" border=3D"0">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td width=3D"40"></td>
+      </tr>
+      <tr>
+        <td width=3D"40"></td>
+        <td>
+          <table class=3D"w100" height=3D"40" style=3D"table-layout:fixed;m=
+argin-top:15px;">
+            <tr>
+              <td width=3D"28" style=3D"vertical-align: middle">
+                <a href=3D"https://itunes.apple.com/fr/app/leboncoin/id4841=
+15113?mt=3D8" title=3D"Apple Store" target=3D"_blank" style=3D"text-decorat=
+ion: none; border: none;">
+                  <img src=3D"https://img8.leboncoin.fr/Emails_contact/app_=
+store_icon.png" class=3D"wautoh" alt=3D"Apple Store" style=3D"display: bloc=
+k; line-height: normal; font-family: Arial; font-size: 12px;" width=3D"115"=
+ height=3D"35" border=3D"0">
+                </a>
+              </td>
+              <td width=3D"28" style=3D"vertical-align: middle; padding-lef=
+t:10px;">
+                <a href=3D"https://play.google.com/store/apps/details?id=3D=
+fr.leboncoin&amp;hl=3Dfr" title=3D"Google Play" target=3D"_blank" style=3D"=
+text-decoration: none; border: none;">
+                  <img src=3D"https://img8.leboncoin.fr/Emails_contact/goog=
+le_play_icon.png" class=3D"wautoh" alt=3D"Google Play" style=3D"display: bl=
+ock; line-height: normal; font-family: Arial; font-size: 12px;" width=3D"11=
+7" height=3D"35" border=3D"0">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td width=3D"40"></td>
+      </tr>
+      <tr>
+        <td width=3D"40"></td>
+        <td height=3D"20"></td>
+        <td width=3D"40"></td>
+      </tr>
+      <tr>
+        <td width=3D"40"></td>
+        <td style=3D"font-family: arial, 'sans-serif'; font-size: 14px; lin=
+e-height: 16px; font-weight: normal; color: white;padding-bottom:20px;">
+          <a href=3D"https://www.leboncoin.fr/dc/cgu/" style=3D"color:white=
+;line-height:0;">Acc=C3=A8s =C3=A0 nos conditions g=C3=A9n=C3=A9rales
+            d=E2=80=99utilisation.</a>
+        </td>
+        <td width=3D"40"></td>
+      </tr>
+      <tr>
+        <td width=3D"40"></td>
+        <td height=3D"20"></td>
+        <td width=3D"40"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+
+</html>
+
+
+

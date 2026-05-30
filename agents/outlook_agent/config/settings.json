@@ -1,0 +1,6 @@
+{
+    "rules": [
+        { "keyword": "facture", "target": "./sorted/factures" },
+        { "keyword": "amazon", "target": "./sorted/amazon" }
+    ]
+}

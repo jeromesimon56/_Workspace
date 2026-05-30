@@ -1,0 +1,195 @@
+Received: from AS4P250MB0681.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:4bc::18)
+ by PAVP250MB0931.EURP250.PROD.OUTLOOK.COM with HTTPS; Wed, 25 Mar 2026
+ 10:09:23 +0000
+Received: from SI2PR04CA0013.apcprd04.prod.outlook.com (2603:1096:4:197::6) by
+ AS4P250MB0681.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:4bc::18) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.9745.20; Wed, 25 Mar 2026 10:09:21 +0000
+Received: from SG2PEPF000B66CD.apcprd03.prod.outlook.com
+ (2603:1096:4:197:cafe::a7) by SI2PR04CA0013.outlook.office365.com
+ (2603:1096:4:197::6) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9723.31 via Frontend Transport; Wed,
+ 25 Mar 2026 10:09:20 +0000
+Authentication-Results: spf=pass (sender IP is 185.250.237.253)
+ smtp.mailfrom=a460870.bnc3.mailjet.com; dkim=pass (signature was verified)
+ header.d=ms.contactevery.one;dmarc=pass action=none
+ header.from=ms.contactevery.one;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of a460870.bnc3.mailjet.com
+ designates 185.250.237.253 as permitted sender)
+ receiver=protection.outlook.com; client-ip=185.250.237.253;
+ helo=o253.p38.mailjet.com; pr=C
+Received: from o253.p38.mailjet.com (185.250.237.253) by
+ SG2PEPF000B66CD.mail.protection.outlook.com (10.167.240.27) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.9745.21 via Frontend Transport; Wed, 25 Mar 2026 10:09:19 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:7AB7490A167EF30B5A5873A9E96FA9C80AFEC2027E735E01E0BF0A993FA29E9A;UpperCasedChecksum:6E862029C7C6F31A2A95994A5DEF14A8EB4E7A588138CAC77608C785636E7B50;SizeAsReceived:1711;Count:15
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; q=dns/txt;
+  d=ms.contactevery.one; i=noreply@ms.contactevery.one; s=mailjet; x=1774440559;
+  h=message-id:from:from:to:to:subject:subject:date:date:list-unsubscribe:list-unsubscribe-post:
+  feedback-id:x-csa-complaints:x-mj-mid:x-report-abuse-to:mime-version:
+  content-type;
+  bh=Cn6MvGaGFWxOWdQ5R4HRki7A8stlJs1VxijMp2IHvtM=;
+  b=I+AZDsFJPvO8ixMm41HaP94nAHtpCwjgOnXxxUrka2DEzWhWckhPMhXEr
+ Yqtu7QBAykD31gWy4g0g15EAbouUUSr/Ptfme46gCiNitqXWKzWKpdCjfMqA
+ O2G1S1h5X5UpWE93oDRXI5mNIzUJMY5VimlJbiyt7xUKqVmDf9bpqo=
+Return-Path: 8574dc67.BAAACGpTC6wAAAAAAAAAAM793H4AAROi8mkAAAAAAAcIRgBpw7RP@a460870.bnc3.mailjet.com
+Message-Id: <8574dc67.BAAACGpTC6wAAAAAAAAAAM793H4AAROi8mkAAAAAAAcIRgBpw7RP@mailjet.com>
+From: MAIRIE DE RUEIL MALMAISON <noreply@ms.contactevery.one>
+To: jeromesimon56@hotmail.com
+Subject: =?UTF-8?Q?Direction_de_l'Education_et_de_?=
+ =?UTF-8?Q?l'Enfance_=3A_Gr=C3=A8ve_du_vendredi_?= =?UTF-8?Q?27_mars_2026?=
+Date: Wed, 25 Mar 2026 10:09:19 +0000
+List-Unsubscribe: <mailto:unsub-8574dc67.g004.vps6hqh34h5q@bnc3.mailjet.com>,
+	<https://g004.mjt.lu/unsub2?m=BAAACGpTC6wAAAAAAAAAAM793H4AAROi8mkAAAAAAAcIRgBpw7RPspgp0hUjQVGHyLhJP_jpzQADWyc&b=8574dc67&e=d9a4fd2a&x=mIxD9p74pISlHWU1_sjvOH9uPgF5eQTSBaVyS6iXN-w>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-Id: 42.460870.219943:MJ
+X-CSA-Complaints: csa-complaints@eco.de
+X-MJ-Mid: BAAACGpTC6wAAAAAAAAAAM793H4AAROi8mkAAAAAAAcIRgBpw7RPspgp0hUjQVGHyLhJP_jpzQADWyc
+X-REPORT-ABUSE-TO: Message sent by Mailjet please report to
+	abuse@mailjet.com with a copy of the message
+Content-Type: multipart/alternative; boundary="=-Gq3lXSYRQevah0eb3oNX"
+X-IncomingHeaderCount: 15
+X-MS-Exchange-Organization-ExpirationStartTime: 25 Mar 2026 10:09:20.6204
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: e6af2d9c-a152-42bd-3508-08de8a569515
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SG2PEPF000B66CD:EE_|AS4P250MB0681:EE_|PAVP250MB0931:EE_
+X-MS-Exchange-Organization-AuthSource: SG2PEPF000B66CD.apcprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 3/25/2026 9:39:48 AM
+X-MS-Office365-Filtering-Correlation-Id: e6af2d9c-a152-42bd-3508-08de8a569515
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 185.250.237.253
+X-SID-PRA: NOREPLY@MS.CONTACTEVERY.ONE
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:4;ARA:1444111002|58200799021|68400799013|36140799009|3069299007|461199028|4039299003|9400799043|35120799006|1290799033|32080799006|47200799024|42300799018|5149299006|1360799030|1370799030|1380799030|1602099012|3412199025|4302099013|4601999015|440099028|26104999006|30041999003|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 25 Mar 2026 10:09:19.8916
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e6af2d9c-a152-42bd-3508-08de8a569515
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: SG2PEPF000B66CD.apcprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS4P250MB0681
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.3374792
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9745.015
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90012020)(91020020)(91040095)(9050020)(9100341)(944500132)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?Zk5DNDQ4alMwZERUSzZhKzhLclFaajVOZmZWTjMvZktHZE1KczJwZ2dJcWxK?=
+ =?utf-8?B?NjhZT0xsajNuRTJOdzc3VkVTNTFNSEc4VERhUlZoQTBxamtkOXBTeFloYTQ5?=
+ =?utf-8?B?SElnMHZsTVg1S2FMNHc0aG1PeEpQS1lHRUZIcVVORjJ1a0J3bXZUNEo3M2lO?=
+ =?utf-8?B?Nm9YZWVtcnhQQ2J6eHkvTDcrZkg3NXBoR2c1ODR3Y1N6ejBaRzhpeVlUT01V?=
+ =?utf-8?B?NDVlTHVBY1N0Mkp1d1k5emdxTjB0QnFIanRBRnhhZ1FSL2JiQ01zNHNaWU5s?=
+ =?utf-8?B?SlZ5SW93RWtoaXcxUjl2djBKYXQ2V01GN2pQZzdNdGdHcDh2OEhFendJNUc4?=
+ =?utf-8?B?RXB1Mk95RXdJS0hzVDE0eFFzMlgrcDh3cEpQNFVmeCt0UVNKWnZjTVZjS1Ax?=
+ =?utf-8?B?Y2ZPc0dhN2tRb0cwREhMUGErdnlXblpBNmh2eFo3K3MwZ095ZGJVUmVHTGZB?=
+ =?utf-8?B?dDY5ZlhzOHIraGQrUWh5YlVEdjBxTnVSaVo1K2YvQWRIcVpTZjNsZnA5aHhN?=
+ =?utf-8?B?Sm1zUndrN2NFRFdZS21zbGw5Tk5MZXpxckVBczNON3M2V3FYK3dSNURBdytS?=
+ =?utf-8?B?ekVTWG5QQVdxakZpc0Vxa2FwL0RyMkZoQ0lUZStKa1pYbzNnWFNGQU1GblNW?=
+ =?utf-8?B?MjFOQThlYmpzdDhNeXVWY0tSVDFDMTBXNkdHUU1aMjZWS3pocFJSdEJZR2Q1?=
+ =?utf-8?B?TkRtTUNGVytZZS9qT2NmaVkyTUJqRHg4RnRscVZnU3ZHSU5hc2MxNmxoV1Fy?=
+ =?utf-8?B?VUlXcFdKeUI5aklkdU5QQStGSjZlc2FySjgvREhjY0l1eW9ueG01cThYYUNj?=
+ =?utf-8?B?OGE5NTB6dkMxdlQxTVVobnkzYlVzc2k2QmdQeEdKSU1NRzlCQ1NmS0xWcjNu?=
+ =?utf-8?B?L1BDR1hDTEVlcXlRVzRlTEQrV2YweGpEMncyZkNBNm1sV1J3dlFqSGx1b2hp?=
+ =?utf-8?B?aGJCZmZONE9WeGlZa3I3aXFxa1c2L0hvMlpRUDh6S05GRWNic0Y2WTgrMTMy?=
+ =?utf-8?B?S1JVQWdiTVpnQWp2UnVlU3M2YWdQZlN2eVBmZmR0QkFxN1k3VFI2ZUFwWjZm?=
+ =?utf-8?B?VzRRdnpTN25FWmYrQllVbGNvKzgwemNFTmVLVmtTRjUxNk1LKytVTng3RWpI?=
+ =?utf-8?B?cUlPSTdHMG9Wb0J3aHVobE9kZjFkbUtRZzRGZWw0NVozdklQcmk3Qlo1cmM3?=
+ =?utf-8?B?dlV2S043NFQvVjNxeUZXSEJEVW9FNDFsb01BVTE0Y0hvbVQ0ZnlCSW5hZmNH?=
+ =?utf-8?B?ZUdpS0hMYmNNWHRTRnRueGVzd1BrK1lINkJGcVZCbGVoQ2U1djUyVUE3VmIx?=
+ =?utf-8?B?RUlUSitybVhTdHRYOFBBRUZnN0RDelBBbGVzR2FKdnBWZUllM0ZIa1ZuR0Yv?=
+ =?utf-8?B?OW5reEt5MmJJMExrcEJMSW9ZejhNTVl6emRQSStXa0habUZyZmpyYVRNdlFX?=
+ =?utf-8?B?QU9NalQxd3grUG85ODNPYzBLZjh4d01FNnlMWTJHQkhxVlpzZ21WWVpCaStm?=
+ =?utf-8?B?V3Q5WnFMRVZUMktmTGJaQzlLaEtBQWxIbUJDczdFNUFmanFwUUV4QU0zUDJQ?=
+ =?utf-8?B?QWFHSDBOdDdiN2ZUYjJRTnJlZDVrbVNMYzFlREg2Um43bGc1NlVSbjRBKzZL?=
+ =?utf-8?B?eHE2Tnc5d2xhdjVEL2UzOHVlT05OUlQ0TE4zYWJaN0NVUlN6WUdValdPRU90?=
+ =?utf-8?B?Vnhtc2dQdjVjZHU1TE9hdy9sb0FZb0R2dWVZejRROGltTDRSZnlUaVRwSGNr?=
+ =?utf-8?B?U2Yya08yM2xkc0ZEWnM0QjlMTytRazJURUl4cEFNeTU0aXlnUW5xR25iODBZ?=
+ =?utf-8?B?RVp4QmFtUzFKZndla08xNVY2SlByWFBsY2pmbzNOb2hMK2NyVWNXVHZGajBp?=
+ =?utf-8?B?WkFUMnZWZUJ4WjN2OVUvZXIwbWJzN1dNN0h3dEpXVFV0Skp2UVE1N0lvczhy?=
+ =?utf-8?B?R09FbmViTTVKQWczbndlY09wclo4dGFydnU5Q2NTUTdnZzJ2Q2srM2ZNMmhz?=
+ =?utf-8?B?Y2dBKzRic091d0ZvdFJWN0tGWlZBSFNOSGd3M3lnb0xjZzBsVWtrRU1WcW54?=
+ =?utf-8?B?NDdSSGp6YWFiR1dlc3FzTTlaOEdsMGlVSk80MU1GOFg1ZnRFbDBPMVVCUDk0?=
+ =?utf-8?B?R3k1cXdIQVJNV3NVeklJTHhmc0JscmJwamdibWdRaitBOThtUS9IRGt0Ti9S?=
+ =?utf-8?B?L2pJcCtZN2JIYmFtTERoWkhGU3FjZDhiSmxaaU1jcDBMTlJibWZzVVpJTEFL?=
+ =?utf-8?B?R1ArSEQ1UlB5WjlxNDMyVEtaYlNVU1U3RmU3bHB5TlBoUlhqVjYxSkhjWm5T?=
+ =?utf-8?B?aDVleFkzdVhocERvZG54bnFDeWlEcWtCa1R0R1E3TXEzd3VIcVc1VTdzT2tX?=
+ =?utf-8?B?NGhOTm56bzZ4UFBEcWh0aWdFODhXc2l2b1VocjFvamdSWTVoQWYxNS81dHNk?=
+ =?utf-8?B?S1JJanYxZ2xqQVJldUJGTXNMb29LMWk2VGR4SmppNlV0QlNHWEpUa0x1QXdB?=
+ =?utf-8?B?SXJuRUVYVEdxMmpCdkZBMTR0Z0Z3RHhOS21BQngyVndkV1FFeFdtbFc3dk1z?=
+ =?utf-8?B?QUhYaS8yOUhCSnFqYlJja2pzQVlPTHBvaWdBUTVhTVNjQVducFZxOUhRSmVx?=
+ =?utf-8?B?Q0kvM0d6RjlaamJxekkyUlNQMzBFNGpROGEyS1FmTWZ0elZTNnpMNi9mdjBF?=
+ =?utf-8?B?bmNDNldiUVU0Y1QweEdIUS9aZkNDcFBlaGkvQlZRVmFuV0ZHSndZcmNCYU56?=
+ =?utf-8?B?cUtxQTFiVzhMbEs4UU10b0JpeDIrQWxDQ2pDemJ0NUhYSGVZMGFqVGh6N29a?=
+ =?utf-8?B?US9ZZ0FwcmtLUURsWk15czFVSEJhdlRNR1ZIdkIyMjVnYlZlaUVDVDdwTkE0?=
+ =?utf-8?B?TWM5WVlvZnlPbzZ6N0szbDNOclBqd1lkSk4xR09oZGJXVE1KVHBWMHNVZTJt?=
+ =?utf-8?B?QUVXd0pKZzlUem40L0UxNWRRNGttb0VLQnRJbWpjYmNEcXRyTWRqd0xxa2xD?=
+ =?utf-8?Q?s2/MfVtqoysxzK8lI4P5b597HbcrEjQW3IT?=
+MIME-Version: 1.0
+
+--=-Gq3lXSYRQevah0eb3oNX
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Un pr=C3=A9avis de gr=C3=A8ve nationale est d=C3=A9pos=C3=A9 pour le      v=
+endredi 27 mars 2026.    =20
+
+La direction de l=E2=80=99Education et de l=E2=80=99Enfance vous invite =C3=
+=A0 consulter le site internet de la ville afin de conna=C3=AEtre l=E2=80=
+=99impact de la gr=C3=A8ve au sein de votre =C3=A9cole en cliquant sur le l=
+ien ci-dessous.    =20
+
+https://www.villederueil.fr/fr/actualites/mouvement-de-greve-du-vendredi-27=
+-mars-2026 <https://www.villederueil.fr/fr/actualites/mouvement-de-greve-du=
+-vendredi-27-mars-2026>
+
+Ville de Rueil-Malmaison=
+
+--=-Gq3lXSYRQevah0eb3oNX
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle></title>
+</head>
+<body>
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:&quot;Times Ne=
+w Roman&quot;,serif"><span style=3D"font-size:11.0pt"><span style=3D"font-f=
+amily:&quot;Calibri&quot;,sans-serif"><span style=3D"color:#1f497d">Un pr=
+=C3=A9avis de gr=C3=A8ve nationale est d=C3=A9pos=C3=A9 pour le </span></sp=
+an></span></span></span>vendredi 27 mars 2026<span style=3D"font-size:12pt"=
+><span style=3D"font-family:&quot;Times New Roman&quot;,serif"><span style=
+=3D"font-size:11.0pt"><span style=3D"font-family:&quot;Calibri&quot;,sans-s=
+erif"><span style=3D"color:#1f497d">.</span></span></span></span></span></p=
+>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:&quot;Times Ne=
+w Roman&quot;,serif"><span style=3D"font-size:11.0pt"><span style=3D"font-f=
+amily:&quot;Calibri&quot;,sans-serif"><span style=3D"color:#1f497d">La dire=
+ction de l=E2=80=99Education et de l=E2=80=99Enfance vous invite =C3=A0 con=
+sulter le site internet de la ville afin de conna=C3=AEtre l=E2=80=99impact=
+ de la gr=C3=A8ve au sein de votre =C3=A9cole en cliquant sur le lien ci-de=
+ssous.</span></span></span></span></span></p>
+
+<p><a href=3D"https://www.villederueil.fr/fr/actualites/mouvement-de-greve-=
+du-vendredi-27-mars-2026">https://www.villederueil.fr/fr/actualites/mouveme=
+nt-de-greve-du-vendredi-27-mars-2026</a></p>
+
+<p><span style=3D"font-size:11.0pt"><span style=3D"line-height:107%"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif"><span style=3D"color:#=
+1f497d">Ville de Rueil-Malmaison </span></span></span></span></p>
+</body>
+</html>
+
+--=-Gq3lXSYRQevah0eb3oNX--

@@ -1,0 +1,639 @@
+Received: from AS4P250MB0705.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:4bc::21)
+ by PAVP250MB0931.EURP250.PROD.OUTLOOK.COM with HTTPS; Wed, 1 Apr 2026
+ 12:55:33 +0000
+Received: from SEWP216CA0147.KORP216.PROD.OUTLOOK.COM (2603:1096:101:2be::14)
+ by AS4P250MB0705.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:4bc::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9769.17; Wed, 1 Apr
+ 2026 12:55:29 +0000
+Received: from TY2PEPF0000AB85.apcprd03.prod.outlook.com
+ (2603:1096:101:2be:cafe::1a) by SEWP216CA0147.outlook.office365.com
+ (2603:1096:101:2be::14) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9745.31 via Frontend Transport; Wed,
+ 1 Apr 2026 12:55:26 +0000
+Authentication-Results: spf=pass (sender IP is 195.68.89.195)
+ smtp.mailfrom=oodrive.com; dkim=pass (signature was verified)
+ header.d=oodrive.com;dmarc=pass action=none
+ header.from=oodrive.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of oodrive.com designates
+ 195.68.89.195 as permitted sender) receiver=protection.outlook.com;
+ client-ip=195.68.89.195; helo=mailinfra.oodrive.com; pr=C
+Received: from mailinfra.oodrive.com (195.68.89.195) by
+ TY2PEPF0000AB85.mail.protection.outlook.com (10.167.253.5) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.9769.17 via Frontend Transport; Wed, 1 Apr 2026 12:55:25 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:64277BE272CCBBCFC3D69B50DFE248FCE461243871600F5C4F6656FF4915D545;UpperCasedChecksum:A39EB84267C50BEC3CA564B201675A6B5E4D614EF8BEEABA64F57D39205137CF;SizeAsReceived:845;Count:10
+Date: Wed, 1 Apr 2026 14:55:23 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oodrive.com;
+	s=default; t=1775048123;
+	bh=5PGBPM2hH6CuoRiThxS5/0554wIcgup5904ZXp1VPUA=;
+	h=From:Reply-To:To:Subject;
+	b=CChIl4zIQpeOtJHfLbHw3TzxoxHohL3NvXjPewWKAVK7l7+Bz3llKjeE/7QFM+DA7
+	 RmsdzMM/znRYA69jCo1pDFWYUBYxJRtMRgi+me5o+uCydliP9zuXMpbrqIF5IfCApw
+	 7NJqb1Vw0SxZQVAAifKzUTuJnltSMjVN19dQ5XKs=
+X-Server-Id: mailinfra01
+From: Michael LE TILLY via ca-morbihan-postfiles
+ <nepasrepondre_ca-morbihan@oodrive.com>
+Reply-To: nepasrepondre_ca-morbihan@oodrive.com
+To: jeromesimon56@hotmail.com
+Message-ID: <572205721.205888.1775048123449@hermod-blue-5d9d475844-xw5j9>
+Subject: =?UTF-8?Q?relev=C3=A9s_de_compte_sur_5_ans?=
+Content-Type: multipart/mixed;
+	boundary="----=_Part_205886_465552271.1775048123409"
+X-IncomingHeaderCount: 10
+Return-Path: nepasrepondre_ca-morbihan@oodrive.com
+X-MS-Exchange-Organization-ExpirationStartTime: 01 Apr 2026 12:55:26.0744
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: d2907852-7e9d-4387-0dc6-08de8fedf1d9
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: TY2PEPF0000AB85:EE_|AS4P250MB0705:EE_|PAVP250MB0931:EE_
+X-MS-Exchange-Organization-AuthSource: TY2PEPF0000AB85.apcprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 4/1/2026 12:32:13 PM
+X-MS-Office365-Filtering-Correlation-Id: d2907852-7e9d-4387-0dc6-08de8fedf1d9
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 195.68.89.195
+X-SID-PRA: NEPASREPONDRE_CA-MORBIHAN@OODRIVE.COM
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:1444111002|5139299004|32060799003|9109299003|461199028|10300799038|9400799043|970799060|6019299003|5149299006|3069299007|1680799066|9000799056|40200799119|1290799033|4302099013|3412199025|440099028|18021999003|30041999003|19025499015|1380799030|1370799030|1360799030|1602099012;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 01 Apr 2026 12:55:25.2467
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d2907852-7e9d-4387-0dc6-08de8fedf1d9
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: TY2PEPF0000AB85.apcprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS4P250MB0705
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:08.2051122
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9745.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?cGNsNm1jc2pmY2NDNXBYZ2VuajZtZkJPazN6bWNubXJVL3lyWmxlSG9zV3l3?=
+ =?utf-8?B?UnhWSTI3YXVlTG1pWTVlMXJ5b3lBMEh0NGhwMHAzNmhWZlllczF1SG11cklr?=
+ =?utf-8?B?RG9ZT3psYTU4a054Sm9ITW9FdTk1NVo1dFBCMDNDSjdra25LVzQ2UERrSDRW?=
+ =?utf-8?B?TkxUSCtjRDVZd3hNWWNEZjZweXZhNUxCaGszZTFkRVFzZXlhME84ZkZIbFRx?=
+ =?utf-8?B?OHNyMHhjaTV2bWs5aWdiQnA1YjhXc3grSDNhdDBCMGJrRVlBZFJxS3FDWlZn?=
+ =?utf-8?B?RHR1eWZFNERLQmZKWGI0cFZWblltMnZ2SjFUd1VDSzVqREUvNDVuWWdwdXJs?=
+ =?utf-8?B?TnB2akVxS3h2eTJBUENqMUhPVTFGZE8rcmpTcHNuSURrN1pGMnpLOUNCMDd5?=
+ =?utf-8?B?Tm9LRVc5L3l1TGJUaVAwRmlsM2tMaktDUjF5TDZVdlRmc29mbVVpd0paMUZS?=
+ =?utf-8?B?Z3o3RklybHZmdVRqaW1LTWw2dVlPWElIRTQrazcrcGJQbmJ5RkF6L3NZbHdR?=
+ =?utf-8?B?WnJodmZVY1Y1Vm0wV1ZoNlluODZnNU1IclByblhqczFFNCtDdE56Wk52aEE4?=
+ =?utf-8?B?WGdVMEdJamNYL2NsYTZDZktIeS9zUFhiZkhVazhYY2I0RmNOZ2NPek9FSnJU?=
+ =?utf-8?B?WVhKMFBCWVZoYmZTOVhNK1kzVE0rb0ZMYnJlUmc3NWV0MFZTUit4VUVHMHJV?=
+ =?utf-8?B?QS9Jc3Y1TkhWYkJxOCtpK0pOMmNIWWNIczZlNlhuSVJSNzQxQUVPb3Bhd3o5?=
+ =?utf-8?B?UFRvcHJWYWJoMDUvcW1OQWExbGhSd3B6Q084NU9uTmhaM1JqcU55UWRvTWJn?=
+ =?utf-8?B?R1hKRWhpb01GWFVQNVdIdjAzOW5kb292Snc1UStTRXozNWRmVGNGbWNYbUw1?=
+ =?utf-8?B?RXZKY3NHL3owaThqVGRPZHV4V0hOd0dSRTNYRjNXcGtTaHVERU9RWitmd24v?=
+ =?utf-8?B?Y3loOWVIbk1MVGVDaGRid1RnM0lEZjdSS3lHbVhlU21RaWRrdEk5ZFZCTUtl?=
+ =?utf-8?B?UmxuT2U2aG5kbzFvZTVCYi92QUxGa3N5dlIzcmp1Z3lsa1B5WGV5ZHp2alF1?=
+ =?utf-8?B?Wm9zR0dNNDBZSlQyako0VUFLNmpYaUZRWHhaTFlzVjZpVHk4c3VuMlFmYlBP?=
+ =?utf-8?B?eWR0aVhtdFRuSHV3dGtLT3BYM2JneFM1KzZJZ3RRb3pSNExHWXkzbEJYOW5k?=
+ =?utf-8?B?bWFaNzdBL0J5aG94aTJDSnQ0MWZpN3RwV1liLzRxOGJkcE1rWUNmZE1nbmkz?=
+ =?utf-8?B?VzlERkRLNTA3Yks5KzJsck9RNFh1OEJhRFcyY0YvU253QVVuMmlTZmcrazAy?=
+ =?utf-8?B?czdvTjBHaklSd3pJQzNUaFV4bmw3T0MxT1dBYUtpQ083cUF1b24zUUVnSHZH?=
+ =?utf-8?B?UmV4SkVNUjRJeHlPL3dVdGRoNjMxLzlGcnRzbUFudmM4bEZhNW5UVllXMVFC?=
+ =?utf-8?B?WnlBdCtJbStvR3UwU0RKSE9pVXZORG1tTW5zZkkwKzZESkltWnI3N3AzdFla?=
+ =?utf-8?B?d3ZlVklEMnd2SXE0QU8yMThsZzRVK1dUVDZaOTFOVi9pQ2UydEN4SVd1SzlG?=
+ =?utf-8?B?cFNxK3VKZUIzWXErN1JTdUNxQlh4SHh4cmRkcEhseFdIa2YrL3hLMXcwWExK?=
+ =?utf-8?B?R0t6SEhZRlExU2dOdW4wZkltcXRDZFk1NjM1TmMrZ1NXdytJMDhNc3FpcHBx?=
+ =?utf-8?B?cEhUakY1SHhnSHhiZHNhK0FMdnc4by83MVlYbkVVRGYwb3Rib0NvQ2hpWWJ2?=
+ =?utf-8?B?N2hGUUYwU2VWVkpSTzA0dEtaZFV3VTQxdGRwKzFvV3NzemVwemN0OGpTL1dK?=
+ =?utf-8?B?YjE5dUhVa0lBUzlWajRpM1cweWRPMUp6S1BVc28rbHh6VVFRVGdTOFd0VWlH?=
+ =?utf-8?B?eHdNSmhnOHlqVFp1eWVIbkVhdk0vdW9qSlpjcWVZQkE5Z3UwNGNxcUMyelVI?=
+ =?utf-8?B?QVhHeUJ6SU1TcFkxOFZjcTRtbXA0VlVPRzg3MEZPWUZ5SHdSYzBtakRsbkdM?=
+ =?utf-8?B?YmdWdWxyYklMNFg4a0UyK1NFcTdFTlNtYXlrODNKZjNQMENUblF2a0tVcnUw?=
+ =?utf-8?B?MFdtcmhBUFIvZzMzZ2Mvb1ZwWXZteHFSc3NWSVZPQkFhekJPSjgySmlnOFZX?=
+ =?utf-8?B?M3NyYjlnWmduS3VRbER0SitIZXkxZW5zdU1wWUtoVW9XNEUrazNweTcxa1Rx?=
+ =?utf-8?B?QXFBUlhsWThiN1dtL25Id0VNcmZSYmpHOEtKaUxGTmx3Tmg2bHBKM09KZ0N0?=
+ =?utf-8?B?YS9PbURwb05TQUw1NTB1Y1pDRStoZXpUelkrTVU3SWdReURLdFYvRElnWXA5?=
+ =?utf-8?B?NS9lL2QvbERzNXFjM3YrR2tmWnVzcFovR01sNFNIVTlZZnpyaHJWVE1nS0to?=
+ =?utf-8?B?bEVteEZKWCtEVzQwODBOOTBDODhOR3R6THI0Y3NWVVE4MkNUdWZ6M0ZaTzJp?=
+ =?utf-8?B?aEJ3d0c1QVdXZEdjRnN6bVhBaGFsTW9qQjJPS29Udnl2MG94TW9qcXdFYkdi?=
+ =?utf-8?B?MC9mR0xGSU5uQ0dwQjNEWXd1TkVoay85dVlxSlFUK1N0UWhEMFJsc05iaEI3?=
+ =?utf-8?B?cjRrV09kSHFUUzMxN3UybnZPMTJTbEMzTC9xbkRHb2VZZmk2TDc3cU82KzNB?=
+ =?utf-8?B?cityNEFEeDliYXlmcEw4amFmNWdmZzcxWVB0T2l5RHREMVRhVmhMazVlVFNO?=
+ =?utf-8?B?enVKTE9HRldEVnJqd25nWlVySXBJOUc5ajUwUGlORlNCQWpqUlpadDIrK3Vo?=
+ =?utf-8?B?NjhVYjFXcVJLZDVuN3dkdzlZOVBnSHlsSTREQ2VEOFR1K014UkkyTmd4dkdW?=
+ =?utf-8?B?bUdLZ0E0TjQ5QW5peG92VEc0TVJtL0VFdVdRTElncFhTcTcyV09xNVFWQVJz?=
+ =?utf-8?B?M3pEZEFnVnYzNzJXM3hLTDdBS0E1cHZGN1g0amJxdGIyNnhYbFpabklObTRX?=
+ =?utf-8?B?ZDN3M2lKS3ZNbHMwWHRBc0x5akxTWjNUNWM4bW1zaFZvM1I3RGFkWlloY0Rj?=
+ =?utf-8?B?eXR0S00zaWZsOGVkR3VvZWlUU0M0YUFzNGErUGFIRUN3bndXSjJ3OUVyelJI?=
+ =?utf-8?B?dFpaNFZEYlorTXh5amRsbU1CNUp6NVgzMXpIblY1bzd4dkIwM1VCbzRjN3V0?=
+ =?utf-8?Q?3+Gfru0LI?=
+MIME-Version: 1.0
+
+------=_Part_205886_465552271.1775048123409
+Content-Type: multipart/alternative;
+	boundary="----=_Part_205887_262459666.1775048123409"
+
+------=_Part_205887_262459666.1775048123409
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+Bonjour jeromesimon56@hotmail.com,
+
+
+Michael LE TILLY vous a partag=C3=A9 les =C3=A9l=C3=A9ments suivants avec l=
+e droit de t=C3=A9l=C3=A9charger :
+
+
+
+
+Bonjour Monsieur SIMON,
+Veuillez trouver ci-joint les relev=C3=A9s de compte demand=C3=A9s dans le =
+cadre de la succession de Mr SIMON G=C3=A9rard. Vous souhaitant bonne r=C3=
+=A9ception, Je vous souhaite une bonne journ=C3=A9e et reste =C3=A0 votre d=
+isposition, Bien cordialement, Michael LE TILLY Service Successions Avenue =
+de K=C3=A9ranguen 56956 Vannes t=C3=A9l : 02.97.01.79.38 Accueil t=C3=A9l=
+=C3=A9phonique de 9h =C3=A0 12h00 et de 14h-17h00 michael.letilly@ca-morbih=
+an.fr - www.ca-morbihan.fr
+
+
+Acc=C3=A9der au partage
+https://transfert.credit-agricole.fr/share-access/sharings/dlG85y0q.pllllZg=
+5.Hn26uJ1aPhk9CVgl?action=3Dview
+
+
+
+
+
+- Actif jusqu=E2=80=99au 1,778,849,640,000
+
+
+
+
+
+
+
+
+
+- succession Mr SIMON G=C3=A9rard
+
+
+
+
+
+
+
+
+
+--------------------------------------------
+
+Oodrive Share - Cet e-mail est une notification. Merci de ne pas y r=C3=A9p=
+ondre.
+
+
+
+------=_Part_205887_262459666.1775048123409
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"http://www.w3.org/1999/xht=
+ml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micros=
+oft-com:office:office" style=3D"height:100%;margin:0;padding:0;"><head><!--=
+[if gte mso 9]><xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml><![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+		<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+		<meta name=3D"format-detection" content=3D"telephone=3Dno,date=3Dno,addre=
+ss=3Dno,email=3Dno,url=3Dno">
+		<title>title</title>
+		<style type=3D"text/css">
+=09
+	body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-a=
+djust:100%; margin:0; padding:0;}
+	table td {border-collapse: collapse;}
+	img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+	a img {border:none;}
+	p {margin: 1em 0;}
+	.image_fix {display:block;}
+	#backgroundTable {margin:0; padding:0; width:100% !important; line-height:=
+ 100% !important;}
+=09
+	#outlook a {padding:0;}
+	.ExternalClass {width:100%;}
+	.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font=
+, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+</style>
+
+	=09
+
+		<style type=3D"text/css">
+			body,table tr,table td,a,span,table.MsoNormalTable {
+				font-family:Arial,sans-serif; font-size:14px;
+			}
+		</style>
+	</head>
+	<body style=3D"height:100%;margin:0;padding:0;font-size:14px;font-family:A=
+rial,sans-serif;">
+		<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" id=3D"backgroundT=
+able" bgcolor=3D"#F2F2F2" style=3D"background-color:#F2F2F2;margin:0;paddin=
+g:0;width:100%;height:100%;line-height:100%;"><tr><td valign=3D"top">
+	<!--[if mso]>
+	<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" w=
+idth=3D"580"><tr><td>
+	<![endif]-->
+	<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"text-alig=
+n:left;color:black;background-color:#F2F2F2;max-width:580px;width:100%;marg=
+in:auto;"><tr><td>
+		<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%">
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"width:100%; height: 60px; background-color: #FFF; margin-to=
+p:16px; border-collapse: collapse; border-radius: 6px; overflow: hidden; ve=
+rtical-align: top">
+				<tr style=3D"border-bottom: 1px solid #E5E5E5;">
+					<td>
+						<img src=3D"https://transfert.credit-agricole.fr/themes/ca-morbihan-p=
+ostfiles/banner.png" width=3D"580" height=3D"116.0" align=3D"bottom" border=
+=3D"0" style=3D"display: block;" alt=3D"Oodrive Share">
+					</td>
+				</tr>
+
+				<tr>
+					<td style=3D"padding-top:32px;">
+						<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" style=3D"width:100%; line-height: 1.4em; color: #333">
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%">
+	<tbody style=3D"color:#333; font-size: 14px; line-height: 1.4em;">
+		<tr>
+			<td class=3D"message" style=3D"padding-top: 0; padding-right: 24px; padd=
+ing-bottom: 0; padding-left: 24px; font-size: 16px; font-weight: bold; line=
+-height: 1em;" x-ms-format-detection=3D"none">
+			=09
+					Bonjour jeromesimon56@hotmail.com,
+			=09
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+			<br>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%">
+	<tbody style=3D"color: #333; font-size: 14px;">
+		<tr>
+			<td class=3D"message" style=3D"padding-top: 0; padding-right: 24px; padd=
+ing-bottom: 0; padding-left: 24px; line-height: 22px;">
+			 <b style=3D"color: #333; font-size: 14px;">Michael LE TILLY</b> vous a =
+partag=C3=A9 les =C3=A9l=C3=A9ments suivants avec le droit de <b style=3D"c=
+olor: #333; font-size: 14px;">t=C3=A9l=C3=A9charger</b> :
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td style=3D"line-height: 1px;" height=3D"24">&nbsp;</td>
+	</tr>
+
+=09
+	<tr>
+		<td>
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%">
+	<tbody style=3D"font-size: 14px; color: #333;">
+	=09
+		<tr style=3D"height: 47px; box-sizing: border-box;">
+	<td width=3D"24">&nbsp;</td>
+	<td width=3D"40" valign=3D"middle" style=3D"border-top: 1px solid #e5e5e5;=
+ padding-top: 0.5625rem; padding-right: 0; padding-bottom: 0.5625rem; paddi=
+ng-left: 0; line-height: 20px;border-bottom: 1px solid #e5e5e5;">
+		<img src=3D"https://transfert.credit-agricole.fr/assets/emails/i5/icons/i=
+tems/folder.png" width=3D"30" height=3D"30" align=3D"absmiddle" border=3D"0=
+" style=3D"display: block;" alt=3D"unknown">
+	</td>
+	<td valign=3D"middle" style=3D"border-top: 1px solid #e5e5e5; width: 420px=
+; max-width: 420px; padding-top: 1.0000rem; padding-right:8px; padding-bott=
+om: 0.8750rem; padding-left: 0; line-height: 16px;border-bottom: 1px solid =
+#e5e5e5;">
+		<span style=3D"white-space: pre; display: inline-block; max-width: 420px;=
+ overflow: hidden; text-overflow: ellipsis;">succession Mr SIMON G=C3=A9rar=
+d</span>
+	</td>
+	<td align=3D"right" valign=3D"middle" style=3D"font-size: 12px; border-top=
+: 1px solid #e5e5e5; padding-top: 1.0000rem; padding-right:8px; padding-bot=
+tom: 0.8750rem; padding-left: 0; line-height: 16px; text-align: right;borde=
+r-bottom: 1px solid #e5e5e5;">&nbsp;</td>
+	<td width=3D"24">&nbsp;</td>
+</tr>
+
+	=09
+	</tbody>
+</table>
+</td>
+	</tr>
+=09
+
+	<tr>
+		<td height=3D"11" style=3D"line-height: 1px;">&nbsp;</td>
+	</tr>
+
+=09
+	<tr>
+		<td><table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" style=3D"margin-right: 0; margin-left: 0; mso-table-lspace:0px; ms=
+o-table-rspace:0px; mso-table-tspace: 5px;mso-table-bspace: 24px;" data-qa=
+=3D"sharing-info">
+	<tbody>
+		<tr style=3D"color: #666;">
+			<td width=3D"24">&nbsp;</td>
+			<td style=3D"width: 526px; max-width: 526px;">
+			=09
+			=09
+					<!--[if mso]>
+<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" align=3D"left" style=3D"border: 0; mso-cellspacing: 0; mso-padding-alt: =
+0; margin: 0;padding: 0; mso-table-lspace:0px; mso-table-rspace:8px;mso-tab=
+le-tspace: 0px;mso-table-bspace: 8px;">
+	<tr>
+		<td height=3D"32" style=3D"height:32px">
+			<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:sc=
+hemas-microsoft-com:office:word" height=3D"32" style=3D"height:32px; mso-wr=
+ap-style:none;" arcsize=3D"20%" stroke=3D"f" fillcolor=3D"#f9f9f9">
+				<center>
+					<span font-size=3D"13" style=3D"display: inline-block; font-size: 12px=
+; color: #666; background: #f9f9f9; margin: 0px 8px 8px 0px; padding: 8px; =
+border-radius: 7px;font-family: Arial, Helvetica, sans-serif; text-decorati=
+on: none; ">
+						Actif jusqu=E2=80=99au 15/05/2026 14:54
+					=09
+					</span>
+				</center>
+			</v:roundrect>
+		</td>
+	</tr>
+</table>
+<![endif]-->
+<![if !mso]>
+	<span style=3D"margin-top: 5px; box-sizing: border-box; background-color: =
+#f9f9f9; font-size: 12px; border-radius: 6px; max-height: 26px; min-height:=
+ 26px; height: 26px; padding: 0 12px; margin-right: 8px; display: inline-bl=
+ock; max-width: 526px; overflow: hidden; text-overflow: ellipsis; white-spa=
+ce: nowrap; line-height: 26px;">
+		Actif jusqu=E2=80=99au 15/05/2026 14:54
+	=09
+	</span>
+<![endif]>
+
+			=09
+			=09
+			=09
+			=09
+			</td>
+			<td width=3D"24">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</td>
+	</tr>
+=09
+
+=09
+	<tr>
+		<td><table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" width=3D"100%">
+	<tr>
+		<td>
+		<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0">
+			<tr>
+				<td height=3D"12" style=3D"line-height: 1px;">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width=3D"24">&nbsp;</td>
+				<td align=3D"center">
+					<div>
+						<!--[if mso]>
+							<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"ur=
+n:schemas-microsoft-com:office:word" href=3D"https://transfert.credit-agric=
+ole.fr/share-access/sharings/dlG85y0q.pllllZg5.Hn26uJ1aPhk9CVgl?action&#x3D=
+;view" style=3D"height:40px;v-text-anchor:middle;mso-wrap-style:none;" arcs=
+ize=3D"50%" stroke=3D"f" fillcolor=3D"#008899">
+								<w:anchorlock/>
+								<center>
+									<a href=3D"https://transfert.credit-agricole.fr/share-access/shari=
+ngs/dlG85y0q.pllllZg5.Hn26uJ1aPhk9CVgl?action&#x3D;view"
+							style=3D"background-color:#008899;border-radius:20px;color:#008899;d=
+isplay:inline-block;font-family:Arial, Helvetica, sans-serif;font-size:14px=
+;line-height:40px;text-align:center;text-decoration:none;-webkit-text-size-=
+adjust:none;padding-top:0; padding-bottom: 0; padding-right: 24px; padding-=
+left: 24px">
+										<span style=3D"text-decoration: none!important; color: white;">
+											<font size=3D"4">&nbsp;&nbsp;</font>
+						Acc=C3=A9der au partage
+											<font size=3D"4">&nbsp;&nbsp;</font>
+										</span>
+									</a>
+								</center>
+							</v:roundrect>
+						<![endif]-->
+						<![if !mso]>
+							<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0">
+								<tr>
+									<td align=3D"center" bgcolor=3D"#008899" style=3D"border-radius: 2=
+0px; color: white; display: block;">
+										<a href=3D"https://transfert.credit-agricole.fr/share-access/shar=
+ings/dlG85y0q.pllllZg5.Hn26uJ1aPhk9CVgl?action=3Dview" target=3D"_blank" st=
+yle=3D"color: white;
+										display: inline-block;
+										text-decoration: none;
+										font-size: 14px;
+										padding-top: 8px;
+										padding-right: 24px;
+										padding-bottom: 8px;
+										padding-left: 24px;
+										background: #008899;
+										border-radius: 20px;
+										line-height: 24px;
+										font-family: Arial, Helvetica, sans-serif">
+										Acc=C3=A9der au partage
+										</a>
+									</td>
+								</tr>
+							</table>
+						<![endif]>
+					</div>
+				</td>
+				<td width=3D"24">&nbsp;</td>
+			</tr>
+			<tr>
+				<td height=3D"22" style=3D"line-height: 1px;">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</td>
+	</tr>
+=09
+
+=09
+	<tr>
+		<td><table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" width=3D"100%">
+	<tbody>
+		<tr>
+			<td style=3D"line-height: 1px;" height=3D"11">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0">
+					<tr>
+						<td width=3D"24">&nbsp;</td>
+						<td style=3D"color: #333; font-weight: bold; height: 16px; line-heigh=
+t: 16px;">Message :</td>
+					</tr>
+				</table>
+				<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"margin-top: 13px; width: 100%">
+					<tr>
+						<td width=3D"24">&nbsp;</td>
+						<td class=3D"message" style=3D"background-color: #f9f9f9; padding-top=
+: 16px; padding-right:16px; padding-bottom: 16px; padding-left: 16px; borde=
+r-radius: 6px; color: #333; line-height: 22px; font-size: 14px;">
+							Bonjour Monsieur SIMON,<div><br><div></div><div></div><div>Veuillez =
+trouver ci-joint les relev=C3=A9s de compte demand=C3=A9s dans le cadre de =
+la succession de Mr SIMON G=C3=A9rard.
+</div><div><br></div><div>Vous souhaitant bonne r=C3=A9ception,=20
+</div><div><br></div><div>Je vous souhaite une bonne journ=C3=A9e et reste =
+=C3=A0 votre disposition,
+</div><div><br></div><div>Bien cordialement,
+</div><div><br></div><div>Michael LE TILLY
+</div><div>Service Successions
+</div><div>Avenue de K=C3=A9ranguen
+</div><div>56956 Vannes
+</div><div>t=C3=A9l : 02.97.01.79.38
+</div><div>Accueil t=C3=A9l=C3=A9phonique de 9h =C3=A0 12h00 et de 14h-17h0=
+0
+</div><div>michael.letilly@ca-morbihan.fr - www.ca-morbihan.fr
+</div><div><br></div><div>=20
+</div><div>=20
+</div><div>=20
+</div><div>
+</div><div>
+</div></div>
+						</td>
+						<td width=3D"24">&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td>
+	</tr>
+=09
+
+=09
+
+=09
+=09
+
+=09
+	<tr>
+	<td style=3D"padding-top: 0; padding-right: 24px; padding-bottom 0; paddin=
+g-left: 24px;">
+		<div style=3D"border-top: 1px solid #e5e5e5;"></div>
+	</td>
+</tr>
+
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%">
+	<tbody>
+		<tr>
+			<td style=3D"padding-top: 16px; padding-right: 24px; padding-bottom 32px=
+; padding-left: 24px; color: #999; line-height: 16px;">
+				<span style=3D"color: #999; font-size: 12px;">Si vous ne parvenez pas =
+=C3=A0 acc=C3=A9der au partage, copiez et collez l'URL suivante dans votre =
+navigateur :</span>
+				<a style=3D"color: #999; font-size: 12px; text-decoration: none" href=
+=3D"https://transfert.credit-agricole.fr/share-access/sharings/dlG85y0q.pll=
+llZg5.Hn26uJ1aPhk9CVgl?action=3Dview">
+					<span style=3D"color: #999; font-size: 12px; text-decoration: underlin=
+e">https://transfert.credit-agricole.fr/share-access/sharings/dlG85y0q.plll=
+lZg5.Hn26uJ1aPhk9CVgl?action=3Dview</span>
+				</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+		</td>
+	</tr>
+=09
+	<tr><td><br></td></tr>
+</table>
+
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"margin-top: 16px; margin-bottom: 16px; margin-right: 0; mar=
+gin-left: 0; width: 100%;">
+				<tr>
+					<td align=3D"left" style=3D"color: #9A9A9A; text-align: left; font-siz=
+e: 12px; line-height: 16px; ">
+						Cet e-mail est une notification. Merci de ne pas y r=C3=A9pondre.
+					</td>
+					<td align=3D"right" style=3D"text-align: right; ">
+						<img src=3D"https://transfert.credit-agricole.fr/assets/emails/i5/ood=
+rive.png" width=3D"67" height=3D"21" alt=3D"Oodrive Share">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+	</td></tr></table>
+	<!--[if mso]>
+	</td></tr></table>
+	<![endif]-->
+</td></tr></table>
+
+	</body>
+</html>
+
+
+
+
+------=_Part_205887_262459666.1775048123409--
+
+------=_Part_205886_465552271.1775048123409--

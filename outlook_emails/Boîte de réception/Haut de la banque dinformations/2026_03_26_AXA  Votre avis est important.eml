@@ -1,0 +1,844 @@
+Received: from AS1P250MB0480.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:4a3::5)
+ by PAVP250MB0931.EURP250.PROD.OUTLOOK.COM with HTTPS; Thu, 26 Mar 2026
+ 09:34:54 +0000
+Received: from AS4P190CA0009.EURP190.PROD.OUTLOOK.COM (2603:10a6:20b:5de::16)
+ by AS1P250MB0480.EURP250.PROD.OUTLOOK.COM (2603:10a6:20b:4a3::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9745.20; Thu, 26 Mar
+ 2026 09:34:53 +0000
+Received: from AM3PEPF0000A78F.eurprd04.prod.outlook.com
+ (2603:10a6:20b:5de:cafe::e1) by AS4P190CA0009.outlook.office365.com
+ (2603:10a6:20b:5de::16) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9723.31 via Frontend Transport; Thu,
+ 26 Mar 2026 09:34:45 +0000
+Authentication-Results: spf=pass (sender IP is 172.82.229.253)
+ smtp.mailfrom=contact.axa.fr; dkim=pass (signature was verified)
+ header.d=contact.axa.fr;dmarc=pass action=none
+ header.from=contact.axa.fr;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of contact.axa.fr
+ designates 172.82.229.253 as permitted sender)
+ receiver=protection.outlook.com; client-ip=172.82.229.253;
+ helo=r253.contact.axa.fr; pr=C
+Received: from r253.contact.axa.fr (172.82.229.253) by
+ AM3PEPF0000A78F.mail.protection.outlook.com (10.167.16.118) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.9745.21 via Frontend Transport; Thu, 26 Mar 2026 09:34:53 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:85BEC969F8B9232C021027726A5B40E79F6C0620879A652D4772F68787B008B9;UpperCasedChecksum:7B5123C438425C93635E6E7C198DA8B3DDA874E800CE2733564BB6C4D91802E8;SizeAsReceived:2312;Count:16
+Return-Path: axa@contact.axa.fr
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=contact.axa.fr;
+	s=neolane; t=1774517693;
+	bh=3bSUSFQh7Xo/OeTtDuIe11kgogQNA4bD5TWend35DiU=;
+	h=From:Subject:Date:To:MIME-Version:Message-ID:
+	 List-Unsubscribe-Post:List-Unsubscribe:Content-Type;
+	b=oTnUG74w5LVgFkMEZ3Gs0mrWJuW0wK0P8cs7iXVGejLOffiaZRo1aSxmutEOL331u
+	 VJbqqrPg0umAYoJANKnzbnzcEipAnusOJ5k+tGoZM6JPMW8pSU68G2QRDEZXYLpNsk
+	 F1+L8p10UujbXX9plXfpcMBTAbBS3NYkKqlGQHJO9MzyHGjv0J4WEfZr4WYkBS2CmQ
+	 EzjeRyXIazPrGk5IJc9gZLPrXhQ+HH6BdnOrLP+BkammSQLe8TJu27XPVH0TE2zzHa
+	 XYGpu4bwBtk8U1HCfWAdjuW+Q6zrJhByxBMto+i5cO2bcILaLm0kiHn0+4xY/PAWXi
+	 rDsAlEvimXZYA==
+X-MSFBL: eXLx7hnA+JNwKjAS8E/6QRLqmBrHcOyRRxqSTdydNJI=|eyJyY3B0X21ldGEiOns
+	gIm0iOiAiMTE0MTUxNjA0MSIsICJkIjogIjY4MzE2NjczIiwgImluIjogImF4YWZ
+	yYW5fbWlkX3Byb2QxMSIsICJyIjogIkpFUk9NRVNJTU9ONTZAaG90bWFpbC5jb20
+	iIH0sImluYm91bmRfdGxzX2NpcGhlciI6IlRMU3YxLjI6REhFLVJTQS1BRVMyNTY
+	tR0NNLVNIQTM4NCIsImIiOiJheGFmcmFuY2VfMTcyLjgyLjIyOS4yNTNfbWlkLmR
+	lZmF1bHRfYTVmM2FiZjYtMzY1My00MzZiLThlMzAtOWVmZTBjM2ZiNmIxIiwiZyI
+	6Im1pZC5kZWZhdWx0X2E1ZjNhYmY2LTM2NTMtNDM2Yi04ZTMwLTllZmUwYzNmYjZ
+	iMSIsInIiOiJKRVJPTUVTSU1PTjU2QGhvdG1haWwuY29tIn0=
+Received: from [10.1.1.133] ([10.1.1.133:47407] helo=r253.contact.axa.fr) by irl1-prod1-mta-i-042c477fd5fa77c31 (envelope-from <axa@contact.axa.fr>) (ecelerity 4.4.1.20033 r(msys-ecelerity:tags/4.4.1.0^0)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384)  id 77/E6-36310-DBDF4C96; Thu, 26 Mar 2026 09:34:53 +0000
+From: "AXA" <ServiceClientAXA@contact.axa.fr>
+Subject: =?windows-1252?Q?AXA_=96_Votre_avis_est_important=A0!?=
+Date: Thu, 26 Mar 2026 10:34:46 +0100
+To: <JEROMESIMON56@HOTMAIL.COM>
+Reply-To: "NO REPLY" <Service.NoReply@axa.fr>
+X-mailer: nlserver, Build 6.7.0
+Message-ID: <NM6440A270904126E01axafran_mid_prod11@contact.axa.fr>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://apis.axa.fr/neolane-unsub-oneclick/unsub/oneclick.jssp?bId=%40Vs5JHG5nufvukuWAdi2cMQ%3D%3D&dId=%40P%2FqAAdqxBBv5BT2KRuSFhw%3D%3D&dTagId=%40WuY44km464ys%2FwFYFsEyQg%3D%3D&eId=%40LQc6Bx7yWOrtugXlkarcHQ%3D%3D&pId=%40%2BVEk7oPs9bSGzoqxgjzThg%3D%3D>
+Precedence: Bulk
+Content-Type: multipart/alternative;
+	charset="windows-1252";
+	boundary="----=_NextPart_039_42DAF6BF.42DAF6BF"
+X-IncomingHeaderCount: 16
+X-MS-Exchange-Organization-ExpirationStartTime: 26 Mar 2026 09:34:53.4369
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 1548864b-7b52-49d8-c8d4-08de8b1aef5b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: AM3PEPF0000A78F:EE_|AS1P250MB0480:EE_|PAVP250MB0931:EE_
+X-MS-Exchange-Organization-AuthSource: AM3PEPF0000A78F.eurprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 3/26/2026 8:59:30 AM
+X-MS-Office365-Filtering-Correlation-Id: 1548864b-7b52-49d8-c8d4-08de8b1aef5b
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 172.82.229.253
+X-SID-PRA: SERVICECLIENTAXA@CONTACT.AXA.FR
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;ARA:1444111002|461199028|68400799013|7009299003|57050799003|9109299003|5149299006|3069299007|970799060|9000799056|5139299004|10300799038|9400799043|1680799066|8011999015|440099028|4302099013|3412199025|30041999003|18021999003|26104999006|1360799030|1370799030|1380799030|1602099012|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Mar 2026 09:34:53.1863
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1548864b-7b52-49d8-c8d4-08de8b1aef5b
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: AM3PEPF0000A78F.eurprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS1P250MB0480
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3832145
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9745.015
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?uRUNfSX7suAiErKSOm7DdPCSSCAJlE+5fi2xXtjEW7MYlj4/G0OsWCvL?=
+ =?Windows-1252?Q?EuAVDXmFwI4YHejKB1Z4X591Y5V98dauB7AJ+zAVx1fQiKnVlEcq5aZ1?=
+ =?Windows-1252?Q?/ZGutAFxu58sZfC2L1Rt2+6KYH4t4YnMoqBrZgTVLXwTsZNH5WLE839M?=
+ =?Windows-1252?Q?a3sJUl947MBlzgYCRUI68tp/1ZmZmdpXrZ8ogMqRa+RTwDEQPgtDz7rs?=
+ =?Windows-1252?Q?i802BzKOfLJ3ZFd4s3EO2u8r4eaUP9oCslp5KtQ1BkwZ4YwbWxPlxCnH?=
+ =?Windows-1252?Q?JSsFP1E7FVQpTMb00/q/68cDTrT7LPni9Z9fb+P4B1757vWn6oSFmict?=
+ =?Windows-1252?Q?BM5e7noB3texTJ7EytUWtIrlrWS9xT9A5vTi0pUB0lHnMhV9L2Imy2kd?=
+ =?Windows-1252?Q?vNnHqpb5FPZeCRMF786y9cGCvIQOkaeyERzxXz5IY9zHYGdb4zfmy9DA?=
+ =?Windows-1252?Q?x84B1tMUTlu1+nri8b9Y1lrzjOdCdPWmiAhBd82qiKCeSuiI8XmikfUq?=
+ =?Windows-1252?Q?S9x9cbYPjBr0vjEsEQbm2za8gUwCPUx1lqZm1R9k+wjWAhYJSUQY9kyz?=
+ =?Windows-1252?Q?nP3ofOh0bbj1TWZAH2htf4dbQ1VX4gYLHzt56TxovAFzuJyo/yhAXL97?=
+ =?Windows-1252?Q?2NhfE0sJ/rW044G6l4/ib355NUXSJl4p34oB8QmWiS5xaZQRPrByDAPq?=
+ =?Windows-1252?Q?N+4SY18QfcGI2O7BajT0hlZzFEHhWc+U+tEmJn9UQvMxQf1l8i6YncLL?=
+ =?Windows-1252?Q?TphO3QYiAmBI7j+kgq+VfvCZiiBz8s4o4ozCY8hsVywJVvX+pSb4Zug5?=
+ =?Windows-1252?Q?YMpCi+LTzugCINPvvfJ6Tw0WkwJyDbjeKlLFeexKzvm9FGOQOkfUcfbG?=
+ =?Windows-1252?Q?G8kxSv8SOdxD78D58hiJv/OPJNR1JJjIVQQ9M6KDgmY2sCuryeuW1EDx?=
+ =?Windows-1252?Q?FXnjdOGXCZp/VnBtc/pnX3tCz5dNp7caW8argxiu5rhXMt9bdDq0x+0N?=
+ =?Windows-1252?Q?JV//MfI5SldhWNl2crkh4j/jVirs5oSY8hQDgTUk6YwSg7Lv84ldhUR3?=
+ =?Windows-1252?Q?hJhqPDlcHmnHONplTs33EXHBsutGxAXXcWij527G+wV6kxvTOp9a1ZLE?=
+ =?Windows-1252?Q?0/jtxRy1GhwP9cV3jIHbAc4w1Z2wtZ5hRLZX6Tg1X+izQAlIXNkiXf3j?=
+ =?Windows-1252?Q?7nMUm3TD0V2dGoHNFHeiuwoUWVuOIFj2tmWIrWjAuX00OeJigQkqB6Zy?=
+ =?Windows-1252?Q?lVaq/rPzkJRGZUPtzD8OcLwDi7O0txSH0px35IKlaXQhEQi+6KrpkcVx?=
+ =?Windows-1252?Q?Ds3bP4E7SyDmZRYaiB3/qMfnJHRgcgJNLdt9LhIt/R+aApFVIh5gqe2G?=
+ =?Windows-1252?Q?jxJauDvIqxbqYBOUclerzh3D9R6Xaz2+M8v1XFhRssCnXkFOS1wEE9nX?=
+ =?Windows-1252?Q?ik51VBWzYqZSsdVweogrLVkICwohX2rXKa6mkofQeC2jByWjAA7rCY1n?=
+ =?Windows-1252?Q?LTGSw4b5uMgVRqdwC3MXm/FSeFErjHEDbyIu/A/w8MEm1t1MsrHyLKvs?=
+ =?Windows-1252?Q?3s/Nbo6J9la9H33eEfxJKGWUUha+J7a+JVwhb5uWvIwVK9w96s2Hm4Aw?=
+ =?Windows-1252?Q?WgvlUdJxB+g/h1fz+3Y3JbycB4ptzRICrNxgTpBNPJiJ5YeKVPEGp0Vs?=
+ =?Windows-1252?Q?PgX4N/pj+crcVRWIglyuJ7a3QGkIjscRMmlKpllXHP/YkWGbQuvhzTex?=
+ =?Windows-1252?Q?BvkdvlhybFWUQ3u2KuRFlxwbE1OK2BwdvVChe4gCbhR7OnGxnrW96oCX?=
+ =?Windows-1252?Q?BBiv0wZOyrg4K4AxESz+c6iOWQg1z7uzTyih2yYR+nRQNlnDXdUeigFw?=
+ =?Windows-1252?Q?WXEQJm61Ru7qlq/WlYH+kTpbPQ+O9/8qiULLA/x0ntSvUMFUJiWpJdPr?=
+ =?Windows-1252?Q?vw/CDdKpdyuVCSzUSBfOiV5/oOcnCTB/vK3PmaaDSzqu2i5x0Uzsc0j3?=
+ =?Windows-1252?Q?PLDYh1KnwPNNpD5Q8EGiVWTxUOvlWIdFibE/spvcgeNHKCqH+FC2eEhP?=
+ =?Windows-1252?Q?tdCxLfLKGFG1HUFAm3v7kTiMzTJOYc26IJg5XP2mc0oLmv96Yu+UAm86?=
+ =?Windows-1252?Q?cPVrgPrWUkiyYNpdwlfzJrySYV0MkHTFAVz7VcbT2WMuESfHuSvNFsdo?=
+ =?Windows-1252?Q?jFNQqsvOwBslaiiSb99VYEeFeQ3hZ1Dfdo4lH74qeV8ZhYSe7S54Tggz?=
+ =?Windows-1252?Q?1yXnHhUbyZABbgj6I8hf7noaX7Ed1r3yaG5eMbdn6MdW0Q1JVLkiDzHg?=
+ =?Windows-1252?Q?Ty9GQXq3J5ySw/GsuGOjo8SaCbJFqDbRQiL3CEZgrzJCNxwKyr2lYnbm?=
+ =?Windows-1252?Q?XgFA7zgdKQP9uZxIfOQSk7aHaAqpLeIaoqsEJP3SVtEN6i8VOa7wklWi?=
+ =?Windows-1252?Q?nHRRUeg8m3gDS5DV0b8u4A=3D=3D?=
+MIME-Version: 1.0
+
+------=_NextPart_039_42DAF6BF.42DAF6BF
+Content-Type: text/plain;
+	charset="windows-1252"
+Content-Transfer-Encoding: 8bit
+
+https://t.contact.axa.fr/r/?id=t4690e42c,8aba2468,ead2cd&e=cDE9bXdBN3dock40ZHpROWl3a2hFVVY2dTNTM1k1QVNSMEg&s=V-DSI1aVWv_DpZZj4OJ3KOy61XRh5dt6ImqaSd2mdDAAssurance Auto
+Votre avis est important
+
+Chère Mme Vidal,
+
+ Vous avez récemment eu un sinistre avec votre véhicule. 
+
+Votre avis est important pour nous !
+
+En r&eacute;pondant &agrave; quelques questions en moins de 3 minutes, vous nous aidez &agrave; toujours nous am&eacute;liorer.  
+
+
+Donnez votre avis en cliquant sur le lien ci-dessous:
+
+https://t.contact.axa.fr/r/?id=t4690e42c,8aba2468,ead2cf&e=cDE9amZlL2Zvcm0vU1ZfY3pITDR1WXlueEV5cVRIP1FfQ0hMPWdsJlFfREw9RU1EX2psRHZ5dkkwSHI5NjF4SF9jekhMNHVZeW54RXlxVEhfQ0dDX05yakhXVFNKZ2lkcGUwSiZfZ189Zw&s=xbdLl8br42eF8ZGjB_WXgLWtloq72OrHzVyXAguGmh4
+
+Merci pour votre participation.<br/>
+Bien sinc&egrave;rement,<br/>
+ L'Equipe Expérience Client  
+Dans une démarche d’amélioration continue de notre qualité de service, vos réponses pourraient être transmises à votre conseiller habituel. Il pourra, le cas échéant, vous contacter.Merci de ne pas répondre à cet e-mail. Votre demande ne pourra pas être traitée. 
+Pour toute question, vous pouvez contacter votre interlocuteur habituel ou renseigner le formulaire de contact  https://t.contact.axa.fr/r/?id=t4690e42c,8aba2468,ead2d0 .
+Vous disposez de droits sur les informations vous concernant. Pour plus d'informations, cliquez ici  https://t.contact.axa.fr/r/?id=t4690e42c,8aba2468,ead2d1 .
+AXA France Vie. SA au capital de 487 725 073,50 € – 310 499 959 R.C.S. Nanterre • AXA France IARD. S A au capital de 214 799 030 € – 722 057 460 R.C.S. Nanterre • AXA Assurances Vie Mutuelle. Société d´assurance mutuelle sur la vie et de capitalisation à cotisations fixes – Siren 353 457 245 • AXA Assurances IARD Mutuelle. Société d´assurance mutuelle à cotisations fixes contre l´incendie, les accidents et risques divers – Siren 775 699 309 • Sièges sociaux : 313 Terrasses de l´Arche 92727 Nanterre Cédex. Entreprises régies par le Code des Assurances.
+
+------=_NextPart_039_42DAF6BF.42DAF6BF
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.or=
+g=3D/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"https://www.w3.org/199=
+9/xhtml"><head><!--[if !mso]><!-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252"><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge,chrome=3D1">
+    <!--<![endif]-->
+    <!--[if mso]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    <![endif]-->
+    <title>AXA - Votre avis est important !</title>
+   =20
+    <meta http-equiv=3D"Content-Language" content=3D"fr">
+    <meta content=3D"width=3Ddevice-width, initial-scale=3D1" name=3D"viewp=
+ort">
+    <meta name=3D"color-scheme" content=3D"light dark">
+    <meta name=3D"supported-color-schemes" content=3D"light dark">
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno,address=3Dno,=
+email=3Dno,date=3Dno,url=3Dno">
+    <style type=3D"text/css">
+      :root{Color-scheme:light dark;supported-color-schemes:light dark}
+     =20
+      *{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+      body{margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-a=
+djust:100%}
+      img{border:0;height:auto;line-height:100%;outline:0;text-decoration:n=
+one;-ms-interpolation-mode:bicubic}table,td{border-collapse:collapse;mso-ta=
+ble-lspace:0;mso-table-rspace:0}
+      a{text-decoration:none}
+      a,blockquote,body,li,p,table,td{-ms-text-size-adjust:100%;-webkit-tex=
+t-size-adjust:100%}
+      a,blockquote,li,p,td{mso-line-height-rule:exactly}
+      a[href^=3Dsms],a[href^=3Dtel]{color:inherit;cursor:default;text-decor=
+ation:none}
+      a{text-decoration:none;color:inherit}
+      #outlook a{padding:0}
+      .ReadMsgBody{width:100%}
+      .ExternalClass{width:100%}
+      .ExternalClass,.ExternalClass div,.ExternalClass font,.ExternalClass =
+p,.ExternalClass span,.ExternalClass td{line-height:100%}
+     =20
+      .w-100{width:100%!important;max-width:100%;font-size:0;word-break:bre=
+ak-word;vertical-align:top}
+      .w-75{width:75%!important;max-width:75%}
+      .w-70{width:70%!important;max-width:70%}
+      .w-50{width:50%!important;max-width:50%}
+      .w-48{width:48%!important;max-width:48%}
+      .w-33{width:33.333333333333336%!important;max-width:33.33333333333333=
+6%}
+      .w-25{width:25%!important;max-width:25%}
+     =20
+      @media screen{
+        @font-face{font-family:'Source Sans Pro';font-style:normal;font-wei=
+ght:400;src:local('Source Sans Pro Regular'),local('SourceSansPro-Regular')=
+,url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RY=
+Oo3qOK7l.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-015=
+3,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,=
+U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+        @font-face{font-family:'Source Sans Pro';font-style:normal;font-wei=
+ght:700;src:url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-=
+LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');unicode-range:U+0000-00FF,U+=
+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC=
+,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+      }
+     =20
+      .background,body{width:100%;margin:0;padding:0}
+      .container__div{margin:0 auto;max-width:600px}
+      .container{margin-top:10px}
+      .main__container{vertical-align:top;font-size:0;word-break:break-word=
+}
+     =20
+      .preHeader__container--left{vertical-align:top}
+     =20
+      .cta__bloc{border-collapse:separate;line-height:100%}
+      .cta__text{text-decoration:none;color:#fff;font-size:16px;line-height=
+:25px;font-family:'Source Sans Pro',Arial,'Helvetica Neue',Helvetica,sans-s=
+erif;font-weight:700}
+      .cta__main{cursor:pointer;background-color:#ff6501;transition:.25s li=
+near}
+      .cta__alt{cursor:pointer;background-color:#fff;border:1px solid #3032=
+c1;transition:.25s linear;color:#3032c1}
+     =20
+      .bloc__zeropapier td.text--center{margin:0;padding:20px 0}
+      .bloc__bonasavoir__table__container{vertical-align:top}
+      .bloc__bonasavoir__table__container thead td{height:36px;border-botto=
+m:1px solid #00008f;line-height:36px;padding-left:10px;background-color:#f4=
+f4f4}
+      .bloc__bonasavoir__table__container tbody td{border-bottom:solid 1px =
+#e5e5e5;height:36px;line-height:36px;padding-left:10px}
+      .bloc__bonasavoir__table__container tbody td:last-of-type,.bloc__bona=
+savoir__table__container thead td:last-of-type{text-align:center}
+      .bloc__demande__container__table td{border-bottom:solid 1px #e5e5e5;h=
+eight:36px;line-height:24px;padding-left:10px}
+     =20
+      .bloc__doubleagent:first-of-type{border-right:1px solid #ccc}
+     =20
+      .bloc__list__text{width:85%;height:48px;vertical-align:middle;margin-=
+bottom:10px}
+      .liststyle{color:#00008f;font-size:12px;line-height:24px;vertical-ali=
+gn:top;padding:0 20px}
+      .liststyle__text{margin-bottom:10px}
+     =20
+      .img-social{cursor:pointer;padding:4px;transition:.25s linear;border:=
+0}
+     =20
+      .logo{font-family:'Source Sans Pro',Arial,'Helvetica Neue',Helvetica,=
+sans-serif;font-weight:700;font-size:14px;color:#00008f;line-height:55px;wh=
+ite-space:nowrap}
+     =20
+      .reset__bloc{font-size:0;direction:ltr;display:inline-block;vertical-=
+align:top;width:100%}
+      .bloc{padding:20px}
+      .bloc__s{padding:10px 20px}
+      .bloc__xs{padding:5px 20px}
+      .bloc__border--white{ border: 1px solid #CCCCCC; }
+      .bloc__border--gray{border:1px solid #ccc}
+      .bloc__border--blue{border:1px solid #00008f}
+      .bloc__border--tb--blue{border-top:1px solid #00008f;border-bottom:1p=
+x solid #00008f;margin-bottom:1px}
+      .bloc__border--t--blue{border-top:1px solid #00008f}
+     =20
+      .spacer{margin-bottom:20px}
+      .spacer--s{margin-bottom:10px}
+      .spacer--xs{margin-bottom:5px}
+      .spacer--mobile{width:0}
+     =20
+      .txt__main{color:#333;font-family:'Source Sans Pro',Arial,'Helvetica =
+Neue',Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400}
+      .text--semibold{font-weight:700}
+     =20
+      .nowrap{white-space:nowrap}
+      .hrefLink{color:#0000EE;}
+      .text-underline{text-decoration:underline}
+      .text--right{text-align:right}
+      .text--center{text-align:center}
+      .text--left{text-align:left}
+     =20
+      .text--white{color:#fff}
+      .text--blue{color:#00008f}
+      .text--gray{color:#999}
+      .text--light-gray{color:#5f5f5f}
+     =20
+      .txt__xxs{font-size:10px;line-height:13px}
+      .txt__xs{font-size:12px;line-height:20px}
+      .txt__s{font-size:14px;line-height:18px}
+      .txt__l{font-size:16px;line-height:20px}
+      .txt__xl{font-size:20px;line-height:25px}
+      .txt__xxl{font-size:24px;line-height:26px}
+     =20
+      .bg--primary{background-color:#fff}
+      .bg--secondary{background-color:#00008f}
+      .bg--alt{background-color:#f5f5f5}
+     =20
+      .img__reset{border:0;display:block;outline:0;text-decoration:none}
+      .img--center{margin:0 auto;display:block}
+      .img--resp{margin:0 auto;display:block;width:100%}
+      .darkimg{display:none}
+      .cta__main:hover{background-color:#dd5401}
+      .cta__alt:hover{background-color:#3032c1 !important;}
+     =20
+      .cta__alt:hover font{color:#fff!important}
+      .cta__alt:hover .img--hover{display:block!important}
+      .cta__alt:hover .lightimg{display:none!important}
+      ::selection{
+        background-color:#00008f;
+        color:#fff
+      }
+     =20
+      @media screen and (prefers-color-scheme:dark){
+        .background,.bg--alt,.spacer-mobile{background-color:#1c1c1c!import=
+ant}
+        .bg--secondary{background-color:#2425aa!important}
+        .bg--primary,
+        .cta__alt{background-color:#252626!important}
+        .cta__main{background-color:#fa5d02!important}
+        .cta__main:hover{background-color:#dd5401!important}
+        .cta__alt{border:1px solid #fff!important}
+        .cta__alt:hover{background-color:#1c1c1c!important}
+        .cta__alt:hover .img--hover{display:none!important}
+       =20
+        .logo{color:#fff!important}
+       =20
+        .text--white,.txt__main{color:#c4c3c2!important}
+        .text--blue,.txt__main.txt__l,.txt__main.txt__xl{color:#fff!importa=
+nt}
+        .text--blue,.text--white{color:#fff!important}
+       =20
+        .bloc__border--t--blue,.bloc__border--tb--blue{border-color:#2425aa=
+!important}
+       =20
+        .bloc__border--gray{border:1px solid #999!important}
+        .bloc__bonasavoir__table__container thead td{background-color:#fff!=
+important;color:#3032c1!important}
+        .bloc__bonasavoir__table__container tbody tr:first-of-type{backgrou=
+nd-color:#fff!important;color:#3032c1!important}
+        .bloc__bonasavoir__table__container tbody td,.bloc__bonasavoir__tab=
+le__container thead td{border-bottom:1px solid #1c1c1c!important}
+       =20
+        .bloc__demande__container__table td{border-bottom:solid 1px #1c1c1c=
+!important}
+       =20
+        .liststyle{color:#c4c3c2!important}
+       =20
+        .lightimg{display:none!important}
+       =20
+        .darkimg,.darkimgWrapper{display:block!important}
+      }
+     =20
+      @media only screen and (max-width:550px){
+        .listText{max-width:85%!important}
+      }
+     =20
+      @media only screen and (max-width:480px){
+        .w-100-mobile{width:100%!important;max-width:100%!important}
+        .w-10-mobile{width:10%!important;max-width:10%!important}
+       =20
+        .container{max-width:95%;margin:0 10px}
+        .bloc__list__text{width:100%!important;max-width:100%!important;tex=
+t-align:center}
+        .bloc__doubleagent{border-bottom:1px solid #ccc!important;border-ri=
+ght:0!important}
+       =20
+        .cta__alt,.cta__main{margin:0!important}
+        .cta__bloc{padding:0 20px}
+        .cta__bloc:first-of-type{padding-bottom:20px}
+       =20
+        .spacer--mobile{width:20px!important}
+      }
+    </style>
+    <!--[if lte mso 11]>
+        <style type=3D"text/css">
+            .w-100{width:100% !important;}
+            .txt__main{font-family:Arial, 'Helvetica Neue', Helvetica, sans=
+-serif !important; }=20
+        </style>
+    <![endif]-->
+    <!--[if mso]>
+        <style type=3D"text/css">
+            .cta__bloc{width: 290px}/*FIX 120DPI: width in px*/
+            .bloc__doubleagent{width: 300px}/*FIX 120DPI: width in px*/
+        </style>
+    <![endif]-->
+  </head>
+  <body class=3D"background bg--alt" style=3D"width:100%;margin:0;padding:0=
+;background-color:#f5f5f5;">
+    <div class=3D"background bg--alt" style=3D"width:100%;margin:0;padding:=
+0;background-color:#f5f5f5;">
+    <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" class=3D"background bg--alt" style=3D"width:100%;margin:0;padding:0;backg=
+round-color:#f5f5f5;">
+      <tbody>
+        <tr>
+          <td>
+            <!--[if mso | IE]>
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"width:600px;" width=3D"600">
+                <tr>
+                  <td style=3D"line-height:0px;font-size:0px;mso-line-heigh=
+t-rule:exactly;">
+            <![endif]-->
+            <div class=3D"container__div" style=3D"margin:0px auto;max-widt=
+h:600px;">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"container w-100 bg--primary" style=3D"margin-top:10px;=
+background-color:#FFFFFF;">
+                <tbody>
+                    <tr>
+                        <td>
+                        <!--[if mso | IE]>
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0">
+                            <tr>
+                                <td style=3D"vertical-align:top;width:600px=
+;">
+                        <![endif]-->
+                            <div class=3D"w-100 main__container bg--alt res=
+et__bloc" style=3D"max-width:100%;word-break:break-word;font-size:0px;direc=
+tion:ltr;display:inline-block;vertical-align:top;width:100%;background-colo=
+r:#f5f5f5;width:100% !important;">
+                                <table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" class=3D"spacer--xs bg--alt " width=3D"100%" style=3D"margin-b=
+ottom:5px;background-color:#f5f5f5;">
+                                    <tbody>
+                                        <tr>
+                                            <td align=3D"left" class=3D"pre=
+Header__container--left" style=3D"vertical-align:top;">
+                                                <font class=3D"txt__main tx=
+t__xxs text--left text--light-gray" id=3D"1.1- Pre-header_ Gauche_ Haut" st=
+yle=3D"color:#333333;font-family:'Source Sans Pro', Arial, 'Helvetica Neue'=
+, Helvetica, sans-serif;font-size:14px;line-height:24px;font-weight:400;tex=
+t-align:left;color:#5F5F5F;font-size:10px;line-height:13px;">
+                                                    Mme Vidal, dans cet ema=
+il :
+                                               =20
+                                                <br>
+                                                   AXA =96 Votre avis est i=
+mportant !
+                                                </font>
+                                                <br>
+                                            </td>
+                              <td align=3D"right" class=3D"preHeader__conta=
+iner--right">
+                                <a href=3D"https://t.contact.axa.fr/r/?id=
+=3Dh4690e42c,8aba2468,ead2c4&amp;e=3DcDE9bXdBN3dock40ZHpROWl3a2hFVVY2dTNTM1=
+k1QVNSMEg&amp;s=3DZM_w1SueM9dspg4RtZNA78MSpSYdKbsR8K7mXd_Hkvw" _type=3D"mir=
+rorPage" _label=3D"Page miroir" style=3D"text-decoration:none"><font class=
+=3D"txt__main txt__xxs text--right nowrap text--light-gray" id=3D"1.3- Pre-=
+header_ Droit_ Haut" style=3D"color:#333333;font-family:'Source Sans Pro', =
+Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:14px;line-height:2=
+4px;font-weight:400;white-space:nowrap;text-align:right;color:#5F5F5F;font-=
+size:10px;line-height:13px;">
+                                    <u>Acc=E9der =E0 la version en ligne</u=
+>
+                                  </font>
+                                </a>
+                                <br>
+                               =20
+                                    <font class=3D"txt__main txt__xxs text-=
+-right text--light-gray" id=3D"1.4- Pre-header_ Droit_ Bas" style=3D"color:=
+#333333;font-family:'Source Sans Pro', Arial, 'Helvetica Neue', Helvetica, =
+sans-serif;font-size:14px;line-height:24px;font-weight:400;text-align:right=
+;color:#5F5F5F;font-size:10px;line-height:13px;">
+                                  Ajouter l'adresse=20
+                                  <a href=3D"mailto:ServiceClientAXA@contac=
+t.axa.fr" style=3D"text-decoration: none">
+                                  <font class=3D"txt__main txt__xxs text--r=
+ight text--light-gray" color=3D"#333333" size=3D"1" style=3D"color:#333333;=
+ font-size:10px;text-align:right; line-height:13px;">
+                                  <u>ServiceClientAXA@contact.axa.fr</u>
+                                  </font>
+                                </a> =E0 vos contacts=20
+                                    </font>
+                                <br><br>
+                                                    </td>
+                            </tr>
+                          </tbody>
+                        </table>
+          <!-- Fin Preheader -->
+          <!-- Bandeau Logo -->
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"w-100 =
+bg--primary" width=3D"100%" style=3D"max-width:100%;font-size:0px;word-brea=
+k:break-word;vertical-align:top;background-color:#FFFFFF;width:100% !import=
+ant;">
+                              <tbody>
+                                <tr>
+                                  <td class=3D"bloc__s" style=3D"padding:10=
+px 20px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" class=3D"w-100" style=3D"max-width:100%;fon=
+t-size:0px;word-break:break-word;vertical-align:top;width:100% !important;"=
+>
+                                      <tr>
+                                        <td align=3D"left" class=3D"w-50 te=
+xt--left" width=3D"280" style=3D"max-width:50%;text-align:left;width:50% !i=
+mportant;">
+                                          <img class=3D"img__reset logo-axa=
+" id=3D"2.1- Logo" width=3D"55" height=3D"55" src=3D"https://axafrance61-i.=
+neolane.net/res/axafrance_t/26947e74bafdd3b7abf8dcf51439b693.jpg" style=3D"=
+border:0;display:block;outline:none;text-decoration:none;">
+                                                                    </td>
+                                        <td align=3D"right" class=3D"w-50 t=
+ext--right" width=3D"280" style=3D"max-width:50%;text-align:right;width:50%=
+ !important;">
+                                          <font class=3D"logo text--right" =
+id=3D"2.1- Complement_Logo" style=3D"font-family:'Source Sans Pro', Arial, =
+'Helvetica Neue', Helvetica, sans-serif;font-weight:700;font-size:14px;colo=
+r:#00008F;line-height:55px;white-space:nowrap;text-align:right;"> Assurance=
+ et Banque </font>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+          <!-- Fin Bandeau Logo -->
+          <!-- Bandeau Titre -->
+    </div>
+<div class=3D"w-100 bg--primary reset__bloc" style=3D"max-width:100%;word-b=
+reak:break-word;font-size:0px;direction:ltr;display:inline-block;vertical-a=
+lign:top;width:100%;background-color:#FFFFFF;width:100% !important;">
+  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"w-100 bg=
+--secondary" width=3D"100%" style=3D"max-width:100%;font-size:0px;word-brea=
+k:break-word;vertical-align:top;background-color:#00008F;width:100% !import=
+ant;">
+    <tbody>
+      <tr>
+        <td class=3D"bloc__s" style=3D"padding:10px 20px;">
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+w-100" style=3D"max-width:100%;font-size:0px;word-break:break-word;vertical=
+-align:top;width:100% !important;">
+            <tr>
+              <td align=3D"left">
+                <div>
+               =20
+                  <font class=3D"txt__main text--white txt__s" id=3D"4.1- B=
+andeau_Titre_Email" style=3D"color:#333333;font-family:'Source Sans Pro', A=
+rial, 'Helvetica Neue', Helvetica, sans-serif;line-height:24px;font-weight:=
+400;color:#FFFFFF;font-size:14px;line-height:18px;">
+                    Assurance Auto                                         =
+                  =20
+                  </font>
+                 =20
+                  <br>
+                 =20
+                  <font class=3D"txt__main text--white txt__xl" id=3D"4.2- =
+Bandeau_SousTitre_Email" style=3D"color:#333333;font-family:'Source Sans Pr=
+o', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:14px;line-heig=
+ht:24px;font-weight:400;color:#FFFFFF;font-size:20px;line-height:25px;">
+                    Votre avis est important  =20
+                                                                        =20
+                  </font>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+          <!-- Fin Bandeau Titre -->
+          <!-- Bloc Principale -->
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"w-100 =
+bg--primary" width=3D"100%" style=3D"background-color:#FFFFFF;">
+            <tr>
+              <td>
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cla=
+ss=3D"w-100">
+                  <tr>
+                    <td class=3D"bloc spacer" style=3D"padding:20px;margin-=
+bottom:10px;">
+                      <div>
+                        <font id=3D"5.1- Corps_Mail_Salutation" class=3D"tx=
+t__main" style=3D"color:#333333;font-family:'Source Sans Pro', Arial, 'Helv=
+etica Neue', Helvetica, sans-serif;font-size:14px;line-height:24px;font-wei=
+ght:400;">
+                          Ch=E8re Mme Vidal,                               =
+                             =20
+                                                      <br><br>
+                                                      </font>
+                        <font id=3D"5.2- Corps_Mail_Paragraphe1" class=3D"t=
+xt__main" style=3D"color:#333333;font-family:'Source Sans Pro', Arial, 'Hel=
+vetica Neue', Helvetica, sans-serif;font-size:14px;line-height:24px;font-we=
+ight:400;text-align:justify">
+                            Vous avez r=E9cemment eu un sinistre avec votre=
+ v=E9hicule.
+                            <br><br> =20
+                            Votre avis est important pour nous !
+                            <br><br>
+                            En r=E9pondant =E0 quelques questions en moins =
+de 3 minutes, vous nous aidez =E0 toujours nous am=E9liorer.               =
+                                       =20
+                                                      </font>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+          <!-- Fin Texte1 -->
+          <!-- CTA -->
+ =20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"w-100 bg--=
+primary" width=3D"600" style=3D"background-color:#FFFFFF;">
+  <tr>
+    <td>
+      <table class=3D"w-50 w-100-mobile" width=3D"580" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" align=3D"center" style=3D"" id=3D"5.4- Corps_M=
+ail_CTA">
+        <tr>
+          <center>
+            <td align=3D"center" class=3D"bloc__xs" style=3D"padding:5px 20=
+px;">
+              <table height=3D"56" width=3D"200" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0" align=3D"center" class=3D"w-100-mobile cta__main" st=
+yle=3D"cursor:pointer;background-color:#D24723;transition:.25s linear;">
+                <tbody>
+                   <tr>
+                      <td width=3D"16"></td>
+                      <td height=3D"56" class=3D"text--left" style=3D"text-=
+align:left;">
+                        <a href=3D"https://t.contact.axa.fr/r/?id=3Dh4690e4=
+2c,8aba2468,ead2c6&amp;e=3DcDE9amZlL2Zvcm0vU1ZfY3pITDR1WXlueEV5cVRIP1FfQ0hM=
+PWdsJlFfREw9RU1EX2psRHZ5dkkwSHI5NjF4SF9jekhMNHVZeW54RXlxVEhfQ0dDX05yakhXVFN=
+KZ2lkcGUwSiZfZ189Zw&amp;s=3Da9rGcG4FDCwWWPxJOx30IwQCo7FJ-gCk86oT_xU5lYg" st=
+yle=3D"text-decoration:none">
+                            <font class=3D"cta__text text--white" style=3D"=
+text-decoration:none;font-size:16px;line-height:25px;font-family:'Source Sa=
+ns Pro', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-weight:700;col=
+or:#FFFFFF;">
+                             Donner mon avis
+                            </font>
+                        </a>
+                        &nbsp;
+                      </td>
+                      <td align=3D"right" height=3D"52">
+                        <a href=3D"https://t.contact.axa.fr/r/?id=3Dh4690e4=
+2c,8aba2468,ead2c8&amp;e=3DcDE9amZlL2Zvcm0vU1ZfY3pITDR1WXlueEV5cVRIP1FfQ0hM=
+PWdsJlFfREw9RU1EX2psRHZ5dkkwSHI5NjF4SF9jekhMNHVZeW54RXlxVEhfQ0dDX05yakhXVFN=
+KZ2lkcGUwSiZfZ189Zw&amp;s=3D2K0rKXD1r0dZdDxRh-Loi5QCNyV2aqAdaNeSTdPUFYU" st=
+yle=3D"text-decoration:none">
+                          <img class=3D"img__reset lightimg" border=3D"0" a=
+lt=3D"&gt;" src=3D"https://t.contact.axa.fr/res/axafran_mid_prod11/04452ba5=
+e59de9ab006d3193d45a6185.png" style=3D"border:0;display:block;outline:none;=
+text-decoration:none;">
+                          <div class=3D"darkimgWrapper" style=3D"mso-hide: =
+all; display: none">
+                              <img src=3D"https://t.contact.axa.fr/res/axaf=
+ran_mid_prod11/04452ba5e59de9ab006d3193d45a6185.png" border=3D"0" class=3D"=
+img__reset darkimg" style=3D"border:0;display:block;outline:none;text-decor=
+ation:none;display:none;">
+                          </div>
+                        </a>
+                      </td>
+                      <td width=3D"10">
+                      </td>
+                   </tr>
+                </tbody>
+              </table>
+            </td>
+          </center>
+        </tr>
+      </table>
+      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D" w-5=
+0 w-100-mobile" width=3D"600" align=3D"center" style=3D"">
+        <tr>
+        <center>
+          <td align=3D"center" class=3D"bloc__xs">
+            <font id=3D"5.3- Corps_Mail_Paragraphe2" class=3D"txt__main txt=
+__xxs" align=3D"justify" style=3D"color:#333333;font-family:'Source Sans Pr=
+o', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:14px;line-heig=
+ht:24px;font-weight:400;text-align: justify;font-size:10px;line-height:13px=
+;">
+            Si vous rencontrez un probl=E8me, copiez et collez dans votre n=
+avigateur internet le lien suivant :<br> =20
+            <a href=3D"https://t.contact.axa.fr/r/?id=3Dh4690e42c,8aba2468,=
+ead2ca&amp;e=3DcDE9amZlL2Zvcm0vU1ZfY3pITDR1WXlueEV5cVRIP1FfQ0hMPWdsJlFfREw9=
+RU1EX2psRHZ5dkkwSHI5NjF4SF9jekhMNHVZeW54RXlxVEhfQ0dDX05yakhXVFNKZ2lkcGUwSiZ=
+fZ189Zw&amp;s=3Dok-q-AIf63G0HYHKj7QUaMuvlCcQI74gnksNKHKy33Q" style=3D"text-=
+decoration:none">https://axafr.eu.qualtrics.com/jfe/form/SV_czHL4uYynxEyqTH=
+?Q_CHL=3Dgl&amp;Q_DL=3DEMD_jlDvyvI0Hr961xH_czHL4uYynxEyqTH_CGC_NrjHWTSJgidp=
+e0J&amp;_g_=3Dg</a> <br>                                                   =
+     =20
+            </font>
+          </td>
+          </center>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- Fin CTA -->
+          <!-- Texte2 -->
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+w-100 bg--primary" style=3D"background-color:#FFFFFF;">
+            <tr>
+              <td class=3D"bloc" style=3D"padding:20px;">
+                <div>
+                  <font id=3D"5.5- Corps_Mail_FormulePolitesse" class=3D"tx=
+t__main" style=3D"color:#333333;font-family:'Source Sans Pro', Arial, 'Helv=
+etica Neue', Helvetica, sans-serif;font-size:14px;line-height:24px;font-wei=
+ght:400;">
+                    Merci pour votre participation.<br>
+Bien sinc=E8rement,<br>                                                    =
+        =20
+                                                    <br>
+                                                </font>
+                  <font id=3D"5.6- Signature" class=3D"txt__main" style=3D"=
+color:#333333;font-family:'Source Sans Pro', Arial, 'Helvetica Neue', Helve=
+tica, sans-serif;font-size:14px;line-height:24px;font-weight:400;">
+    L'Equipe Exp=E9rience Client<br>
+</font>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <!-- Fin Texte2 -->
+          <!-- Texte3 -->
+         =20
+              <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"w-100 bloc__s text--left spacer--s" width=3D"600" style=3D"padding:10px=
+ 10px;margin-bottom:10px;text-align:left;">
+    <tr>
+        <td class=3D"txt__main txt__xxs bloc__xs" id=3D"13.1- Footer_Paragr=
+apheNoReply" style=3D"padding:5px 20px;color:#333333;font-family:'Source Sa=
+ns Pro', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:14px;line=
+-height:24px;font-weight:400;font-size:10px;line-height:13px;">
+            <em>Dans une d=E9marche d=92am=E9lioration continue de notre qu=
+alit=E9 de service, vos r=E9ponses pourraient =EAtre transmises =E0 votre c=
+onseiller habituel. Il pourra, le cas =E9ch=E9ant, vous contacter.</em>
+        </td>
+    </tr>
+</table>
+          =20
+          <!-- Fin Texte3 -->
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+spacer w-100 bg--alt" width=3D"100%" style=3D"max-width:100%;font-size:0px;=
+word-break:break-word;vertical-align:top;margin-bottom:20px;background-colo=
+r:#f5f5f5;">
+                                                                    <tr>
+                                                                        <td=
+ class=3D"txt__main txt__xxs text--light-gray" id=3D"16.1- Footer_ Mentions=
+L=E9gales" style=3D"color:#333333;font-family:'Source Sans Pro', Arial, 'He=
+lvetica Neue', Helvetica, sans-serif;font-size:14px;line-height:24px;font-w=
+eight:400;color:#5F5F5F;font-size:10px;line-height:13px;text-align:justify"=
+>
+                                                                           =
+ Merci de ne pas r=E9pondre =E0 cet e-mail. Votre demande ne pourra pas =EA=
+tre trait=E9e. <br>
+                                                                           =
+ Pour toute question, vous pouvez contacter votre interlocuteur habituel ou=
+ renseigner le <a href=3D"https://t.contact.axa.fr/r/?id=3Dh4690e42c,8aba24=
+68,ead2cb" class=3D"txt__main txt__xxs text-underline" style=3D"color:#3333=
+33;font-family:'Source Sans Pro', Arial, 'Helvetica Neue', Helvetica, sans-=
+serif;font-size:14px;line-height:24px;font-weight:400;text-decoration:under=
+line;font-size:10px;line-height:13px;">formulaire de contact</a>.<br><br>
+                                                                           =
+ Vous disposez de droits sur les informations vous concernant. Pour plus d'=
+informations, <a href=3D"https://t.contact.axa.fr/r/?id=3Dh4690e42c,8aba246=
+8,ead2cc" class=3D"txt__main txt__xxs text-underline" style=3D"color:#33333=
+3;font-family:'Source Sans Pro', Arial, 'Helvetica Neue', Helvetica, sans-s=
+erif;font-size:14px;line-height:24px;font-weight:400;text-decoration:underl=
+ine;font-size:10px;line-height:13px;">cliquez ici</a>.<br><br>
+                                                                   =20
+                                                                           =
+ AXA France Vie. SA au capital de 487 725 073,50 =80 =96 310 499 959 R.C.S.=
+ Nanterre =95 AXA France IARD. S A au capital de 214 799 030 =80 =96 722 05=
+7 460 R.C.S. Nanterre =95 AXA Assurances Vie Mutuelle. Soci=E9t=E9 d=B4assu=
+rance mutuelle sur la vie et de capitalisation =E0 cotisations fixes =96 Si=
+ren 353 457 245 =95 AXA Assurances IARD Mutuelle. Soci=E9t=E9 d=B4assurance=
+ mutuelle =E0 cotisations fixes contre l=B4incendie, les accidents et risqu=
+es divers =96 Siren 775 699 309 =95 Si=E8ges sociaux : 313 Terrasses de l=
+=B4Arche 92727 Nanterre C=E9dex. Entreprises r=E9gies par le Code des Assur=
+ances.                                  =20
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            <!--[if mso | IE]>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                            <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <!--[if mso | IE]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+   <img height=3D"0" width=3D"0" alt=3D"" src=3D"https://t.contact.axa.fr/r=
+/?id=3Dh4690e42c,8aba2468,1"></body>
+</html>
+
+------=_NextPart_039_42DAF6BF.42DAF6BF--
