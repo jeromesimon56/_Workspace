@@ -9,12 +9,12 @@ $libDir = Join-Path $scriptDir 'lib'
 $tempDir = Join-Path $env:TEMP "mailkit_$([guid]::NewGuid().ToString().Substring(0,8))"
 
 $packages = @{
-    'MailKit' = '4.3.0'
-    'MimeKit' = '4.3.0'
-    'System.Runtime' = '4.3.0'
+    'MailKit' = '3.4.0'
+    'MimeKit' = '3.4.0'
+    'System.Threading.Tasks.Extensions' = '4.5.4'
 }
 
-$requiredDlls = @('System.Runtime.dll','MimeKit.dll','MailKit.dll')
+$requiredDlls = @('System.Threading.Tasks.Extensions.dll','MimeKit.dll','MailKit.dll')
 
 function Ensure-Dir {
     param([string]$Path)
@@ -51,7 +51,7 @@ function Extract-Dll {
             Copy-Item -Path $Zip -Destination $zipFile -Force
         }
         Expand-Archive -Path $zipFile -DestinationPath $ext -Force
-        $paths = @('lib/net6.0','lib/net8.0','lib/net462','lib/netstandard2.1','lib/net5.0','lib')
+        $paths = @('lib/net461','lib/net462','lib/net47','lib/net48','lib/netstandard2.0','lib/netstandard2.1','lib/net6.0','lib/net8.0','lib')
         foreach ($dll in $Dlls) {
             foreach ($p in $paths) {
                 $src = Join-Path (Join-Path $ext $p) $dll
@@ -89,7 +89,7 @@ Write-Host ""
 $map = @{
     'MailKit' = @('MailKit.dll')
     'MimeKit' = @('MimeKit.dll')
-    'System.Runtime' = @('System.Runtime.dll')
+    'System.Threading.Tasks.Extensions' = @('System.Threading.Tasks.Extensions.dll')
 }
 
 foreach ($p in $map.GetEnumerator()) {

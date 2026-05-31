@@ -1,0 +1,14 @@
+name: Local Config
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Llama 3 local
+    provider: ollama
+    model: llama3:8b
+    apiBase: "http://localhost:11434"
+
+  - name: GPT‑OSS 20B local
+    provider: ollama
+    model: gpt-oss:20b
+    apiBase: "http://localhost:11434"

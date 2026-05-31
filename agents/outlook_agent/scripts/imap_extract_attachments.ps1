@@ -1,12 +1,31 @@
 param(
     [string]$Username,
     [string]$Password,
+    [ValidateSet('auto','login','plain','oauth2')] [string]$AuthMethod = 'auto',
+    [string]$OAuth2Token = '',
     [string]$Output = ''
 )
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 if (-not $Output) {
     $Output = Join-Path $scriptDir 'attachments'
+}
+
+if (-not $Username) {
+    Write-Error "Veuillez fournir -Username pour l'action IMAP."
+    exit 1
+}
+
+if ($AuthMethod -eq 'oauth2') {
+    if (-not $OAuth2Token) {
+        Write-Error "Le mode oauth2 nécessite -OAuth2Token. Utilisez get_imap_oauth2_token.ps1 pour obtenir un jeton valide."
+        exit 1
+    }
+} else {
+    if (-not $Password) {
+        Write-Error "Le mode d'authentification '$AuthMethod' nécessite un mot de passe. Utilisez -AuthMethod oauth2 avec -OAuth2Token pour XOAUTH2."
+        exit 1
+    }
 }
 
 function Resolve-AssemblyPath {
@@ -18,7 +37,7 @@ function Resolve-AssemblyPath {
 
 function Load-RequiredAssemblies {
     $required = @(
-        'System.Runtime.dll',
+        'System.Threading.Tasks.Extensions.dll',
         'MimeKit.dll',
         'MailKit.dll'
     )
@@ -33,6 +52,7 @@ function Load-RequiredAssemblies {
 
         try {
             [Reflection.Assembly]::LoadFrom($path) | Out-Null
+            Write-Host "Loaded assembly: $dll"
         } catch {
             Write-Warning "Impossible de charger l'assembly '$dll' depuis '$path': $($_.Exception.Message)"
             $missing += $dll
@@ -71,8 +91,54 @@ try {
     Write-Host "Connexion IMAP..."
     $client.Connect('imap-mail.outlook.com', 993, $true)
 
-    Write-Host "Authentification..."
-    $client.Authenticate($Username, $Password)
+    Write-Host "IMAP capacités : $($client.Capabilities)"
+    Write-Host "Mechanismes auth supportés : $($client.AuthenticationMechanisms -join ', ')"
+    Write-Host "Authentification avec AuthMethod=$AuthMethod..."
+
+    if ($AuthMethod -eq 'oauth2') {
+        if (-not $OAuth2Token) {
+            Write-Error "AuthMethod oauth2 nécessite le paramètre -OAuth2Token avec un jeton valide."
+            exit 1
+        }
+        $mechanism = New-Object MailKit.Security.SaslMechanismOAuth2($Username, $OAuth2Token)
+    } else {
+        $preferred = $AuthMethod
+        if ($AuthMethod -eq 'auto') {
+            if ($client.AuthenticationMechanisms -contains 'LOGIN') {
+                $preferred = 'login'
+            } elseif ($client.AuthenticationMechanisms -contains 'PLAIN') {
+                $preferred = 'plain'
+            }
+        }
+
+        switch ($preferred) {
+            'login' {
+                if (-not ($client.AuthenticationMechanisms -contains 'LOGIN')) {
+                    Write-Error "Serveur IMAP ne propose pas LOGIN. Choisissez AuthMethod=plain ou vérifiez les paramètres du serveur."
+                    exit 1
+                }
+                $mechanism = New-Object MailKit.Security.SaslMechanismLogin($Username, $Password)
+            }
+            'plain' {
+                if (-not ($client.AuthenticationMechanisms -contains 'PLAIN')) {
+                    Write-Error "Serveur IMAP ne propose pas PLAIN. Choisissez AuthMethod=login ou vérifiez les paramètres du serveur."
+                    exit 1
+                }
+                $mechanism = New-Object MailKit.Security.SaslMechanismPlain($Username, $Password)
+            }
+        }
+    }
+
+    try {
+        $client.Authenticate($mechanism)
+    } catch {
+        Write-Error "Auth failed : $($_.Exception.Message)"
+        if ($_.Exception.InnerException) { Write-Error "  Inner: $($_.Exception.InnerException.Message)" }
+        Write-Error "Le serveur supporte uniquement : $($client.AuthenticationMechanisms -join ', ')"
+        Write-Error "Si Outlook.com rejette l'authentification basique, activez IMAP et / ou utilisez un mot de passe d'application Microsoft."
+        Write-Error "Si le compte est protégé par MFA, vous devrez utiliser XOAUTH2 et un jeton d'accès valide."
+        exit 1
+    }
 
     Write-Host "Récupération des dossiers..."
     $root = $client.GetFolder($client.PersonalNamespaces[0])

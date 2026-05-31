@@ -46,6 +46,19 @@ Usage
 .\agents\outlook_agent\run_agent.ps1 -Action extract -Folder Inbox -AttachmentsOutput .\attachments
 ```
 
+- Extraire les pièces jointes via IMAP (optionnel, nécessite des identifiants IMAP ou un token XOAUTH2) :
+
+```powershell
+.\agents\outlook_agent\run_agent.ps1 -Action imap-extract -ImapUsername your@email.com -ImapPassword '<password>' -AttachmentsOutput .\attachments
+```
+
+ou pour XOAUTH2 :
+
+```powershell
+$token = .\agents\outlook_agent\scripts\get_imap_oauth2_token.ps1 -ClientId '<app-id>' -TenantId 'common'
+.\agents\outlook_agent\run_agent.ps1 -Action imap-extract -ImapUsername your@email.com -ImapAuthMethod oauth2 -ImapOAuth2Token $token -AttachmentsOutput .\attachments
+```
+
 - Supprimer les emails promotionnels détectés (avec confirmation) :
 
 ```powershell

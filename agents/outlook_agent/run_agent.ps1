@@ -8,6 +8,8 @@ param(
     [string[]]$ForceDeleteDomains = @(),
     [string]$ImapUsername = "",
     [string]$ImapPassword = "",
+    [string]$ImapAuthMethod = "auto",
+    [string]$ImapOAuth2Token = "",
     [switch]$StandardCleanup,
     [switch]$DryRun,
     [switch]$AutoConfirm
@@ -23,11 +25,17 @@ switch ($Action.ToLower()) {
         & (Join-Path $scriptRoot "scripts\extract_attachments.ps1") -Folder $Folder -Output $AttachmentsOutput -MaxMessages $MaxMessages
     }
     "imap-extract" {
-        if (-not $ImapUsername -or -not $ImapPassword) {
-            Write-Error "Action 'imap-extract' requires -ImapUsername and -ImapPassword"
+        if (-not $ImapUsername) {
+            Write-Error "Action 'imap-extract' requires -ImapUsername"
             exit 1
         }
-        & (Join-Path $scriptRoot "scripts\imap_extract_attachments.ps1") -Username $ImapUsername -Password $ImapPassword -Output $AttachmentsOutput
+
+        if ($ImapAuthMethod -ne 'oauth2' -and -not $ImapPassword) {
+            Write-Error "Action 'imap-extract' requires -ImapPassword pour AuthMethod '$ImapAuthMethod'"
+            exit 1
+        }
+
+        & (Join-Path $scriptRoot "scripts\imap_extract_attachments.ps1") -Username $ImapUsername -Password $ImapPassword -AuthMethod $ImapAuthMethod -OAuth2Token $ImapOAuth2Token -Output $AttachmentsOutput
     }
     "clean" {
         & (Join-Path $scriptRoot "scripts\clean_promotions.ps1") -Folder $Folder -MaxMessages $MaxMessages -ForceDeleteDomains $ForceDeleteDomains @([System.Management.Automation.SwitchParameter]::new($StandardCleanup)) @([System.Management.Automation.SwitchParameter]::new($DryRun)) @([System.Management.Automation.SwitchParameter]::new($AutoConfirm))
